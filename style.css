@@ -1058,6 +1058,14 @@ input, textarea, select { font-family: inherit; font-size: 1rem; }
   color: var(--text-dim);
 }
 
+/* ===== CONTACT LAYOUT ===== */
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 64px;
+  align-items: start;
+}
+
 /* ===== CONTACT FORM ===== */
 .contact-form {
   background: var(--bg-3);
@@ -1368,6 +1376,7 @@ textarea.form-input { resize: vertical; min-height: 120px; }
   .float-cta span { display: none; }
   .float-cta { padding: 16px; border-radius: 50%; }
 
+  .contact-layout { grid-template-columns: 1fr; gap: 40px; }
   .contact-form { padding: 32px 24px; }
   .page-hero { padding: 120px 0 60px; }
 }
