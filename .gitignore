@@ -1,0 +1,16 @@
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor files
+.vscode/
+*.swp
+*.swo
+
+# Node (if ever used)
+node_modules/
+
+# Large 3D files (too big for GitHub)
+*.blend
+*.blend1
