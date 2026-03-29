@@ -14,3 +14,5 @@ node_modules/
 # Large 3D files (too big for GitHub)
 *.blend
 *.blend1
+*.blend
+*.blend1

@@ -174,3 +174,86 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
     }
   });
 });
+
+/* ═══════════════════════════════════════════════
+   INTERACTIVE FIREPLACE EXPLORER
+═══════════════════════════════════════════════ */
+(function () {
+  const explorer = document.getElementById('explorer');
+  if (!explorer) return;
+
+  const fpImg   = document.getElementById('fpImg');
+  const fpLabel = document.getElementById('fpLabel');
+  const fpDesc  = document.getElementById('fpDesc');
+  const cats    = explorer.querySelectorAll('.fp-cat');
+
+  // Preload all images for instant switching
+  const allImgs = explorer.querySelectorAll('.fp-style[data-img]');
+  allImgs.forEach(btn => {
+    const pre = new Image();
+    pre.src = btn.dataset.img;
+  });
+
+  // Swap main image with smooth fade
+  function swapImage(src, label, desc) {
+    fpImg.classList.add('fp-fade');
+    fpDesc.classList.add('fp-fade-text');
+    setTimeout(() => {
+      fpImg.src = src;
+      fpLabel.textContent = label;
+      fpImg.classList.remove('fp-fade');
+      fpDesc.textContent = desc;
+      fpDesc.classList.remove('fp-fade-text');
+    }, 320);
+  }
+
+  // Subtle parallax on mouse move over display frame
+  const frame = document.getElementById('fpFrame');
+  if (frame) {
+    frame.addEventListener('mousemove', e => {
+      const rect = frame.getBoundingClientRect();
+      const x = ((e.clientX - rect.left) / rect.width  - 0.5) * 8;
+      const y = ((e.clientY - rect.top)  / rect.height - 0.5) * 8;
+      fpImg.style.transform = `scale(1.05) translate(${x}px, ${y}px)`;
+    });
+    frame.addEventListener('mouseleave', () => {
+      fpImg.style.transform = '';
+    });
+  }
+
+  // Category click — open/close accordion + load default style
+  cats.forEach(cat => {
+    const header  = cat.querySelector('.fp-cat__header');
+    const styles  = cat.querySelectorAll('.fp-style');
+
+    header.addEventListener('click', () => {
+      const isActive = cat.classList.contains('fp-cat--active');
+
+      // Close all
+      cats.forEach(c => c.classList.remove('fp-cat--active'));
+      explorer.querySelectorAll('.fp-style').forEach(s => s.classList.remove('fp-style--active'));
+
+      if (!isActive) {
+        cat.classList.add('fp-cat--active');
+        // Activate first style of this category
+        if (styles.length) {
+          styles[0].classList.add('fp-style--active');
+          swapImage(styles[0].dataset.img, styles[0].dataset.label, styles[0].dataset.desc);
+        }
+      }
+    });
+
+    // Style pill click
+    styles.forEach(btn => {
+      btn.addEventListener('click', e => {
+        e.stopPropagation();
+        // Make sure this category is open
+        cats.forEach(c => c.classList.remove('fp-cat--active'));
+        explorer.querySelectorAll('.fp-style').forEach(s => s.classList.remove('fp-style--active'));
+        cat.classList.add('fp-cat--active');
+        btn.classList.add('fp-style--active');
+        swapImage(btn.dataset.img, btn.dataset.label, btn.dataset.desc);
+      });
+    });
+  });
+})();

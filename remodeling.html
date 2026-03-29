@@ -67,6 +67,106 @@
     </div>
   </section>
 
+  <!-- ═══════════════════════════════════════════
+       INTERACTIVE FIREPLACE EXPLORER
+  ═══════════════════════════════════════════ -->
+  <section class="section section--dark fp-explorer" id="explorer">
+    <div class="container">
+      <div class="section-header section-header--center anim" style="margin-bottom:56px;">
+        <span class="label">Design Studio</span>
+        <h2 class="section-title">Explore Your <span class="text-orange">Style</span></h2>
+        <p class="section-sub" style="max-width:560px;margin-inline:auto;">Click a category, then choose a style — see your fireplace transformation instantly.</p>
+      </div>
+
+      <div class="fp-explorer__layout">
+
+        <!-- LEFT: Category + Style Selector -->
+        <div class="fp-explorer__sidebar">
+
+          <!-- Category: Mantel -->
+          <div class="fp-cat fp-cat--active" data-cat="mantel">
+            <button class="fp-cat__header">
+              <div class="fp-cat__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M3 9h18M9 21V9"/></svg>
+              </div>
+              <span class="fp-cat__name">Mantel Design</span>
+              <svg class="fp-cat__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="16" height="16"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="fp-styles">
+              <button class="fp-style fp-style--active" data-img="showcase/mantel/modern.png" data-label="Modern Minimalist" data-desc="Clean lines, floating mantel shelf, sleek plaster surround.">Modern</button>
+              <button class="fp-style" data-img="showcase/mantel/rustic.png" data-label="Rustic Wood Beam" data-desc="Reclaimed wood beam mantel with warm, natural character.">Rustic</button>
+              <button class="fp-style" data-img="showcase/mantel/luxury.png" data-label="Luxury Carved" data-desc="Custom carved stone or MDF mantel — true centerpiece feel.">Luxury</button>
+            </div>
+          </div>
+
+          <!-- Category: Stone -->
+          <div class="fp-cat" data-cat="stone">
+            <button class="fp-cat__header">
+              <div class="fp-cat__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M12 2 C9 6 6 10 6 14a6 6 0 0012 0c0-4-3-8-6-12z"/></svg>
+              </div>
+              <span class="fp-cat__name">Stone &amp; Marble</span>
+              <svg class="fp-cat__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="16" height="16"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="fp-styles">
+              <button class="fp-style fp-style--active" data-img="showcase/stone/quartzite.png" data-label="Quartzite Slab" data-desc="Full floor-to-ceiling quartzite — dramatic and timeless.">Quartzite</button>
+              <button class="fp-style" data-img="showcase/stone/travertine.png" data-label="Travertine" data-desc="Warm cream tones with natural veining. Arizona's most popular.">Travertine</button>
+              <button class="fp-style" data-img="showcase/stone/porcelain.png" data-label="Porcelain Tile" data-desc="Large-format porcelain slabs — durable and ultra-clean.">Porcelain</button>
+            </div>
+          </div>
+
+          <!-- Category: Frame -->
+          <div class="fp-cat" data-cat="frame">
+            <button class="fp-cat__header">
+              <div class="fp-cat__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>
+              </div>
+              <span class="fp-cat__name">Frame &amp; Surround</span>
+              <svg class="fp-cat__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="16" height="16"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="fp-styles">
+              <button class="fp-style fp-style--active" data-img="showcase/frame/media-wall.png" data-label="Media Wall" data-desc="Full accent wall with TV integration — the ultimate living room upgrade.">Media Wall</button>
+              <button class="fp-style" data-img="showcase/frame/flat.png" data-label="Flat Surround" data-desc="Flush, clean surround for a sleek, low-profile modern look.">Flat Surround</button>
+            </div>
+          </div>
+
+          <!-- Category: Upgrade -->
+          <div class="fp-cat" data-cat="upgrade">
+            <button class="fp-cat__header">
+              <div class="fp-cat__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <span class="fp-cat__name">Upgrade Packages</span>
+              <svg class="fp-cat__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="16" height="16"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="fp-styles">
+              <button class="fp-style fp-style--active" data-img="showcase/upgrade/led.png" data-label="LED Accent Lighting" data-desc="Integrated LED strips that set the mood — adjustable color and brightness.">LED Lighting</button>
+              <button class="fp-style" data-img="showcase/upgrade/shelves.png" data-label="Floating Shelves" data-desc="Custom floating shelves flanking the fireplace for display and storage.">Floating Shelves</button>
+            </div>
+          </div>
+
+        </div><!-- /sidebar -->
+
+        <!-- RIGHT: Main Display -->
+        <div class="fp-explorer__display">
+          <div class="fp-display__frame" id="fpFrame">
+            <img class="fp-display__img" id="fpImg" src="showcase/mantel/modern.png" alt="Fireplace style preview"/>
+            <div class="fp-display__overlay" aria-hidden="true"></div>
+            <div class="fp-display__badge" id="fpBadge">
+              <span class="fp-display__badge-label" id="fpLabel">Modern Minimalist</span>
+            </div>
+          </div>
+          <div class="fp-display__desc" id="fpDesc">Clean lines, floating mantel shelf, sleek plaster surround.</div>
+          <a href="contact.html" class="btn btn--primary" style="margin-top:20px;display:inline-flex;align-items:center;gap:8px;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11.5a19.79 19.79 0 01-3.07-8.63A2 2 0 012 .82h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            Get This Look — Free Estimate
+          </a>
+        </div><!-- /display -->
+
+      </div><!-- /layout -->
+    </div>
+  </section>
+
   <section class="section section--raised">
     <div class="container">
       <div class="section-header section-header--center anim">
