@@ -418,5 +418,89 @@
     "tags": ["tune-up", "prevention", "value", "annual"],
     "fuel": ["gas", "wood", "any"],
     "season": ["fall"]
+  },
+  {
+    "id": "anec_061",
+    "note": "Goodyear homes in the Estrella and Palm Valley subdivisions mostly have newer direct-vent units from the 2000s build boom — the failures are almost always remotes or wall switches, not the appliance itself.",
+    "tags": ["goodyear", "direct-vent", "remote", "west-valley", "estrella"],
+    "fuel": ["gas"],
+    "season": ["fall", "winter"]
+  },
+  {
+    "id": "anec_062",
+    "note": "In Avondale we see a recurring pattern: homes built around 2005-2010 with builder-grade gas inserts where the original igniters have started cycling through early failure — the parts are usually still available but no one stocked them locally.",
+    "tags": ["avondale", "igniter", "builder-grade", "west-valley"],
+    "fuel": ["gas"],
+    "season": ["any"]
+  },
+  {
+    "id": "anec_063",
+    "note": "Fountain Hills homes sit at higher elevation and catch more wind than the Valley floor — we've replaced more spark-arrestor caps on Fountain Hills chimneys in the last two years than anywhere else we service.",
+    "tags": ["fountain-hills", "chimney-cap", "elevation", "wind", "spark-arrestor"],
+    "fuel": ["any"],
+    "season": ["spring", "summer"]
+  },
+  {
+    "id": "anec_064",
+    "note": "Cave Creek and Carefree chimneys are magnets for wildlife — pack rats, bees, even the occasional owl. We pull more debris nests out of north-valley chimneys in fall than anywhere else in the metro.",
+    "tags": ["cave-creek", "carefree", "wildlife", "pack-rat", "north-valley", "debris"],
+    "fuel": ["wood", "any"],
+    "season": ["fall", "winter"]
+  },
+  {
+    "id": "anec_065",
+    "note": "Anthem homes built in the late 90s and early 2000s often have the original Heat-N-Glo direct-vent units. The logs are fine but the ceramic glass gaskets dry-rot — it looks like the fireplace is failing but it's a twenty-minute gasket swap.",
+    "tags": ["anthem", "heat-n-glo", "gasket", "direct-vent", "glass"],
+    "fuel": ["gas"],
+    "season": ["fall", "winter"]
+  },
+  {
+    "id": "anec_066",
+    "note": "Surprise has exploded with new builds over the last decade — most of the gas fireplaces we service there are less than eight years old, and the issues are almost always sensor calibration rather than mechanical failure.",
+    "tags": ["surprise", "new-build", "sensor", "calibration", "west-valley"],
+    "fuel": ["gas"],
+    "season": ["fall", "winter"]
+  },
+  {
+    "id": "anec_067",
+    "note": "Queen Creek's newer developments often have outdoor gas fire features on patios — those units take a beating from dust storms and occasional freeze-thaw nights, and the burner trays clog faster than indoor units by roughly double.",
+    "tags": ["queen-creek", "outdoor", "fire-pit", "dust", "burner-tray"],
+    "fuel": ["gas"],
+    "season": ["any"]
+  },
+  {
+    "id": "anec_068",
+    "note": "Peoria homes near the lake have a quirk — humidity off the water in summer actually helps rust susceptible components faster than dry-climate homes further east. We replace more rusted burner assemblies in Peoria than in Phoenix proper.",
+    "tags": ["peoria", "humidity", "lake", "rust", "burner"],
+    "fuel": ["gas"],
+    "season": ["summer", "monsoon"]
+  },
+  {
+    "id": "anec_069",
+    "note": "Ahwatukee Foothills is a weird microclimate — the South Mountain side gets more dust infiltration than anywhere else in the Valley, and fireplace intakes clog faster there than anywhere we service.",
+    "tags": ["ahwatukee", "dust", "infiltration", "intake", "south-mountain"],
+    "fuel": ["gas", "any"],
+    "season": ["spring", "summer"]
+  },
+  {
+    "id": "anec_070",
+    "note": "Glendale's older ranch-style homes from the 70s and 80s often still have original masonry chimneys with the factory clay flue tiles — about one in four has a cracked tile we flag during inspection, usually from thermal cycling over forty-plus years.",
+    "tags": ["glendale", "masonry", "flue-tile", "clay", "thermal-cycling", "inspection"],
+    "fuel": ["wood", "any"],
+    "season": ["any"]
+  },
+  {
+    "id": "anec_071",
+    "note": "Chandler has a lot of second-owner homes now, and the single biggest surprise for buyers is when we tell them their fireplace hasn't been serviced since the 90s. A thorough first-time service on an older gas insert runs longer than a standard tune-up.",
+    "tags": ["chandler", "second-owner", "deferred-maintenance", "gas-insert"],
+    "fuel": ["gas"],
+    "season": ["fall"]
+  },
+  {
+    "id": "anec_072",
+    "note": "In Gilbert's Seville and Power Ranch neighborhoods, we see a lot of pre-fab factory-built units where the refractory panels crack after about ten to fifteen years. Panel replacement is cheaper than people expect — usually under $400 for a standard unit.",
+    "tags": ["gilbert", "refractory", "factory-built", "pre-fab", "seville", "power-ranch"],
+    "fuel": ["gas", "wood"],
+    "season": ["any"]
   }
 ]
