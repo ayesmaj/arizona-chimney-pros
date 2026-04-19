@@ -26,6 +26,8 @@ import random
 import sys
 from datetime import datetime
 
+from schema_builder import build_page_schema
+
 # ─────────────────────────────────────────────
 # CONFIG — set your API key here or in env var
 # ─────────────────────────────────────────────
@@ -40,7 +42,9 @@ FAQ_FILE      = "content-banks/faq-bank.json"
 FAQ_SEED_COUNT = 8    # How many candidate questions to show Claude (picks 4)
 AUTO_LINK_COUNT = 5   # Auto-injected internal links added to Claude's 3 manual picks
 
-# Generated fields that Claude fills in
+# Generated fields that Claude fills in (+ locally-computed extras).
+# schema_json is computed locally after Claude returns content — it's in this
+# list so the CSV writer includes it in the output header.
 GENERATED_FIELDS = [
     "slug", "title",
     "meta_title", "meta_description",
@@ -52,6 +56,7 @@ GENERATED_FIELDS = [
     "faq_4_q", "faq_4_a",
     "cta_headline", "cta_text",
     "internal_links",
+    "schema_json",    # locally-computed JSON-LD
 ]
 
 # Fields that come back from Claude as arrays but must be flattened
@@ -520,6 +525,10 @@ def main():
         # Auto-inject 5 related internal links on top of Claude's 3 manual picks.
         # Uses the same deterministic RNG so reruns are reproducible.
         content = merge_internal_links(content, row, rows, rng)
+
+        # Compute JSON-LD schema BEFORE flattening (needs raw content fields,
+        # and internal_links stays as a list for schema_builder).
+        content["schema_json"] = build_page_schema(row, content)
 
         # Flatten any array fields (e.g. internal_links) into delimited strings
         content = flatten_arrays(content)

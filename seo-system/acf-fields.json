@@ -295,9 +295,17 @@
         "label": "Internal Links",
         "name": "internal_links",
         "type": "textarea",
-        "instructions": "Three related internal link paths. Semicolon-separated. Example: /chimney-repair/phoenix;/fireplace-remodeling/phoenix;/gas-fireplace-repair/scottsdale",
-        "rows": 3,
-        "placeholder": "/chimney-repair/phoenix;/fireplace-remodeling/phoenix;/gas-fireplace-repair/scottsdale"
+        "instructions": "Semicolon-separated internal link paths (typically 6-8 per page). Use the flat /{service-city-slug}/ format — one URL segment, lowercase, hyphens, no spaces. Generator merges 3 editorial picks from Claude with 5 auto-injected peer links for hub-and-spoke topology.",
+        "rows": 4,
+        "placeholder": "/chimney-repair-phoenix/;/fireplace-remodeling-phoenix/;/gas-fireplace-repair-scottsdale/;/chimney-cleaning-phoenix/;/chimney-inspection-phoenix/"
+      },
+      {
+        "key": "field_acp_schema_json",
+        "label": "Schema.org JSON-LD",
+        "name": "schema_json",
+        "type": "textarea",
+        "instructions": "Locally-generated JSON-LD @graph for this page (LocalBusiness + Service + WebPage + BreadcrumbList + FAQPage). The WP template dumps this raw inside a <script type=\"application/ld+json\"> tag in <head>. DO NOT hand-edit — regenerate via generate.py so the schema stays in sync with CSV + content.",
+        "rows": 10
       }
     ],
     "location": [
