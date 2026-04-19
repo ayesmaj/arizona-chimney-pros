@@ -263,7 +263,7 @@ def build_auto_links(row: dict, all_rows: list[dict], rng: random.Random,
         r_service = (r.get("service") or "").strip().lower()
         r_type    = (r.get("page_type") or "").strip().lower()
 
-        if r_type in ("comparison", "cost_page"):
+        if r_type in ("comparison", "cost_page", "location_hub"):
             pools["hub_pages"].append(r_slug)
         elif r_city == city:
             if r_type == "problem_city":
@@ -298,7 +298,7 @@ def build_auto_links(row: dict, all_rows: list[dict], rng: random.Random,
             ("hub_pages",             1),  # funnel depth
             ("same_service_anywhere", 1),  # "we service gas fireplaces across AZ"
         ]
-    elif page_type in ("comparison", "cost_page"):
+    elif page_type in ("comparison", "cost_page", "location_hub"):
         # Hub pages push link equity DOWN into city-level service pages
         quotas = [
             ("same_service_anywhere", 3),  # link to 3 city-level service pages
@@ -306,9 +306,15 @@ def build_auto_links(row: dict, all_rows: list[dict], rng: random.Random,
             ("same_city_diff_svc",    1),
         ]
     else:  # service_city (default)
+        # Total quota sums to 6 but AUTO_LINK_COUNT caps at 5 — the last pool
+        # (same_service_anywhere) drops FIRST when a large city fills the
+        # problem/diff-service pools. Tier-2 small cities with empty problem
+        # pools still get the same_service_anywhere cross-city boost via
+        # the backfill loop below.
         quotas = [
             ("same_city_diff_svc",    1),  # "also in this city"
-            ("same_city_problems",    1),  # "specific problems we fix here"
+            ("same_city_problems",    2),  # bumped: big-city problem pools
+                                           # (10+) otherwise starve 1-pick selection
             ("nearby_same_svc",       1),  # "same service nearby"
             ("hub_pages",             1),  # funnel
             ("same_service_anywhere", 1),  # cross-city reach (tier-2 booster)
