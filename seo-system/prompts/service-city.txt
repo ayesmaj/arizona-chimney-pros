@@ -186,12 +186,16 @@ Answers must be clear, practical, and specific — NOT generic.
 
 13. INTERNAL LINKS
 Return 3 relevant internal link paths as strings in the array.
-Format examples:
-- "/chimney-repair/{{city}}"
-- "/fireplace-remodeling/{{city}}"
-- "/gas-fireplace-repair/{nearby-city-slug}"
+Use the flat /{service-city-slug}/ format — one URL segment, lowercase,
+hyphens, no spaces. Swap spaces in city names for hyphens.
 
-Use lowercase, hyphens, and swap spaces for hyphens in city names.
+Format examples:
+- "/chimney-repair-{{city}}/"
+- "/fireplace-remodeling-{{city}}/"
+- "/gas-fireplace-repair-{nearby-city-slug}/"
+
+Pick pages that genuinely help the reader (related service in same city,
+same service in nearby city, or a helpful cost/comparison hub).
 
 ---
 

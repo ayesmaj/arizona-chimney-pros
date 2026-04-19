@@ -38,6 +38,7 @@ OUTPUT_FILE   = "pages-enriched.csv"
 ANECDOTE_FILE = "content-banks/anecdotes.json"
 FAQ_FILE      = "content-banks/faq-bank.json"
 FAQ_SEED_COUNT = 8    # How many candidate questions to show Claude (picks 4)
+AUTO_LINK_COUNT = 5   # Auto-injected internal links added to Claude's 3 manual picks
 
 # Generated fields that Claude fills in
 GENERATED_FIELDS = [
@@ -187,6 +188,182 @@ def enrich_row(row: dict, anecdotes: list, faqs: list, rng: random.Random) -> di
     if not enriched.get("seed_angle"):
         enriched["seed_angle"] = "reassuring"
     return enriched
+
+
+# ─────────────────────────────────────────────
+# Auto internal-link injector
+# ─────────────────────────────────────────────
+#
+# Claude generates 3 editorial links per page from the prompt. We add up to
+# AUTO_LINK_COUNT more by mining the full CSV for relevant peers. Result: a
+# dense internal graph (~8 links/page) that amplifies ranking signal and
+# keeps visitors inside the funnel.
+#
+# All links use the flat /{slug}/ format — must match actual WP permalinks.
+
+def _as_path(slug: str) -> str:
+    slug = (slug or "").strip().strip("/")
+    return f"/{slug}/" if slug else ""
+
+
+def _split_list(value: str) -> list[str]:
+    """Parse semicolon-separated CSV field (e.g. nearby_cities)."""
+    if not value:
+        return []
+    return [p.strip() for p in value.split(";") if p.strip()]
+
+
+def build_auto_links(row: dict, all_rows: list[dict], rng: random.Random,
+                     count: int = AUTO_LINK_COUNT) -> list[str]:
+    """Return up to `count` related /{slug}/ paths from the full page index.
+
+    The algorithm is page-type-aware because different page types need
+    different link patterns:
+
+      - service_city  pages pull users down into specific problems + nearby cities
+      - problem_city  pages MUST link up to their parent service_city page
+                      (highest conversion signal) + sibling problems
+      - comparison/cost_page hubs spread link equity across tier-1 city pages
+
+    Each pool is shuffled within tier so a batch of Phoenix pages doesn't
+    all link to the same 5 neighbors in the same order.
+    """
+    self_slug = (row.get("slug") or "").strip()
+    city      = (row.get("city") or "").strip().lower()
+    service   = (row.get("service") or "").strip().lower()
+    page_type = (row.get("page_type") or "").strip().lower()
+    nearby    = {c.strip().lower() for c in _split_list(row.get("nearby_cities", ""))}
+
+    # Categorize every other row into typed pools
+    pools: dict[str, list[str]] = {
+        "parent_service":         [],  # same city + same service, service_city
+        "same_city_diff_svc":     [],  # same city, different service, service_city
+        "same_city_problems":     [],  # same city, problem_city (excluding self)
+        "nearby_same_svc":        [],  # nearby city, same service, service_city
+        "nearby_problems":        [],  # nearby city, problem_city
+        "hub_pages":              [],  # comparison / cost_page
+        "same_service_anywhere":  [],  # any service_city with same service
+                                        # (non-local — redistributes link equity
+                                        #  to tier-2/3 cities + lets hubs link
+                                        #  to city-level service pages)
+    }
+
+    for r in all_rows:
+        if not r:
+            continue
+        r_slug    = (r.get("slug") or "").strip()
+        if not r_slug or r_slug == self_slug:
+            continue
+        r_city    = (r.get("city") or "").strip().lower()
+        r_service = (r.get("service") or "").strip().lower()
+        r_type    = (r.get("page_type") or "").strip().lower()
+
+        if r_type in ("comparison", "cost_page"):
+            pools["hub_pages"].append(r_slug)
+        elif r_city == city:
+            if r_type == "problem_city":
+                pools["same_city_problems"].append(r_slug)
+            elif r_type == "service_city":
+                if r_service == service:
+                    pools["parent_service"].append(r_slug)
+                else:
+                    pools["same_city_diff_svc"].append(r_slug)
+        elif r_city in nearby:
+            if r_type == "problem_city":
+                pools["nearby_problems"].append(r_slug)
+            elif r_type == "service_city" and r_service == service:
+                pools["nearby_same_svc"].append(r_slug)
+
+        # Separately (not exclusive with above): any non-self service_city with
+        # same service feeds the cross-city fallback pool.
+        if (r_type == "service_city" and r_service == service and r_city != city):
+            pools["same_service_anywhere"].append(r_slug)
+
+    for pool in pools.values():
+        rng.shuffle(pool)
+
+    # Page-type-aware quotas. Each tuple is (pool_name, max_from_this_pool).
+    if page_type == "problem_city":
+        # Problem pages need: parent service hub + sibling problems + nearby
+        quotas = [
+            ("parent_service",        1),  # "we fix gas fireplaces in Phoenix" — critical
+            ("same_city_problems",    1),  # "another issue we see in Phoenix"
+            ("same_city_diff_svc",    1),  # "we also do chimney work"
+            ("nearby_problems",       1),  # "same problem next city over"
+            ("hub_pages",             1),  # funnel depth
+            ("same_service_anywhere", 1),  # "we service gas fireplaces across AZ"
+        ]
+    elif page_type in ("comparison", "cost_page"):
+        # Hub pages push link equity DOWN into city-level service pages
+        quotas = [
+            ("same_service_anywhere", 3),  # link to 3 city-level service pages
+            ("hub_pages",             1),  # other hubs
+            ("same_city_diff_svc",    1),
+        ]
+    else:  # service_city (default)
+        quotas = [
+            ("same_city_diff_svc",    1),  # "also in this city"
+            ("same_city_problems",    1),  # "specific problems we fix here"
+            ("nearby_same_svc",       1),  # "same service nearby"
+            ("hub_pages",             1),  # funnel
+            ("same_service_anywhere", 1),  # cross-city reach (tier-2 booster)
+        ]
+
+    picked: list[str] = []
+    for pool_name, quota in quotas:
+        for slug in pools[pool_name][:quota]:
+            path = _as_path(slug)
+            if path and path not in picked:
+                picked.append(path)
+
+    # Backfill if a pool came up short (small-pool cities, edge cases)
+    if len(picked) < count:
+        # Backfill in the same priority order as the quotas for this type
+        for pool_name, _ in quotas:
+            for slug in pools[pool_name]:
+                path = _as_path(slug)
+                if path and path not in picked:
+                    picked.append(path)
+                    if len(picked) >= count:
+                        break
+            if len(picked) >= count:
+                break
+
+    return picked[:count]
+
+
+def merge_internal_links(content: dict, row: dict, all_rows: list[dict],
+                         rng: random.Random) -> dict:
+    """Append auto-links to Claude's manual internal_links, deduped + validated.
+
+    Claude occasionally hallucinates links to pages we haven't built. We drop
+    those silently so the auto-injector can backfill with real pages — better
+    than letting a 404 ship to production.
+    """
+    manual = content.get("internal_links", [])
+    if isinstance(manual, str):
+        manual = _split_list(manual)
+    manual = [_as_path(link.strip("/")) if not link.startswith("/") else link.strip()
+              for link in manual if link]
+
+    # Build the known-good slug set and the self-slug (both to reject)
+    known = {_as_path(r.get("slug", "")) for r in all_rows if r.get("slug")}
+    self_path = _as_path(row.get("slug", ""))
+
+    validated_manual = [
+        link for link in manual
+        if link in known and link != self_path
+    ]
+
+    auto = build_auto_links(row, all_rows, rng)
+
+    merged: list[str] = []
+    for link in [*validated_manual, *auto]:
+        if link and link not in merged:
+            merged.append(link)
+
+    content["internal_links"] = merged
+    return content
 
 
 # Load prompt templates
@@ -339,6 +516,10 @@ def main():
             writer.writerow({**row, **{f: "ERROR" for f in GENERATED_FIELDS}})
             out_file.flush()
             continue
+
+        # Auto-inject 5 related internal links on top of Claude's 3 manual picks.
+        # Uses the same deterministic RNG so reruns are reproducible.
+        content = merge_internal_links(content, row, rows, rng)
 
         # Flatten any array fields (e.g. internal_links) into delimited strings
         content = flatten_arrays(content)
