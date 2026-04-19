@@ -1,0 +1,422 @@
+[
+  {
+    "id": "anec_001",
+    "note": "Last August after a monsoon cell dumped three inches on the Arcadia area, we pulled a chimney crown apart that had hairline cracks nobody could see from the ground — the seal had been compromised for probably two years before any water showed inside.",
+    "tags": ["phoenix", "arcadia", "monsoon", "crown", "chimney-repair"],
+    "fuel": ["any"],
+    "season": ["summer", "monsoon"]
+  },
+  {
+    "id": "anec_002",
+    "note": "In North Scottsdale and DC Ranch homes built in the late 90s, we commonly see direct-vent gas units where the original thermopile has drifted below spec — the pilot stays lit but the main burner clicks and dies. Five-dollar part, forty-minute fix.",
+    "tags": ["scottsdale", "dc-ranch", "direct-vent", "thermopile", "pilot"],
+    "fuel": ["gas"],
+    "season": ["fall", "winter"]
+  },
+  {
+    "id": "anec_003",
+    "note": "Paradise Valley estates from the 80s have slump-block chimney crowns that crack along a predictable seam from thermal cycling — we see it on roughly one in three inspections in that zip code.",
+    "tags": ["paradise-valley", "slump-block", "crown", "inspection"],
+    "fuel": ["any"],
+    "season": ["any"]
+  },
+  {
+    "id": "anec_004",
+    "note": "Mesa gas inserts from the late 80s and early 90s almost always have an original Honeywell millivolt system that just gives up after twenty years of cycling. It's usually a thermocouple or thermopile, not the valve itself.",
+    "tags": ["mesa", "millivolt", "thermocouple", "gas-repair"],
+    "fuel": ["gas"],
+    "season": ["any"]
+  },
+  {
+    "id": "anec_005",
+    "note": "We pulled a pack rat nest the size of a basketball out of a North Phoenix chimney last November — the homeowner had been smelling something off for weeks and assumed it was a dead lizard.",
+    "tags": ["phoenix", "wildlife", "pack-rat", "chimney-cleaning"],
+    "fuel": ["wood", "any"],
+    "season": ["fall", "winter"]
+  },
+  {
+    "id": "anec_006",
+    "note": "In older Tempe condos near ASU, we run into gas fireplaces that haven't been serviced in a decade — dust packs into the burner tray and the flame burns yellow instead of blue. Homeowners often think it's a major failure; it's usually a cleaning.",
+    "tags": ["tempe", "asu", "condo", "burner-cleaning", "yellow-flame"],
+    "fuel": ["gas"],
+    "season": ["fall"]
+  },
+  {
+    "id": "anec_007",
+    "note": "Carefree and Cave Creek homes catch the edge of the weather — the chimney caps take a beating from spring winds and summer microbursts. We replace more caps up there than anywhere else in the Valley.",
+    "tags": ["carefree", "cave-creek", "chimney-cap", "wind"],
+    "fuel": ["any"],
+    "season": ["spring", "summer"]
+  },
+  {
+    "id": "anec_008",
+    "note": "Biltmore-area historic homes often have original 1950s masonry chimneys with flue liners that are long past their service life. We usually recommend a stainless-steel reline instead of tearing into the brick stack.",
+    "tags": ["phoenix", "biltmore", "historic", "flue-liner", "reline"],
+    "fuel": ["wood", "gas"],
+    "season": ["any"]
+  },
+  {
+    "id": "anec_009",
+    "note": "In Gilbert and Chandler tract homes from the 2000s, the gas log sets are usually original to the build. We see igniter electrodes corroded from humidity during monsoon season — a $40 part that fixes 'fireplace won't light.'",
+    "tags": ["gilbert", "chandler", "tract-home", "igniter", "monsoon"],
+    "fuel": ["gas"],
+    "season": ["fall", "monsoon"]
+  },
+  {
+    "id": "anec_010",
+    "note": "Scottsdale luxury linear fireplaces — the wide modern ones — usually run a proprietary electronic ignition board. When those boards fail, the repair isn't the cheapest, but we keep the three most common boards on the truck.",
+    "tags": ["scottsdale", "linear", "electronic-ignition", "luxury"],
+    "fuel": ["gas"],
+    "season": ["any"]
+  },
+  {
+    "id": "anec_011",
+    "note": "A Surprise homeowner in a Sun City Grand community called because her fireplace 'hadn't worked in three years.' It was just a dead battery in the remote receiver. Ten-second fix, she was baffled.",
+    "tags": ["surprise", "sun-city", "remote", "battery"],
+    "fuel": ["gas"],
+    "season": ["any"]
+  },
+  {
+    "id": "anec_012",
+    "note": "During the August 2024 haboob season we got thirty-eight calls in six days for fireplace issues — not because the fireplaces were used, but because dust infiltrated burner assemblies and clogged venturis.",
+    "tags": ["phoenix", "haboob", "dust", "burner", "venturi"],
+    "fuel": ["gas"],
+    "season": ["summer", "monsoon"]
+  },
+  {
+    "id": "anec_013",
+    "note": "Flagstaff and Prescott homes are a different animal — wood-burning is the primary heat source, creosote builds faster at altitude, and we schedule annual cleanings as a matter of course rather than as-needed.",
+    "tags": ["flagstaff", "prescott", "wood-burning", "creosote", "altitude"],
+    "fuel": ["wood"],
+    "season": ["fall", "winter"]
+  },
+  {
+    "id": "anec_014",
+    "note": "Queen Creek and San Tan Valley homes are so new we usually aren't repairing anything — we're doing first-year tune-ups and teaching homeowners how to operate their own units.",
+    "tags": ["queen-creek", "san-tan", "new-construction", "tune-up"],
+    "fuel": ["gas"],
+    "season": ["fall"]
+  },
+  {
+    "id": "anec_015",
+    "note": "In Glendale and Peoria we see a lot of 90s-era B-vent gas fireplaces where the original galvanized vent is starting to rust through. It's usually noticed when a homeowner smells combustion byproducts in the room.",
+    "tags": ["glendale", "peoria", "b-vent", "rust", "safety"],
+    "fuel": ["gas"],
+    "season": ["fall", "winter"]
+  },
+  {
+    "id": "anec_016",
+    "note": "Chandler remodel jobs lately have been all about the clean modern look — porcelain slabs, concealed mantels, recessed TV niches above. The days of the tiered brick column surround are over.",
+    "tags": ["chandler", "remodel", "porcelain", "modern"],
+    "fuel": ["any"],
+    "season": ["any"]
+  },
+  {
+    "id": "anec_017",
+    "note": "A classic Scottsdale remodel last winter — the homeowner wanted to keep the 1998 masonry fireplace but clad the surround in a full-height Calacatta quartzite slab. Three-day job, completely changed the room.",
+    "tags": ["scottsdale", "remodel", "quartzite", "luxury"],
+    "fuel": ["any"],
+    "season": ["winter"]
+  },
+  {
+    "id": "anec_018",
+    "note": "Mesa homeowners calling about 'fireplace smells' in October are almost always just experiencing the first burn of the season — dust that accumulated all summer burning off. It clears in twenty minutes.",
+    "tags": ["mesa", "first-burn", "fall", "dust"],
+    "fuel": ["gas", "wood"],
+    "season": ["fall"]
+  },
+  {
+    "id": "anec_019",
+    "note": "We cleaned a chimney in Paradise Valley where a colony of bees had set up in the flue over the summer. Not a call most sweeps enjoy, but a reminder to keep the cap screen intact.",
+    "tags": ["paradise-valley", "wildlife", "bees", "chimney-cap"],
+    "fuel": ["any"],
+    "season": ["summer", "fall"]
+  },
+  {
+    "id": "anec_020",
+    "note": "In Fountain Hills we see a surprising number of outdoor gas fireplaces with ignition issues from wind-driven dust and pollen clogging the pilot assembly. Three-minute clean, fireplace back in service.",
+    "tags": ["fountain-hills", "outdoor", "pollen", "pilot"],
+    "fuel": ["gas"],
+    "season": ["spring"]
+  },
+  {
+    "id": "anec_021",
+    "note": "Phoenix historic district homes in Encanto and Willo often have fireplaces that haven't been professionally inspected since the Clinton administration. Buyers request pre-purchase inspections constantly.",
+    "tags": ["phoenix", "encanto", "willo", "historic", "pre-purchase"],
+    "fuel": ["wood"],
+    "season": ["any"]
+  },
+  {
+    "id": "anec_022",
+    "note": "A Gilbert homeowner called because the fireplace remote 'stopped working during the dust storm.' The dust had packed into the receiver mounted on the floor of the firebox — compressed air and it was back to normal.",
+    "tags": ["gilbert", "dust-storm", "remote", "receiver"],
+    "fuel": ["gas"],
+    "season": ["summer"]
+  },
+  {
+    "id": "anec_023",
+    "note": "Anthem and Tramonto homes built in the mid-2000s have a specific brand of direct-vent insert we've serviced hundreds of times. The failure pattern is predictable — we usually know the fix before we pull in the driveway.",
+    "tags": ["anthem", "tramonto", "direct-vent", "insert"],
+    "fuel": ["gas"],
+    "season": ["fall", "winter"]
+  },
+  {
+    "id": "anec_024",
+    "note": "Luxury Scottsdale outdoor fireplaces often use natural gas lines routed through decorative stone. When those lines corrode at fittings, the repair involves careful stone work to access without damaging the design.",
+    "tags": ["scottsdale", "outdoor", "natural-gas", "luxury"],
+    "fuel": ["gas"],
+    "season": ["any"]
+  },
+  {
+    "id": "anec_025",
+    "note": "In Tempe rental properties we often find fireplaces that tenants have never used and landlords have never serviced. The first inspection in ten years reveals everything from bird nests to failed gas valves.",
+    "tags": ["tempe", "rental", "inspection", "deferred-maintenance"],
+    "fuel": ["any"],
+    "season": ["any"]
+  },
+  {
+    "id": "anec_026",
+    "note": "Smoke backing into a Phoenix living room is almost always neutral-pressure zone issues in tight modern homes, not a chimney fault. We diagnose by cracking a window and watching if the draft reverses.",
+    "tags": ["phoenix", "smoke-backdraft", "diagnostic", "neutral-pressure"],
+    "fuel": ["wood"],
+    "season": ["winter"]
+  },
+  {
+    "id": "anec_027",
+    "note": "A Mesa homeowner had been 'smelling gas' for three weeks but was afraid to call. It was a minor pilot tube leak — tightening the fitting solved it in ten minutes, and we sleep better knowing it's done.",
+    "tags": ["mesa", "gas-leak", "pilot-tube", "safety"],
+    "fuel": ["gas"],
+    "season": ["any"]
+  },
+  {
+    "id": "anec_028",
+    "note": "After the 2024 monsoon season, chimney flashing calls spiked across every Phoenix zip code — the combination of driving rain and thermal cycling cracks silicone seals that were installed ten years ago.",
+    "tags": ["phoenix", "monsoon", "flashing", "silicone"],
+    "fuel": ["any"],
+    "season": ["monsoon", "fall"]
+  },
+  {
+    "id": "anec_029",
+    "note": "Wood-to-gas conversions in Scottsdale luxury homes are our most common remodel request right now — homeowners want the ambiance without the mess, and a gas log insert drops in without major structural work.",
+    "tags": ["scottsdale", "wood-to-gas", "conversion", "remodel"],
+    "fuel": ["gas", "wood"],
+    "season": ["any"]
+  },
+  {
+    "id": "anec_030",
+    "note": "A Chandler homeowner's 'fireplace won't turn on' turned out to be a shut-off valve someone had moved during kitchen remodeling two years earlier. We turned the valve and the fireplace lit on the first try.",
+    "tags": ["chandler", "shut-off-valve", "diagnostic"],
+    "fuel": ["gas"],
+    "season": ["any"]
+  },
+  {
+    "id": "anec_031",
+    "note": "Older Phoenix adobe homes have chimneys integrated into the structural mass — repairs have to be careful not to disturb the historic masonry. We usually spend as much time on assessment as on the repair itself.",
+    "tags": ["phoenix", "adobe", "historic", "structural"],
+    "fuel": ["wood"],
+    "season": ["any"]
+  },
+  {
+    "id": "anec_032",
+    "note": "Peoria West Wing area homes have started hitting the twenty-year mark — gas log sets that were builder-grade in 2004 are now original-equipment repairs, and we're starting to see volume.",
+    "tags": ["peoria", "west-wing", "gas-log", "aging"],
+    "fuel": ["gas"],
+    "season": ["fall", "winter"]
+  },
+  {
+    "id": "anec_033",
+    "note": "Pilot lights that won't stay on are ninety percent of the time a thermocouple or thermopile issue — a $40 part and thirty minutes of labor. We keep a dozen on every truck because it's the most common gas repair we do.",
+    "tags": ["thermocouple", "thermopile", "pilot", "common-fix"],
+    "fuel": ["gas"],
+    "season": ["fall", "winter"]
+  },
+  {
+    "id": "anec_034",
+    "note": "A Gilbert chimney inspection last spring revealed a crown that had been patched three times with incompatible products — we rebuilt it properly with Crown-Coat and the leak that had been happening for years finally stopped.",
+    "tags": ["gilbert", "crown", "crown-coat", "repair"],
+    "fuel": ["any"],
+    "season": ["spring"]
+  },
+  {
+    "id": "anec_035",
+    "note": "Firebox cracking in Arizona is a real pattern — the temperature swings between 115°F summer and active burn exceed what most firebrick is specified for. We've seen entire firebrick floors that need replacement after twenty years.",
+    "tags": ["firebox", "firebrick", "thermal-cycling", "arizona-climate"],
+    "fuel": ["wood"],
+    "season": ["any"]
+  },
+  {
+    "id": "anec_036",
+    "note": "A Paradise Valley outdoor fireplace remodel last fall — travertine wrap, full redesign of the flue, integrated LED lighting. Jobs like that are why we exist; the homeowner lives in that backyard every evening now.",
+    "tags": ["paradise-valley", "outdoor", "travertine", "luxury-remodel"],
+    "fuel": ["gas"],
+    "season": ["fall"]
+  },
+  {
+    "id": "anec_037",
+    "note": "Glendale homeowners often call about 'fireplace that smells weird' — half the time it's a mouse that got in during summer, half the time it's creosote from years of wood burning without a sweep.",
+    "tags": ["glendale", "smell", "wildlife", "creosote"],
+    "fuel": ["wood", "any"],
+    "season": ["fall"]
+  },
+  {
+    "id": "anec_038",
+    "note": "A Scottsdale HOA last year required documented chimney inspection records for every home before listing — we got thirty inspection calls in two weeks from that single neighborhood.",
+    "tags": ["scottsdale", "hoa", "inspection", "real-estate"],
+    "fuel": ["any"],
+    "season": ["any"]
+  },
+  {
+    "id": "anec_039",
+    "note": "First-burn of the season always brings a burst of calls in early November — dust and summer residue create smells, spiders nest in pilot tubes, and remotes with dead batteries go unnoticed until first use.",
+    "tags": ["first-burn", "november", "seasonal", "pilot"],
+    "fuel": ["gas"],
+    "season": ["fall"]
+  },
+  {
+    "id": "anec_040",
+    "note": "We did a chimney cap install in Fountain Hills where the previous cap had been blown off during a microburst and the homeowner didn't realize for eight months — by then a family of pigeons had moved in.",
+    "tags": ["fountain-hills", "chimney-cap", "wildlife", "wind-damage"],
+    "fuel": ["any"],
+    "season": ["spring", "summer"]
+  },
+  {
+    "id": "anec_041",
+    "note": "Younger Gilbert and Queen Creek homeowners often don't realize their gas fireplace needs any service at all — we do a lot of education on first visits about why annual tune-ups exist.",
+    "tags": ["gilbert", "queen-creek", "education", "tune-up"],
+    "fuel": ["gas"],
+    "season": ["fall"]
+  },
+  {
+    "id": "anec_042",
+    "note": "In Phoenix, a chimney that leaks during monsoon rain but is dry in winter is almost always a crown or flashing issue, not a liner issue. We chase the water path from top down in that order.",
+    "tags": ["phoenix", "monsoon", "leak", "crown", "flashing", "diagnostic"],
+    "fuel": ["any"],
+    "season": ["monsoon"]
+  },
+  {
+    "id": "anec_043",
+    "note": "The most expensive chimney repair we've done in the last year was a full rebuild on a 1960s Phoenix masonry stack that had been ignored through three owners — structural issues finally made it a safety problem, not just a cosmetic one.",
+    "tags": ["phoenix", "rebuild", "structural", "historic"],
+    "fuel": ["any"],
+    "season": ["any"]
+  },
+  {
+    "id": "anec_044",
+    "note": "A Chandler family bought a home where the previous owner had painted the firebox interior with regular wall paint. We sandblasted the surface and refinished with high-temperature refractory paint — works as intended now.",
+    "tags": ["chandler", "firebox-paint", "refractory"],
+    "fuel": ["wood"],
+    "season": ["any"]
+  },
+  {
+    "id": "anec_045",
+    "note": "Avondale and Goodyear homes in newer master-planned communities often share the same three or four insert models. After a few years working the area you know exactly which part to bring without even asking.",
+    "tags": ["avondale", "goodyear", "master-planned", "insert"],
+    "fuel": ["gas"],
+    "season": ["any"]
+  },
+  {
+    "id": "anec_046",
+    "note": "Linear gas fireplaces that 'flicker' instead of burning steady usually have a pressure issue on the supply line — either the regulator is off or there's a partial obstruction. Cleaning fixes most of it.",
+    "tags": ["linear", "flicker", "pressure", "gas-supply"],
+    "fuel": ["gas"],
+    "season": ["any"]
+  },
+  {
+    "id": "anec_047",
+    "note": "Desert dust is a quiet killer of gas fireplaces — it's fine enough to pass through basic filters and it coats pilot assemblies like a film. This is the single most common reason Arizona gas fireplaces won't light in October.",
+    "tags": ["arizona-climate", "dust", "pilot", "october"],
+    "fuel": ["gas"],
+    "season": ["fall"]
+  },
+  {
+    "id": "anec_048",
+    "note": "A Scottsdale homeowner had a thirty-thousand-dollar custom fireplace design installed by a GC who didn't know gas venting code — we came in after the fact and rerouted the termination to comply. Painful for everyone.",
+    "tags": ["scottsdale", "code", "venting", "luxury"],
+    "fuel": ["gas"],
+    "season": ["any"]
+  },
+  {
+    "id": "anec_049",
+    "note": "In Mesa we recently consolidated three separate chimney issues on the same home into one visit — crown sealing, cap replacement, and a flue scrub. Bundling saved the homeowner about thirty percent versus three trips.",
+    "tags": ["mesa", "bundling", "crown", "cap", "sweep"],
+    "fuel": ["any"],
+    "season": ["any"]
+  },
+  {
+    "id": "anec_050",
+    "note": "Phoenix homes built between 1975 and 1985 are in the 'awkward middle' — old enough that original gas inserts are failing, new enough that the chimney structure is still sound. Most of our gas-log retrofits happen on this vintage.",
+    "tags": ["phoenix", "1970s", "1980s", "retrofit", "gas-log"],
+    "fuel": ["gas"],
+    "season": ["any"]
+  },
+  {
+    "id": "anec_051",
+    "note": "A Surprise retiree called us because 'something' was in the chimney — turned out to be a juvenile great-horned owl that had fallen in through an uncapped flue. We coordinated with a wildlife rescue and got it out safely.",
+    "tags": ["surprise", "wildlife", "owl", "chimney-cap"],
+    "fuel": ["any"],
+    "season": ["spring"]
+  },
+  {
+    "id": "anec_052",
+    "note": "Gas fireplaces that 'thump' when they light have usually gone too long between burns — gas accumulates in the combustion chamber before ignition catches. It sounds alarming but it's a tuning issue, not a hazard, if caught early.",
+    "tags": ["thump", "delayed-ignition", "tuning", "diagnostic"],
+    "fuel": ["gas"],
+    "season": ["fall", "winter"]
+  },
+  {
+    "id": "anec_053",
+    "note": "A Tempe landlord called because four rental units had fireplaces 'that all stopped working.' It was the same batch of remote receivers with batteries installed three years ago — we swapped all four in ninety minutes.",
+    "tags": ["tempe", "rental", "remote", "battery"],
+    "fuel": ["gas"],
+    "season": ["any"]
+  },
+  {
+    "id": "anec_054",
+    "note": "The difference between a twenty-dollar thermocouple replacement and a three-hundred-dollar valve replacement is a diagnostic skill — we see homeowners quoted the bigger job from less experienced techs all the time.",
+    "tags": ["diagnostic", "thermocouple", "valve", "expertise"],
+    "fuel": ["gas"],
+    "season": ["any"]
+  },
+  {
+    "id": "anec_055",
+    "note": "In Carefree we handled a chimney that had been struck by lightning during a July storm — no fire, but enough damage to the crown and liner that it needed a full rebuild. One of the more unusual jobs of the year.",
+    "tags": ["carefree", "lightning", "crown", "rebuild"],
+    "fuel": ["any"],
+    "season": ["summer", "monsoon"]
+  },
+  {
+    "id": "anec_056",
+    "note": "Hampton-style mantels and shiplap surrounds are replacing the Tuscan-era travertine columns in Gilbert remodels — the aesthetic pendulum has swung to clean, coastal, and light rather than ornate and heavy.",
+    "tags": ["gilbert", "remodel", "shiplap", "aesthetic-trend"],
+    "fuel": ["any"],
+    "season": ["any"]
+  },
+  {
+    "id": "anec_057",
+    "note": "Scottsdale homes that go on the market are often the ones that need chimney attention the most — inspectors flag the fireplace, the sale pauses, and we get an urgent call.",
+    "tags": ["scottsdale", "real-estate", "inspection", "urgency"],
+    "fuel": ["any"],
+    "season": ["spring", "summer"]
+  },
+  {
+    "id": "anec_058",
+    "note": "Phoenix homeowners are sometimes surprised that we recommend annual service on gas fireplaces even if they're barely used — dust, spiders, and component drift happen regardless of usage.",
+    "tags": ["phoenix", "annual-service", "education", "dust"],
+    "fuel": ["gas"],
+    "season": ["fall"]
+  },
+  {
+    "id": "anec_059",
+    "note": "A Paradise Valley client's linear gas unit started shutting off after two minutes — turned out the heat sensor was misaligned from a recent cleaning. Realignment took eight minutes.",
+    "tags": ["paradise-valley", "linear", "heat-sensor", "misalignment"],
+    "fuel": ["gas"],
+    "season": ["any"]
+  },
+  {
+    "id": "anec_060",
+    "note": "The cheapest thing we do that saves homeowners the most money over time is a simple annual tune-up — a one-hour visit catches six things that would otherwise be emergency calls in three years.",
+    "tags": ["tune-up", "prevention", "value", "annual"],
+    "fuel": ["gas", "wood", "any"],
+    "season": ["fall"]
+  }
+]

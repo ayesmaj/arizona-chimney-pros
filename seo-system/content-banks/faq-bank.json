@@ -1,0 +1,482 @@
+[
+  {
+    "id": "faq_001",
+    "intent": "service",
+    "fuel": ["gas"],
+    "appliance": ["fireplace"],
+    "q": "How often should a gas fireplace be serviced in Arizona?",
+    "a_seed": "Annual service is the standard recommendation — one tune-up per year keeps the pilot assembly clean, the igniter components tested, and the gas valve verified. In Arizona the dust accumulation from dry summers and monsoon-driven fine particulates makes this especially important, even if the fireplace is barely used during the year."
+  },
+  {
+    "id": "faq_002",
+    "intent": "service",
+    "fuel": ["gas"],
+    "appliance": ["fireplace"],
+    "q": "What's included in a gas fireplace tune-up?",
+    "a_seed": "A complete tune-up includes a visual inspection of the firebox and venting, cleaning of the pilot assembly and burner tray, testing of the thermopile and thermocouple, verification of gas pressure, combustion check, remote or switch operation test, and a safety check for any leaks at fittings."
+  },
+  {
+    "id": "faq_003",
+    "intent": "service",
+    "fuel": ["wood"],
+    "appliance": ["chimney"],
+    "q": "How often should I have my chimney cleaned?",
+    "a_seed": "Most wood-burning fireplaces in Arizona need cleaning every one to two years of active use. The NFPA recommends an inspection annually regardless of usage. Creosote buildup is the main driver — if you burn frequently through winter, annual cleaning is safer."
+  },
+  {
+    "id": "faq_004",
+    "intent": "problem",
+    "fuel": ["gas"],
+    "appliance": ["fireplace"],
+    "q": "Why won't my gas fireplace light?",
+    "a_seed": "The most common causes are a dirty or drifted pilot assembly, a failed thermocouple or thermopile, a weak igniter, or a gas supply issue. In Arizona, dust infiltration through the off-season is the number one cause we see when fireplaces fail to light in October and November."
+  },
+  {
+    "id": "faq_005",
+    "intent": "problem",
+    "fuel": ["gas"],
+    "appliance": ["fireplace"],
+    "q": "Why does my pilot light keep going out?",
+    "a_seed": "A pilot that lights but won't stay lit is almost always a failing thermocouple or thermopile — the sensor that tells the gas valve the pilot is present. It's a common wear item, typically an inexpensive part and under an hour of labor to replace."
+  },
+  {
+    "id": "faq_006",
+    "intent": "problem",
+    "fuel": ["gas"],
+    "appliance": ["fireplace"],
+    "q": "What should I do if I smell gas near my fireplace?",
+    "a_seed": "Treat it as urgent. Turn off the gas supply valve at the fireplace if you can access it, open windows, leave the area, and avoid any ignition source. Don't turn switches on or off. Call a licensed gas technician immediately — we respond same-day for gas smell calls."
+  },
+  {
+    "id": "faq_007",
+    "intent": "problem",
+    "fuel": ["gas", "wood"],
+    "appliance": ["fireplace"],
+    "q": "Why is my fireplace making a clicking noise?",
+    "a_seed": "Clicking during ignition is the igniter trying to spark the pilot or burner — a normal sound. Clicking when the fireplace is off usually means the electronic control is stuck trying to ignite, often caused by a dirty pilot tube or a failed ignition board."
+  },
+  {
+    "id": "faq_008",
+    "intent": "problem",
+    "fuel": ["wood"],
+    "appliance": ["chimney"],
+    "q": "Why is smoke backing into my house?",
+    "a_seed": "The most common causes are a cold chimney that hasn't warmed up, a closed or partially closed damper, negative pressure in the house from modern tight construction, or a blockage in the flue. Cracking a window when you start a fire often resolves the pressure issue."
+  },
+  {
+    "id": "faq_009",
+    "intent": "problem",
+    "fuel": ["any"],
+    "appliance": ["chimney"],
+    "q": "Why is my chimney leaking during rain?",
+    "a_seed": "Leaks during rain usually trace back to a cracked chimney crown, failed flashing where the chimney meets the roof, or a missing or damaged cap. Arizona monsoon rains expose these weaknesses fast — water enters along whichever path offers the least resistance."
+  },
+  {
+    "id": "faq_010",
+    "intent": "cost",
+    "fuel": ["gas"],
+    "appliance": ["fireplace"],
+    "q": "How much does gas fireplace repair cost?",
+    "a_seed": "Most repairs fall in the $150 to $450 range. Simple fixes like thermocouples or igniters are on the lower end; control board replacements or valve work are higher. A diagnostic visit typically runs $99 and applies toward the repair if you proceed."
+  },
+  {
+    "id": "faq_011",
+    "intent": "cost",
+    "fuel": ["any"],
+    "appliance": ["chimney"],
+    "q": "How much does chimney cleaning cost?",
+    "a_seed": "Standard chimney cleaning in the Phoenix metro runs $149 to $299 depending on access, flue size, and how much creosote is present. We include a Level 1 visual inspection with every cleaning."
+  },
+  {
+    "id": "faq_012",
+    "intent": "cost",
+    "fuel": ["any"],
+    "appliance": ["chimney"],
+    "q": "How much does chimney repair cost?",
+    "a_seed": "Repair costs vary widely by scope — crown sealing and flashing repair usually run $300 to $800, while liner replacement or structural masonry work can reach several thousand. We diagnose first and quote against specific findings, not averages."
+  },
+  {
+    "id": "faq_013",
+    "intent": "cost",
+    "fuel": ["any"],
+    "appliance": ["fireplace"],
+    "q": "How much does a fireplace remodel cost?",
+    "a_seed": "Arizona fireplace remodels typically run from $1,500 on the value end to $15,000 or more for full luxury transformations. The variables are materials (porcelain vs natural stone), scope (surround only vs full wall), and any structural or gas line modifications."
+  },
+  {
+    "id": "faq_014",
+    "intent": "cost",
+    "fuel": ["gas"],
+    "appliance": ["fireplace"],
+    "q": "How much to convert a wood fireplace to gas?",
+    "a_seed": "Gas log insert conversions in Arizona typically run $1,200 to $3,500 including the insert, gas line extension if needed, and professional installation. Full gas insert conversions with a sealed combustion unit are more, depending on the unit selected."
+  },
+  {
+    "id": "faq_015",
+    "intent": "comparison",
+    "fuel": ["gas", "wood"],
+    "appliance": ["fireplace"],
+    "q": "Should I repair or replace my gas fireplace?",
+    "a_seed": "Repair is usually the right call if the unit is under 15 years old, parts are available, and the fix is under a third of replacement cost. Replacement makes sense when the unit is obsolete, parts are discontinued, or efficiency and safety have become issues."
+  },
+  {
+    "id": "faq_016",
+    "intent": "comparison",
+    "fuel": ["gas", "wood"],
+    "appliance": ["fireplace"],
+    "q": "Gas or wood fireplace — which is better for Arizona?",
+    "a_seed": "Gas wins on convenience, cleanliness, and ease of use — no ashes, no wood storage, instant-on ambiance. Wood wins on authentic feel and heat output. Most Arizona homes use fireplaces for ambiance rather than heating, which is why gas has dominated new construction for two decades."
+  },
+  {
+    "id": "faq_017",
+    "intent": "emergency",
+    "fuel": ["any"],
+    "appliance": ["fireplace", "chimney"],
+    "q": "Can you come out same day?",
+    "a_seed": "Yes — we reserve capacity for same-day and emergency calls, especially for gas smell or safety concerns. Call us early in the day and we'll get you slotted; most Phoenix-area calls we can reach within a few hours."
+  },
+  {
+    "id": "faq_018",
+    "intent": "emergency",
+    "fuel": ["any"],
+    "appliance": ["chimney"],
+    "q": "What do I do if my chimney is leaking right now?",
+    "a_seed": "If water is actively coming in, place a bucket or towel, and if it's reaching electrical or drywall, shut off the breaker for that area. Don't try to climb onto a wet roof. Call us and we'll dispatch a tarp-and-temporary-seal team — permanent repair happens once the weather clears."
+  },
+  {
+    "id": "faq_019",
+    "intent": "emergency",
+    "fuel": ["gas"],
+    "appliance": ["fireplace"],
+    "q": "Is it safe to keep using my fireplace if it's acting strange?",
+    "a_seed": "If you smell gas, hear hissing, see black soot deposits where there weren't any, or the flame looks drastically different, stop using it until it's inspected. Minor cosmetic issues are fine to live with short-term, but anything combustion-related deserves a same-day look."
+  },
+  {
+    "id": "faq_020",
+    "intent": "maintenance",
+    "fuel": ["gas"],
+    "appliance": ["fireplace"],
+    "q": "How long do gas fireplaces last?",
+    "a_seed": "A well-maintained gas fireplace typically lasts 20 to 25 years. The major components — valve, burner, firebox — usually outlast the home's original décor. Regular annual service extends life substantially; neglected units often fail around year 15."
+  },
+  {
+    "id": "faq_021",
+    "intent": "maintenance",
+    "fuel": ["any"],
+    "appliance": ["chimney"],
+    "q": "When should I replace my chimney cap?",
+    "a_seed": "Chimney caps typically last 15 to 25 years depending on material. Signs it's time: rust through the mesh, bent or missing sections after a storm, missing cap entirely, or evidence of animal intrusion. Arizona summer heat and monsoon winds accelerate wear."
+  },
+  {
+    "id": "faq_022",
+    "intent": "maintenance",
+    "fuel": ["gas", "wood"],
+    "appliance": ["fireplace"],
+    "q": "How do I clean the glass on my gas fireplace?",
+    "a_seed": "Wait for the glass to fully cool, then use a fireplace-specific ammonia-free cleaner or a paste of water and fireplace ash on a soft cloth. Never use household glass cleaner or abrasives — they leave residue that burns in next time you light the fireplace."
+  },
+  {
+    "id": "faq_023",
+    "intent": "maintenance",
+    "fuel": ["any"],
+    "appliance": ["chimney"],
+    "q": "Do I need a chimney sweep if I only use a gas fireplace?",
+    "a_seed": "You don't need a creosote sweep, but you still need an annual inspection. Gas fireplaces exhaust combustion byproducts through the chimney, and venting issues, bird nests, and cap damage affect gas units just like wood-burning ones."
+  },
+  {
+    "id": "faq_024",
+    "intent": "service",
+    "fuel": ["any"],
+    "appliance": ["chimney"],
+    "q": "What does a chimney inspection include?",
+    "a_seed": "A Level 1 inspection covers readily accessible areas of the chimney structure and interior flue — crown, cap, flashing, liner, firebox, damper. We document findings with photos and provide a written report that works for real estate transactions."
+  },
+  {
+    "id": "faq_025",
+    "intent": "problem",
+    "fuel": ["gas"],
+    "appliance": ["fireplace"],
+    "q": "Why is my gas fireplace flame yellow instead of blue?",
+    "a_seed": "A yellow flame usually means incomplete combustion — commonly caused by a dirty burner, clogged orifice, or improper gas-air mix. With gas log sets, yellow tips are designed in for realism; with blue-flame burners, yellow indicates something is off and needs service."
+  },
+  {
+    "id": "faq_026",
+    "intent": "problem",
+    "fuel": ["gas"],
+    "appliance": ["fireplace"],
+    "q": "Why does my gas fireplace smell when I use it?",
+    "a_seed": "Most commonly, first-burn-of-the-season dust burn-off — disappears in 15 to 30 minutes. Persistent smells of sulfur or rotten eggs indicate a gas leak. Chemical or plastic smells point to overheating components. First burn smells are normal; new or persistent odors aren't."
+  },
+  {
+    "id": "faq_027",
+    "intent": "problem",
+    "fuel": ["gas"],
+    "appliance": ["fireplace"],
+    "q": "Why does my fireplace turn off after a few minutes?",
+    "a_seed": "Common causes include a failing thermopile that can't sustain the voltage to hold the valve open, a flame rollout sensor tripping, blocked venting, or a thermostat connection issue. We troubleshoot these in order of likelihood based on age and model."
+  },
+  {
+    "id": "faq_028",
+    "intent": "problem",
+    "fuel": ["gas"],
+    "appliance": ["fireplace"],
+    "q": "Why isn't my fireplace remote working?",
+    "a_seed": "Eighty percent of the time it's the battery in the receiver — often hidden inside the firebox, not just the handheld. Also check for receiver dust fouling, transmitter battery, and that the unit's on/off switch on the valve is set to Remote mode."
+  },
+  {
+    "id": "faq_029",
+    "intent": "problem",
+    "fuel": ["any"],
+    "appliance": ["chimney"],
+    "q": "How do I know if I have creosote buildup?",
+    "a_seed": "Signs include a strong smoky smell even when not in use, dark flakes or glaze visible inside the flue or on the damper, difficulty starting fires, or increased smoke in the room. A professional inspection confirms both presence and stage — Stage 3 creosote is a fire hazard."
+  },
+  {
+    "id": "faq_030",
+    "intent": "service",
+    "fuel": ["gas"],
+    "appliance": ["fireplace"],
+    "q": "Can you install a new gas fireplace?",
+    "a_seed": "Yes — we install both gas log sets and sealed direct-vent units, including running the gas line, coordinating any permits, and handling venting. Turnaround from quote to finished install is typically two to four weeks depending on product availability."
+  },
+  {
+    "id": "faq_031",
+    "intent": "service",
+    "fuel": ["any"],
+    "appliance": ["fireplace"],
+    "q": "Do you offer fireplace remodeling services?",
+    "a_seed": "Yes — we remodel everything from surround and mantel upgrades to full-wall feature transformations. We handle stone, porcelain, tile, shiplap, and custom designs, and we coordinate with tile and masonry partners on larger scopes."
+  },
+  {
+    "id": "faq_032",
+    "intent": "comparison",
+    "fuel": ["gas"],
+    "appliance": ["fireplace"],
+    "q": "What's the difference between a gas log set and a gas insert?",
+    "a_seed": "A gas log set drops into an existing wood fireplace for ambiance with moderate heat. A gas insert is a sealed, self-contained unit that fits into the fireplace opening and delivers substantially more heat efficiency, like a zone heater with a view."
+  },
+  {
+    "id": "faq_033",
+    "intent": "comparison",
+    "fuel": ["gas"],
+    "appliance": ["fireplace"],
+    "q": "Direct-vent vs B-vent gas fireplace — what's the difference?",
+    "a_seed": "Direct-vent units pull combustion air from outside and vent combustion products outside through a sealed coaxial pipe — safe, efficient, and code-friendly. B-vent units pull room air for combustion and vent vertically. Direct-vent is the modern standard and required in most new installations."
+  },
+  {
+    "id": "faq_034",
+    "intent": "cost",
+    "fuel": ["any"],
+    "appliance": ["chimney"],
+    "q": "How much does a chimney cap cost installed?",
+    "a_seed": "Standard stainless-steel chimney caps installed run $150 to $450 in the Phoenix area, depending on flue size and whether custom sizing is needed. Copper or decorative caps cost more. Installation is typically one hour."
+  },
+  {
+    "id": "faq_035",
+    "intent": "maintenance",
+    "fuel": ["any"],
+    "appliance": ["chimney"],
+    "q": "How do I prepare my fireplace for winter?",
+    "a_seed": "Book an annual tune-up or inspection before November, clean the glass, verify the remote batteries, and for wood fireplaces check the damper operation and stock dry seasoned wood. If you haven't used the fireplace in a year, a pro check-in is the safe play."
+  },
+  {
+    "id": "faq_036",
+    "intent": "maintenance",
+    "fuel": ["any"],
+    "appliance": ["chimney"],
+    "q": "Should my chimney be waterproofed in Arizona?",
+    "a_seed": "Arizona monsoons drive water into masonry that sun exposure has already cracked — waterproofing every 5 to 7 years protects the stack from progressive moisture damage. We use a breathable sealer that lets trapped moisture escape while repelling new intrusion."
+  },
+  {
+    "id": "faq_037",
+    "intent": "emergency",
+    "fuel": ["any"],
+    "appliance": ["chimney"],
+    "q": "What do I do if something is living in my chimney?",
+    "a_seed": "Don't light a fire — that's cruel and dangerous. If it's a small animal, leave the damper closed and call us or a wildlife removal service; we often coordinate. Once the animal is out, we recommend installing a proper cap with screen to prevent re-entry."
+  },
+  {
+    "id": "faq_038",
+    "intent": "service",
+    "fuel": ["any"],
+    "appliance": ["fireplace"],
+    "q": "Are you licensed and insured?",
+    "a_seed": "Yes — we carry full Arizona contractor licensing and general liability insurance, and all technicians are trained on gas systems and certified for inspections. License and insurance documentation is available on request."
+  },
+  {
+    "id": "faq_039",
+    "intent": "service",
+    "fuel": ["any"],
+    "appliance": ["fireplace"],
+    "q": "Do you offer free estimates?",
+    "a_seed": "Yes — in-home estimates for remodels, installations, and larger repair projects are free. For diagnostic service calls on repair issues, a $99 diagnostic applies and credits toward the repair if you proceed."
+  },
+  {
+    "id": "faq_040",
+    "intent": "maintenance",
+    "fuel": ["gas", "wood"],
+    "appliance": ["fireplace"],
+    "q": "Can I use my fireplace in summer?",
+    "a_seed": "Physically yes, practically it's unusual — summer monsoon ambiance aside, most Arizona fireplaces sit idle May through September. If you plan to use it in summer, just make sure it was serviced the prior fall and the venting is clear."
+  },
+  {
+    "id": "faq_041",
+    "intent": "problem",
+    "fuel": ["gas"],
+    "appliance": ["fireplace"],
+    "q": "Why is my pilot light blue and weak?",
+    "a_seed": "A small or lazy pilot flame usually means a partially clogged pilot orifice or a drop in gas pressure. It can also indicate the pilot tube itself is fouled. A tune-up almost always resolves this without any parts."
+  },
+  {
+    "id": "faq_042",
+    "intent": "problem",
+    "fuel": ["wood"],
+    "appliance": ["chimney"],
+    "q": "My chimney makes a whistling noise — is that normal?",
+    "a_seed": "Whistling during wind is often a loose or damaged cap creating resonance, or gaps in flashing letting air through. It's not usually dangerous but it's a signal that the cap or flashing needs attention."
+  },
+  {
+    "id": "faq_043",
+    "intent": "service",
+    "fuel": ["any"],
+    "appliance": ["fireplace"],
+    "q": "Do you service outdoor fireplaces?",
+    "a_seed": "Yes — outdoor gas fireplaces, fire pits, and pizza ovens are a growing part of our work, especially in Scottsdale and Paradise Valley. We handle repairs, conversions, and tune-ups on outdoor gas appliances."
+  },
+  {
+    "id": "faq_044",
+    "intent": "problem",
+    "fuel": ["gas"],
+    "appliance": ["fireplace"],
+    "q": "Can I fix my gas fireplace myself?",
+    "a_seed": "Basic things are safe for homeowners — battery replacement, cleaning glass, swapping remote batteries. Anything involving the gas valve, pilot assembly, or venting should be a licensed pro. Arizona code and insurance both require it, and the cost of a mistake is significant."
+  },
+  {
+    "id": "faq_045",
+    "intent": "comparison",
+    "fuel": ["any"],
+    "appliance": ["fireplace"],
+    "q": "What's the difference between a chimney sweep and a chimney inspection?",
+    "a_seed": "A sweep is a cleaning service — removing soot, creosote, and debris. An inspection is an assessment of the chimney's condition and safety. A professional sweep typically includes a Level 1 visual inspection; deeper inspections are a separate scope."
+  },
+  {
+    "id": "faq_046",
+    "intent": "cost",
+    "fuel": ["any"],
+    "appliance": ["chimney"],
+    "q": "How much does chimney flashing repair cost?",
+    "a_seed": "Flashing repair in the Phoenix area typically runs $300 to $900 depending on roof type, chimney size, and how much sealant and counter-flashing work is required. If the underlying step flashing is compromised, costs rise."
+  },
+  {
+    "id": "faq_047",
+    "intent": "maintenance",
+    "fuel": ["gas"],
+    "appliance": ["fireplace"],
+    "q": "Do I need to turn off my pilot light in summer?",
+    "a_seed": "Optional and personal preference. Leaving it on uses a tiny amount of gas (a few dollars a month) but keeps the system primed and moisture out. Turning it off saves the gas but can allow spiders and dust into the pilot tube. We see both approaches."
+  },
+  {
+    "id": "faq_048",
+    "intent": "problem",
+    "fuel": ["any"],
+    "appliance": ["chimney"],
+    "q": "Why is there a cold draft coming down my chimney?",
+    "a_seed": "A cold draft means the damper is open or the top-sealing damper has failed. Chimneys act as reverse-flow vents when the stack is colder than the house. A damper top-seal solves it permanently; closing a functional damper solves it until next use."
+  },
+  {
+    "id": "faq_049",
+    "intent": "service",
+    "fuel": ["any"],
+    "appliance": ["chimney"],
+    "q": "Can you inspect a chimney before I buy a house?",
+    "a_seed": "Yes — pre-purchase inspections are a significant part of our work, especially in Scottsdale and Phoenix historic districts. We document findings with photos and written reports that work for buyers' due diligence, and we can coordinate with real estate timelines."
+  },
+  {
+    "id": "faq_050",
+    "intent": "problem",
+    "fuel": ["gas"],
+    "appliance": ["fireplace"],
+    "q": "My gas fireplace smells like exhaust — is that dangerous?",
+    "a_seed": "Exhaust or combustion smell indoors from a gas fireplace is a concern — it suggests venting failure, a cracked heat exchanger, or a blocked flue. Stop using the unit and call a professional. CO detectors should be installed in any home with gas appliances, for exactly this scenario."
+  },
+  {
+    "id": "faq_051",
+    "intent": "comparison",
+    "fuel": ["any"],
+    "appliance": ["fireplace"],
+    "q": "Stone vs tile vs porcelain for a fireplace surround?",
+    "a_seed": "Stone offers natural character and longevity but weighs more and costs more. Tile gives design flexibility at a mid-range price. Large-format porcelain slabs are the current trend — stone-like appearance, thinner profile, lower cost, faster install."
+  },
+  {
+    "id": "faq_052",
+    "intent": "service",
+    "fuel": ["any"],
+    "appliance": ["fireplace"],
+    "q": "Do you handle HOA approvals for fireplace exterior work?",
+    "a_seed": "Yes — in Scottsdale, Paradise Valley, and other HOA-heavy neighborhoods we routinely prepare architectural submission packets, including product specs, renderings, and installation diagrams. We've worked with most of the major HOAs in the Valley."
+  },
+  {
+    "id": "faq_053",
+    "intent": "cost",
+    "fuel": ["any"],
+    "appliance": ["fireplace"],
+    "q": "How much does firebox repair cost?",
+    "a_seed": "Firebox repairs range from $250 for firebrick touch-up and refractory patching to $1,800 or more for full refractory panel replacement. Cost depends on whether the damage is surface cracks, cracked panels, or structural compromise."
+  },
+  {
+    "id": "faq_054",
+    "intent": "maintenance",
+    "fuel": ["any"],
+    "appliance": ["fireplace"],
+    "q": "What's the difference between a Level 1, 2, and 3 chimney inspection?",
+    "a_seed": "Level 1 is a visual inspection of readily accessible areas — standard for annual maintenance. Level 2 adds video scan of the flue interior and is required for real estate transactions or after a chimney fire. Level 3 involves removal of parts of the structure — rare and only when Level 2 finds hidden damage."
+  },
+  {
+    "id": "faq_055",
+    "intent": "problem",
+    "fuel": ["wood"],
+    "appliance": ["chimney"],
+    "q": "How dangerous is a chimney fire?",
+    "a_seed": "Very. Chimney fires burn at 2,000°F+ and can crack flue liners, spread to framing, and destroy homes. If you suspect one is happening — loud roaring, intense heat, sparks from the cap — get out and call 911. After any suspected chimney fire, a Level 2 inspection is mandatory before the next use."
+  },
+  {
+    "id": "faq_056",
+    "intent": "service",
+    "fuel": ["any"],
+    "appliance": ["fireplace"],
+    "q": "Do you offer warranty on your work?",
+    "a_seed": "Yes — all repair work carries a labor warranty, and parts we install carry the manufacturer's warranty (typically one to five years depending on the component). Remodel work is warrantied against installation defects for one year."
+  },
+  {
+    "id": "faq_057",
+    "intent": "comparison",
+    "fuel": ["gas"],
+    "appliance": ["fireplace"],
+    "q": "Ventless vs vented gas fireplace — which is better?",
+    "a_seed": "Vented units are safer and allowed everywhere — combustion products go outside through a dedicated vent. Ventless units dump combustion products (including moisture and trace CO) into the room. Arizona code and most municipalities strongly prefer vented. We recommend vented in nearly all cases."
+  },
+  {
+    "id": "faq_058",
+    "intent": "maintenance",
+    "fuel": ["any"],
+    "appliance": ["fireplace"],
+    "q": "How do I know when it's time to remodel my fireplace?",
+    "a_seed": "Common triggers: dated appearance after a room remodel, a functional problem that requires opening the surround anyway, new home purchase where the fireplace doesn't match your style, or converting wood to gas. If you walk into the room and the fireplace feels 'old,' it's time to at least get a quote."
+  },
+  {
+    "id": "faq_059",
+    "intent": "cost",
+    "fuel": ["any"],
+    "appliance": ["fireplace"],
+    "q": "Do you provide written estimates?",
+    "a_seed": "Yes — every project over $500 gets a written estimate detailing scope, materials, labor, and timeline. We don't proceed without your signed approval, and change orders during the project are documented separately."
+  },
+  {
+    "id": "faq_060",
+    "intent": "service",
+    "fuel": ["any"],
+    "appliance": ["fireplace", "chimney"],
+    "q": "What areas of Arizona do you serve?",
+    "a_seed": "We cover the greater Phoenix metro area including Scottsdale, Paradise Valley, Mesa, Tempe, Chandler, Gilbert, Glendale, Peoria, Surprise, Cave Creek, Carefree, Fountain Hills, and Anthem. For larger projects we travel statewide."
+  }
+]

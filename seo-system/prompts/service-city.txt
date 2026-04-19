@@ -36,6 +36,38 @@ Nearby Cities: {{nearby_cities}}
 
 ---
 
+VOICE ANGLE: {{seed_angle}}
+
+Write the page leaning into this emotional center. Allowed angles:
+- diagnostic    → explain the why, sound like an expert diagnosing
+- reassuring    → calm, confident, "you're in good hands"
+- cost-focused  → transparent, budget-conscious, honest pricing
+- aesthetic     → design-forward, remodel / luxury feel
+- safety-first  → careful, code-compliant, never alarmist
+- speed         → fast response, same-day, efficient
+
+The angle shifts the INTRO, TRUST, and CTA most. Don't mention the
+angle itself — it's the vibe, not a label.
+
+---
+
+FIELD NOTES (real technician insight to weave naturally into the intro
+or local_section — do NOT quote it verbatim, paraphrase into your own
+flow so it reads as part of the page):
+
+{{technician_anecdote}}
+
+---
+
+FAQ SEED BANK (candidate questions and suggested answer angles —
+pick 4 that fit this page best, rewrite the answers in YOUR voice
+specific to {{city}} and the exact service. Do not copy the seeds
+verbatim; they are only starting points):
+
+{{faq_seeds}}
+
+---
+
 TASK:
 
 Generate structured content for a LOCAL SERVICE PAGE.

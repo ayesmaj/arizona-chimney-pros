@@ -22,6 +22,7 @@ import json
 import time
 import argparse
 import os
+import random
 import sys
 from datetime import datetime
 
@@ -34,6 +35,9 @@ MAX_TOKENS    = 2000
 DELAY_SECONDS = 1.5                     # pause between API calls (rate limiting)
 INPUT_FILE    = "pages-template.csv"
 OUTPUT_FILE   = "pages-enriched.csv"
+ANECDOTE_FILE = "content-banks/anecdotes.json"
+FAQ_FILE      = "content-banks/faq-bank.json"
+FAQ_SEED_COUNT = 8    # How many candidate questions to show Claude (picks 4)
 
 # Generated fields that Claude fills in
 GENERATED_FIELDS = [
@@ -64,6 +68,126 @@ def flatten_arrays(content: dict) -> dict:
         else:
             flat[key] = value
     return flat
+
+
+# ─────────────────────────────────────────────
+# Content banks: inject unique flavor per page
+# ─────────────────────────────────────────────
+
+PAGE_TYPE_TO_INTENT = {
+    "service_city": "service",
+    "problem_city": "problem",
+    "cost_page":    "cost",
+    "comparison":   "comparison",
+    "emergency":    "emergency",
+    "maintenance":  "maintenance",
+    "location_hub": "service",
+}
+
+
+def load_banks() -> tuple[list, list]:
+    """Load anecdote + FAQ banks from disk. Called once per run."""
+    try:
+        with open(ANECDOTE_FILE, "r", encoding="utf-8") as f:
+            anecdotes = json.load(f)
+        with open(FAQ_FILE, "r", encoding="utf-8") as f:
+            faqs = json.load(f)
+        return anecdotes, faqs
+    except FileNotFoundError as e:
+        print(f"  ! Content bank missing ({e}). Continuing without injected banks.")
+        return [], []
+
+
+def _city_slug(city: str) -> str:
+    return city.strip().lower().replace(" ", "-")
+
+
+def pick_anecdote(anecdotes: list, row: dict, rng: random.Random) -> str:
+    """Score anecdotes against the row, pick from top matches.
+
+    Scoring: city tag > service/appliance tag > fuel match. We return a
+    random pick from the top 5 to keep variety across a city run."""
+    if not anecdotes:
+        return ""
+
+    city = _city_slug(row.get("city", ""))
+    fuel = (row.get("fuel_type") or "any").lower()
+    service = (row.get("service") or "").lower()
+    appliance = (row.get("appliance_type") or "").lower()
+
+    scored = []
+    for a in anecdotes:
+        tags = [t.lower() for t in a.get("tags", [])]
+        fuels = [f.lower() for f in a.get("fuel", [])]
+        score = 0
+        if city and city in tags:
+            score += 10
+        if appliance and appliance in tags:
+            score += 3
+        # Service keywords overlap with tags (e.g. "chimney-repair", "remodel")
+        for word in service.split():
+            if word and word in tags:
+                score += 2
+        if fuel in fuels or "any" in fuels:
+            score += 1
+        scored.append((score, a))
+
+    scored.sort(reverse=True, key=lambda x: x[0])
+    # Keep variety: pick randomly from top 5 (or all if fewer)
+    top_n = min(5, len(scored))
+    pick = rng.choice(scored[:top_n])[1]
+    return pick.get("note", "")
+
+
+def pick_faq_seeds(faqs: list, row: dict, rng: random.Random, n: int = FAQ_SEED_COUNT) -> list[dict]:
+    """Pick N candidate FAQ seeds, prioritizing intent + fuel match."""
+    if not faqs:
+        return []
+
+    intent = PAGE_TYPE_TO_INTENT.get(row.get("page_type", "service_city"), "service")
+    fuel = (row.get("fuel_type") or "any").lower()
+    appliance = (row.get("appliance_type") or "").lower()
+
+    def score(faq: dict) -> int:
+        s = 0
+        if faq.get("intent") == intent:
+            s += 5
+        fuels = [f.lower() for f in faq.get("fuel", [])]
+        if fuel in fuels or "any" in fuels:
+            s += 2
+        appls = [a.lower() for a in faq.get("appliance", [])]
+        if appliance in appls:
+            s += 1
+        return s
+
+    ranked = sorted(faqs, key=score, reverse=True)
+    # Take top 2*n then sample n — adds variety without drifting off-topic
+    pool = ranked[: max(n * 2, n)]
+    rng.shuffle(pool)
+    return pool[:n]
+
+
+def format_faq_seeds(seeds: list[dict]) -> str:
+    """Format FAQ candidates as a numbered list Claude can pick from."""
+    if not seeds:
+        return "(no seed bank available — generate 4 original FAQs)"
+    lines = []
+    for i, f in enumerate(seeds, 1):
+        lines.append(f'{i}. Q: "{f["q"]}"')
+        lines.append(f'   Suggested angle: {f["a_seed"]}')
+    return "\n".join(lines)
+
+
+def enrich_row(row: dict, anecdotes: list, faqs: list, rng: random.Random) -> dict:
+    """Attach sampled anecdote + FAQ seeds to the row as prompt variables."""
+    enriched = dict(row)
+    enriched["technician_anecdote"] = pick_anecdote(anecdotes, row, rng)
+    enriched["faq_seeds"] = format_faq_seeds(pick_faq_seeds(faqs, row, rng))
+    # Ensure seed_angle has a default if missing (legacy rows)
+    if not enriched.get("seed_angle"):
+        enriched["seed_angle"] = "reassuring"
+    return enriched
+
 
 # Load prompt templates
 def load_prompt(page_type: str) -> str:
@@ -143,6 +267,11 @@ def main():
         reader = csv.DictReader(f)
         rows = list(reader)
 
+    # Load content banks once (reused across all rows)
+    anecdotes, faqs = load_banks()
+    if anecdotes or faqs:
+        print(f"Loaded banks: {len(anecdotes)} anecdotes, {len(faqs)} FAQs")
+
     total = len(rows)
     start = args.start
     end   = min(start + args.limit, total) if args.limit else total
@@ -189,7 +318,12 @@ def main():
             failed += 1
             continue
 
-        prompt = build_prompt(template, row)
+        # Inject sampled anecdote + FAQ seeds per row.
+        # Seed RNG deterministically by slug so reruns produce the same sampling
+        # (easier debugging; swap in random.Random() for variety on reruns).
+        rng = random.Random(slug)
+        enriched_row = enrich_row(row, anecdotes, faqs, rng)
+        prompt = build_prompt(template, enriched_row)
 
         if args.dry_run:
             print(f"  → Prompt preview ({len(prompt)} chars):")
