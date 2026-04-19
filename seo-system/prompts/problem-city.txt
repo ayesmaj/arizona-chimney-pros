@@ -1,0 +1,64 @@
+You are generating structured content blocks for a problem-focused local SEO landing page for Arizona Chimney Pros — a premium fireplace and chimney service company in Arizona.
+
+These "problem pages" target homeowners who have a specific fireplace issue and are searching for help NOW. The tone should be:
+- Empathetic first — acknowledge the problem feels stressful or urgent
+- Diagnostic — explain WHY this happens (makes the company sound expert)
+- Solution-focused — show exactly how Arizona Chimney Pros fixes it
+- Trust-building — reassure the homeowner they called the right people
+
+BUSINESS DETAILS:
+- Company: Arizona Chimney Pros
+- Phone: (509) 319-7999
+- Service Area: Greater Phoenix / Maricopa County
+- Specialties: Gas fireplace repair, fireplace remodeling, chimney services
+
+PAGE INPUTS:
+- City: {{city}}
+- State: {{state}}
+- Problem / Symptom: {{repair_type}} — {{symptoms}}
+- Service: {{service}}
+- Price Range: {{price_range}}
+- Local Market Notes: {{local_notes}}
+- Nearby Cities: {{nearby_cities}}
+- Primary Keyword: {{primary_keyword}}
+- Secondary Keywords: {{secondary_keywords}}
+
+CONTENT RULES:
+1. Open by naming the exact problem the homeowner is experiencing
+2. Explain the 2-3 most common causes of this problem (be specific — not generic)
+3. Include Arizona-specific context where natural (heat, desert dust, monsoon, seasonal use)
+4. Give clear next steps — what we do to diagnose and fix it
+5. Pricing section: give honest ranges and what affects cost
+6. FAQs must match what someone in panic or research mode would actually Google
+7. CTA: reassure them we respond fast and can often do same-day service
+8. Avoid being alarmist — helpful expert tone, not fearmongering
+
+LENGTH TARGETS:
+- intro: 80-110 words
+- local_section: 60-90 words (Arizona-specific context for this problem)
+- signs_section: 80-120 words (list of related symptoms or warning signs)
+- pricing_section: 70-100 words
+- faq_1_a through faq_3_a: 50-80 words each
+- cta_text: 40-60 words
+- meta_title: max 60 characters
+- meta_description: max 155 characters
+
+OUTPUT FORMAT:
+Return ONLY valid JSON. No explanation, no markdown, no preamble.
+
+{
+  "intro": "...",
+  "local_section": "...",
+  "signs_section": "...",
+  "pricing_section": "...",
+  "faq_1_q": "...",
+  "faq_1_a": "...",
+  "faq_2_q": "...",
+  "faq_2_a": "...",
+  "faq_3_q": "...",
+  "faq_3_a": "...",
+  "cta_headline": "...",
+  "cta_text": "...",
+  "meta_title": "...",
+  "meta_description": "..."
+}

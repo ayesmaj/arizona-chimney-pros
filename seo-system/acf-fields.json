@@ -1,0 +1,261 @@
+[
+  {
+    "key": "group_acp_seo_page",
+    "title": "Arizona Chimney Pros – SEO Page Data",
+    "fields": [
+      {
+        "key": "field_acp_city",
+        "label": "City",
+        "name": "city",
+        "type": "text",
+        "instructions": "City name exactly as it appears in the URL and title.",
+        "required": 1,
+        "placeholder": "Phoenix"
+      },
+      {
+        "key": "field_acp_state",
+        "label": "State",
+        "name": "state",
+        "type": "text",
+        "instructions": "State abbreviation or full name.",
+        "required": 1,
+        "default_value": "Arizona",
+        "placeholder": "Arizona"
+      },
+      {
+        "key": "field_acp_service",
+        "label": "Service",
+        "name": "service",
+        "type": "text",
+        "instructions": "Primary service offered on this page.",
+        "required": 1,
+        "placeholder": "Gas Fireplace Repair"
+      },
+      {
+        "key": "field_acp_appliance_type",
+        "label": "Appliance Type",
+        "name": "appliance_type",
+        "type": "select",
+        "instructions": "Type of appliance this page targets.",
+        "required": 1,
+        "choices": {
+          "Fireplace": "Fireplace",
+          "Chimney": "Chimney",
+          "Insert": "Insert",
+          "Stove": "Stove",
+          "Any": "Any"
+        },
+        "default_value": "Fireplace",
+        "allow_null": 0
+      },
+      {
+        "key": "field_acp_fuel_type",
+        "label": "Fuel Type",
+        "name": "fuel_type",
+        "type": "select",
+        "instructions": "Fuel type this page targets.",
+        "required": 1,
+        "choices": {
+          "Gas": "Gas",
+          "Wood": "Wood",
+          "Electric": "Electric",
+          "Gas;Wood": "Gas & Wood",
+          "Any": "Any"
+        },
+        "default_value": "Gas",
+        "allow_null": 0
+      },
+      {
+        "key": "field_acp_page_type",
+        "label": "Page Type",
+        "name": "page_type",
+        "type": "select",
+        "instructions": "The strategic type of this landing page.",
+        "required": 1,
+        "choices": {
+          "service_city": "Service + City",
+          "problem_city": "Problem + City",
+          "comparison": "Comparison",
+          "cost_page": "Cost / Pricing",
+          "location_hub": "Location Hub"
+        },
+        "default_value": "service_city",
+        "allow_null": 0
+      },
+      {
+        "key": "field_acp_price_range",
+        "label": "Price Range",
+        "name": "price_range",
+        "type": "text",
+        "instructions": "Typical price range for this service. Used in content and schema.",
+        "placeholder": "$180-$450"
+      },
+      {
+        "key": "field_acp_primary_keyword",
+        "label": "Primary Keyword",
+        "name": "primary_keyword",
+        "type": "text",
+        "instructions": "The exact keyword this page targets. Used in meta title.",
+        "required": 1,
+        "placeholder": "gas fireplace repair phoenix"
+      },
+      {
+        "key": "field_acp_secondary_keywords",
+        "label": "Secondary Keywords",
+        "name": "secondary_keywords",
+        "type": "textarea",
+        "instructions": "Semicolon-separated secondary keywords to weave into content.",
+        "rows": 3
+      },
+      {
+        "key": "field_acp_nearby_cities",
+        "label": "Nearby Cities",
+        "name": "nearby_cities",
+        "type": "text",
+        "instructions": "Comma or semicolon separated nearby cities for internal linking and local signals.",
+        "placeholder": "Scottsdale; Tempe; Mesa"
+      },
+      {
+        "key": "field_acp_local_notes",
+        "label": "Local Notes",
+        "name": "local_notes",
+        "type": "textarea",
+        "instructions": "Editor notes about this city/market. Used as context for content generation — NOT shown on page.",
+        "rows": 3
+      },
+      {
+        "key": "field_acp_meta_title",
+        "label": "Meta Title",
+        "name": "meta_title",
+        "type": "text",
+        "instructions": "SEO meta title. Max 60 characters.",
+        "maxlength": 60,
+        "placeholder": "Gas Fireplace Repair in Phoenix AZ | Arizona Chimney Pros"
+      },
+      {
+        "key": "field_acp_meta_description",
+        "label": "Meta Description",
+        "name": "meta_description",
+        "type": "textarea",
+        "instructions": "SEO meta description. Max 155 characters.",
+        "rows": 2,
+        "maxlength": 155
+      },
+      {
+        "key": "field_acp_intro",
+        "label": "Page Intro",
+        "name": "intro",
+        "type": "wysiwyg",
+        "instructions": "Opening paragraph(s) of the page. 80-120 words. Sets context and contains primary keyword.",
+        "tabs": "all",
+        "toolbar": "basic",
+        "media_upload": 0,
+        "delay": 0
+      },
+      {
+        "key": "field_acp_local_section",
+        "label": "Local Section",
+        "name": "local_section",
+        "type": "wysiwyg",
+        "instructions": "City-specific paragraph. What makes this market unique — climate, home styles, common issues in this city.",
+        "tabs": "all",
+        "toolbar": "basic",
+        "media_upload": 0
+      },
+      {
+        "key": "field_acp_signs_section",
+        "label": "Signs / Symptoms Section",
+        "name": "signs_section",
+        "type": "wysiwyg",
+        "instructions": "Common warning signs and symptoms the homeowner should watch for. Use a list format.",
+        "tabs": "all",
+        "toolbar": "basic",
+        "media_upload": 0
+      },
+      {
+        "key": "field_acp_pricing_section",
+        "label": "Pricing Section",
+        "name": "pricing_section",
+        "type": "wysiwyg",
+        "instructions": "Transparent pricing overview for this service in this city. Builds trust.",
+        "tabs": "all",
+        "toolbar": "basic",
+        "media_upload": 0
+      },
+      {
+        "key": "field_acp_faq_1_q",
+        "label": "FAQ 1 – Question",
+        "name": "faq_1_q",
+        "type": "text",
+        "instructions": "First FAQ question. Should target a common search query."
+      },
+      {
+        "key": "field_acp_faq_1_a",
+        "label": "FAQ 1 – Answer",
+        "name": "faq_1_a",
+        "type": "textarea",
+        "instructions": "Answer to FAQ 1. 50-90 words.",
+        "rows": 4
+      },
+      {
+        "key": "field_acp_faq_2_q",
+        "label": "FAQ 2 – Question",
+        "name": "faq_2_q",
+        "type": "text"
+      },
+      {
+        "key": "field_acp_faq_2_a",
+        "label": "FAQ 2 – Answer",
+        "name": "faq_2_a",
+        "type": "textarea",
+        "rows": 4
+      },
+      {
+        "key": "field_acp_faq_3_q",
+        "label": "FAQ 3 – Question",
+        "name": "faq_3_q",
+        "type": "text"
+      },
+      {
+        "key": "field_acp_faq_3_a",
+        "label": "FAQ 3 – Answer",
+        "name": "faq_3_a",
+        "type": "textarea",
+        "rows": 4
+      },
+      {
+        "key": "field_acp_cta_headline",
+        "label": "CTA Headline",
+        "name": "cta_headline",
+        "type": "text",
+        "instructions": "The closing call-to-action headline. Should feel urgent but not pushy.",
+        "placeholder": "Ready to Fix Your Gas Fireplace in Phoenix?"
+      },
+      {
+        "key": "field_acp_cta_text",
+        "label": "CTA Text",
+        "name": "cta_text",
+        "type": "textarea",
+        "instructions": "Supporting CTA paragraph. 2-3 sentences. Reinforces trust and urgency.",
+        "rows": 3
+      }
+    ],
+    "location": [
+      [
+        {
+          "param": "post_type",
+          "operator": "==",
+          "value": "service_area_page"
+        }
+      ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Structured content fields for Arizona Chimney Pros programmatic SEO pages."
+  }
+]

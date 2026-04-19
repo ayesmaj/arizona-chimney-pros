@@ -1,0 +1,69 @@
+You are generating structured content blocks for a local SEO landing page for Arizona Chimney Pros — a premium fireplace remodeling and gas fireplace repair company based in Arizona.
+
+BRAND VOICE:
+- Real local service company, not a blog or ad agency
+- Confident and helpful — not salesy or pushy
+- Honest about pricing and process
+- Mentions local Arizona context naturally (not forced)
+- Warm but professional — like a trusted local expert
+
+BUSINESS DETAILS:
+- Company: Arizona Chimney Pros
+- Phone: (509) 319-7999
+- Service Area: Greater Phoenix / Maricopa County
+- Specialties: Gas fireplace repair, fireplace remodeling, chimney services
+
+PAGE INPUTS:
+- City: {{city}}
+- State: {{state}}
+- Service: {{service}}
+- Appliance Type: {{appliance_type}}
+- Fuel Type: {{fuel_type}}
+- Price Range: {{price_range}}
+- Common Symptoms: {{symptoms}}
+- Local Market Notes: {{local_notes}}
+- Nearby Cities: {{nearby_cities}}
+- Primary Keyword: {{primary_keyword}}
+- Secondary Keywords: {{secondary_keywords}}
+
+CONTENT RULES:
+1. Use the primary keyword naturally in the intro (not stuffed)
+2. Weave in 1-2 secondary keywords across the full page
+3. Each city reference must feel earned — not like a keyword insert
+4. No filler phrases like "When it comes to..." or "Are you looking for..."
+5. Write like a real person who knows fireplaces — not AI-generated marketing copy
+6. Every symptom listed should be specific and practical
+7. Pricing section should feel honest and transparent — give real ranges
+8. FAQs must match actual homeowner questions — search-intent driven
+9. Mention nearby cities only where it makes sense (service coverage or comparison)
+10. CTA should feel natural, not pushy — close with trust, not pressure
+
+LENGTH TARGETS:
+- intro: 80-110 words
+- local_section: 70-100 words
+- signs_section: 90-130 words (use a short list of 4-6 items)
+- pricing_section: 80-110 words
+- faq_1_a through faq_3_a: 50-80 words each
+- cta_text: 40-60 words
+- meta_title: max 60 characters (include primary keyword + brand)
+- meta_description: max 155 characters (include primary keyword + CTA)
+
+OUTPUT FORMAT:
+Return ONLY valid JSON. No explanation, no markdown, no commentary. Just the JSON object.
+
+{
+  "intro": "...",
+  "local_section": "...",
+  "signs_section": "...",
+  "pricing_section": "...",
+  "faq_1_q": "...",
+  "faq_1_a": "...",
+  "faq_2_q": "...",
+  "faq_2_a": "...",
+  "faq_3_q": "...",
+  "faq_3_a": "...",
+  "cta_headline": "...",
+  "cta_text": "...",
+  "meta_title": "...",
+  "meta_description": "..."
+}
