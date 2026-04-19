@@ -4,6 +4,24 @@
     "title": "Arizona Chimney Pros – SEO Page Data",
     "fields": [
       {
+        "key": "field_acp_slug",
+        "label": "Slug",
+        "name": "slug",
+        "type": "text",
+        "instructions": "URL slug. Format: {service-slug}-{city-slug}. Lowercase, hyphens only.",
+        "required": 1,
+        "placeholder": "gas-fireplace-repair-phoenix"
+      },
+      {
+        "key": "field_acp_title",
+        "label": "Page Title (H1)",
+        "name": "title",
+        "type": "text",
+        "instructions": "The main H1 shown on the page. Service + city, high-intent.",
+        "required": 1,
+        "placeholder": "Gas Fireplace Repair in Phoenix, AZ"
+      },
+      {
         "key": "field_acp_city",
         "label": "City",
         "name": "city",
@@ -183,6 +201,26 @@
         "media_upload": 0
       },
       {
+        "key": "field_acp_process_section",
+        "label": "Process Section",
+        "name": "process_section",
+        "type": "wysiwyg",
+        "instructions": "How we actually do the work: inspection, diagnosis, repair, final testing. Methodical and trustworthy.",
+        "tabs": "all",
+        "toolbar": "basic",
+        "media_upload": 0
+      },
+      {
+        "key": "field_acp_trust_section",
+        "label": "Trust Section",
+        "name": "trust_section",
+        "type": "wysiwyg",
+        "instructions": "Credibility block: years in Arizona, jobs handled, safety focus, licensed and insured.",
+        "tabs": "all",
+        "toolbar": "basic",
+        "media_upload": 0
+      },
+      {
         "key": "field_acp_faq_1_q",
         "label": "FAQ 1 – Question",
         "name": "faq_1_q",
@@ -224,6 +262,19 @@
         "rows": 4
       },
       {
+        "key": "field_acp_faq_4_q",
+        "label": "FAQ 4 – Question",
+        "name": "faq_4_q",
+        "type": "text"
+      },
+      {
+        "key": "field_acp_faq_4_a",
+        "label": "FAQ 4 – Answer",
+        "name": "faq_4_a",
+        "type": "textarea",
+        "rows": 4
+      },
+      {
         "key": "field_acp_cta_headline",
         "label": "CTA Headline",
         "name": "cta_headline",
@@ -238,6 +289,15 @@
         "type": "textarea",
         "instructions": "Supporting CTA paragraph. 2-3 sentences. Reinforces trust and urgency.",
         "rows": 3
+      },
+      {
+        "key": "field_acp_internal_links",
+        "label": "Internal Links",
+        "name": "internal_links",
+        "type": "textarea",
+        "instructions": "Three related internal link paths. Semicolon-separated. Example: /chimney-repair/phoenix;/fireplace-remodeling/phoenix;/gas-fireplace-repair/scottsdale",
+        "rows": 3,
+        "placeholder": "/chimney-repair/phoenix;/fireplace-remodeling/phoenix;/gas-fireplace-repair/scottsdale"
       }
     ],
     "location": [

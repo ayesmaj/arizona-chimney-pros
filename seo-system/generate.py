@@ -37,10 +37,33 @@ OUTPUT_FILE   = "pages-enriched.csv"
 
 # Generated fields that Claude fills in
 GENERATED_FIELDS = [
+    "slug", "title",
+    "meta_title", "meta_description",
     "intro", "local_section", "signs_section", "pricing_section",
-    "faq_1_q", "faq_1_a", "faq_2_q", "faq_2_a", "faq_3_q", "faq_3_a",
-    "cta_headline", "cta_text", "meta_title", "meta_description"
+    "process_section", "trust_section",
+    "faq_1_q", "faq_1_a",
+    "faq_2_q", "faq_2_a",
+    "faq_3_q", "faq_3_a",
+    "faq_4_q", "faq_4_a",
+    "cta_headline", "cta_text",
+    "internal_links",
 ]
+
+# Fields that come back from Claude as arrays but must be flattened
+# to a semicolon-joined string before writing to CSV.
+ARRAY_FIELDS = {"internal_links"}
+ARRAY_JOIN   = ";"
+
+
+def flatten_arrays(content: dict) -> dict:
+    """Convert list-valued fields into semicolon-joined strings for CSV."""
+    flat = {}
+    for key, value in content.items():
+        if key in ARRAY_FIELDS and isinstance(value, list):
+            flat[key] = ARRAY_JOIN.join(str(v).strip() for v in value if v)
+        else:
+            flat[key] = value
+    return flat
 
 # Load prompt templates
 def load_prompt(page_type: str) -> str:
@@ -182,6 +205,9 @@ def main():
             writer.writerow({**row, **{f: "ERROR" for f in GENERATED_FIELDS}})
             out_file.flush()
             continue
+
+        # Flatten any array fields (e.g. internal_links) into delimited strings
+        content = flatten_arrays(content)
 
         # Merge original row with generated content
         enriched = {**row, **content}

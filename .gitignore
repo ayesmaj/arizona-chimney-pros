@@ -14,5 +14,10 @@ node_modules/
 # Large 3D files (too big for GitHub)
 *.blend
 *.blend1
-*.blend
-*.blend1
+
+# Python
+__pycache__/
+*.pyc
+
+# SEO pipeline artifacts
+seo-system/pages-enriched.csv
