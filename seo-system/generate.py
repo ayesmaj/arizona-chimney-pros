@@ -379,10 +379,18 @@ def merge_internal_links(content: dict, row: dict, all_rows: list[dict],
 
 # Load prompt templates
 def load_prompt(page_type: str) -> str:
-    if page_type in ("problem_city",):
-        path = "prompts/problem-city.txt"
-    else:
-        path = "prompts/service-city.txt"
+    """Pick the prompt template for a given page_type.
+
+    Uses PAGE_TYPE_TO_INTENT if a dedicated template exists for that
+    intent (e.g. prompts/cost-city.txt for cost_page). Falls back to
+    service-city.txt when the intent-specific file isn't present —
+    so the pipeline never breaks on a missing prompt.
+    """
+    intent = PAGE_TYPE_TO_INTENT.get(page_type, "service")
+    preferred = f"prompts/{intent}-city.txt"
+    fallback  = "prompts/service-city.txt"
+
+    path = preferred if os.path.exists(preferred) else fallback
 
     with open(path, "r", encoding="utf-8") as f:
         return f.read()
