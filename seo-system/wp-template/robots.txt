@@ -1,0 +1,31 @@
+# Arizona Chimney Pros — robots.txt
+#
+# Drop this file at the site root: public_html/robots.txt
+#
+# Purpose:
+#   - Allow all crawlers to index everything public
+#   - Block obvious WP admin / includes paths that leak internals
+#   - Declare sitemap location so Google/Bing auto-discover it
+#
+# Sitemap URL assumes sitemap-acp.xml lives in public_html/. If you're
+# serving via WordPress instead, replace with the WP-served path.
+
+User-agent: *
+Allow: /
+
+# WordPress internals — no SEO value, block from crawl budget
+Disallow: /wp-admin/
+Disallow: /wp-includes/
+Disallow: /wp-json/
+Disallow: /?s=
+Disallow: /search/
+Disallow: /*?*orderby=
+Disallow: /*?*filter=
+Disallow: /xmlrpc.php
+
+# Allow wp-admin/admin-ajax.php (needed for some frontend JS)
+Allow: /wp-admin/admin-ajax.php
+
+# Sitemap locations — submit these in Google Search Console too
+Sitemap: https://arizonachimneypros.com/sitemap-acp.xml
+Sitemap: https://arizonachimneypros.com/sitemap_index.xml
