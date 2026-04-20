@@ -502,5 +502,117 @@
     "tags": ["gilbert", "refractory", "factory-built", "pre-fab", "seville", "power-ranch"],
     "fuel": ["gas", "wood"],
     "season": ["any"]
+  },
+  {
+    "id": "anec_073",
+    "note": "Tempe rentals near ASU have the roughest-used fireplaces in the Valley — tenant after tenant, no annual service. When a landlord finally calls, we routinely find the gas valve drifted out of spec and the pilot orifice clogged with lint and dust.",
+    "tags": ["tempe", "asu", "rental", "gas-valve", "pilot-orifice", "gas-repair"],
+    "fuel": ["gas"],
+    "season": ["fall", "winter"]
+  },
+  {
+    "id": "anec_074",
+    "note": "Glendale west-valley homes from the 70s often have the original clay flue liners cracked from decades of thermal cycling. Stainless reline runs about $1,800-$3,200 and essentially adds another 30+ years to the chimney.",
+    "tags": ["glendale", "clay-liner", "reline", "stainless", "chimney-repair"],
+    "fuel": ["wood", "any"],
+    "season": ["any"]
+  },
+  {
+    "id": "anec_075",
+    "note": "Peoria retirement communities — especially Westbrook Village and Sun City Grand — get a lot of pre-sale inspection calls. Most issues we find are cosmetic, but every third home has a damper that's seized from disuse.",
+    "tags": ["peoria", "westbrook", "sun-city-grand", "pre-sale", "damper", "inspection"],
+    "fuel": ["any"],
+    "season": ["any"]
+  },
+  {
+    "id": "anec_076",
+    "note": "Queen Creek new-builds from 2015-2020 routinely come with builder-grade venting that's marginal on long runs. We've fixed backdraft issues on a dozen homes just by upgrading the termination cap and adding a draft inducer.",
+    "tags": ["queen-creek", "new-construction", "venting", "backdraft", "draft-inducer"],
+    "fuel": ["gas"],
+    "season": ["winter"]
+  },
+  {
+    "id": "anec_077",
+    "note": "Fountain Hills hillside homes take the full brunt of monsoon gusts — we replace chimney caps there after every major storm season. Stainless-steel caps run about $280-$450 installed and usually outlast the original galvanized by a decade.",
+    "tags": ["fountain-hills", "monsoon", "wind", "chimney-cap", "stainless"],
+    "fuel": ["any"],
+    "season": ["summer", "monsoon"]
+  },
+  {
+    "id": "anec_078",
+    "note": "Cave Creek adobe-style chimneys are gorgeous but the soft mortar needs repointing every 15-20 years. Full repointing on a two-story adobe stack runs $900-$1,800 and looks like new again.",
+    "tags": ["cave-creek", "adobe", "repointing", "mortar", "chimney-repair"],
+    "fuel": ["any"],
+    "season": ["spring", "fall"]
+  },
+  {
+    "id": "anec_079",
+    "note": "Paradise Valley multi-fireplace estates often have one unit that never gets used — the dining-room gas unit from the 90s. By the time owners call about a smell or a pilot problem, the valve's been sitting dormant for 15 years and needs a full rebuild.",
+    "tags": ["paradise-valley", "estate", "gas-valve", "dormant", "rebuild"],
+    "fuel": ["gas"],
+    "season": ["any"]
+  },
+  {
+    "id": "anec_080",
+    "note": "Anthem's master-planned homes all came with identical Heat & Glo units back in the early 2000s. We've rebuilt enough of them now that we stock the exact gasket set and pilot assembly in the truck.",
+    "tags": ["anthem", "heat-glo", "master-planned", "gasket", "pilot-assembly"],
+    "fuel": ["gas"],
+    "season": ["any"]
+  },
+  {
+    "id": "anec_081",
+    "note": "Linear gas fireplaces — the long, slim modern ones — account for about 70% of our new-construction installs in north Scottsdale now. They look incredible but installation is demanding: glass alignment and burner-pan leveling have zero tolerance.",
+    "tags": ["scottsdale", "linear", "new-construction", "installation"],
+    "fuel": ["gas"],
+    "season": ["any"]
+  },
+  {
+    "id": "anec_082",
+    "note": "Wood-to-gas conversions are the single most common remodel we do — usually $2,500-$4,500 all-in with a new insert, liner, and venting. Homeowners consistently tell us the convenience of a switch beats the wood-burning experience they thought they'd miss.",
+    "tags": ["conversion", "wood-to-gas", "remodel", "insert"],
+    "fuel": ["gas", "wood"],
+    "season": ["fall"]
+  },
+  {
+    "id": "anec_083",
+    "note": "Smoke smell when the fireplace isn't in use is almost always a damper seal problem — the house pulls air down the flue through the gasket, dragging creosote odor with it. A $150 replacement damper gasket fixes most of these.",
+    "tags": ["smoke-smell", "damper", "gasket", "phoenix"],
+    "fuel": ["wood"],
+    "season": ["summer"]
+  },
+  {
+    "id": "anec_084",
+    "note": "Phoenix-metro modern homes built after 2010 are so airtight that woodburning fireplaces struggle to draft. We've installed exterior air kits on a dozen new builds — $450-$700 and the fireplace works the way it was supposed to.",
+    "tags": ["phoenix", "modern", "draft", "air-kit", "woodburning"],
+    "fuel": ["wood"],
+    "season": ["fall", "winter"]
+  },
+  {
+    "id": "anec_085",
+    "note": "Electric fireplaces are growing fast in AZ new builds — especially in condos and HOA communities where gas lines aren't viable. Install runs $600-$1,400 for a good mid-range unit, plus maybe $200 for the electrical run.",
+    "tags": ["electric", "condo", "hoa", "installation"],
+    "fuel": ["electric"],
+    "season": ["any"]
+  },
+  {
+    "id": "anec_086",
+    "note": "Real-estate inspections in Scottsdale and Phoenix have gotten stricter since 2022 — Level 2 inspections with camera scans are increasingly required at closing, especially on wood-burning homes. A $200-$400 pre-list inspection catches problems before they kill a deal.",
+    "tags": ["real-estate", "level-2", "pre-list", "scottsdale", "phoenix"],
+    "fuel": ["any"],
+    "season": ["any"]
+  },
+  {
+    "id": "anec_087",
+    "note": "Chimney crown sealing with SaverSystems CrownCoat or ChimneySaver costs about $250-$400 and extends the crown's life by 10+ years. It's the single best preventive-maintenance spend a homeowner with a masonry chimney can make.",
+    "tags": ["crown-coat", "sealing", "preventive", "masonry"],
+    "fuel": ["any"],
+    "season": ["spring"]
+  },
+  {
+    "id": "anec_088",
+    "note": "Surprise and west-valley retirement homes often haven't burned wood in a decade but never had the chimney cleaned before the switch. First sweep on a dormant flue reveals creosote glaze and sometimes animal nests — budget for a Level 2 the first time.",
+    "tags": ["surprise", "west-valley", "retirement", "dormant", "creosote"],
+    "fuel": ["wood"],
+    "season": ["fall"]
   }
 ]

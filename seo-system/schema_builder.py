@@ -105,8 +105,37 @@ def _page_url(slug: str) -> str:
 # Schema node builders
 # ─────────────────────────────────────────────
 
-def build_business_node() -> dict:
-    """Reusable LocalBusiness node — referenced by @id from other schemas."""
+def _collect_reviews(content: dict) -> list[dict]:
+    """Extract review_1..3 fields from content into a structured list.
+
+    Returns rows where BOTH author and text are present; missing fields
+    are silently dropped (union-schema CSV behavior).
+    """
+    reviews = []
+    for i in range(1, 4):
+        author = content.get(f"review_{i}_author") or ""
+        text   = content.get(f"review_{i}_text") or ""
+        if not (author and text):
+            continue
+        try:
+            rating = int(content.get(f"review_{i}_rating") or 5)
+        except (TypeError, ValueError):
+            rating = 5
+        reviews.append({
+            "author": author.strip(),
+            "text":   _strip_html(text).strip(),
+            "city":   (content.get(f"review_{i}_city") or "").strip(),
+            "rating": max(1, min(5, rating)),
+        })
+    return reviews
+
+
+def build_business_node(content: dict | None = None) -> dict:
+    """Reusable LocalBusiness node — referenced by @id from other schemas.
+
+    When content is provided and contains review_1..3 data, attaches
+    AggregateRating so the business earns review stars in rich results.
+    """
     node = {
         "@type":       "LocalBusiness",
         "@id":         _business_id(),
@@ -142,7 +171,49 @@ def build_business_node() -> dict:
     }
     if BUSINESS["sameAs"]:
         node["sameAs"] = BUSINESS["sameAs"]
+
+    if content is not None:
+        reviews = _collect_reviews(content)
+        if reviews:
+            avg = sum(r["rating"] for r in reviews) / len(reviews)
+            node["aggregateRating"] = {
+                "@type":       "AggregateRating",
+                "ratingValue": round(avg, 1),
+                "bestRating":  5,
+                "worstRating": 1,
+                "reviewCount": len(reviews),
+            }
     return node
+
+
+def build_review_nodes(content: dict) -> list[dict]:
+    """Build standalone Review nodes referencing the LocalBusiness.
+
+    Separate from AggregateRating so both appear in @graph — Google uses
+    AggregateRating for star display and individual Reviews for snippet
+    context.
+    """
+    nodes = []
+    for rv in _collect_reviews(content):
+        node = {
+            "@type":  "Review",
+            "itemReviewed": {"@id": _business_id()},
+            "reviewRating": {
+                "@type":       "Rating",
+                "ratingValue": rv["rating"],
+                "bestRating":  5,
+                "worstRating": 1,
+            },
+            "author": {"@type": "Person", "name": rv["author"]},
+            "reviewBody": rv["text"],
+        }
+        if rv["city"]:
+            node["publisher"] = {
+                "@type": "Place",
+                "name":  f"{rv['city']}, AZ",
+            }
+        nodes.append(node)
+    return nodes
 
 
 def build_service_node(row: dict, content: dict) -> dict:
@@ -183,9 +254,9 @@ def build_service_node(row: dict, content: dict) -> dict:
 
 
 def build_faq_node(content: dict) -> dict | None:
-    """FAQPage schema from the 4 Q&A pairs. Returns None if no FAQs."""
+    """FAQPage schema from up to 6 Q&A pairs. Returns None if no FAQs."""
     questions = []
-    for i in range(1, 5):
+    for i in range(1, 7):
         q = _strip_html(content.get(f"faq_{i}_q", ""))
         a = _strip_html(content.get(f"faq_{i}_a", ""))
         if q and a:
@@ -251,7 +322,7 @@ def build_page_schema(row: dict, content: dict) -> str:
     """
     graph = [
         build_webpage_node(row, content),
-        build_business_node(),
+        build_business_node(content),   # attaches aggregateRating if reviews exist
         build_service_node(row, content),
         build_breadcrumb_node(row),
     ]
@@ -259,6 +330,8 @@ def build_page_schema(row: dict, content: dict) -> str:
     faq = build_faq_node(content)
     if faq:
         graph.append(faq)
+
+    graph.extend(build_review_nodes(content))
 
     schema = {
         "@context": "https://schema.org",

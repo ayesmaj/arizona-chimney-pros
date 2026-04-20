@@ -1,0 +1,68 @@
+{
+  "_comment": "Fuel-type-indexed brand list rendered by render_brands_section() in generate.py. The 'all' key is the fallback when fuel_type doesn't match gas/wood/electric. Brands are real fireplace/chimney manufacturers we service. Edit this file to match what Arizona Chimney Pros actually works on.",
+
+  "gas": [
+    "Napoleon",
+    "Regency",
+    "Valor",
+    "Majestic",
+    "Heat & Glo",
+    "Heatilator",
+    "Mendota",
+    "Kozy Heat",
+    "Empire",
+    "Monessen",
+    "FMI",
+    "Superior",
+    "Travis Industries",
+    "Lennox Hearth",
+    "Fireplace Xtrordinair"
+  ],
+
+  "wood": [
+    "Regency",
+    "Lopi",
+    "Pacific Energy",
+    "Napoleon",
+    "Jotul",
+    "Vermont Castings",
+    "Quadra-Fire",
+    "Blaze King",
+    "Morso",
+    "Fireplace Xtrordinair",
+    "Osburn",
+    "Buck Stove"
+  ],
+
+  "electric": [
+    "Dimplex",
+    "Napoleon",
+    "Amantii",
+    "Modern Flames",
+    "Touchstone",
+    "Real Flame",
+    "ClassicFlame",
+    "SimpliFire",
+    "Regency",
+    "Valor"
+  ],
+
+  "all": [
+    "Napoleon",
+    "Regency",
+    "Valor",
+    "Majestic",
+    "Heat & Glo",
+    "Heatilator",
+    "Mendota",
+    "Lopi",
+    "Pacific Energy",
+    "Dimplex",
+    "Jotul",
+    "Vermont Castings",
+    "Empire",
+    "Monessen",
+    "Quadra-Fire",
+    "Fireplace Xtrordinair"
+  ]
+}

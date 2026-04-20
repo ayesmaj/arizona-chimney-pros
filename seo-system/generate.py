@@ -33,30 +33,76 @@ from schema_builder import build_page_schema
 # ─────────────────────────────────────────────
 API_KEY       = os.environ.get("ANTHROPIC_API_KEY", "YOUR_API_KEY_HERE")
 MODEL         = "claude-opus-4-5"        # claude-sonnet-4-5 for faster/cheaper
-MAX_TOKENS    = 2000
+MAX_TOKENS    = 4000                     # bumped for longer ~2500w pages
 DELAY_SECONDS = 1.5                     # pause between API calls (rate limiting)
 INPUT_FILE    = "pages-template.csv"
 OUTPUT_FILE   = "pages-enriched.csv"
-ANECDOTE_FILE = "content-banks/anecdotes.json"
-FAQ_FILE      = "content-banks/faq-bank.json"
-FAQ_SEED_COUNT = 8    # How many candidate questions to show Claude (picks 4)
-AUTO_LINK_COUNT = 5   # Auto-injected internal links added to Claude's 3 manual picks
+ANECDOTE_FILE    = "content-banks/anecdotes.json"
+FAQ_FILE         = "content-banks/faq-bank.json"
+TESTIMONIAL_FILE = "content-banks/testimonials.json"
+BRANDS_FILE      = "content-banks/brands.json"
+FAQ_SEED_COUNT = 10   # How many candidate questions to show Claude (picks 6)
+AUTO_LINK_COUNT = 12  # Auto-injected internal links added to Claude's 3 manual picks
+                      # (combined ~13-15 curated links per page — competitor benchmark)
 
-# Generated fields that Claude fills in (+ locally-computed extras).
-# schema_json is computed locally after Claude returns content — it's in this
-# list so the CSV writer includes it in the output header.
+# Generated fields. The schema is the UNION of what Claude emits across all
+# page_types — service pages fill some, problem/cost/comparison pages fill
+# others. Empty fields in the CSV are skipped by the WP template via
+# `if ( $field )` guards, so a service page row simply has empty
+# causes_section / option_a_section / etc.
+#
+# schema_json + locally-injected fields (brands_serviced_section,
+# service_area_section, testimonials) are computed here, not by Claude.
 GENERATED_FIELDS = [
+    # Core (all page types)
     "slug", "title",
     "meta_title", "meta_description",
-    "intro", "local_section", "signs_section", "pricing_section",
-    "process_section", "trust_section",
+    "intro", "local_section",
+    "trust_section",
+
+    # service_city-specific
+    "signs_section", "problems_we_fix_section",
+    "pricing_section", "process_section",
+    "warranty_section",
+
+    # problem_city-specific (some overlap with service)
+    "causes_section", "danger_section", "diy_checklist_section",
+
+    # cost_page-specific
+    "pricing_table_section", "factors_section",
+    "repair_vs_replace_section", "budget_tips_section",
+
+    # comparison-specific
+    "option_a_section", "option_b_section",
+    "comparison_table_section", "cost_difference_section",
+    "maintenance_section", "local_fit_section",
+    "recommendation_section",
+
+    # FAQs (6 slots — not all filled for shorter page types)
     "faq_1_q", "faq_1_a",
     "faq_2_q", "faq_2_a",
     "faq_3_q", "faq_3_a",
     "faq_4_q", "faq_4_a",
+    "faq_5_q", "faq_5_a",
+    "faq_6_q", "faq_6_a",
+
+    # CTA
     "cta_headline", "cta_text",
+
+    # Internal links (Claude's 3 manual + auto-injected)
     "internal_links",
-    "schema_json",    # locally-computed JSON-LD
+
+    # Locally-computed sections (NOT from Claude)
+    "brands_serviced_section",  # fuel-type-aware brand list
+    "service_area_section",      # rendered from nearby_cities CSV field
+
+    # Locally-injected testimonials (3 per page, from testimonials.json bank)
+    "review_1_author", "review_1_text", "review_1_city", "review_1_rating",
+    "review_2_author", "review_2_text", "review_2_city", "review_2_rating",
+    "review_3_author", "review_3_text", "review_3_city", "review_3_rating",
+
+    # Locally-computed JSON-LD
+    "schema_json",
 ]
 
 # Fields that come back from Claude as arrays but must be flattened
@@ -91,17 +137,29 @@ PAGE_TYPE_TO_INTENT = {
 }
 
 
-def load_banks() -> tuple[list, list]:
-    """Load anecdote + FAQ banks from disk. Called once per run."""
-    try:
-        with open(ANECDOTE_FILE, "r", encoding="utf-8") as f:
-            anecdotes = json.load(f)
-        with open(FAQ_FILE, "r", encoding="utf-8") as f:
-            faqs = json.load(f)
-        return anecdotes, faqs
-    except FileNotFoundError as e:
-        print(f"  ! Content bank missing ({e}). Continuing without injected banks.")
-        return [], []
+def load_banks() -> tuple[list, list, list, dict]:
+    """Load all 4 content banks (anecdotes, FAQs, testimonials, brands).
+
+    Returns (anecdotes, faqs, testimonials, brands). Missing banks
+    degrade gracefully to empty — the pipeline never hard-fails on a
+    bank file, it just skips that injection.
+    """
+    def _load_json(path, default):
+        try:
+            with open(path, "r", encoding="utf-8") as f:
+                return json.load(f)
+        except FileNotFoundError:
+            print(f"  ! Content bank missing: {path} (skipping)")
+            return default
+        except json.JSONDecodeError as e:
+            print(f"  ! Content bank invalid JSON: {path} ({e})")
+            return default
+
+    anecdotes    = _load_json(ANECDOTE_FILE,    [])
+    faqs         = _load_json(FAQ_FILE,         [])
+    testimonials = _load_json(TESTIMONIAL_FILE, [])
+    brands       = _load_json(BRANDS_FILE,      {})
+    return anecdotes, faqs, testimonials, brands
 
 
 def _city_slug(city: str) -> str:
@@ -176,7 +234,7 @@ def pick_faq_seeds(faqs: list, row: dict, rng: random.Random, n: int = FAQ_SEED_
 def format_faq_seeds(seeds: list[dict]) -> str:
     """Format FAQ candidates as a numbered list Claude can pick from."""
     if not seeds:
-        return "(no seed bank available — generate 4 original FAQs)"
+        return "(no seed bank available — generate 6 original FAQs)"
     lines = []
     for i, f in enumerate(seeds, 1):
         lines.append(f'{i}. Q: "{f["q"]}"')
@@ -184,8 +242,154 @@ def format_faq_seeds(seeds: list[dict]) -> str:
     return "\n".join(lines)
 
 
+# ─────────────────────────────────────────────
+# Locally-injected content (NOT from Claude)
+# ─────────────────────────────────────────────
+#
+# Three categories are injected per-row after Claude returns:
+#   1. Testimonials — deterministic pick from testimonials.json (3 per page)
+#   2. Brands serviced — static list filtered by fuel_type (HTML block)
+#   3. Service area — rendered list of nearby cities + major tier-1 cities
+#
+# Why inject locally instead of asking Claude?
+#   - Testimonials: legal/ethical liability if Claude invents fake reviews.
+#     The bank is editorial-approved content only.
+#   - Brands: consistency. A Napoleon/Regency page must see the same brand
+#     list as every Napoleon/Regency page. Claude would drift.
+#   - Service area: trivially derivable from CSV — no API tokens needed.
+
+def pick_testimonials(testimonials: list, row: dict, rng: random.Random,
+                      n: int = 3) -> list[dict]:
+    """Score testimonials by city/service match, pick from top 2N
+    deterministically. Returns an empty list if bank is empty."""
+    if not testimonials:
+        return []
+    city    = _city_slug(row.get("city", ""))
+    service = (row.get("service") or "").lower()
+
+    scored = []
+    for t in testimonials:
+        tags = [x.lower() for x in t.get("tags", [])]
+        score = 0
+        if city and city in tags:
+            score += 5
+        for word in service.split():
+            if word and word in tags:
+                score += 2
+        if not tags:
+            score += 1  # universal testimonials get a baseline
+        scored.append((score, t))
+
+    scored.sort(reverse=True, key=lambda x: x[0])
+    # Pool of top 2N for variety across a city run
+    pool_size = min(max(n * 2, n), len(scored))
+    pool = [t for _, t in scored[:pool_size]]
+    rng.shuffle(pool)
+    return pool[:n]
+
+
+def render_brands_section(brands: dict, row: dict) -> str:
+    """Build the HTML block for 'Brands We Service' filtered by fuel_type.
+
+    The brands.json file is a dict like:
+      {
+        "gas":      ["Napoleon", "Regency", "Valor", ...],
+        "wood":     ["Regency", "Lopi", "Pacific Energy", ...],
+        "electric": ["Dimplex", "Napoleon", "Amantii", ...],
+        "all":      ["Napoleon", "Regency", ...]
+      }
+    We pick the list matching fuel_type, fall back to "all".
+    Returns plain HTML suitable for direct WP rendering.
+    """
+    if not brands:
+        return ""
+    fuel = (row.get("fuel_type") or "").lower()
+    # Normalize "Gas;Wood" -> pick union
+    candidates: list[str] = []
+    if ";" in fuel:
+        for f in fuel.split(";"):
+            candidates.extend(brands.get(f.strip(), []))
+    else:
+        candidates = list(brands.get(fuel, []))
+    if not candidates:
+        candidates = list(brands.get("all", []))
+    if not candidates:
+        return ""
+    # Dedupe preserving order
+    seen = set()
+    ordered = []
+    for b in candidates:
+        if b not in seen:
+            seen.add(b)
+            ordered.append(b)
+    # Cap the visible list at 12 so the section stays readable
+    ordered = ordered[:12]
+    city = row.get("city") or "Arizona"
+
+    intro = (f"<p>We service most major fireplace and chimney brands across "
+             f"{city} — OEM parts stocked for the most common issues, "
+             f"and we can source almost anything we don't have on the truck. "
+             f"Below are the brands we see most often:</p>")
+    lis = "".join(f"<li>{b}</li>" for b in ordered)
+    return f"{intro}<ul>{lis}</ul>"
+
+
+def render_service_area_section(row: dict, all_rows: list[dict] | None = None) -> str:
+    """Build the HTML 'Service Area' block from the row's nearby_cities plus
+    major tier-1 cities. Shown on every page for local signal reinforcement."""
+    city = (row.get("city") or "Arizona").strip()
+    raw_nearby = row.get("nearby_cities") or ""
+    nearby = [c.strip() for c in raw_nearby.replace(",", ";").split(";") if c.strip()]
+
+    # Tier-1 Phoenix metro backbone — shown on every page for topical reach
+    tier1 = ["Phoenix", "Scottsdale", "Mesa", "Gilbert", "Chandler", "Tempe",
+             "Glendale", "Peoria"]
+
+    # Merge: nearby first, then tier-1, dedupe, drop self
+    merged: list[str] = []
+    seen = {city.lower()}
+    for c in [*nearby, *tier1]:
+        if c.lower() not in seen:
+            merged.append(c)
+            seen.add(c.lower())
+    merged = merged[:10]  # cap for readability
+
+    if not merged:
+        return ""
+
+    intro = (f"<p>Arizona Chimney Pros serves the entire Phoenix metro from "
+             f"our {city} base. Same-day and next-day availability across:</p>")
+    lis = "".join(f"<li>{c}</li>" for c in merged)
+    closer = ("<p>Don't see your neighborhood? Call us — our service radius "
+              "covers about 50 miles of the Valley.</p>")
+    return f"{intro}<ul>{lis}</ul>{closer}"
+
+
+def inject_testimonials_fields(content: dict, testimonials: list,
+                                row: dict, rng: random.Random) -> dict:
+    """Flatten 3 picked testimonials into review_N_author/text/city/rating
+    CSV fields. Empty bank -> all review fields empty (template skips block)."""
+    picks = pick_testimonials(testimonials, row, rng, n=3)
+    for i in range(1, 4):
+        if i <= len(picks):
+            t = picks[i - 1]
+            content[f"review_{i}_author"] = t.get("author", "")
+            content[f"review_{i}_text"]   = t.get("text", "")
+            content[f"review_{i}_city"]   = t.get("city", "")
+            content[f"review_{i}_rating"] = str(t.get("rating", 5))
+        else:
+            content[f"review_{i}_author"] = ""
+            content[f"review_{i}_text"]   = ""
+            content[f"review_{i}_city"]   = ""
+            content[f"review_{i}_rating"] = ""
+    return content
+
+
 def enrich_row(row: dict, anecdotes: list, faqs: list, rng: random.Random) -> dict:
-    """Attach sampled anecdote + FAQ seeds to the row as prompt variables."""
+    """Attach sampled anecdote + FAQ seeds to the row as prompt variables.
+
+    This only prepares values for the PROMPT — testimonial/brand/service-area
+    injection happens POST-API in the main loop (see inject_local_sections)."""
     enriched = dict(row)
     enriched["technician_anecdote"] = pick_anecdote(anecdotes, row, rng)
     enriched["faq_seeds"] = format_faq_seeds(pick_faq_seeds(faqs, row, rng))
@@ -193,6 +397,20 @@ def enrich_row(row: dict, anecdotes: list, faqs: list, rng: random.Random) -> di
     if not enriched.get("seed_angle"):
         enriched["seed_angle"] = "reassuring"
     return enriched
+
+
+def inject_local_sections(content: dict, row: dict, brands: dict,
+                          testimonials: list, all_rows: list,
+                          rng: random.Random) -> dict:
+    """Inject all non-Claude content into the page:
+       - brands_serviced_section (fuel-type-aware HTML block)
+       - service_area_section (rendered from nearby_cities)
+       - review_1..3 fields from testimonials.json
+    Runs after Claude returns but before CSV write."""
+    content["brands_serviced_section"] = render_brands_section(brands, row)
+    content["service_area_section"]    = render_service_area_section(row, all_rows)
+    content = inject_testimonials_fields(content, testimonials, row, rng)
+    return content
 
 
 # ─────────────────────────────────────────────
@@ -288,36 +506,39 @@ def build_auto_links(row: dict, all_rows: list[dict], rng: random.Random,
         rng.shuffle(pool)
 
     # Page-type-aware quotas. Each tuple is (pool_name, max_from_this_pool).
+    # Quotas are BIG because the target density is 12-17 links per page
+    # (benchmark from competitor Scottsdale Fireplace & Chimney). The pools
+    # self-cap when exhausted, and the backfill loop at the bottom tops up
+    # short rows with other pool overflow.
     if page_type == "problem_city":
         # Problem pages need: parent service hub + sibling problems + nearby
         quotas = [
-            ("parent_service",        1),  # "we fix gas fireplaces in Phoenix" — critical
-            ("same_city_problems",    1),  # "another issue we see in Phoenix"
-            ("same_city_diff_svc",    1),  # "we also do chimney work"
-            ("nearby_problems",       1),  # "same problem next city over"
-            ("hub_pages",             1),  # funnel depth
-            ("same_service_anywhere", 1),  # "we service gas fireplaces across AZ"
+            ("parent_service",        2),  # same service, same city (strongest signal)
+            ("same_city_problems",    4),  # sibling problems in this city
+            ("same_city_diff_svc",    2),  # other services in this city
+            ("nearby_problems",       2),  # same problem, next city over
+            ("nearby_same_svc",       1),  # parent service, next city
+            ("hub_pages",             1),  # cost/comparison/location hubs
+            ("same_service_anywhere", 2),  # cross-city service reach
         ]
     elif page_type in ("comparison", "cost_page", "location_hub"):
         # Hub pages push link equity DOWN into city-level service pages
         quotas = [
-            ("same_service_anywhere", 3),  # link to 3 city-level service pages
-            ("hub_pages",             1),  # other hubs
-            ("same_city_diff_svc",    1),
+            ("same_service_anywhere", 6),  # link to 6 city-level service pages
+            ("hub_pages",             2),  # other hubs
+            ("same_city_diff_svc",    2),
+            ("same_city_problems",    2),
         ]
     else:  # service_city (default)
-        # Total quota sums to 6 but AUTO_LINK_COUNT caps at 5 — the last pool
-        # (same_service_anywhere) drops FIRST when a large city fills the
-        # problem/diff-service pools. Tier-2 small cities with empty problem
-        # pools still get the same_service_anywhere cross-city boost via
-        # the backfill loop below.
+        # Target ~12 auto-links for service pages. Pools self-cap; backfill
+        # redistributes overflow. Small tier-2 cities with thin pools fall
+        # back to cross-city and hub links.
         quotas = [
-            ("same_city_diff_svc",    1),  # "also in this city"
-            ("same_city_problems",    2),  # bumped: big-city problem pools
-                                           # (10+) otherwise starve 1-pick selection
-            ("nearby_same_svc",       1),  # "same service nearby"
+            ("same_city_diff_svc",    4),  # "also in this city" — strongest topical signal
+            ("same_city_problems",    4),  # problem-page harvesting
+            ("nearby_same_svc",       2),  # same service, next city
             ("hub_pages",             1),  # funnel
-            ("same_service_anywhere", 1),  # cross-city reach (tier-2 booster)
+            ("same_service_anywhere", 2),  # cross-city tier-2 booster
         ]
 
     picked: list[str] = []
@@ -464,9 +685,11 @@ def main():
         rows = list(reader)
 
     # Load content banks once (reused across all rows)
-    anecdotes, faqs = load_banks()
-    if anecdotes or faqs:
-        print(f"Loaded banks: {len(anecdotes)} anecdotes, {len(faqs)} FAQs")
+    anecdotes, faqs, testimonials, brands = load_banks()
+    if anecdotes or faqs or testimonials or brands:
+        print(f"Loaded banks: {len(anecdotes)} anecdotes, {len(faqs)} FAQs, "
+              f"{len(testimonials)} testimonials, "
+              f"{sum(len(v) for v in brands.values()) if isinstance(brands, dict) else 0} brands")
 
     total = len(rows)
     start = args.start
@@ -536,9 +759,15 @@ def main():
             out_file.flush()
             continue
 
-        # Auto-inject 5 related internal links on top of Claude's 3 manual picks.
-        # Uses the same deterministic RNG so reruns are reproducible.
+        # Auto-inject ~12 related internal links on top of Claude's 3 manual
+        # picks. Uses the same deterministic RNG so reruns are reproducible.
         content = merge_internal_links(content, row, rows, rng)
+
+        # Inject locally-computed sections (brands, service area,
+        # testimonials) — these are NOT from Claude so they're consistent
+        # across pages and can't hallucinate.
+        content = inject_local_sections(content, row, brands, testimonials,
+                                        rows, rng)
 
         # Compute JSON-LD schema BEFORE flattening (needs raw content fields,
         # and internal_links stays as a list for schema_builder).

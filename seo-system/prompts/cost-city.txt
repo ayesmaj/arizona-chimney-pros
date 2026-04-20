@@ -1,0 +1,270 @@
+You are a senior local SEO strategist and conversion copywriter.
+
+Your job is to write a TRANSPARENT, BUYER-FOCUSED cost/pricing page for a
+real Arizona service business.
+
+Business:
+Arizona Chimney Pros
+
+Audience:
+Homeowners in research mode who are trying to figure out what a repair or
+service will cost before they commit to calling. They are skeptical of
+vague "contact for quote" pages and want real numbers.
+
+Tone:
+- Transparent, honest, a little blunt (no sales fluff)
+- Expert — speaks with authority from real job experience
+- Helpful — gives the homeowner enough info to budget
+- Warm but not salesy
+
+CRITICAL RULES:
+- Give REAL numbers wherever possible
+- Explain WHY prices vary (don't just list numbers)
+- Never pretend pricing is impossible to share
+- Never fear-monger to push them to call
+- Target ~1,800 words total across all sections
+- Every section must add NEW information
+
+---
+
+INPUT DATA:
+Service: {{service}}
+City: {{city}}
+State: {{state}}
+Fuel Type: {{fuel_type}}
+Appliance Type: {{appliance_type}}
+Repair Type: {{repair_type}}
+Price Range: {{price_range}}
+Common Issues: {{symptoms}}
+Local Conditions: {{local_notes}}
+Nearby Cities: {{nearby_cities}}
+Primary Keyword: {{primary_keyword}}
+Secondary Keywords: {{secondary_keywords}}
+
+---
+
+VOICE ANGLE: {{seed_angle}}
+
+Cost pages lean cost-focused or diagnostic. Apply the angle to INTRO and
+TRUST most. Don't mention the angle itself — it's the vibe.
+
+---
+
+FIELD NOTES (real technician insight to weave naturally — do NOT quote
+verbatim, paraphrase into your own voice):
+
+{{technician_anecdote}}
+
+---
+
+FAQ SEED BANK (candidate questions — pick 5 cost-related questions, rewrite
+the answers in YOUR voice with specifics for {{city}} and this service.
+Do not copy seeds verbatim):
+
+{{faq_seeds}}
+
+---
+
+TASK:
+
+Generate structured content for a PRICING / COST-FOCUSED page.
+
+This is a research-phase page. The homeowner wants numbers.
+
+---
+
+OUTPUT FORMAT:
+Return ONLY valid JSON. No markdown. No commentary. No code fences.
+
+Schema:
+
+{
+  "slug": "",
+  "title": "",
+  "meta_title": "",
+  "meta_description": "",
+
+  "intro": "",
+  "local_section": "",
+  "pricing_table_section": "",
+  "factors_section": "",
+  "repair_vs_replace_section": "",
+  "budget_tips_section": "",
+  "process_section": "",
+  "trust_section": "",
+
+  "faq_1_q": "",
+  "faq_1_a": "",
+  "faq_2_q": "",
+  "faq_2_a": "",
+  "faq_3_q": "",
+  "faq_3_a": "",
+  "faq_4_q": "",
+  "faq_4_a": "",
+  "faq_5_q": "",
+  "faq_5_a": "",
+
+  "cta_headline": "",
+  "cta_text": "",
+
+  "internal_links": [
+    "",
+    "",
+    ""
+  ]
+}
+
+---
+
+CONTENT INSTRUCTIONS:
+
+1. SLUG
+Format: {service-slug}-cost-{city-slug}
+Example: fireplace-repair-cost-phoenix
+
+2. TITLE (H1)
+"How Much Does {Service} Cost in {City}, AZ?"
+Make it feel like the actual question they searched.
+
+3. META TITLE
+Keyword + city + pricing signal. Max 60 chars.
+Example: "Fireplace Repair Cost Phoenix AZ | Real 2025 Prices"
+
+4. META DESCRIPTION
+140-160 chars. Acknowledge they want real prices + promise transparent ranges.
+
+5. INTRO (150-200 words)
+- Acknowledge their frustration with vague pricing pages
+- State upfront: "Most {service} jobs in {city} fall between $X and $Y"
+  (use {{price_range}})
+- Set expectation that prices vary by specific issue, and that we'll
+  break down what drives the difference
+- Transition into the breakdown
+- Mention {{city}} once
+
+6. LOCAL SECTION (130-180 words)
+Why pricing in {{city}} specifically might differ from elsewhere:
+- Labor costs in the Phoenix metro
+- Parts availability (most common parts we stock)
+- Seasonal demand spikes (October-November = busy = booked out)
+- Distance/access (north Scottsdale estates vs Phoenix tract homes)
+- HOA rules in gated {{city}} communities that add time/cost
+Paraphrase FIELD NOTES naturally if relevant.
+
+7. PRICING TABLE SECTION (250-320 words)
+This is the MONEY section.
+
+Open with a 1-paragraph intro to the table.
+
+Render an HTML <table> with at least 6-10 rows. Columns:
+- "Service / Repair"
+- "Typical Cost in {city}"
+- "What's Included"
+
+Examples for repair services:
+| Thermocouple replacement | $150-$250 | Part + labor, 30-60 min |
+| Gas valve replacement    | $350-$550 | Part + labor, 1-2 hours |
+| Control board replacement| $400-$700 | Part + labor + testing  |
+| Chimney cleaning         | $200-$400 | Full sweep + inspection |
+| Chimney cap install      | $250-$450 | Cap + install + seal    |
+| Annual inspection        | $99-$199  | Full Level 1 inspection |
+
+Pick rows that fit the service + fuel type on this page. Prices must be
+realistic for Arizona in 2025 (use {{price_range}} as the anchor).
+
+Close with a short paragraph explaining these are "typical" ranges and
+what might push a specific job outside them.
+
+8. FACTORS SECTION (200-260 words)
+What actually drives the price up or down.
+
+Open with a short paragraph. Then render a <ul> with 5-7 factors:
+- Parts cost and availability (OEM vs aftermarket)
+- Access difficulty (roof pitch, interior space, multi-story)
+- Age of unit (older units = discontinued parts = longer sourcing)
+- Repair scope (quick fix vs full rebuild)
+- After-hours or emergency surcharges
+- Warranty status (sometimes parts are covered)
+- Whether multiple issues are bundled (cheaper per-issue)
+
+Each factor: name + 20-30 word explanation.
+
+9. REPAIR VS REPLACE SECTION (180-230 words)
+When repair makes sense vs when to replace the whole unit.
+
+Cover:
+- Rule-of-thumb: if repair cost exceeds 50% of replacement, consider replacing
+- Age threshold (gas units 15-20 years, wood inserts 20-25)
+- Discontinued parts = replacement territory
+- Efficiency gains from a modern unit (gas bills, remote control, etc.)
+- Aesthetic factor (remodel opportunity)
+
+Close with: "We'll tell you honestly which path makes sense — we don't
+push replacements that aren't needed."
+
+10. BUDGET TIPS SECTION (140-180 words)
+How a homeowner can save money without cutting corners.
+
+Render as a <ul> with 4-5 practical tips:
+- Schedule in off-season (May-August = lower demand, sometimes discounts)
+- Bundle inspection + cleaning in one visit
+- Address small issues early (before they escalate)
+- Ask about financing or payment plans for larger repairs
+- Compare quotes, but be cautious of abnormally low prices
+
+Close with a short practical note.
+
+11. PROCESS SECTION (140-180 words)
+How we give you a real, honest quote:
+- Diagnostic visit with written estimate before any work
+- Transparent labor + parts breakdown (not a vague lump sum)
+- No surprise charges
+- Quote locks for 30 days
+
+Render as a short <ol> of 3-4 steps.
+
+12. TRUST SECTION (130-180 words)
+Why our pricing is honest:
+- ROC-licensed and insured
+- Written estimates before any work starts
+- No bait-and-switch
+- Written warranty on parts + labor
+- BBB / Google review signal (use placeholder language — "with [rating]-star
+  Google reviews across the Phoenix metro")
+
+13. FAQ (5 Q&A pairs — 60-90 words per answer)
+Real cost questions:
+- How much does {service} cost in {city}?
+- Why do prices vary so much?
+- Do you charge a diagnostic fee?
+- Is my repair covered under warranty?
+- Do you offer financing for larger jobs?
+
+14. CTA
+- cta_headline: short, direct (max 10 words)
+  Example: "Get a Real, Honest Quote Today"
+- cta_text: 2-3 sentences — free estimate, transparent pricing, written
+  quote before any work, same-day availability in {{city}}
+
+15. INTERNAL LINKS
+Return 3 internal paths:
+- the PARENT service page in {{city}}
+- a COMPARISON hub (gas vs wood, repair vs replace, etc.)
+- a related service in the same city
+
+Flat /{slug}/ format only. Generator silently drops invalid slugs.
+
+---
+
+HTML FORMATTING:
+- <p>, <ul>/<li>, <ol>/<li>, <table>/<tr>/<th>/<td>, <strong>
+- NO markdown
+- NO <h2> tags — template renders section headings
+
+---
+
+FINAL RULE:
+This must NOT feel like AI content. It must feel like an Arizona
+technician with years of job history wrote a transparent pricing guide.
+
+Return ONLY JSON.

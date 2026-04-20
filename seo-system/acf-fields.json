@@ -306,6 +306,309 @@
         "type": "textarea",
         "instructions": "Locally-generated JSON-LD @graph for this page (LocalBusiness + Service + WebPage + BreadcrumbList + FAQPage). The WP template dumps this raw inside a <script type=\"application/ld+json\"> tag in <head>. DO NOT hand-edit — regenerate via generate.py so the schema stays in sync with CSV + content.",
         "rows": 10
+      },
+
+      {
+        "key": "field_acp_problems_we_fix_section",
+        "label": "Problems We Fix Section",
+        "name": "problems_we_fix_section",
+        "type": "wysiwyg",
+        "instructions": "Service-city pages: common problems this service solves, formatted as HTML <ul>.",
+        "tabs": "all",
+        "toolbar": "basic",
+        "media_upload": 0
+      },
+      {
+        "key": "field_acp_warranty_section",
+        "label": "Warranty / Guarantee Section",
+        "name": "warranty_section",
+        "type": "wysiwyg",
+        "instructions": "Service-city pages: warranty terms, guarantee language, and what's covered.",
+        "tabs": "all",
+        "toolbar": "basic",
+        "media_upload": 0
+      },
+
+      {
+        "key": "field_acp_causes_section",
+        "label": "Causes Section",
+        "name": "causes_section",
+        "type": "wysiwyg",
+        "instructions": "Problem-city pages: what actually causes this problem. Educational, diagnostic tone.",
+        "tabs": "all",
+        "toolbar": "basic",
+        "media_upload": 0
+      },
+      {
+        "key": "field_acp_danger_section",
+        "label": "Safe-to-Wait vs Call-Now Section",
+        "name": "danger_section",
+        "type": "wysiwyg",
+        "instructions": "Problem-city pages: two-column logic — when it's safe to wait vs when to call immediately. Safety-focused.",
+        "tabs": "all",
+        "toolbar": "basic",
+        "media_upload": 0
+      },
+      {
+        "key": "field_acp_diy_checklist_section",
+        "label": "DIY Checklist Section",
+        "name": "diy_checklist_section",
+        "type": "wysiwyg",
+        "instructions": "Problem-city pages: what a homeowner can safely check themselves before calling. Builds trust.",
+        "tabs": "all",
+        "toolbar": "basic",
+        "media_upload": 0
+      },
+
+      {
+        "key": "field_acp_pricing_table_section",
+        "label": "Pricing Table Section",
+        "name": "pricing_table_section",
+        "type": "wysiwyg",
+        "instructions": "Cost pages: HTML <table> with service, typical cost, and what's included. 6-10 rows.",
+        "tabs": "all",
+        "toolbar": "basic",
+        "media_upload": 0
+      },
+      {
+        "key": "field_acp_factors_section",
+        "label": "Cost Factors Section",
+        "name": "factors_section",
+        "type": "wysiwyg",
+        "instructions": "Cost pages: 5-7 factors that drive price up or down. <ul> format.",
+        "tabs": "all",
+        "toolbar": "basic",
+        "media_upload": 0
+      },
+      {
+        "key": "field_acp_repair_vs_replace_section",
+        "label": "Repair vs Replace Section",
+        "name": "repair_vs_replace_section",
+        "type": "wysiwyg",
+        "instructions": "Cost pages: when repair makes sense vs when to replace. Rule-of-thumb + age thresholds.",
+        "tabs": "all",
+        "toolbar": "basic",
+        "media_upload": 0
+      },
+      {
+        "key": "field_acp_budget_tips_section",
+        "label": "Budget Tips Section",
+        "name": "budget_tips_section",
+        "type": "wysiwyg",
+        "instructions": "Cost pages: 4-5 ways homeowners can save money without cutting corners. <ul> format.",
+        "tabs": "all",
+        "toolbar": "basic",
+        "media_upload": 0
+      },
+
+      {
+        "key": "field_acp_option_a_section",
+        "label": "Option A Section",
+        "name": "option_a_section",
+        "type": "wysiwyg",
+        "instructions": "Comparison pages: intro + pros + cons for Option A (first item in the comparison).",
+        "tabs": "all",
+        "toolbar": "basic",
+        "media_upload": 0
+      },
+      {
+        "key": "field_acp_option_b_section",
+        "label": "Option B Section",
+        "name": "option_b_section",
+        "type": "wysiwyg",
+        "instructions": "Comparison pages: intro + pros + cons for Option B (second item in the comparison).",
+        "tabs": "all",
+        "toolbar": "basic",
+        "media_upload": 0
+      },
+      {
+        "key": "field_acp_comparison_table_section",
+        "label": "Comparison Table Section",
+        "name": "comparison_table_section",
+        "type": "wysiwyg",
+        "instructions": "Comparison pages: side-by-side HTML <table> with Factor / Option A / Option B columns. 6-10 rows.",
+        "tabs": "all",
+        "toolbar": "basic",
+        "media_upload": 0
+      },
+      {
+        "key": "field_acp_cost_difference_section",
+        "label": "Cost Difference Section",
+        "name": "cost_difference_section",
+        "type": "wysiwyg",
+        "instructions": "Comparison pages: money-focused breakdown — upfront, operating, maintenance, 10-year, resale.",
+        "tabs": "all",
+        "toolbar": "basic",
+        "media_upload": 0
+      },
+      {
+        "key": "field_acp_maintenance_section",
+        "label": "Maintenance Section",
+        "name": "maintenance_section",
+        "type": "wysiwyg",
+        "instructions": "Comparison pages: side-by-side maintenance reality with task + frequency + cost.",
+        "tabs": "all",
+        "toolbar": "basic",
+        "media_upload": 0
+      },
+      {
+        "key": "field_acp_local_fit_section",
+        "label": "Local Fit Section",
+        "name": "local_fit_section",
+        "type": "wysiwyg",
+        "instructions": "Comparison pages: which option fits Arizona specifically — climate, HOA, air-quality days, home styles.",
+        "tabs": "all",
+        "toolbar": "basic",
+        "media_upload": 0
+      },
+      {
+        "key": "field_acp_recommendation_section",
+        "label": "Recommendation Section",
+        "name": "recommendation_section",
+        "type": "wysiwyg",
+        "instructions": "Comparison pages: 'when each wins' framing with scenarios for Option A and Option B.",
+        "tabs": "all",
+        "toolbar": "basic",
+        "media_upload": 0
+      },
+
+      {
+        "key": "field_acp_faq_5_q",
+        "label": "FAQ 5 – Question",
+        "name": "faq_5_q",
+        "type": "text"
+      },
+      {
+        "key": "field_acp_faq_5_a",
+        "label": "FAQ 5 – Answer",
+        "name": "faq_5_a",
+        "type": "textarea",
+        "rows": 4
+      },
+      {
+        "key": "field_acp_faq_6_q",
+        "label": "FAQ 6 – Question",
+        "name": "faq_6_q",
+        "type": "text"
+      },
+      {
+        "key": "field_acp_faq_6_a",
+        "label": "FAQ 6 – Answer",
+        "name": "faq_6_a",
+        "type": "textarea",
+        "rows": 4
+      },
+
+      {
+        "key": "field_acp_brands_serviced_section",
+        "label": "Brands Serviced Section",
+        "name": "brands_serviced_section",
+        "type": "wysiwyg",
+        "instructions": "Locally-injected (non-Claude) HTML <ul> of fireplace/chimney brands we service, selected by fuel type from brands.json.",
+        "tabs": "all",
+        "toolbar": "basic",
+        "media_upload": 0
+      },
+      {
+        "key": "field_acp_service_area_section",
+        "label": "Service Area Section",
+        "name": "service_area_section",
+        "type": "wysiwyg",
+        "instructions": "Locally-injected (non-Claude) HTML block listing cities we serve, merged from nearby_cities + Phoenix-metro backbone.",
+        "tabs": "all",
+        "toolbar": "basic",
+        "media_upload": 0
+      },
+
+      {
+        "key": "field_acp_review_1_author",
+        "label": "Review 1 – Author",
+        "name": "review_1_author",
+        "type": "text",
+        "instructions": "Locally-injected from testimonials.json. Do not hand-edit."
+      },
+      {
+        "key": "field_acp_review_1_text",
+        "label": "Review 1 – Text",
+        "name": "review_1_text",
+        "type": "textarea",
+        "rows": 3,
+        "instructions": "Locally-injected from testimonials.json."
+      },
+      {
+        "key": "field_acp_review_1_city",
+        "label": "Review 1 – City",
+        "name": "review_1_city",
+        "type": "text"
+      },
+      {
+        "key": "field_acp_review_1_rating",
+        "label": "Review 1 – Rating",
+        "name": "review_1_rating",
+        "type": "number",
+        "min": 1,
+        "max": 5,
+        "default_value": 5
+      },
+
+      {
+        "key": "field_acp_review_2_author",
+        "label": "Review 2 – Author",
+        "name": "review_2_author",
+        "type": "text",
+        "instructions": "Locally-injected from testimonials.json."
+      },
+      {
+        "key": "field_acp_review_2_text",
+        "label": "Review 2 – Text",
+        "name": "review_2_text",
+        "type": "textarea",
+        "rows": 3
+      },
+      {
+        "key": "field_acp_review_2_city",
+        "label": "Review 2 – City",
+        "name": "review_2_city",
+        "type": "text"
+      },
+      {
+        "key": "field_acp_review_2_rating",
+        "label": "Review 2 – Rating",
+        "name": "review_2_rating",
+        "type": "number",
+        "min": 1,
+        "max": 5,
+        "default_value": 5
+      },
+
+      {
+        "key": "field_acp_review_3_author",
+        "label": "Review 3 – Author",
+        "name": "review_3_author",
+        "type": "text",
+        "instructions": "Locally-injected from testimonials.json."
+      },
+      {
+        "key": "field_acp_review_3_text",
+        "label": "Review 3 – Text",
+        "name": "review_3_text",
+        "type": "textarea",
+        "rows": 3
+      },
+      {
+        "key": "field_acp_review_3_city",
+        "label": "Review 3 – City",
+        "name": "review_3_city",
+        "type": "text"
+      },
+      {
+        "key": "field_acp_review_3_rating",
+        "label": "Review 3 – Rating",
+        "name": "review_3_rating",
+        "type": "number",
+        "min": 1,
+        "max": 5,
+        "default_value": 5
       }
     ],
     "location": [

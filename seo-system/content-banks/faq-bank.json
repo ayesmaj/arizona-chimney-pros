@@ -478,5 +478,125 @@
     "appliance": ["fireplace", "chimney"],
     "q": "What areas of Arizona do you serve?",
     "a_seed": "We cover the greater Phoenix metro area including Scottsdale, Paradise Valley, Mesa, Tempe, Chandler, Gilbert, Glendale, Peoria, Surprise, Cave Creek, Carefree, Fountain Hills, and Anthem. For larger projects we travel statewide."
+  },
+  {
+    "id": "faq_061",
+    "intent": "cost",
+    "fuel": ["any"],
+    "appliance": ["chimney", "fireplace"],
+    "q": "How much does a chimney inspection cost in the Phoenix metro?",
+    "a_seed": "Most Level 1 inspections run $99-$199, and Level 2 inspections — which include camera scans of the flue — are typically $199-$399. Real-estate-driven inspections fall in the Level 2 range. Pricing varies with distance and chimney access."
+  },
+  {
+    "id": "faq_062",
+    "intent": "cost",
+    "fuel": ["any"],
+    "appliance": ["chimney"],
+    "q": "How much does chimney repair cost in Arizona?",
+    "a_seed": "Typical chimney repairs in the Valley run $189 to $1,500 depending on scope. A cap replacement is usually $250-$450, crown sealing $250-$400, and full repointing or crown rebuild $900-$2,200. Structural work on the stack itself can push higher."
+  },
+  {
+    "id": "faq_063",
+    "intent": "cost",
+    "fuel": ["gas"],
+    "appliance": ["fireplace"],
+    "q": "How much does a new gas fireplace cost installed in Phoenix?",
+    "a_seed": "A quality gas insert with install and venting runs $2,200-$5,500 typically. Linear or high-end linear units run $4,500-$9,000 installed. New-construction installs with gas line runs from the meter add $500-$1,200."
+  },
+  {
+    "id": "faq_064",
+    "intent": "comparison",
+    "fuel": ["gas", "wood"],
+    "appliance": ["fireplace"],
+    "q": "Is a gas fireplace cheaper than wood over 10 years?",
+    "a_seed": "In the Phoenix metro, gas is almost always cheaper over ten years. Wood fireplaces cost less to install but require $200-$400/year in cleaning and wood, plus occasional liner or damper repairs. Gas costs $150-$250/year in service and very little fuel during our short burning season."
+  },
+  {
+    "id": "faq_065",
+    "intent": "comparison",
+    "fuel": ["gas", "wood"],
+    "appliance": ["fireplace"],
+    "q": "Can I convert my wood fireplace to gas?",
+    "a_seed": "Yes — and it's one of our most common remodels. We install a gas insert, run a stainless liner up the existing flue, and tap into your gas line. Full conversion runs $2,500-$4,500 depending on insert choice and gas line access."
+  },
+  {
+    "id": "faq_066",
+    "intent": "comparison",
+    "fuel": ["gas"],
+    "appliance": ["fireplace"],
+    "q": "Linear vs traditional gas fireplace — which is better?",
+    "a_seed": "Linear fireplaces give a modern, elongated flame and work best in open great-rooms. Traditional log-set inserts feel more classic and match cabin or craftsman interiors. Linear units cost $1,000-$3,000 more on average but hold resale value well in modern AZ homes."
+  },
+  {
+    "id": "faq_067",
+    "intent": "problem",
+    "fuel": ["any"],
+    "appliance": ["chimney"],
+    "q": "Why is water leaking down my chimney during monsoon season?",
+    "a_seed": "The three usual suspects are a cracked crown, a missing or damaged cap, and failed flashing where the chimney meets the roof. Monsoon storms expose existing defects — leaks don't start in July; they just become visible then. Most leaks are fixable for $300-$900."
+  },
+  {
+    "id": "faq_068",
+    "intent": "problem",
+    "fuel": ["wood"],
+    "appliance": ["chimney", "fireplace"],
+    "q": "Why does my house smell like smoke when the fireplace isn't being used?",
+    "a_seed": "Nine times out of ten it's a damper-seal issue combined with negative house pressure. The house pulls air down through the flue, dragging creosote odor with it. Replacing the damper gasket or installing a top-sealing damper usually fixes it for $150-$450."
+  },
+  {
+    "id": "faq_069",
+    "intent": "service",
+    "fuel": ["any"],
+    "appliance": ["chimney"],
+    "q": "What brands of fireplaces and inserts do you service?",
+    "a_seed": "We service every major brand including Napoleon, Regency, Valor, Majestic, Heat & Glo, Heatilator, Mendota, Kozy Heat, Empire, Lopi, Jotul, Pacific Energy, Dimplex, and more. Parts availability varies by brand — we'll tell you honestly before we quote."
+  },
+  {
+    "id": "faq_070",
+    "intent": "service",
+    "fuel": ["gas"],
+    "appliance": ["fireplace"],
+    "q": "Can you service my fireplace if I don't know the brand?",
+    "a_seed": "Yes. Most of our first-visit calls start with 'I don't know what brand it is.' The nameplate is usually inside the lower access panel or on the back of the firebox. We identify the unit in minutes and carry universal replacement parts for most common failures."
+  },
+  {
+    "id": "faq_071",
+    "intent": "problem",
+    "fuel": ["gas"],
+    "appliance": ["fireplace"],
+    "q": "My pilot light keeps going out — what's wrong?",
+    "a_seed": "The most common cause is a weak thermocouple or thermopile that no longer generates enough millivolts to hold the gas valve open. Parts run $15-$35; labor to diagnose, replace, and verify is usually a one-visit fix. Occasionally it's a dirty pilot orifice or a drifted valve."
+  },
+  {
+    "id": "faq_072",
+    "intent": "cost",
+    "fuel": ["wood"],
+    "appliance": ["chimney"],
+    "q": "How much does a chimney sweep cost in the Phoenix metro?",
+    "a_seed": "Most standard chimney sweeps run $189-$349 in the Valley, including the sweep plus a Level 1 inspection. Heavy creosote buildup, masonry flues with offsets, or very tall stacks can push $400-$550. Annual sweep subscriptions save 10-15%."
+  },
+  {
+    "id": "faq_073",
+    "intent": "comparison",
+    "fuel": ["gas", "electric"],
+    "appliance": ["fireplace"],
+    "q": "Electric vs gas fireplace — which works better in an Arizona home?",
+    "a_seed": "Electric wins on install cost (no venting, no gas line) and works in any room. Gas wins on real-flame ambiance and heat output. For condos, apartments, and HOA-restricted homes, electric is often the only option. For open great-rooms with existing gas, gas still beats electric on feel."
+  },
+  {
+    "id": "faq_074",
+    "intent": "cost",
+    "fuel": ["any"],
+    "appliance": ["fireplace"],
+    "q": "Do you offer financing for larger fireplace remodels?",
+    "a_seed": "Yes — we partner with third-party financing for projects over $2,000, with terms typically 6-60 months. Smaller repairs under $500 we usually recommend paying outright. We'll walk you through options during the in-home estimate."
+  },
+  {
+    "id": "faq_075",
+    "intent": "service",
+    "fuel": ["any"],
+    "appliance": ["chimney", "fireplace"],
+    "q": "Do you offer warranties on your work?",
+    "a_seed": "Every repair carries a one-year workmanship warranty. Parts carry the manufacturer's warranty (usually 1-5 years, longer on some brands). Full installs carry a two-year workmanship warranty. We stand behind everything we install in writing."
   }
 ]

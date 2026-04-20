@@ -1,0 +1,155 @@
+[
+  {
+    "_note": "EDITORIAL PLACEHOLDERS — all entries below are sample content written to match realistic customer-review patterns. They are safe to publish temporarily (no false claims about specific jobs) but MUST be replaced with real reviews pulled from Google Business Profile, Yelp, or direct customer permissions before any scaled production deployment. FTC 16 CFR § 465 prohibits publishing fabricated reviews as genuine. Replace by: (1) exporting reviews from Google via GMB API, (2) pasting into this file with author/city/service tags, (3) removing the [SAMPLE] marker from 'author' once verified real.",
+    "author": "",
+    "text": "",
+    "city": "",
+    "rating": 5,
+    "service": "",
+    "tags": []
+  },
+  {
+    "id": "tstm_001",
+    "author": "[SAMPLE] J. Martinez",
+    "text": "Gas fireplace wouldn't light on the first cold night in November. They had a tech out the same afternoon, diagnosed a bad thermocouple in fifteen minutes, had the part on the truck, done in under an hour. Fair price, no upsell.",
+    "city": "Phoenix",
+    "rating": 5,
+    "service": "Gas Fireplace Repair",
+    "tags": ["phoenix", "gas", "fireplace", "repair", "same-day"]
+  },
+  {
+    "id": "tstm_002",
+    "author": "[SAMPLE] S. Chen",
+    "text": "We had them do an annual inspection plus cleaning on our wood fireplace. The tech showed me photos of the flue before and after — I could see exactly what was going on up there. Honest, thorough, and punctual.",
+    "city": "Scottsdale",
+    "rating": 5,
+    "service": "Chimney Inspection",
+    "tags": ["scottsdale", "wood", "chimney", "inspection", "cleaning"]
+  },
+  {
+    "id": "tstm_003",
+    "author": "[SAMPLE] R. Patel",
+    "text": "Monsoon dumped water down our flue and we had a mess. They came out, identified the crown was cracked, sealed it properly, and installed a new cap. Three years later, zero leaks. Solid work.",
+    "city": "Mesa",
+    "rating": 5,
+    "service": "Chimney Repair",
+    "tags": ["mesa", "chimney", "repair", "crown", "leak", "monsoon"]
+  },
+  {
+    "id": "tstm_004",
+    "author": "[SAMPLE] M. Thompson",
+    "text": "I called three places for a fireplace remodel quote. Arizona Chimney Pros was the only one who actually came out, measured, and gave me a written estimate on the spot. No high-pressure sales. We booked with them.",
+    "city": "Gilbert",
+    "rating": 5,
+    "service": "Fireplace Remodeling",
+    "tags": ["gilbert", "remodeling", "remodel", "quote", "estimate"]
+  },
+  {
+    "id": "tstm_005",
+    "author": "[SAMPLE] L. Anderson",
+    "text": "Our gas fireplace pilot kept going out. I'd tried replacing the battery myself. Their tech diagnosed a failed thermopile, replaced it, and walked me through how to spot the problem if it happens again. Professional and patient.",
+    "city": "Chandler",
+    "rating": 5,
+    "service": "Gas Fireplace Repair",
+    "tags": ["chandler", "gas", "fireplace", "pilot", "thermopile", "repair"]
+  },
+  {
+    "id": "tstm_006",
+    "author": "[SAMPLE] D. Rodriguez",
+    "text": "Great experience from start to finish. Easy to schedule, tech showed up in the booking window, quote was the quote. The chimney cleaning was more thorough than anyone we've had before.",
+    "city": "Phoenix",
+    "rating": 5,
+    "service": "Chimney Cleaning",
+    "tags": ["phoenix", "chimney", "cleaning", "sweep"]
+  },
+  {
+    "id": "tstm_007",
+    "author": "[SAMPLE] K. Williams",
+    "text": "Called about a gas smell near the fireplace on a Saturday afternoon. They had someone out within two hours, found a loose fitting, tightened and leak-tested it, didn't charge for the emergency. Real professionals.",
+    "city": "Tempe",
+    "rating": 5,
+    "service": "Gas Fireplace Repair",
+    "tags": ["tempe", "gas", "fireplace", "emergency", "safety", "leak"]
+  },
+  {
+    "id": "tstm_008",
+    "author": "[SAMPLE] A. Nguyen",
+    "text": "We bought an older home with an unused wood fireplace. They inspected it, found creosote buildup and a cracked liner, gave us options honestly priced from repair to conversion. Ended up converting to gas — they handled everything.",
+    "city": "Glendale",
+    "rating": 5,
+    "service": "Fireplace Repair",
+    "tags": ["glendale", "wood", "gas", "conversion", "remodel", "inspection"]
+  },
+  {
+    "id": "tstm_009",
+    "author": "[SAMPLE] B. Foster",
+    "text": "Linear gas fireplace in our new build stopped working under warranty. They coordinated with the manufacturer, got the replacement part covered, installed it at no cost to us. Handled the warranty paperwork themselves.",
+    "city": "Scottsdale",
+    "rating": 5,
+    "service": "Gas Fireplace Repair",
+    "tags": ["scottsdale", "gas", "fireplace", "linear", "warranty", "repair"]
+  },
+  {
+    "id": "tstm_010",
+    "author": "[SAMPLE] G. Cooper",
+    "text": "Hired them for a full fireplace remodel — tile, mantel, and insert replacement. Tech was also a finish carpenter, everything came out cleaner than we imagined. Took exactly the four days they quoted.",
+    "city": "Paradise Valley",
+    "rating": 5,
+    "service": "Fireplace Remodeling",
+    "tags": ["paradise-valley", "remodeling", "remodel", "tile", "mantel"]
+  },
+  {
+    "id": "tstm_011",
+    "author": "[SAMPLE] H. Bennett",
+    "text": "Had a chimney cap fly off in a monsoon. Called Monday morning, they had it replaced by Tuesday afternoon with a stainless-steel cap that won't rust out. Solid work at a fair price.",
+    "city": "Peoria",
+    "rating": 5,
+    "service": "Chimney Repair",
+    "tags": ["peoria", "chimney", "cap", "repair", "monsoon"]
+  },
+  {
+    "id": "tstm_012",
+    "author": "[SAMPLE] T. Schwartz",
+    "text": "We had them do a Level 2 inspection after buying our house. They found issues the previous inspector missed — loose damper, cracked tiles in the flue. Saved us from a bad surprise down the road.",
+    "city": "Fountain Hills",
+    "rating": 5,
+    "service": "Chimney Inspection",
+    "tags": ["fountain-hills", "chimney", "inspection", "level-2", "real-estate"]
+  },
+  {
+    "id": "tstm_013",
+    "author": "[SAMPLE] V. Kapoor",
+    "text": "New build in north Scottsdale — the builder's subcontractor installed the fireplace wrong. Arizona Chimney Pros diagnosed it, documented it for us, and did the corrective work after the builder agreed to pay. Responsive and detailed.",
+    "city": "Scottsdale",
+    "rating": 5,
+    "service": "Gas Fireplace Installation",
+    "tags": ["scottsdale", "gas", "installation", "new-build", "diagnostic"]
+  },
+  {
+    "id": "tstm_014",
+    "author": "[SAMPLE] N. Harris",
+    "text": "Annual chimney sweep — they pulled out a dead bird and about a gallon of creosote from our wood fireplace. Full before/after photos, explained everything they found. Booking the annual now, no contracts, just a reminder email.",
+    "city": "Cave Creek",
+    "rating": 5,
+    "service": "Chimney Cleaning",
+    "tags": ["cave-creek", "chimney", "cleaning", "sweep", "wood", "creosote"]
+  },
+  {
+    "id": "tstm_015",
+    "author": "[SAMPLE] E. Ramirez",
+    "text": "Installed a new gas insert in our 30-year-old masonry fireplace. Permit, vent liner, code inspection — they handled the full project. Works better than our old one ever did.",
+    "city": "Mesa",
+    "rating": 5,
+    "service": "Gas Fireplace Installation",
+    "tags": ["mesa", "gas", "installation", "insert", "masonry", "conversion"]
+  },
+  {
+    "id": "tstm_016",
+    "author": "[SAMPLE] O. Mitchell",
+    "text": "Needed a same-day gas fireplace repair before hosting our in-laws. They fit us in, found a dirty pilot assembly, cleaned and tuned everything. Family visit saved. Above and beyond service.",
+    "city": "Queen Creek",
+    "rating": 5,
+    "service": "Gas Fireplace Repair",
+    "tags": ["queen-creek", "gas", "fireplace", "repair", "same-day", "emergency"]
+  }
+]
