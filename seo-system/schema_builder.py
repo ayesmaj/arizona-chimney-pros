@@ -32,35 +32,50 @@ BUSINESS = {
     "name":        "Arizona Chimney Pros",
     "url":         "https://arizonachimneypros.com",
     "logo":        "https://arizonachimneypros.com/wp-content/uploads/logo.png",
-    "telephone":   "+1-602-000-0000",           # TODO: replace with real
-    "email":       "info@arizonachimneypros.com",  # TODO: replace with real
+    "telephone":   "+1-602-536-8034",            # Arizona Chimney Pros main line
+    "email":       "info@arizonachimneypros.com",
     "priceRange":  "$$",
     "image":       "https://arizonachimneypros.com/wp-content/uploads/truck.jpg",
+    # Service Area Business (SAB) pattern — no public street address.
+    # Google's SAB guidance: use addressLocality + addressRegion + country,
+    # and express the actual service area via `areaServed` (GeoCircle below).
     "address": {
-        "streetAddress":   "TBD",               # TODO: real street
         "addressLocality": "Phoenix",
         "addressRegion":   "AZ",
-        "postalCode":      "85001",             # TODO: real zip
         "addressCountry":  "US",
     },
-    # Phoenix metro bounding box — adjust to actual service radius
+    # Phoenix city-hall coords — center of the 40-mile service radius.
     "geo": {
         "latitude":  33.4484,
         "longitude": -112.0740,
     },
-    "serviceRadius_km": 80,  # ~50 miles covers Phoenix metro + suburbs
+    "serviceRadius_km": 64,  # 40 miles ≈ 64.37 km, covers Phoenix metro
+    # Explicit cities in the primary service footprint (matches GBP listing).
+    "cities_served": [
+        "Phoenix", "Scottsdale", "Mesa", "Tempe", "Chandler",
+    ],
+    # Mon–Sat 8am–7pm; Sunday emergency-only encoded as a separate spec.
     "openingHours": [
-        "Mo-Fr 07:00-18:00",
-        "Sa 08:00-14:00",
+        {"days": ["Mo", "Tu", "We", "Th", "Fr", "Sa"], "opens": "08:00", "closes": "19:00"},
+        {"days": ["Su"], "opens": "00:00", "closes": "23:59", "description": "Emergency service"},
     ],
     "sameAs": [
-        # Social profiles — fill in as you get them
+        # TODO fill in when available:
         # "https://www.facebook.com/arizonachimneypros",
-        # "https://www.google.com/maps/place/?q=place_id:...",
+        # "https://www.google.com/maps/place/?q=place_id:YOUR_GBP_ID",
+        # "https://www.yelp.com/biz/arizona-chimney-pros-phoenix",
     ],
-    "founded": 2015,
+    "founded":  2024,
     "licensed": True,
     "insured":  True,
+    # GBP categories — used in `@type` hierarchy and page copy signals.
+    "category_primary":   "Fireplace repair service",
+    "category_secondary": [
+        "Chimney repair service",
+        "Fireplace remodel",
+        "Home improvement",
+    ],
+    # TODO when available: "roc_license": "ROC XXXXXX",
 }
 
 
@@ -130,12 +145,53 @@ def _collect_reviews(content: dict) -> list[dict]:
     return reviews
 
 
+# schema.org day-of-week full names for OpeningHoursSpecification
+_DOW_FULL = {
+    "Mo": "Monday",    "Tu": "Tuesday",  "We": "Wednesday",
+    "Th": "Thursday",  "Fr": "Friday",   "Sa": "Saturday",
+    "Su": "Sunday",
+}
+
+
+def _build_opening_hours() -> list[dict]:
+    """Convert BUSINESS['openingHours'] dicts → schema.org specs.
+
+    Emergency-only days (description contains 'Emergency') are dropped from
+    the spec entirely — Google would otherwise display them as regular open
+    hours, misleading searchers. Emergency availability is surfaced in page
+    copy instead.
+    """
+    specs = []
+    for h in BUSINESS["openingHours"]:
+        if "Emergency" in (h.get("description") or ""):
+            continue
+        specs.append({
+            "@type":     "OpeningHoursSpecification",
+            "dayOfWeek": [_DOW_FULL[d] for d in h["days"]],
+            "opens":     h["opens"],
+            "closes":    h["closes"],
+        })
+    return specs
+
+
 def build_business_node(content: dict | None = None) -> dict:
     """Reusable LocalBusiness node — referenced by @id from other schemas.
+
+    Service Area Business pattern: no streetAddress; areaServed GeoCircle
+    defines the footprint. Google's SAB guidance explicitly permits this.
 
     When content is provided and contains review_1..3 data, attaches
     AggregateRating so the business earns review stars in rich results.
     """
+    # description with emergency-service note so Google surfaces it in
+    # knowledge panel / Local Pack without abusing openingHours.
+    description = (
+        f"{BUSINESS['name']} provides {BUSINESS['category_primary'].lower()} "
+        f"across {', '.join(BUSINESS['cities_served'])} and the greater "
+        f"Phoenix metro within a {round(BUSINESS['serviceRadius_km'] * 0.621371)}-mile radius. "
+        f"Emergency service available on Sundays."
+    )
+
     node = {
         "@type":       "LocalBusiness",
         "@id":         _business_id(),
@@ -146,6 +202,8 @@ def build_business_node(content: dict | None = None) -> dict:
         "priceRange":  BUSINESS["priceRange"],
         "image":       BUSINESS["image"],
         "logo":        BUSINESS["logo"],
+        "description": description,
+        "foundingDate": str(BUSINESS["founded"]),
         "address": {
             "@type": "PostalAddress",
             **BUSINESS["address"],
@@ -155,19 +213,25 @@ def build_business_node(content: dict | None = None) -> dict:
             "latitude":  BUSINESS["geo"]["latitude"],
             "longitude": BUSINESS["geo"]["longitude"],
         },
-        "openingHoursSpecification": [
-            {"@type": "OpeningHoursSpecification", "description": h}
-            for h in BUSINESS["openingHours"]
-        ],
-        "areaServed": {
-            "@type":       "GeoCircle",
-            "geoMidpoint": {
-                "@type":     "GeoCoordinates",
-                "latitude":  BUSINESS["geo"]["latitude"],
-                "longitude": BUSINESS["geo"]["longitude"],
+        "openingHoursSpecification": _build_opening_hours(),
+        # GeoCircle = primary footprint for Local ranking signals.
+        "areaServed": [
+            {
+                "@type":       "GeoCircle",
+                "geoMidpoint": {
+                    "@type":     "GeoCoordinates",
+                    "latitude":  BUSINESS["geo"]["latitude"],
+                    "longitude": BUSINESS["geo"]["longitude"],
+                },
+                "geoRadius": BUSINESS["serviceRadius_km"] * 1000,  # meters
             },
-            "geoRadius": BUSINESS["serviceRadius_km"] * 1000,  # meters
-        },
+            # Explicit City nodes complement the GeoCircle for entity linking.
+            *[
+                {"@type": "City", "name": city, "containedInPlace": {
+                    "@type": "State", "name": "Arizona",
+                }} for city in BUSINESS["cities_served"]
+            ],
+        ],
     }
     if BUSINESS["sameAs"]:
         node["sameAs"] = BUSINESS["sameAs"]

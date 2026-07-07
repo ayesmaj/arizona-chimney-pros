@@ -26,14 +26,37 @@ import random
 import sys
 from datetime import datetime
 
+# Windows console defaults to cp1252 which crashes on ✓/→/— etc.
+# Force UTF-8 stdout/stderr so status prints don't blow up mid-run.
+if sys.platform == "win32":
+    try:
+        sys.stdout.reconfigure(encoding="utf-8")
+        sys.stderr.reconfigure(encoding="utf-8")
+    except (AttributeError, OSError):
+        pass  # older Python or exotic stream — just carry on
+
 from schema_builder import build_page_schema
 
 # ─────────────────────────────────────────────
 # CONFIG — set your API key here or in env var
 # ─────────────────────────────────────────────
-API_KEY       = os.environ.get("ANTHROPIC_API_KEY", "YOUR_API_KEY_HERE")
-MODEL         = "claude-opus-4-5"        # claude-sonnet-4-5 for faster/cheaper
-MAX_TOKENS    = 4000                     # bumped for longer ~2500w pages
+# Precedence: env var first, then local .api_key file (gitignored), then
+# hard-coded placeholder (fails fast in _validate_env). The .api_key file is
+# how we support Windows users who'd rather not set a persistent env var.
+def _load_api_key() -> str:
+    env_val = os.environ.get("ANTHROPIC_API_KEY", "").strip()
+    if env_val and env_val != "YOUR_API_KEY_HERE":
+        return env_val
+    # Fall back to local .api_key file sitting next to this script
+    key_file = os.path.join(os.path.dirname(os.path.abspath(__file__)), ".api_key")
+    if os.path.isfile(key_file):
+        with open(key_file, "r", encoding="ascii") as f:
+            return f.read().strip()
+    return "YOUR_API_KEY_HERE"
+
+API_KEY       = _load_api_key()
+MODEL         = "claude-sonnet-4-6"       # latest Sonnet — fast, cheap, excellent quality
+MAX_TOKENS    = 8192                     # Sonnet produces ~5-6k tokens per page; 4k was truncating JSON
 DELAY_SECONDS = 1.5                     # pause between API calls (rate limiting)
 INPUT_FILE    = "pages-template.csv"
 OUTPUT_FILE   = "pages-enriched.csv"
@@ -357,11 +380,15 @@ def render_service_area_section(row: dict, all_rows: list[dict] | None = None) -
     if not merged:
         return ""
 
-    intro = (f"<p>Arizona Chimney Pros serves the entire Phoenix metro from "
-             f"our {city} base. Same-day and next-day availability across:</p>")
+    # SAB phrasing: we don't have a physical storefront in each city, so
+    # "serves {city} and surrounding communities" is truthful and still
+    # reinforces the local signal without claiming a fake local office.
+    intro = (f"<p>Arizona Chimney Pros serves {city} and surrounding "
+             f"Phoenix metro communities. Our technicians are on the road "
+             f"daily with same-day and next-day availability across:</p>")
     lis = "".join(f"<li>{c}</li>" for c in merged)
     closer = ("<p>Don't see your neighborhood? Call us — our service radius "
-              "covers about 50 miles of the Valley.</p>")
+              "covers about 40 miles of the Valley.</p>")
     return f"{intro}<ul>{lis}</ul>{closer}"
 
 

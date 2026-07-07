@@ -1374,7 +1374,22 @@ textarea.form-input { resize: vertical; min-height: 120px; }
   .trust-item { border-right: none; padding: 8px 20px; }
 
   .float-cta span { display: none; }
-  .float-cta { padding: 16px; border-radius: 50%; }
+  .float-cta {
+    padding: 14px;
+    border-radius: 50%;
+    bottom: max(20px, env(safe-area-inset-bottom, 20px));
+    right: 18px;
+  }
+  .float-cta svg { width: 22px; height: 22px; }
+
+  /* Hide floating call button when mobile nav drawer is open so it doesn't
+     overlap menu items or the home-indicator area. */
+  body:has(.nav__list.is-open) .float-cta {
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(0.85);
+    transition: opacity .2s ease, transform .2s ease;
+  }
 
   .contact-layout { grid-template-columns: 1fr; gap: 40px; }
   .contact-layout .contact-info { order: 2; }
@@ -1502,4 +1517,273 @@ textarea.form-input { resize: vertical; min-height: 120px; }
   }
   html { scroll-behavior: auto; }
   .anim { opacity: 1 !important; transform: none !important; }
+}
+
+/* ═══════════════════════════════════════════════
+   MOBILE UX IMPROVEMENTS — 2026-04-22 (v2)
+   Matches the ACTUAL HTML class names:
+     .hero__ctas (not hero__actions)
+     .hero__subtitle (not hero__sub)
+     .label (hero tag)
+   Fixes: horizontal overflow, header fit, logo
+   size, CTA stacking, nav drawer top alignment.
+═══════════════════════════════════════════════ */
+
+/* ── GLOBAL OVERFLOW GUARD (iOS Safari hardened) ── */
+html { overflow-x: clip; }
+body {
+  overflow-x: clip;
+  position: relative;
+  width: 100%;
+  max-width: 100vw;
+}
+/* Fallback for browsers without overflow: clip */
+@supports not (overflow-x: clip) {
+  html, body { overflow-x: hidden; }
+}
+/* Never let raster media overflow its container (SVGs keep their explicit sizes).
+   height:auto is safe: specific rules like .logo__img {height:52px} win on specificity. */
+img, video, iframe { max-width: 100%; height: auto; }
+
+/* ── HEADER: compact on mobile + hide button that doesn't fit ── */
+@media (max-width: 900px) {
+  .header__inner { gap: 16px; }
+  /* The "Free Estimate" pill-button next to the phone doesn't fit
+     alongside logo + hamburger on phones — hide it.
+     The hamburger + orange float-CTA already cover both CTAs. */
+  .header__actions .btn { display: none; }
+}
+
+@media (max-width: 768px) {
+  /* Reduce from 76px → 64px to reclaim vertical space */
+  .header__inner { height: 64px; gap: 12px; }
+  /* Keep mobile nav drawer aligned with the new height */
+  .nav__list { top: 64px; }
+  /* Hero offset matches new header height */
+  .hero { padding-top: 64px; }
+  /* Logo: shrink image so it fits a 64px header */
+  .logo__img { max-height: 40px; }
+  .header__actions { gap: 8px; }
+
+  /* COMPACT PHONE BUTTON in header (was display:none before).
+     Shows a circular orange phone icon next to the hamburger so
+     users always have a 1-tap call CTA without opening the drawer. */
+  .header__phone {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    font-size: 0; /* hides the phone number text, keeps icon only */
+    color: #fff;
+    background: var(--orange);
+    border-radius: 50%;
+    box-shadow: 0 4px 14px rgba(255,106,26,.35);
+    flex-shrink: 0;
+    transition: transform var(--transition), background var(--transition);
+  }
+  .header__phone svg { width: 18px; height: 18px; color: #fff; }
+  .header__phone:hover { background: var(--orange-dk); color: #fff; transform: translateY(-1px); }
+  .header__phone:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+
+  /* Reorder so the compact phone button sits before the hamburger.
+     Layout becomes:  [Logo] … [Phone] [Hamburger] */
+  .header__actions { order: 2; margin-left: auto; }
+  .nav { order: 3; flex: 0 0 auto; display: flex; justify-content: flex-end; }
+}
+
+@media (max-width: 480px) {
+  .logo__img { max-height: 36px; }
+  .header__phone { width: 38px; height: 38px; }
+  .header__phone svg { width: 16px; height: 16px; }
+}
+
+/* ── HERO: fix padding that was never retuned for single-column ── */
+@media (max-width: 900px) {
+  /* Grid collapses here but padding-block was left at the desktop 80px */
+  .hero__inner {
+    padding-block: 52px 44px;
+    gap: 32px;
+  }
+  /* Hero content should not exceed viewport */
+  .hero__content { max-width: 100%; min-width: 0; }
+}
+
+@media (max-width: 768px) {
+  /* Hero min-height: on phone, auto so content dictates height */
+  .hero { min-height: auto; }
+  /* Title: drop minimum from 2.4rem (38px) to 1.9rem (~30px) */
+  .hero__title {
+    font-size: clamp(1.9rem, 7vw, 2.8rem);
+    letter-spacing: -0.025em;
+    line-height: 1.12;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+  /* FIXED SELECTOR: was .hero__sub, should be .hero__subtitle */
+  .hero__subtitle {
+    font-size: 0.95rem;
+    max-width: 100%;
+  }
+  .hero__inner {
+    padding-block: 40px 44px;
+    gap: 24px;
+  }
+  /* FIXED SELECTOR: was .hero__actions, should be .hero__ctas */
+  .hero__ctas {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+    width: 100%;
+  }
+  .hero__ctas .btn {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+  /* Proof row (stars + review count) centered-left, wraps properly */
+  .hero__proof { flex-wrap: wrap; gap: 10px; }
+  /* Hide the desktop scroll indicator on mobile */
+  .hero__scroll { display: none; }
+}
+
+@media (max-width: 480px) {
+  .hero__title { font-size: clamp(1.7rem, 8vw, 2.2rem); }
+  .hero__inner { padding-block: 32px 40px; }
+  /* FIXED SELECTOR: was .hero__tag; the actual hero tag element is .label */
+  .hero__content .label { font-size: 0.7rem; }
+}
+
+/* ── BUTTONS: prevent horizontal overflow from white-space: nowrap ── */
+@media (max-width: 768px) {
+  .btn { white-space: normal; max-width: 100%; }
+
+  /* Page-hero CTAs: same stacked treatment as homepage hero */
+  .page-hero__ctas {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+    width: 100%;
+  }
+  .page-hero__ctas .btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* ── TRUST STRIP: 2-column grid instead of raw vertical column ── */
+@media (max-width: 768px) {
+  /* Override the existing flex-direction:column rule with a grid */
+  .trust-strip__inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    align-items: stretch;
+  }
+  .trust-item {
+    padding: 14px 16px;
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.82rem;
+  }
+  /* Left-column items get a right separator to divide the two columns */
+  .trust-item:nth-child(odd) { border-right: 1px solid var(--border); }
+  /* If last item is alone in left column, span it full-width */
+  .trust-item:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+    border-right: none;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Collapse trust grid to single column on very small phones */
+  .trust-strip__inner { grid-template-columns: 1fr; }
+  .trust-item,
+  .trust-item:nth-child(odd) {
+    border-right: none;
+    padding: 12px 18px;
+  }
+}
+
+/* ── SECTION SPACING: tighter at small phone sizes ── */
+@media (max-width: 480px) {
+  .section { padding: 56px 0; }
+  .ba-section { padding: 56px 0; }
+  .final-cta { padding: 56px 0; }
+  .section-header { margin-bottom: 32px; }
+  .final-cta__title {
+    font-size: clamp(1.6rem, 6vw, 2.2rem);
+    letter-spacing: -0.025em;
+  }
+  .final-cta__sub { font-size: 1rem; margin-bottom: 32px; }
+}
+
+/* ── PAGE HERO: tighter at mobile sizes ── */
+@media (max-width: 768px) {
+  /* Header is now 64px; 104px gives 40px of breathing room above breadcrumb */
+  .page-hero { padding: 104px 0 48px; }
+  .page-hero__title { font-size: clamp(1.6rem, 5vw, 2.4rem); }
+}
+@media (max-width: 480px) {
+  .page-hero { padding: 96px 0 36px; }
+  .page-hero__title { font-size: clamp(1.5rem, 6vw, 2rem); }
+}
+
+/* ── HIGHLIGHT BOX: reduce padding on mobile ── */
+@media (max-width: 768px) {
+  .highlight-box { padding: 24px 22px; }
+}
+
+/* ── CONTACT FORM: tighter at small sizes ── */
+@media (max-width: 480px) {
+  .contact-form { padding: 24px 18px; }
+}
+
+/* ── FOOTER: compact spacing at small sizes ── */
+@media (max-width: 480px) {
+  .footer { padding-top: 48px; }
+  .footer__inner { gap: 24px; padding-bottom: 32px; }
+  .footer__bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+}
+
+/* ── FAQ: better touch targets (min 52px tap area) ── */
+@media (max-width: 768px) {
+  .faq-item__q { padding: 18px 20px; min-height: 52px; }
+  .faq-item__a { padding: 0 20px 18px; }
+}
+
+/* ── FLOAT CTA: safe-area tuning on small phones ── */
+@media (max-width: 480px) {
+  .float-cta {
+    bottom: max(14px, env(safe-area-inset-bottom, 14px));
+    right: 14px;
+  }
+}
+
+/* ── EXTRA-SMALL PHONES (≤360px): ensure grids don't crush cards ── */
+@media (max-width: 360px) {
+  .problems-grid { grid-template-columns: 1fr; }
+  .areas-grid    { grid-template-columns: 1fr; }
+  .container     { padding-inline: 14px; }
+}
+
+/* ── CONTAINER SAFETY: absolutely prevent the hero/container from
+   being wider than the viewport — bulletproofs the overflow guard ── */
+.container,
+.hero,
+.hero__inner,
+.hero__content,
+.trust-strip,
+.section {
+  max-width: 100vw;
+  min-width: 0;
 }

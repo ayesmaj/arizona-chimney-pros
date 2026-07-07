@@ -21,3 +21,10 @@ __pycache__/
 
 # SEO pipeline artifacts
 seo-system/pages-enriched.csv
+
+# Secrets — NEVER commit these
+.env
+.env.*
+*.secret
+seo-system/.api_key
+**/.api_key
