@@ -743,12 +743,14 @@ img, video, iframe, svg { max-width: 100% !important; height: auto; }
 /* Desktop baseline — only override on mobile */
 @media (max-width: 900px) {
   /* Kill the Assembler theme's duplicate header part so we have ONE header */
+  /*
   body .wp-site-blocks > header.wp-block-template-part,
   body > .wp-site-blocks > header.wp-block-template-part:first-of-type {
-    /* keep only our custom .header, hide the theme default one */
-    /* If the custom header is rendered INSIDE this template-part we can't hide it,
-       so we limit this to pure template-part headers with only assembler classes */
+    keep only our custom .header, hide the theme default one
+    If the custom header is rendered INSIDE this template-part we can't hide it,
+    so we limit this to pure template-part headers with only assembler classes
   }
+  */
 
   /* The real site header */
   .header {
