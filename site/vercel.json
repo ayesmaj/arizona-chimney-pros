@@ -1,6 +1,5 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "trailingSlash": true,
   "redirects": [
     {
       "source": "/wood-to-gas-conversion-mesa",
@@ -1080,6 +1079,11 @@
     {
       "source": "/chimney-cleaning-anthem/",
       "destination": "/services/chimney-cleaning-anthem/",
+      "statusCode": 301
+    },
+    {
+      "source": "/:path((?!api(?:/|$))(?:.*/)?[^/.]+)",
+      "destination": "/:path/",
       "statusCode": 301
     }
   ],
