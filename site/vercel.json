@@ -1082,6 +1082,111 @@
       "statusCode": 301
     },
     {
+      "source": "/home",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/llms.txt",
+      "destination": "/llms-txt/",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-sweep-cost-arizona",
+      "destination": "/guides/chimney-cleaning-cost-arizona/",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-sweep-cost-arizona/",
+      "destination": "/guides/chimney-cleaning-cost-arizona/",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-log-vs-real-log-fireplace-comparison",
+      "destination": "/guides/gas-vs-wood-fireplace-cost-arizona/",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-log-vs-real-log-fireplace-comparison/",
+      "destination": "/guides/gas-vs-wood-fireplace-cost-arizona/",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-vs-wood-fireplace-repair-cost/",
+      "destination": "/guides/gas-vs-wood-fireplace-repair-cost-arizona/",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-vs-wood-fireplace-repair-cost",
+      "destination": "/guides/gas-vs-wood-fireplace-repair-cost-arizona/",
+      "statusCode": 301
+    },
+    {
+      "source": "/monsoon-chimney-damage-repair-arizona",
+      "destination": "/guides/chimney-repair-storm-damage-arizona/",
+      "statusCode": 301
+    },
+    {
+      "source": "/monsoon-chimney-damage-repair-arizona/",
+      "destination": "/guides/chimney-repair-storm-damage-arizona/",
+      "statusCode": 301
+    },
+    {
+      "source": "/repair-vs-replace-fireplace-arizona/",
+      "destination": "/guides/repair-vs-replace-gas-fireplace-arizona/",
+      "statusCode": 301
+    },
+    {
+      "source": "/repair-vs-replace-fireplace-arizona",
+      "destination": "/guides/repair-vs-replace-gas-fireplace-arizona/",
+      "statusCode": 301
+    },
+    {
+      "source": "/same-day-gas-fireplace-repair-arizona/",
+      "destination": "/guides/gas-fireplace-repair-arizona/",
+      "statusCode": 301
+    },
+    {
+      "source": "/same-day-gas-fireplace-repair-arizona",
+      "destination": "/guides/gas-fireplace-repair-arizona/",
+      "statusCode": 301
+    },
+    {
+      "source": "/when-to-replace-chimney-liner-arizona",
+      "destination": "/guides/chimney-liner-repair-vs-replace-arizona/",
+      "statusCode": 301
+    },
+    {
+      "source": "/when-to-replace-chimney-liner-arizona/",
+      "destination": "/guides/chimney-liner-repair-vs-replace-arizona/",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-repair-arizona",
+      "destination": "/services/chimney-repair-phoenix/",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-repair-arizona/",
+      "destination": "/services/chimney-repair-phoenix/",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-repair",
+      "destination": "/services/chimney-repair-phoenix/",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-repair/",
+      "destination": "/services/chimney-repair-phoenix/",
+      "statusCode": 301
+    },
+    {
       "source": "/:path((?!api(?:/|$))(?:.*/)?[^/.]+)",
       "destination": "/:path/",
       "statusCode": 301
@@ -1122,6 +1227,15 @@
         {
           "key": "Referrer-Policy",
           "value": "strict-origin-when-cross-origin"
+        }
+      ]
+    },
+    {
+      "source": "/_static/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
         }
       ]
     }
