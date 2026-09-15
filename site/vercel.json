@@ -1,0 +1,1125 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "trailingSlash": true,
+  "redirects": [
+    {
+      "source": "/wood-to-gas-conversion-mesa",
+      "destination": "/services/wood-to-gas-fireplace-conversion-mesa/",
+      "statusCode": 301
+    },
+    {
+      "source": "/wood-to-gas-conversion-mesa/",
+      "destination": "/services/wood-to-gas-fireplace-conversion-mesa/",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-damper-stuck-phoenix-2",
+      "destination": "/services/fireplace-damper-stuck-phoenix/",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-damper-stuck-phoenix-2/",
+      "destination": "/services/fireplace-damper-stuck-phoenix/",
+      "statusCode": 301
+    },
+    {
+      "source": "/phoenix-fireplace-services-hub",
+      "destination": "/services/",
+      "statusCode": 301
+    },
+    {
+      "source": "/phoenix-fireplace-services-hub/",
+      "destination": "/services/",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-services",
+      "destination": "/services/",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-services/",
+      "destination": "/services/",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-arizona",
+      "destination": "/guides/gas-fireplace-repair-arizona/",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-arizona/",
+      "destination": "/guides/gas-fireplace-repair-arizona/",
+      "statusCode": 301
+    },
+    {
+      "source": "/repair-vs-replace-gas-fireplace-arizona",
+      "destination": "/guides/repair-vs-replace-gas-fireplace-arizona/",
+      "statusCode": 301
+    },
+    {
+      "source": "/repair-vs-replace-gas-fireplace-arizona/",
+      "destination": "/guides/repair-vs-replace-gas-fireplace-arizona/",
+      "statusCode": 301
+    },
+    {
+      "source": "/pre-burning-season-chimney-inspection-arizona",
+      "destination": "/guides/pre-burning-season-chimney-inspection-arizona/",
+      "statusCode": 301
+    },
+    {
+      "source": "/pre-burning-season-chimney-inspection-arizona/",
+      "destination": "/guides/pre-burning-season-chimney-inspection-arizona/",
+      "statusCode": 301
+    },
+    {
+      "source": "/outdoor-fireplace-installation-cost-arizona",
+      "destination": "/guides/outdoor-fireplace-installation-cost-arizona/",
+      "statusCode": 301
+    },
+    {
+      "source": "/outdoor-fireplace-installation-cost-arizona/",
+      "destination": "/guides/outdoor-fireplace-installation-cost-arizona/",
+      "statusCode": 301
+    },
+    {
+      "source": "/monsoon-chimney-damage-arizona",
+      "destination": "/guides/monsoon-chimney-damage-arizona/",
+      "statusCode": 301
+    },
+    {
+      "source": "/monsoon-chimney-damage-arizona/",
+      "destination": "/guides/monsoon-chimney-damage-arizona/",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-vs-wood-fireplace-repair-cost-arizona",
+      "destination": "/guides/gas-vs-wood-fireplace-repair-cost-arizona/",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-vs-wood-fireplace-repair-cost-arizona/",
+      "destination": "/guides/gas-vs-wood-fireplace-repair-cost-arizona/",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-vs-wood-fireplace-cost-arizona",
+      "destination": "/guides/gas-vs-wood-fireplace-cost-arizona/",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-vs-wood-fireplace-cost-arizona/",
+      "destination": "/guides/gas-vs-wood-fireplace-cost-arizona/",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-insert-vs-gas-logs-arizona",
+      "destination": "/guides/gas-insert-vs-gas-logs-arizona/",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-insert-vs-gas-logs-arizona/",
+      "destination": "/guides/gas-insert-vs-gas-logs-arizona/",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodel-cost-arizona",
+      "destination": "/guides/fireplace-remodel-cost-arizona/",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodel-cost-arizona/",
+      "destination": "/guides/fireplace-remodel-cost-arizona/",
+      "statusCode": 301
+    },
+    {
+      "source": "/emergency-chimney-repair-arizona",
+      "destination": "/guides/emergency-chimney-repair-arizona/",
+      "statusCode": 301
+    },
+    {
+      "source": "/emergency-chimney-repair-arizona/",
+      "destination": "/guides/emergency-chimney-repair-arizona/",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-repair-storm-damage-arizona",
+      "destination": "/guides/chimney-repair-storm-damage-arizona/",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-repair-storm-damage-arizona/",
+      "destination": "/guides/chimney-repair-storm-damage-arizona/",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-liner-repair-vs-replace-arizona",
+      "destination": "/guides/chimney-liner-repair-vs-replace-arizona/",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-liner-repair-vs-replace-arizona/",
+      "destination": "/guides/chimney-liner-repair-vs-replace-arizona/",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-cleaning-cost-arizona",
+      "destination": "/guides/chimney-cleaning-cost-arizona/",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-cleaning-cost-arizona/",
+      "destination": "/guides/chimney-cleaning-cost-arizona/",
+      "statusCode": 301
+    },
+    {
+      "source": "/annual-chimney-maintenance-cost-arizona",
+      "destination": "/guides/annual-chimney-maintenance-cost-arizona/",
+      "statusCode": 301
+    },
+    {
+      "source": "/annual-chimney-maintenance-cost-arizona/",
+      "destination": "/guides/annual-chimney-maintenance-cost-arizona/",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-installation",
+      "destination": "/services/fireplace-installation/",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-installation/",
+      "destination": "/services/fireplace-installation/",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling",
+      "destination": "/services/fireplace-remodeling/",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling/",
+      "destination": "/services/fireplace-remodeling/",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair",
+      "destination": "/services/gas-fireplace-repair/",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair/",
+      "destination": "/services/gas-fireplace-repair/",
+      "statusCode": 301
+    },
+    {
+      "source": "/water-in-fireplace-monsoon-phoenix",
+      "destination": "/services/water-in-fireplace-monsoon-phoenix/",
+      "statusCode": 301
+    },
+    {
+      "source": "/water-in-fireplace-monsoon-phoenix/",
+      "destination": "/services/water-in-fireplace-monsoon-phoenix/",
+      "statusCode": 301
+    },
+    {
+      "source": "/smoke-backing-into-house-phoenix",
+      "destination": "/services/smoke-backing-into-house-phoenix/",
+      "statusCode": 301
+    },
+    {
+      "source": "/smoke-backing-into-house-phoenix/",
+      "destination": "/services/smoke-backing-into-house-phoenix/",
+      "statusCode": 301
+    },
+    {
+      "source": "/pilot-light-wont-stay-on-scottsdale",
+      "destination": "/services/pilot-light-wont-stay-on-scottsdale/",
+      "statusCode": 301
+    },
+    {
+      "source": "/pilot-light-wont-stay-on-scottsdale/",
+      "destination": "/services/pilot-light-wont-stay-on-scottsdale/",
+      "statusCode": 301
+    },
+    {
+      "source": "/pilot-light-wont-light-mesa",
+      "destination": "/services/pilot-light-wont-light-mesa/",
+      "statusCode": 301
+    },
+    {
+      "source": "/pilot-light-wont-light-mesa/",
+      "destination": "/services/pilot-light-wont-light-mesa/",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-smell-from-fireplace-mesa",
+      "destination": "/services/gas-smell-from-fireplace-mesa/",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-smell-from-fireplace-mesa/",
+      "destination": "/services/gas-smell-from-fireplace-mesa/",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-turns-off-after-minutes-phoenix",
+      "destination": "/services/gas-fireplace-turns-off-after-minutes-phoenix/",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-turns-off-after-minutes-phoenix/",
+      "destination": "/services/gas-fireplace-turns-off-after-minutes-phoenix/",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-wont-light-phoenix",
+      "destination": "/services/fireplace-wont-light-phoenix/",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-wont-light-phoenix/",
+      "destination": "/services/fireplace-wont-light-phoenix/",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remote-not-working-phoenix",
+      "destination": "/services/fireplace-remote-not-working-phoenix/",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remote-not-working-phoenix/",
+      "destination": "/services/fireplace-remote-not-working-phoenix/",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-glass-fogged-phoenix",
+      "destination": "/services/fireplace-glass-fogged-phoenix/",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-glass-fogged-phoenix/",
+      "destination": "/services/fireplace-glass-fogged-phoenix/",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-damper-stuck-scottsdale",
+      "destination": "/services/fireplace-damper-stuck-scottsdale/",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-damper-stuck-scottsdale/",
+      "destination": "/services/fireplace-damper-stuck-scottsdale/",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-damper-stuck-phoenix",
+      "destination": "/services/fireplace-damper-stuck-phoenix/",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-damper-stuck-phoenix/",
+      "destination": "/services/fireplace-damper-stuck-phoenix/",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-damper-stuck-mesa",
+      "destination": "/services/fireplace-damper-stuck-mesa/",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-damper-stuck-mesa/",
+      "destination": "/services/fireplace-damper-stuck-mesa/",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-blower-fan-not-working-scottsdale",
+      "destination": "/services/fireplace-blower-fan-not-working-scottsdale/",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-blower-fan-not-working-scottsdale/",
+      "destination": "/services/fireplace-blower-fan-not-working-scottsdale/",
+      "statusCode": 301
+    },
+    {
+      "source": "/creosote-smell-in-house-phoenix",
+      "destination": "/services/creosote-smell-in-house-phoenix/",
+      "statusCode": 301
+    },
+    {
+      "source": "/creosote-smell-in-house-phoenix/",
+      "destination": "/services/creosote-smell-in-house-phoenix/",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-cap-blown-off-phoenix",
+      "destination": "/services/chimney-cap-blown-off-phoenix/",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-cap-blown-off-phoenix/",
+      "destination": "/services/chimney-cap-blown-off-phoenix/",
+      "statusCode": 301
+    },
+    {
+      "source": "/thermopile-replacement-scottsdale",
+      "destination": "/services/thermopile-replacement-scottsdale/",
+      "statusCode": 301
+    },
+    {
+      "source": "/thermopile-replacement-scottsdale/",
+      "destination": "/services/thermopile-replacement-scottsdale/",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-animal-removal-phoenix",
+      "destination": "/services/chimney-animal-removal-phoenix/",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-animal-removal-phoenix/",
+      "destination": "/services/chimney-animal-removal-phoenix/",
+      "statusCode": 301
+    },
+    {
+      "source": "/firebox-repair-phoenix",
+      "destination": "/services/firebox-repair-phoenix/",
+      "statusCode": 301
+    },
+    {
+      "source": "/firebox-repair-phoenix/",
+      "destination": "/services/firebox-repair-phoenix/",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-leaking-scottsdale",
+      "destination": "/services/chimney-leaking-scottsdale/",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-leaking-scottsdale/",
+      "destination": "/services/chimney-leaking-scottsdale/",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-leak-repair-phoenix",
+      "destination": "/services/chimney-leak-repair-phoenix/",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-leak-repair-phoenix/",
+      "destination": "/services/chimney-leak-repair-phoenix/",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-cap-installation-phoenix",
+      "destination": "/services/chimney-cap-installation-phoenix/",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-cap-installation-phoenix/",
+      "destination": "/services/chimney-cap-installation-phoenix/",
+      "statusCode": 301
+    },
+    {
+      "source": "/wood-to-gas-fireplace-conversion-scottsdale",
+      "destination": "/services/wood-to-gas-fireplace-conversion-scottsdale/",
+      "statusCode": 301
+    },
+    {
+      "source": "/wood-to-gas-fireplace-conversion-scottsdale/",
+      "destination": "/services/wood-to-gas-fireplace-conversion-scottsdale/",
+      "statusCode": 301
+    },
+    {
+      "source": "/wood-to-gas-fireplace-conversion-phoenix",
+      "destination": "/services/wood-to-gas-fireplace-conversion-phoenix/",
+      "statusCode": 301
+    },
+    {
+      "source": "/wood-to-gas-fireplace-conversion-phoenix/",
+      "destination": "/services/wood-to-gas-fireplace-conversion-phoenix/",
+      "statusCode": 301
+    },
+    {
+      "source": "/wood-to-gas-fireplace-conversion-paradise-valley",
+      "destination": "/services/wood-to-gas-fireplace-conversion-paradise-valley/",
+      "statusCode": 301
+    },
+    {
+      "source": "/wood-to-gas-fireplace-conversion-paradise-valley/",
+      "destination": "/services/wood-to-gas-fireplace-conversion-paradise-valley/",
+      "statusCode": 301
+    },
+    {
+      "source": "/wood-to-gas-fireplace-conversion-mesa",
+      "destination": "/services/wood-to-gas-fireplace-conversion-mesa/",
+      "statusCode": 301
+    },
+    {
+      "source": "/wood-to-gas-fireplace-conversion-mesa/",
+      "destination": "/services/wood-to-gas-fireplace-conversion-mesa/",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-log-replacement-scottsdale",
+      "destination": "/services/gas-log-replacement-scottsdale/",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-log-replacement-scottsdale/",
+      "destination": "/services/gas-log-replacement-scottsdale/",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-log-replacement-phoenix",
+      "destination": "/services/gas-log-replacement-phoenix/",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-log-replacement-phoenix/",
+      "destination": "/services/gas-log-replacement-phoenix/",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-log-replacement-mesa",
+      "destination": "/services/gas-log-replacement-mesa/",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-log-replacement-mesa/",
+      "destination": "/services/gas-log-replacement-mesa/",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-log-replacement-gilbert",
+      "destination": "/services/gas-log-replacement-gilbert/",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-log-replacement-gilbert/",
+      "destination": "/services/gas-log-replacement-gilbert/",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-log-replacement-chandler",
+      "destination": "/services/gas-log-replacement-chandler/",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-log-replacement-chandler/",
+      "destination": "/services/gas-log-replacement-chandler/",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-tempe",
+      "destination": "/services/gas-fireplace-repair-tempe/",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-tempe/",
+      "destination": "/services/gas-fireplace-repair-tempe/",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-surprise",
+      "destination": "/services/gas-fireplace-repair-surprise/",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-surprise/",
+      "destination": "/services/gas-fireplace-repair-surprise/",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-scottsdale",
+      "destination": "/services/gas-fireplace-repair-scottsdale/",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-scottsdale/",
+      "destination": "/services/gas-fireplace-repair-scottsdale/",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-phoenix",
+      "destination": "/services/gas-fireplace-repair-phoenix/",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-phoenix/",
+      "destination": "/services/gas-fireplace-repair-phoenix/",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-peoria",
+      "destination": "/services/gas-fireplace-repair-peoria/",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-peoria/",
+      "destination": "/services/gas-fireplace-repair-peoria/",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-paradise-valley",
+      "destination": "/services/gas-fireplace-repair-paradise-valley/",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-paradise-valley/",
+      "destination": "/services/gas-fireplace-repair-paradise-valley/",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-mesa",
+      "destination": "/services/gas-fireplace-repair-mesa/",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-mesa/",
+      "destination": "/services/gas-fireplace-repair-mesa/",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-glendale",
+      "destination": "/services/gas-fireplace-repair-glendale/",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-glendale/",
+      "destination": "/services/gas-fireplace-repair-glendale/",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-gilbert",
+      "destination": "/services/gas-fireplace-repair-gilbert/",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-gilbert/",
+      "destination": "/services/gas-fireplace-repair-gilbert/",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-chandler",
+      "destination": "/services/gas-fireplace-repair-chandler/",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-chandler/",
+      "destination": "/services/gas-fireplace-repair-chandler/",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-queen-creek",
+      "destination": "/services/gas-fireplace-repair-queen-creek/",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-queen-creek/",
+      "destination": "/services/gas-fireplace-repair-queen-creek/",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-goodyear",
+      "destination": "/services/gas-fireplace-repair-goodyear/",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-goodyear/",
+      "destination": "/services/gas-fireplace-repair-goodyear/",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-fountain-hills",
+      "destination": "/services/gas-fireplace-repair-fountain-hills/",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-fountain-hills/",
+      "destination": "/services/gas-fireplace-repair-fountain-hills/",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-cave-creek",
+      "destination": "/services/gas-fireplace-repair-cave-creek/",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-cave-creek/",
+      "destination": "/services/gas-fireplace-repair-cave-creek/",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-avondale",
+      "destination": "/services/gas-fireplace-repair-avondale/",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-avondale/",
+      "destination": "/services/gas-fireplace-repair-avondale/",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-anthem",
+      "destination": "/services/gas-fireplace-repair-anthem/",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-anthem/",
+      "destination": "/services/gas-fireplace-repair-anthem/",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-tempe",
+      "destination": "/services/gas-fireplace-installation-tempe/",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-tempe/",
+      "destination": "/services/gas-fireplace-installation-tempe/",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-scottsdale",
+      "destination": "/services/gas-fireplace-installation-scottsdale/",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-scottsdale/",
+      "destination": "/services/gas-fireplace-installation-scottsdale/",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-phoenix",
+      "destination": "/services/gas-fireplace-installation-phoenix/",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-phoenix/",
+      "destination": "/services/gas-fireplace-installation-phoenix/",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-mesa",
+      "destination": "/services/gas-fireplace-installation-mesa/",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-mesa/",
+      "destination": "/services/gas-fireplace-installation-mesa/",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-glendale",
+      "destination": "/services/gas-fireplace-installation-glendale/",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-glendale/",
+      "destination": "/services/gas-fireplace-installation-glendale/",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-gilbert",
+      "destination": "/services/gas-fireplace-installation-gilbert/",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-gilbert/",
+      "destination": "/services/gas-fireplace-installation-gilbert/",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-chandler",
+      "destination": "/services/gas-fireplace-installation-chandler/",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-chandler/",
+      "destination": "/services/gas-fireplace-installation-chandler/",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling-tempe",
+      "destination": "/services/fireplace-remodeling-tempe/",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling-tempe/",
+      "destination": "/services/fireplace-remodeling-tempe/",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling-scottsdale",
+      "destination": "/services/fireplace-remodeling-scottsdale/",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling-scottsdale/",
+      "destination": "/services/fireplace-remodeling-scottsdale/",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling-queen-creek",
+      "destination": "/services/fireplace-remodeling-queen-creek/",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling-queen-creek/",
+      "destination": "/services/fireplace-remodeling-queen-creek/",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling-phoenix",
+      "destination": "/services/fireplace-remodeling-phoenix/",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling-phoenix/",
+      "destination": "/services/fireplace-remodeling-phoenix/",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling-peoria",
+      "destination": "/services/fireplace-remodeling-peoria/",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling-peoria/",
+      "destination": "/services/fireplace-remodeling-peoria/",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling-paradise-valley",
+      "destination": "/services/fireplace-remodeling-paradise-valley/",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling-paradise-valley/",
+      "destination": "/services/fireplace-remodeling-paradise-valley/",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling-mesa",
+      "destination": "/services/fireplace-remodeling-mesa/",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling-mesa/",
+      "destination": "/services/fireplace-remodeling-mesa/",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling-glendale",
+      "destination": "/services/fireplace-remodeling-glendale/",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling-glendale/",
+      "destination": "/services/fireplace-remodeling-glendale/",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling-gilbert",
+      "destination": "/services/fireplace-remodeling-gilbert/",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling-gilbert/",
+      "destination": "/services/fireplace-remodeling-gilbert/",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling-chandler",
+      "destination": "/services/fireplace-remodeling-chandler/",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling-chandler/",
+      "destination": "/services/fireplace-remodeling-chandler/",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-repair-scottsdale",
+      "destination": "/services/chimney-repair-scottsdale/",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-repair-scottsdale/",
+      "destination": "/services/chimney-repair-scottsdale/",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-repair-phoenix",
+      "destination": "/services/chimney-repair-phoenix/",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-repair-phoenix/",
+      "destination": "/services/chimney-repair-phoenix/",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-repair-paradise-valley",
+      "destination": "/services/chimney-repair-paradise-valley/",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-repair-paradise-valley/",
+      "destination": "/services/chimney-repair-paradise-valley/",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-repair-mesa",
+      "destination": "/services/chimney-repair-mesa/",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-repair-mesa/",
+      "destination": "/services/chimney-repair-mesa/",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-repair-gilbert",
+      "destination": "/services/chimney-repair-gilbert/",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-repair-gilbert/",
+      "destination": "/services/chimney-repair-gilbert/",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-repair-chandler",
+      "destination": "/services/chimney-repair-chandler/",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-repair-chandler/",
+      "destination": "/services/chimney-repair-chandler/",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-inspection-surprise",
+      "destination": "/services/chimney-inspection-surprise/",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-inspection-surprise/",
+      "destination": "/services/chimney-inspection-surprise/",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-inspection-scottsdale",
+      "destination": "/services/chimney-inspection-scottsdale/",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-inspection-scottsdale/",
+      "destination": "/services/chimney-inspection-scottsdale/",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-inspection-queen-creek",
+      "destination": "/services/chimney-inspection-queen-creek/",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-inspection-queen-creek/",
+      "destination": "/services/chimney-inspection-queen-creek/",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-inspection-phoenix",
+      "destination": "/services/chimney-inspection-phoenix/",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-inspection-phoenix/",
+      "destination": "/services/chimney-inspection-phoenix/",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-inspection-mesa",
+      "destination": "/services/chimney-inspection-mesa/",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-inspection-mesa/",
+      "destination": "/services/chimney-inspection-mesa/",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-inspection-gilbert",
+      "destination": "/services/chimney-inspection-gilbert/",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-inspection-gilbert/",
+      "destination": "/services/chimney-inspection-gilbert/",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-inspection-fountain-hills",
+      "destination": "/services/chimney-inspection-fountain-hills/",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-inspection-fountain-hills/",
+      "destination": "/services/chimney-inspection-fountain-hills/",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-inspection-chandler",
+      "destination": "/services/chimney-inspection-chandler/",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-inspection-chandler/",
+      "destination": "/services/chimney-inspection-chandler/",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-cleaning-scottsdale",
+      "destination": "/services/chimney-cleaning-scottsdale/",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-cleaning-scottsdale/",
+      "destination": "/services/chimney-cleaning-scottsdale/",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-cleaning-phoenix",
+      "destination": "/services/chimney-cleaning-phoenix/",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-cleaning-phoenix/",
+      "destination": "/services/chimney-cleaning-phoenix/",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-cleaning-paradise-valley",
+      "destination": "/services/chimney-cleaning-paradise-valley/",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-cleaning-paradise-valley/",
+      "destination": "/services/chimney-cleaning-paradise-valley/",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-cleaning-mesa",
+      "destination": "/services/chimney-cleaning-mesa/",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-cleaning-mesa/",
+      "destination": "/services/chimney-cleaning-mesa/",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-cleaning-goodyear",
+      "destination": "/services/chimney-cleaning-goodyear/",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-cleaning-goodyear/",
+      "destination": "/services/chimney-cleaning-goodyear/",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-cleaning-gilbert",
+      "destination": "/services/chimney-cleaning-gilbert/",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-cleaning-gilbert/",
+      "destination": "/services/chimney-cleaning-gilbert/",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-cleaning-chandler",
+      "destination": "/services/chimney-cleaning-chandler/",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-cleaning-chandler/",
+      "destination": "/services/chimney-cleaning-chandler/",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-cleaning-cave-creek",
+      "destination": "/services/chimney-cleaning-cave-creek/",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-cleaning-cave-creek/",
+      "destination": "/services/chimney-cleaning-cave-creek/",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-cleaning-avondale",
+      "destination": "/services/chimney-cleaning-avondale/",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-cleaning-avondale/",
+      "destination": "/services/chimney-cleaning-avondale/",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-cleaning-anthem",
+      "destination": "/services/chimney-cleaning-anthem/",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-cleaning-anthem/",
+      "destination": "/services/chimney-cleaning-anthem/",
+      "statusCode": 301
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "arizona-chimney-pros.vercel.app"
+        }
+      ],
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow"
+        }
+      ]
+    },
+    {
+      "source": "/wp-content/uploads/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        }
+      ]
+    }
+  ]
+}
