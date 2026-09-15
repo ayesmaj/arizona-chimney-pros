@@ -1187,6 +1187,4316 @@
       "statusCode": 301
     },
     {
+      "source": "/arizona-chimney-pros-logo",
+      "destination": "/wp-content/uploads/2026/05/arizona-chimney-pros-logo.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/arizona-chimney-pros-logo/",
+      "destination": "/wp-content/uploads/2026/05/arizona-chimney-pros-logo.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/arizona-chimney-pros-truck",
+      "destination": "/wp-content/uploads/2026/05/arizona-chimney-pros-truck.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/arizona-chimney-pros-truck/",
+      "destination": "/wp-content/uploads/2026/05/arizona-chimney-pros-truck.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/before-chimney",
+      "destination": "/wp-content/uploads/2026/05/before-chimney.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/before-chimney/",
+      "destination": "/wp-content/uploads/2026/05/before-chimney.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/before-chimney-2",
+      "destination": "/wp-content/uploads/2026/05/before-chimney-2.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/before-chimney-2/",
+      "destination": "/wp-content/uploads/2026/05/before-chimney-2.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/before-chimney-3",
+      "destination": "/wp-content/uploads/2026/05/before-chimney-3.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/before-chimney-3/",
+      "destination": "/wp-content/uploads/2026/05/before-chimney-3.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/after-chimney",
+      "destination": "/wp-content/uploads/2026/05/after-chimney.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/after-chimney/",
+      "destination": "/wp-content/uploads/2026/05/after-chimney.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/after-chimney-2",
+      "destination": "/wp-content/uploads/2026/05/after-chimney-2.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/after-chimney-2/",
+      "destination": "/wp-content/uploads/2026/05/after-chimney-2.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/after-chimney-3",
+      "destination": "/wp-content/uploads/2026/05/after-chimney-3.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/after-chimney-3/",
+      "destination": "/wp-content/uploads/2026/05/after-chimney-3.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-logs",
+      "destination": "/wp-content/uploads/2026/05/gas-logs.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-logs/",
+      "destination": "/wp-content/uploads/2026/05/gas-logs.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-installation-2",
+      "destination": "/wp-content/uploads/2026/05/fireplace-installation.jpeg",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-installation-2/",
+      "destination": "/wp-content/uploads/2026/05/fireplace-installation.jpeg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-logs-chandler-az",
+      "destination": "/wp-content/uploads/2026/05/gas-logs-chandler-az.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-logs-chandler-az/",
+      "destination": "/wp-content/uploads/2026/05/gas-logs-chandler-az.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-logs-gilbert-az",
+      "destination": "/wp-content/uploads/2026/05/gas-logs-gilbert-az.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-logs-gilbert-az/",
+      "destination": "/wp-content/uploads/2026/05/gas-logs-gilbert-az.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-logs-mesa-az",
+      "destination": "/wp-content/uploads/2026/05/gas-logs-mesa-az.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-logs-mesa-az/",
+      "destination": "/wp-content/uploads/2026/05/gas-logs-mesa-az.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-logs-scottsdale-az",
+      "destination": "/wp-content/uploads/2026/05/gas-logs-scottsdale-az.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-logs-scottsdale-az/",
+      "destination": "/wp-content/uploads/2026/05/gas-logs-scottsdale-az.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-logs-phoenix-az",
+      "destination": "/wp-content/uploads/2026/05/gas-logs-phoenix-az.jpeg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-logs-phoenix-az/",
+      "destination": "/wp-content/uploads/2026/05/gas-logs-phoenix-az.jpeg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-cap-phoenix-az",
+      "destination": "/wp-content/uploads/2026/05/chimney-cap-phoenix-az.jpeg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-cap-phoenix-az/",
+      "destination": "/wp-content/uploads/2026/05/chimney-cap-phoenix-az.jpeg",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling-scottsdale-az",
+      "destination": "/wp-content/uploads/2026/05/fireplace-remodeling-scottsdale-az.jpeg",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling-scottsdale-az/",
+      "destination": "/wp-content/uploads/2026/05/fireplace-remodeling-scottsdale-az.jpeg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-logs-gallery-02",
+      "destination": "/wp-content/uploads/2026/05/gas-logs-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-logs-gallery-02/",
+      "destination": "/wp-content/uploads/2026/05/gas-logs-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-leak-repair-gallery-02",
+      "destination": "/wp-content/uploads/2026/05/chimney-leak-repair-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-leak-repair-gallery-02/",
+      "destination": "/wp-content/uploads/2026/05/chimney-leak-repair-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-leak-repair-phoenix-az-gallery-02",
+      "destination": "/wp-content/uploads/2026/05/chimney-leak-repair-phoenix-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-leak-repair-phoenix-az-gallery-02/",
+      "destination": "/wp-content/uploads/2026/05/chimney-leak-repair-phoenix-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling-gallery-02",
+      "destination": "/wp-content/uploads/2026/05/fireplace-remodeling-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling-gallery-02/",
+      "destination": "/wp-content/uploads/2026/05/fireplace-remodeling-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-installation-gallery-02",
+      "destination": "/wp-content/uploads/2026/05/fireplace-installation-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-installation-gallery-02/",
+      "destination": "/wp-content/uploads/2026/05/fireplace-installation-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-glendale-az-gallery-02",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-glendale-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-glendale-az-gallery-02/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-glendale-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-glendale-az-gallery-03",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-glendale-az-gallery-03.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-glendale-az-gallery-03/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-glendale-az-gallery-03.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-glendale-az-gallery-04",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-glendale-az-gallery-04.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-glendale-az-gallery-04/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-glendale-az-gallery-04.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-tempe-az-gallery-02",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-tempe-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-tempe-az-gallery-02/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-tempe-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-tempe-az-gallery-03",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-tempe-az-gallery-03.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-tempe-az-gallery-03/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-tempe-az-gallery-03.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-tempe-az-gallery-04",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-tempe-az-gallery-04.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-tempe-az-gallery-04/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-tempe-az-gallery-04.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling-tempe-az-gallery-02",
+      "destination": "/wp-content/uploads/2026/05/fireplace-remodeling-tempe-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling-tempe-az-gallery-02/",
+      "destination": "/wp-content/uploads/2026/05/fireplace-remodeling-tempe-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling-tempe-az-gallery-03",
+      "destination": "/wp-content/uploads/2026/05/fireplace-remodeling-tempe-az-gallery-03.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling-tempe-az-gallery-03/",
+      "destination": "/wp-content/uploads/2026/05/fireplace-remodeling-tempe-az-gallery-03.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling-tempe-az-gallery-04",
+      "destination": "/wp-content/uploads/2026/05/fireplace-remodeling-tempe-az-gallery-04.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling-tempe-az-gallery-04/",
+      "destination": "/wp-content/uploads/2026/05/fireplace-remodeling-tempe-az-gallery-04.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-repair-gallery-02",
+      "destination": "/wp-content/uploads/2026/05/chimney-repair-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-repair-gallery-02/",
+      "destination": "/wp-content/uploads/2026/05/chimney-repair-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-repair-gallery-03",
+      "destination": "/wp-content/uploads/2026/05/chimney-repair-gallery-03.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-repair-gallery-03/",
+      "destination": "/wp-content/uploads/2026/05/chimney-repair-gallery-03.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-repair-gallery-04",
+      "destination": "/wp-content/uploads/2026/05/chimney-repair-gallery-04.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-repair-gallery-04/",
+      "destination": "/wp-content/uploads/2026/05/chimney-repair-gallery-04.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-gallery-02",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-repair-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-gallery-02/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-repair-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-repair-gallery-06",
+      "destination": "/wp-content/uploads/2026/05/chimney-repair-gallery-06.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-repair-gallery-06/",
+      "destination": "/wp-content/uploads/2026/05/chimney-repair-gallery-06.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-repair-gallery-07",
+      "destination": "/wp-content/uploads/2026/05/chimney-repair-gallery-07.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-repair-gallery-07/",
+      "destination": "/wp-content/uploads/2026/05/chimney-repair-gallery-07.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-repair-gallery-08",
+      "destination": "/wp-content/uploads/2026/05/chimney-repair-gallery-08.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-repair-gallery-08/",
+      "destination": "/wp-content/uploads/2026/05/chimney-repair-gallery-08.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-logs-chandler-az-gallery-02",
+      "destination": "/wp-content/uploads/2026/05/gas-logs-chandler-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-logs-chandler-az-gallery-02/",
+      "destination": "/wp-content/uploads/2026/05/gas-logs-chandler-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-logs-chandler-az-gallery-03",
+      "destination": "/wp-content/uploads/2026/05/gas-logs-chandler-az-gallery-03.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-logs-chandler-az-gallery-03/",
+      "destination": "/wp-content/uploads/2026/05/gas-logs-chandler-az-gallery-03.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-logs-chandler-az-gallery-04",
+      "destination": "/wp-content/uploads/2026/05/gas-logs-chandler-az-gallery-04.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-logs-chandler-az-gallery-04/",
+      "destination": "/wp-content/uploads/2026/05/gas-logs-chandler-az-gallery-04.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-logs-gilbert-az-gallery-02",
+      "destination": "/wp-content/uploads/2026/05/gas-logs-gilbert-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-logs-gilbert-az-gallery-02/",
+      "destination": "/wp-content/uploads/2026/05/gas-logs-gilbert-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-logs-gilbert-az-gallery-03",
+      "destination": "/wp-content/uploads/2026/05/gas-logs-gilbert-az-gallery-03.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-logs-gilbert-az-gallery-03/",
+      "destination": "/wp-content/uploads/2026/05/gas-logs-gilbert-az-gallery-03.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-logs-gilbert-az-gallery-04",
+      "destination": "/wp-content/uploads/2026/05/gas-logs-gilbert-az-gallery-04.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-logs-gilbert-az-gallery-04/",
+      "destination": "/wp-content/uploads/2026/05/gas-logs-gilbert-az-gallery-04.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-logs-mesa-az-gallery-02",
+      "destination": "/wp-content/uploads/2026/05/gas-logs-mesa-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-logs-mesa-az-gallery-02/",
+      "destination": "/wp-content/uploads/2026/05/gas-logs-mesa-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-logs-mesa-az-gallery-03",
+      "destination": "/wp-content/uploads/2026/05/gas-logs-mesa-az-gallery-03.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-logs-mesa-az-gallery-03/",
+      "destination": "/wp-content/uploads/2026/05/gas-logs-mesa-az-gallery-03.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-logs-mesa-az-gallery-04",
+      "destination": "/wp-content/uploads/2026/05/gas-logs-mesa-az-gallery-04.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-logs-mesa-az-gallery-04/",
+      "destination": "/wp-content/uploads/2026/05/gas-logs-mesa-az-gallery-04.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-logs-scottsdale-az-gallery-02",
+      "destination": "/wp-content/uploads/2026/05/gas-logs-scottsdale-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-logs-scottsdale-az-gallery-02/",
+      "destination": "/wp-content/uploads/2026/05/gas-logs-scottsdale-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-logs-scottsdale-az-gallery-03",
+      "destination": "/wp-content/uploads/2026/05/gas-logs-scottsdale-az-gallery-03.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-logs-scottsdale-az-gallery-03/",
+      "destination": "/wp-content/uploads/2026/05/gas-logs-scottsdale-az-gallery-03.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-logs-scottsdale-az-gallery-04",
+      "destination": "/wp-content/uploads/2026/05/gas-logs-scottsdale-az-gallery-04.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-logs-scottsdale-az-gallery-04/",
+      "destination": "/wp-content/uploads/2026/05/gas-logs-scottsdale-az-gallery-04.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-logs-phoenix-az-gallery-02",
+      "destination": "/wp-content/uploads/2026/05/gas-logs-phoenix-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-logs-phoenix-az-gallery-02/",
+      "destination": "/wp-content/uploads/2026/05/gas-logs-phoenix-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-logs-phoenix-az-gallery-03",
+      "destination": "/wp-content/uploads/2026/05/gas-logs-phoenix-az-gallery-03.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-logs-phoenix-az-gallery-03/",
+      "destination": "/wp-content/uploads/2026/05/gas-logs-phoenix-az-gallery-03.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-logs-phoenix-az-gallery-04",
+      "destination": "/wp-content/uploads/2026/05/gas-logs-phoenix-az-gallery-04.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-logs-phoenix-az-gallery-04/",
+      "destination": "/wp-content/uploads/2026/05/gas-logs-phoenix-az-gallery-04.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling-queen-creek-az-gallery-02",
+      "destination": "/wp-content/uploads/2026/05/fireplace-remodeling-queen-creek-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling-queen-creek-az-gallery-02/",
+      "destination": "/wp-content/uploads/2026/05/fireplace-remodeling-queen-creek-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling-queen-creek-az-gallery-03",
+      "destination": "/wp-content/uploads/2026/05/fireplace-remodeling-queen-creek-az-gallery-03.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling-queen-creek-az-gallery-03/",
+      "destination": "/wp-content/uploads/2026/05/fireplace-remodeling-queen-creek-az-gallery-03.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling-queen-creek-az-gallery-04",
+      "destination": "/wp-content/uploads/2026/05/fireplace-remodeling-queen-creek-az-gallery-04.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling-queen-creek-az-gallery-04/",
+      "destination": "/wp-content/uploads/2026/05/fireplace-remodeling-queen-creek-az-gallery-04.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-installation-gallery-06",
+      "destination": "/wp-content/uploads/2026/05/fireplace-installation-gallery-06.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-installation-gallery-06/",
+      "destination": "/wp-content/uploads/2026/05/fireplace-installation-gallery-06.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-cap-phoenix-az-gallery-02",
+      "destination": "/wp-content/uploads/2026/05/chimney-cap-phoenix-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-cap-phoenix-az-gallery-02/",
+      "destination": "/wp-content/uploads/2026/05/chimney-cap-phoenix-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-cap-phoenix-az-gallery-03",
+      "destination": "/wp-content/uploads/2026/05/chimney-cap-phoenix-az-gallery-03.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-cap-phoenix-az-gallery-03/",
+      "destination": "/wp-content/uploads/2026/05/chimney-cap-phoenix-az-gallery-03.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-paradise-valley-az-gallery-02",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-paradise-valley-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-paradise-valley-az-gallery-02/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-paradise-valley-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-paradise-valley-az-gallery-03",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-paradise-valley-az-gallery-03.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-paradise-valley-az-gallery-03/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-paradise-valley-az-gallery-03.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-paradise-valley-az-gallery-04",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-paradise-valley-az-gallery-04.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-paradise-valley-az-gallery-04/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-paradise-valley-az-gallery-04.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-mesa-az-gallery-08",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-mesa-az-gallery-08.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-mesa-az-gallery-08/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-mesa-az-gallery-08.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-phoenix-az-gallery-02",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-phoenix-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-phoenix-az-gallery-02/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-phoenix-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-phoenix-az-gallery-03",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-phoenix-az-gallery-03.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-phoenix-az-gallery-03/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-phoenix-az-gallery-03.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-phoenix-az-gallery-04",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-phoenix-az-gallery-04.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-phoenix-az-gallery-04/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-phoenix-az-gallery-04.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-gilbert-az-gallery-02",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-gilbert-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-gilbert-az-gallery-02/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-gilbert-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-gilbert-az-gallery-03",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-gilbert-az-gallery-03.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-gilbert-az-gallery-03/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-gilbert-az-gallery-03.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-gilbert-az-gallery-04",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-gilbert-az-gallery-04.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-gilbert-az-gallery-04/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-gilbert-az-gallery-04.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-chandler-az-gallery-02",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-chandler-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-chandler-az-gallery-02/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-chandler-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-chandler-az-gallery-03",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-chandler-az-gallery-03.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-chandler-az-gallery-03/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-chandler-az-gallery-03.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-chandler-az-gallery-04",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-chandler-az-gallery-04.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-chandler-az-gallery-04/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-chandler-az-gallery-04.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-mesa-az-gallery-09",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-mesa-az-gallery-09.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-mesa-az-gallery-09/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-mesa-az-gallery-09.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-mesa-az-gallery-10",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-mesa-az-gallery-10.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-mesa-az-gallery-10/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-mesa-az-gallery-10.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-scottsdale-az-gallery-02",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-scottsdale-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-scottsdale-az-gallery-02/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-scottsdale-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-scottsdale-az-gallery-03",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-scottsdale-az-gallery-03.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-scottsdale-az-gallery-03/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-scottsdale-az-gallery-03.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-scottsdale-az-gallery-04",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-scottsdale-az-gallery-04.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-scottsdale-az-gallery-04/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-scottsdale-az-gallery-04.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-repair-paradise-valley-az-gallery-02",
+      "destination": "/wp-content/uploads/2026/05/chimney-repair-paradise-valley-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-repair-paradise-valley-az-gallery-02/",
+      "destination": "/wp-content/uploads/2026/05/chimney-repair-paradise-valley-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-repair-paradise-valley-az-gallery-03",
+      "destination": "/wp-content/uploads/2026/05/chimney-repair-paradise-valley-az-gallery-03.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-repair-paradise-valley-az-gallery-03/",
+      "destination": "/wp-content/uploads/2026/05/chimney-repair-paradise-valley-az-gallery-03.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-repair-paradise-valley-az-gallery-04",
+      "destination": "/wp-content/uploads/2026/05/chimney-repair-paradise-valley-az-gallery-04.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-repair-paradise-valley-az-gallery-04/",
+      "destination": "/wp-content/uploads/2026/05/chimney-repair-paradise-valley-az-gallery-04.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-repair-gilbert-az-gallery-02",
+      "destination": "/wp-content/uploads/2026/05/chimney-repair-gilbert-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-repair-gilbert-az-gallery-02/",
+      "destination": "/wp-content/uploads/2026/05/chimney-repair-gilbert-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-repair-gilbert-az-gallery-03",
+      "destination": "/wp-content/uploads/2026/05/chimney-repair-gilbert-az-gallery-03.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-repair-gilbert-az-gallery-03/",
+      "destination": "/wp-content/uploads/2026/05/chimney-repair-gilbert-az-gallery-03.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-repair-gilbert-az-gallery-04",
+      "destination": "/wp-content/uploads/2026/05/chimney-repair-gilbert-az-gallery-04.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-repair-gilbert-az-gallery-04/",
+      "destination": "/wp-content/uploads/2026/05/chimney-repair-gilbert-az-gallery-04.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-repair-chandler-az-gallery-02",
+      "destination": "/wp-content/uploads/2026/05/chimney-repair-chandler-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-repair-chandler-az-gallery-02/",
+      "destination": "/wp-content/uploads/2026/05/chimney-repair-chandler-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-repair-chandler-az-gallery-03",
+      "destination": "/wp-content/uploads/2026/05/chimney-repair-chandler-az-gallery-03.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-repair-chandler-az-gallery-03/",
+      "destination": "/wp-content/uploads/2026/05/chimney-repair-chandler-az-gallery-03.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-repair-chandler-az-gallery-04",
+      "destination": "/wp-content/uploads/2026/05/chimney-repair-chandler-az-gallery-04.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-repair-chandler-az-gallery-04/",
+      "destination": "/wp-content/uploads/2026/05/chimney-repair-chandler-az-gallery-04.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-repair-mesa-az-gallery-02",
+      "destination": "/wp-content/uploads/2026/05/chimney-repair-mesa-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-repair-mesa-az-gallery-02/",
+      "destination": "/wp-content/uploads/2026/05/chimney-repair-mesa-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-repair-mesa-az-gallery-03",
+      "destination": "/wp-content/uploads/2026/05/chimney-repair-mesa-az-gallery-03.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-repair-mesa-az-gallery-03/",
+      "destination": "/wp-content/uploads/2026/05/chimney-repair-mesa-az-gallery-03.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-repair-mesa-az-gallery-04",
+      "destination": "/wp-content/uploads/2026/05/chimney-repair-mesa-az-gallery-04.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-repair-mesa-az-gallery-04/",
+      "destination": "/wp-content/uploads/2026/05/chimney-repair-mesa-az-gallery-04.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-repair-scottsdale-az-gallery-02",
+      "destination": "/wp-content/uploads/2026/05/chimney-repair-scottsdale-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-repair-scottsdale-az-gallery-02/",
+      "destination": "/wp-content/uploads/2026/05/chimney-repair-scottsdale-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-repair-scottsdale-az-gallery-03",
+      "destination": "/wp-content/uploads/2026/05/chimney-repair-scottsdale-az-gallery-03.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-repair-scottsdale-az-gallery-03/",
+      "destination": "/wp-content/uploads/2026/05/chimney-repair-scottsdale-az-gallery-03.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-repair-scottsdale-az-gallery-04",
+      "destination": "/wp-content/uploads/2026/05/chimney-repair-scottsdale-az-gallery-04.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-repair-scottsdale-az-gallery-04/",
+      "destination": "/wp-content/uploads/2026/05/chimney-repair-scottsdale-az-gallery-04.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling-peoria-az-gallery-02",
+      "destination": "/wp-content/uploads/2026/05/fireplace-remodeling-peoria-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling-peoria-az-gallery-02/",
+      "destination": "/wp-content/uploads/2026/05/fireplace-remodeling-peoria-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling-peoria-az-gallery-03",
+      "destination": "/wp-content/uploads/2026/05/fireplace-remodeling-peoria-az-gallery-03.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling-peoria-az-gallery-03/",
+      "destination": "/wp-content/uploads/2026/05/fireplace-remodeling-peoria-az-gallery-03.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling-peoria-az-gallery-04",
+      "destination": "/wp-content/uploads/2026/05/fireplace-remodeling-peoria-az-gallery-04.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling-peoria-az-gallery-04/",
+      "destination": "/wp-content/uploads/2026/05/fireplace-remodeling-peoria-az-gallery-04.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling-paradise-valley-az-gallery-02",
+      "destination": "/wp-content/uploads/2026/05/fireplace-remodeling-paradise-valley-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling-paradise-valley-az-gallery-02/",
+      "destination": "/wp-content/uploads/2026/05/fireplace-remodeling-paradise-valley-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling-paradise-valley-az-gallery-03",
+      "destination": "/wp-content/uploads/2026/05/fireplace-remodeling-paradise-valley-az-gallery-03.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling-paradise-valley-az-gallery-03/",
+      "destination": "/wp-content/uploads/2026/05/fireplace-remodeling-paradise-valley-az-gallery-03.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling-paradise-valley-az-gallery-04",
+      "destination": "/wp-content/uploads/2026/05/fireplace-remodeling-paradise-valley-az-gallery-04.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling-paradise-valley-az-gallery-04/",
+      "destination": "/wp-content/uploads/2026/05/fireplace-remodeling-paradise-valley-az-gallery-04.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling-glendale-az-gallery-02",
+      "destination": "/wp-content/uploads/2026/05/fireplace-remodeling-glendale-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling-glendale-az-gallery-02/",
+      "destination": "/wp-content/uploads/2026/05/fireplace-remodeling-glendale-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling-glendale-az-gallery-03",
+      "destination": "/wp-content/uploads/2026/05/fireplace-remodeling-glendale-az-gallery-03.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling-glendale-az-gallery-03/",
+      "destination": "/wp-content/uploads/2026/05/fireplace-remodeling-glendale-az-gallery-03.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling-glendale-az-gallery-04",
+      "destination": "/wp-content/uploads/2026/05/fireplace-remodeling-glendale-az-gallery-04.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling-glendale-az-gallery-04/",
+      "destination": "/wp-content/uploads/2026/05/fireplace-remodeling-glendale-az-gallery-04.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling-gilbert-az-gallery-02",
+      "destination": "/wp-content/uploads/2026/05/fireplace-remodeling-gilbert-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling-gilbert-az-gallery-02/",
+      "destination": "/wp-content/uploads/2026/05/fireplace-remodeling-gilbert-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling-gilbert-az-gallery-03",
+      "destination": "/wp-content/uploads/2026/05/fireplace-remodeling-gilbert-az-gallery-03.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling-gilbert-az-gallery-03/",
+      "destination": "/wp-content/uploads/2026/05/fireplace-remodeling-gilbert-az-gallery-03.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling-gilbert-az-gallery-04",
+      "destination": "/wp-content/uploads/2026/05/fireplace-remodeling-gilbert-az-gallery-04.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling-gilbert-az-gallery-04/",
+      "destination": "/wp-content/uploads/2026/05/fireplace-remodeling-gilbert-az-gallery-04.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/firebox-repair-phoenix-az-gallery-02",
+      "destination": "/wp-content/uploads/2026/05/firebox-repair-phoenix-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/firebox-repair-phoenix-az-gallery-02/",
+      "destination": "/wp-content/uploads/2026/05/firebox-repair-phoenix-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/firebox-repair-phoenix-az-gallery-03",
+      "destination": "/wp-content/uploads/2026/05/firebox-repair-phoenix-az-gallery-03.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/firebox-repair-phoenix-az-gallery-03/",
+      "destination": "/wp-content/uploads/2026/05/firebox-repair-phoenix-az-gallery-03.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/firebox-repair-phoenix-az-gallery-04",
+      "destination": "/wp-content/uploads/2026/05/firebox-repair-phoenix-az-gallery-04.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/firebox-repair-phoenix-az-gallery-04/",
+      "destination": "/wp-content/uploads/2026/05/firebox-repair-phoenix-az-gallery-04.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-cap-phoenix-az-gallery-07",
+      "destination": "/wp-content/uploads/2026/05/chimney-cap-phoenix-az-gallery-07.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-cap-phoenix-az-gallery-07/",
+      "destination": "/wp-content/uploads/2026/05/chimney-cap-phoenix-az-gallery-07.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-cap-phoenix-az-gallery-08",
+      "destination": "/wp-content/uploads/2026/05/chimney-cap-phoenix-az-gallery-08.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-cap-phoenix-az-gallery-08/",
+      "destination": "/wp-content/uploads/2026/05/chimney-cap-phoenix-az-gallery-08.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-scottsdale-az-gallery-08",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-scottsdale-az-gallery-08.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-scottsdale-az-gallery-08/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-scottsdale-az-gallery-08.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-phoenix-az-gallery-08",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-phoenix-az-gallery-08.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-phoenix-az-gallery-08/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-phoenix-az-gallery-08.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling-gallery-06",
+      "destination": "/wp-content/uploads/2026/05/fireplace-remodeling-gallery-06.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling-gallery-06/",
+      "destination": "/wp-content/uploads/2026/05/fireplace-remodeling-gallery-06.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-leak-repair-scottsdale-az-gallery-02",
+      "destination": "/wp-content/uploads/2026/05/chimney-leak-repair-scottsdale-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-leak-repair-scottsdale-az-gallery-02/",
+      "destination": "/wp-content/uploads/2026/05/chimney-leak-repair-scottsdale-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-scottsdale-az-gallery-02",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-repair-scottsdale-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-scottsdale-az-gallery-02/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-repair-scottsdale-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-repair-phoenix-az-gallery-02",
+      "destination": "/wp-content/uploads/2026/05/chimney-repair-phoenix-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-repair-phoenix-az-gallery-02/",
+      "destination": "/wp-content/uploads/2026/05/chimney-repair-phoenix-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-repair-phoenix-az-gallery-03",
+      "destination": "/wp-content/uploads/2026/05/chimney-repair-phoenix-az-gallery-03.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-repair-phoenix-az-gallery-03/",
+      "destination": "/wp-content/uploads/2026/05/chimney-repair-phoenix-az-gallery-03.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-repair-phoenix-az-gallery-04",
+      "destination": "/wp-content/uploads/2026/05/chimney-repair-phoenix-az-gallery-04.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-repair-phoenix-az-gallery-04/",
+      "destination": "/wp-content/uploads/2026/05/chimney-repair-phoenix-az-gallery-04.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling-mesa-az-gallery-02",
+      "destination": "/wp-content/uploads/2026/05/fireplace-remodeling-mesa-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling-mesa-az-gallery-02/",
+      "destination": "/wp-content/uploads/2026/05/fireplace-remodeling-mesa-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling-mesa-az-gallery-03",
+      "destination": "/wp-content/uploads/2026/05/fireplace-remodeling-mesa-az-gallery-03.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling-mesa-az-gallery-03/",
+      "destination": "/wp-content/uploads/2026/05/fireplace-remodeling-mesa-az-gallery-03.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling-mesa-az-gallery-04",
+      "destination": "/wp-content/uploads/2026/05/fireplace-remodeling-mesa-az-gallery-04.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling-mesa-az-gallery-04/",
+      "destination": "/wp-content/uploads/2026/05/fireplace-remodeling-mesa-az-gallery-04.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling-chandler-az-gallery-02",
+      "destination": "/wp-content/uploads/2026/05/fireplace-remodeling-chandler-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling-chandler-az-gallery-02/",
+      "destination": "/wp-content/uploads/2026/05/fireplace-remodeling-chandler-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling-chandler-az-gallery-03",
+      "destination": "/wp-content/uploads/2026/05/fireplace-remodeling-chandler-az-gallery-03.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling-chandler-az-gallery-03/",
+      "destination": "/wp-content/uploads/2026/05/fireplace-remodeling-chandler-az-gallery-03.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling-chandler-az-gallery-04",
+      "destination": "/wp-content/uploads/2026/05/fireplace-remodeling-chandler-az-gallery-04.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling-chandler-az-gallery-04/",
+      "destination": "/wp-content/uploads/2026/05/fireplace-remodeling-chandler-az-gallery-04.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling-scottsdale-az-gallery-02",
+      "destination": "/wp-content/uploads/2026/05/fireplace-remodeling-scottsdale-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling-scottsdale-az-gallery-02/",
+      "destination": "/wp-content/uploads/2026/05/fireplace-remodeling-scottsdale-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling-scottsdale-az-gallery-03",
+      "destination": "/wp-content/uploads/2026/05/fireplace-remodeling-scottsdale-az-gallery-03.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling-scottsdale-az-gallery-03/",
+      "destination": "/wp-content/uploads/2026/05/fireplace-remodeling-scottsdale-az-gallery-03.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling-scottsdale-az-gallery-04",
+      "destination": "/wp-content/uploads/2026/05/fireplace-remodeling-scottsdale-az-gallery-04.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling-scottsdale-az-gallery-04/",
+      "destination": "/wp-content/uploads/2026/05/fireplace-remodeling-scottsdale-az-gallery-04.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling-phoenix-az-gallery-02",
+      "destination": "/wp-content/uploads/2026/05/fireplace-remodeling-phoenix-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling-phoenix-az-gallery-02/",
+      "destination": "/wp-content/uploads/2026/05/fireplace-remodeling-phoenix-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling-phoenix-az-gallery-03",
+      "destination": "/wp-content/uploads/2026/05/fireplace-remodeling-phoenix-az-gallery-03.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling-phoenix-az-gallery-03/",
+      "destination": "/wp-content/uploads/2026/05/fireplace-remodeling-phoenix-az-gallery-03.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling-phoenix-az-gallery-04",
+      "destination": "/wp-content/uploads/2026/05/fireplace-remodeling-phoenix-az-gallery-04.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling-phoenix-az-gallery-04/",
+      "destination": "/wp-content/uploads/2026/05/fireplace-remodeling-phoenix-az-gallery-04.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-mesa-az-gallery-02",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-repair-mesa-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-mesa-az-gallery-02/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-repair-mesa-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-inspection-queen-creek-az-gallery-02",
+      "destination": "/wp-content/uploads/2026/05/chimney-inspection-queen-creek-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-inspection-queen-creek-az-gallery-02/",
+      "destination": "/wp-content/uploads/2026/05/chimney-inspection-queen-creek-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-inspection-queen-creek-az-gallery-03",
+      "destination": "/wp-content/uploads/2026/05/chimney-inspection-queen-creek-az-gallery-03.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-inspection-queen-creek-az-gallery-03/",
+      "destination": "/wp-content/uploads/2026/05/chimney-inspection-queen-creek-az-gallery-03.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-glendale-az-clip-poster-05",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-glendale-az-clip-poster-05.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-glendale-az-clip-poster-05/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-glendale-az-clip-poster-05.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-glendale-az-clip-poster-06",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-glendale-az-clip-poster-06.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-glendale-az-clip-poster-06/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-glendale-az-clip-poster-06.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-tempe-az-clip-poster-05",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-tempe-az-clip-poster-05.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-tempe-az-clip-poster-05/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-tempe-az-clip-poster-05.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-tempe-az-clip-poster-06",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-tempe-az-clip-poster-06.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-tempe-az-clip-poster-06/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-tempe-az-clip-poster-06.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-inspection-gallery-02",
+      "destination": "/wp-content/uploads/2026/05/chimney-inspection-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-inspection-gallery-02/",
+      "destination": "/wp-content/uploads/2026/05/chimney-inspection-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-inspection-gallery-03",
+      "destination": "/wp-content/uploads/2026/05/chimney-inspection-gallery-03.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-inspection-gallery-03/",
+      "destination": "/wp-content/uploads/2026/05/chimney-inspection-gallery-03.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-gallery-04",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-repair-gallery-04.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-gallery-04/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-repair-gallery-04.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-logs-chandler-az-clip-poster-05",
+      "destination": "/wp-content/uploads/2026/05/gas-logs-chandler-az-clip-poster-05.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-logs-chandler-az-clip-poster-05/",
+      "destination": "/wp-content/uploads/2026/05/gas-logs-chandler-az-clip-poster-05.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-logs-gilbert-az-clip-poster-05",
+      "destination": "/wp-content/uploads/2026/05/gas-logs-gilbert-az-clip-poster-05.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-logs-gilbert-az-clip-poster-05/",
+      "destination": "/wp-content/uploads/2026/05/gas-logs-gilbert-az-clip-poster-05.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-logs-mesa-az-clip-poster-05",
+      "destination": "/wp-content/uploads/2026/05/gas-logs-mesa-az-clip-poster-05.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-logs-mesa-az-clip-poster-05/",
+      "destination": "/wp-content/uploads/2026/05/gas-logs-mesa-az-clip-poster-05.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-logs-scottsdale-az-clip-poster-05",
+      "destination": "/wp-content/uploads/2026/05/gas-logs-scottsdale-az-clip-poster-05.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-logs-scottsdale-az-clip-poster-05/",
+      "destination": "/wp-content/uploads/2026/05/gas-logs-scottsdale-az-clip-poster-05.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-logs-phoenix-az-clip-poster-05",
+      "destination": "/wp-content/uploads/2026/05/gas-logs-phoenix-az-clip-poster-05.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-logs-phoenix-az-clip-poster-05/",
+      "destination": "/wp-content/uploads/2026/05/gas-logs-phoenix-az-clip-poster-05.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-inspection-surprise-az-gallery-02",
+      "destination": "/wp-content/uploads/2026/05/chimney-inspection-surprise-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-inspection-surprise-az-gallery-02/",
+      "destination": "/wp-content/uploads/2026/05/chimney-inspection-surprise-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-inspection-surprise-az-gallery-03",
+      "destination": "/wp-content/uploads/2026/05/chimney-inspection-surprise-az-gallery-03.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-inspection-surprise-az-gallery-03/",
+      "destination": "/wp-content/uploads/2026/05/chimney-inspection-surprise-az-gallery-03.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-inspection-fountain-hills-az-gallery-02",
+      "destination": "/wp-content/uploads/2026/05/chimney-inspection-fountain-hills-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-inspection-fountain-hills-az-gallery-02/",
+      "destination": "/wp-content/uploads/2026/05/chimney-inspection-fountain-hills-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-inspection-fountain-hills-az-gallery-03",
+      "destination": "/wp-content/uploads/2026/05/chimney-inspection-fountain-hills-az-gallery-03.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-inspection-fountain-hills-az-gallery-03/",
+      "destination": "/wp-content/uploads/2026/05/chimney-inspection-fountain-hills-az-gallery-03.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-anthem-az-gallery-02",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-repair-anthem-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-anthem-az-gallery-02/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-repair-anthem-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-cave-creek-az-gallery-02",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-repair-cave-creek-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-cave-creek-az-gallery-02/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-repair-cave-creek-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-fountain-hills-az-gallery-02",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-repair-fountain-hills-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-fountain-hills-az-gallery-02/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-repair-fountain-hills-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-avondale-az-gallery-02",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-repair-avondale-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-avondale-az-gallery-02/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-repair-avondale-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-goodyear-az-gallery-02",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-repair-goodyear-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-goodyear-az-gallery-02/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-repair-goodyear-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-paradise-valley-az-clip-poster-05",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-paradise-valley-az-clip-poster-05.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-paradise-valley-az-clip-poster-05/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-paradise-valley-az-clip-poster-05.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-paradise-valley-az-clip-poster-06",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-paradise-valley-az-clip-poster-06.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-paradise-valley-az-clip-poster-06/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-paradise-valley-az-clip-poster-06.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-mesa-az-clip-poster-11",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-mesa-az-clip-poster-11.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-mesa-az-clip-poster-11/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-mesa-az-clip-poster-11.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-mesa-az-clip-poster-12",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-mesa-az-clip-poster-12.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-mesa-az-clip-poster-12/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-mesa-az-clip-poster-12.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-phoenix-az-clip-poster-05",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-phoenix-az-clip-poster-05.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-phoenix-az-clip-poster-05/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-phoenix-az-clip-poster-05.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-phoenix-az-clip-poster-06",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-phoenix-az-clip-poster-06.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-phoenix-az-clip-poster-06/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-phoenix-az-clip-poster-06.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-gilbert-az-clip-poster-05",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-gilbert-az-clip-poster-05.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-gilbert-az-clip-poster-05/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-gilbert-az-clip-poster-05.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-gilbert-az-clip-poster-06",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-gilbert-az-clip-poster-06.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-gilbert-az-clip-poster-06/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-gilbert-az-clip-poster-06.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-chandler-az-clip-poster-05",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-chandler-az-clip-poster-05.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-chandler-az-clip-poster-05/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-chandler-az-clip-poster-05.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-chandler-az-clip-poster-06",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-chandler-az-clip-poster-06.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-chandler-az-clip-poster-06/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-chandler-az-clip-poster-06.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-mesa-az-gallery-14",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-mesa-az-gallery-14.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-mesa-az-gallery-14/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-mesa-az-gallery-14.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-mesa-az-gallery-15",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-mesa-az-gallery-15.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-mesa-az-gallery-15/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-mesa-az-gallery-15.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-mesa-az-gallery-16",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-mesa-az-gallery-16.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-mesa-az-gallery-16/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-mesa-az-gallery-16.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-mesa-az-clip-poster-17",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-mesa-az-clip-poster-17.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-mesa-az-clip-poster-17/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-mesa-az-clip-poster-17.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-mesa-az-clip-poster-18",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-mesa-az-clip-poster-18.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-mesa-az-clip-poster-18/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-mesa-az-clip-poster-18.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-scottsdale-az-clip-poster-05",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-scottsdale-az-clip-poster-05.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-scottsdale-az-clip-poster-05/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-scottsdale-az-clip-poster-05.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-scottsdale-az-clip-poster-06",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-scottsdale-az-clip-poster-06.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-scottsdale-az-clip-poster-06/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-scottsdale-az-clip-poster-06.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-inspection-gilbert-az-gallery-02",
+      "destination": "/wp-content/uploads/2026/05/chimney-inspection-gilbert-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-inspection-gilbert-az-gallery-02/",
+      "destination": "/wp-content/uploads/2026/05/chimney-inspection-gilbert-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-inspection-gilbert-az-gallery-03",
+      "destination": "/wp-content/uploads/2026/05/chimney-inspection-gilbert-az-gallery-03.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-inspection-gilbert-az-gallery-03/",
+      "destination": "/wp-content/uploads/2026/05/chimney-inspection-gilbert-az-gallery-03.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-inspection-chandler-az-gallery-02",
+      "destination": "/wp-content/uploads/2026/05/chimney-inspection-chandler-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-inspection-chandler-az-gallery-02/",
+      "destination": "/wp-content/uploads/2026/05/chimney-inspection-chandler-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-inspection-chandler-az-gallery-03",
+      "destination": "/wp-content/uploads/2026/05/chimney-inspection-chandler-az-gallery-03.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-inspection-chandler-az-gallery-03/",
+      "destination": "/wp-content/uploads/2026/05/chimney-inspection-chandler-az-gallery-03.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-inspection-mesa-az-gallery-02",
+      "destination": "/wp-content/uploads/2026/05/chimney-inspection-mesa-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-inspection-mesa-az-gallery-02/",
+      "destination": "/wp-content/uploads/2026/05/chimney-inspection-mesa-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-inspection-mesa-az-gallery-03",
+      "destination": "/wp-content/uploads/2026/05/chimney-inspection-mesa-az-gallery-03.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-inspection-mesa-az-gallery-03/",
+      "destination": "/wp-content/uploads/2026/05/chimney-inspection-mesa-az-gallery-03.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-inspection-scottsdale-az-gallery-02",
+      "destination": "/wp-content/uploads/2026/05/chimney-inspection-scottsdale-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-inspection-scottsdale-az-gallery-02/",
+      "destination": "/wp-content/uploads/2026/05/chimney-inspection-scottsdale-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-inspection-scottsdale-az-gallery-03",
+      "destination": "/wp-content/uploads/2026/05/chimney-inspection-scottsdale-az-gallery-03.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-inspection-scottsdale-az-gallery-03/",
+      "destination": "/wp-content/uploads/2026/05/chimney-inspection-scottsdale-az-gallery-03.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-queen-creek-az-gallery-02",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-repair-queen-creek-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-queen-creek-az-gallery-02/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-repair-queen-creek-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-cap-phoenix-az-gallery-09",
+      "destination": "/wp-content/uploads/2026/05/chimney-cap-phoenix-az-gallery-09.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-cap-phoenix-az-gallery-09/",
+      "destination": "/wp-content/uploads/2026/05/chimney-cap-phoenix-az-gallery-09.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-cap-phoenix-az-clip-poster-10",
+      "destination": "/wp-content/uploads/2026/05/chimney-cap-phoenix-az-clip-poster-10.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-cap-phoenix-az-clip-poster-10/",
+      "destination": "/wp-content/uploads/2026/05/chimney-cap-phoenix-az-clip-poster-10.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-scottsdale-az-gallery-09",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-scottsdale-az-gallery-09.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-scottsdale-az-gallery-09/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-scottsdale-az-gallery-09.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-scottsdale-az-gallery-10",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-scottsdale-az-gallery-10.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-scottsdale-az-gallery-10/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-scottsdale-az-gallery-10.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-scottsdale-az-clip-poster-11",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-scottsdale-az-clip-poster-11.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-scottsdale-az-clip-poster-11/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-scottsdale-az-clip-poster-11.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-scottsdale-az-clip-poster-12",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-scottsdale-az-clip-poster-12.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-scottsdale-az-clip-poster-12/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-scottsdale-az-clip-poster-12.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-phoenix-az-gallery-09",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-phoenix-az-gallery-09.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-phoenix-az-gallery-09/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-phoenix-az-gallery-09.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-phoenix-az-gallery-10",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-phoenix-az-gallery-10.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-phoenix-az-gallery-10/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-phoenix-az-gallery-10.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-phoenix-az-clip-poster-11",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-phoenix-az-clip-poster-11.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-phoenix-az-clip-poster-11/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-phoenix-az-clip-poster-11.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-phoenix-az-clip-poster-12",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-phoenix-az-clip-poster-12.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-phoenix-az-clip-poster-12/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-phoenix-az-clip-poster-12.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-leak-repair-scottsdale-az-gallery-03",
+      "destination": "/wp-content/uploads/2026/05/chimney-leak-repair-scottsdale-az-gallery-03.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-leak-repair-scottsdale-az-gallery-03/",
+      "destination": "/wp-content/uploads/2026/05/chimney-leak-repair-scottsdale-az-gallery-03.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-scottsdale-az-gallery-04",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-repair-scottsdale-az-gallery-04.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-scottsdale-az-gallery-04/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-repair-scottsdale-az-gallery-04.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-inspection-phoenix-az-gallery-02",
+      "destination": "/wp-content/uploads/2026/05/chimney-inspection-phoenix-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-inspection-phoenix-az-gallery-02/",
+      "destination": "/wp-content/uploads/2026/05/chimney-inspection-phoenix-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-inspection-phoenix-az-gallery-03",
+      "destination": "/wp-content/uploads/2026/05/chimney-inspection-phoenix-az-gallery-03.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-inspection-phoenix-az-gallery-03/",
+      "destination": "/wp-content/uploads/2026/05/chimney-inspection-phoenix-az-gallery-03.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-paradise-valley-az-gallery-02",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-repair-paradise-valley-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-paradise-valley-az-gallery-02/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-repair-paradise-valley-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-surprise-az-gallery-02",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-repair-surprise-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-surprise-az-gallery-02/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-repair-surprise-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-peoria-az-gallery-02",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-repair-peoria-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-peoria-az-gallery-02/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-repair-peoria-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-glendale-az-gallery-02",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-repair-glendale-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-glendale-az-gallery-02/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-repair-glendale-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-tempe-az-gallery-02",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-repair-tempe-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-tempe-az-gallery-02/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-repair-tempe-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-gilbert-az-gallery-02",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-repair-gilbert-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-gilbert-az-gallery-02/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-repair-gilbert-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-chandler-az-gallery-02",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-repair-chandler-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-chandler-az-gallery-02/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-repair-chandler-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-mesa-az-gallery-04",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-repair-mesa-az-gallery-04.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-mesa-az-gallery-04/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-repair-mesa-az-gallery-04.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-scottsdale-az-gallery-06",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-repair-scottsdale-az-gallery-06.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-scottsdale-az-gallery-06/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-repair-scottsdale-az-gallery-06.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-phoenix-az-gallery-02",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-repair-phoenix-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-phoenix-az-gallery-02/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-repair-phoenix-az-gallery-02.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/site-wide-fire-loop-background-2",
+      "destination": "/wp-content/uploads/2026/05/site-fire-loop-poster.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/site-wide-fire-loop-background-2/",
+      "destination": "/wp-content/uploads/2026/05/site-fire-loop-poster.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/arizona-chimney-pros",
+      "destination": "/wp-content/uploads/2026/05/arizonachimneypros-site-logo.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/arizona-chimney-pros/",
+      "destination": "/wp-content/uploads/2026/05/arizonachimneypros-site-logo.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-cleaning-cost-in-arizona",
+      "destination": "/wp-content/uploads/2026/05/chimney-cleaning-cost-arizona-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-cleaning-cost-in-arizona/",
+      "destination": "/wp-content/uploads/2026/05/chimney-cleaning-cost-arizona-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-hero",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-repair-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-hero/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-repair-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-arizona-hero",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-repair-arizona-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-arizona-hero/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-repair-arizona-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-anthem-hero",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-repair-anthem-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-anthem-hero/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-repair-anthem-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-cave-creek-hero",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-repair-cave-creek-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-cave-creek-hero/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-repair-cave-creek-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-fountain-hills-hero",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-repair-fountain-hills-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-fountain-hills-hero/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-repair-fountain-hills-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-avondale-hero",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-repair-avondale-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-avondale-hero/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-repair-avondale-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-goodyear-hero",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-repair-goodyear-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-goodyear-hero/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-repair-goodyear-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-queen-creek-hero",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-repair-queen-creek-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-queen-creek-hero/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-repair-queen-creek-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-paradise-valley-hero",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-repair-paradise-valley-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-paradise-valley-hero/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-repair-paradise-valley-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-surprise-hero",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-repair-surprise-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-surprise-hero/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-repair-surprise-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-peoria-hero",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-repair-peoria-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-peoria-hero/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-repair-peoria-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-glendale-hero",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-repair-glendale-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-glendale-hero/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-repair-glendale-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-tempe-hero",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-repair-tempe-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-tempe-hero/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-repair-tempe-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-gilbert-hero",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-repair-gilbert-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-gilbert-hero/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-repair-gilbert-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-chandler-hero",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-repair-chandler-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-chandler-hero/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-repair-chandler-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-mesa-hero",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-repair-mesa-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-mesa-hero/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-repair-mesa-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-cleaning-anthem-hero",
+      "destination": "/wp-content/uploads/2026/05/chimney-cleaning-anthem-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-cleaning-anthem-hero/",
+      "destination": "/wp-content/uploads/2026/05/chimney-cleaning-anthem-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-cleaning-cave-creek-hero",
+      "destination": "/wp-content/uploads/2026/05/chimney-cleaning-cave-creek-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-cleaning-cave-creek-hero/",
+      "destination": "/wp-content/uploads/2026/05/chimney-cleaning-cave-creek-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-cleaning-avondale-hero",
+      "destination": "/wp-content/uploads/2026/05/chimney-cleaning-avondale-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-cleaning-avondale-hero/",
+      "destination": "/wp-content/uploads/2026/05/chimney-cleaning-avondale-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-cleaning-goodyear-hero",
+      "destination": "/wp-content/uploads/2026/05/chimney-cleaning-goodyear-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-cleaning-goodyear-hero/",
+      "destination": "/wp-content/uploads/2026/05/chimney-cleaning-goodyear-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-cleaning-paradise-valley-hero",
+      "destination": "/wp-content/uploads/2026/05/chimney-cleaning-paradise-valley-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-cleaning-paradise-valley-hero/",
+      "destination": "/wp-content/uploads/2026/05/chimney-cleaning-paradise-valley-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-cleaning-gilbert-hero",
+      "destination": "/wp-content/uploads/2026/05/chimney-cleaning-gilbert-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-cleaning-gilbert-hero/",
+      "destination": "/wp-content/uploads/2026/05/chimney-cleaning-gilbert-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-cleaning-chandler-hero",
+      "destination": "/wp-content/uploads/2026/05/chimney-cleaning-chandler-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-cleaning-chandler-hero/",
+      "destination": "/wp-content/uploads/2026/05/chimney-cleaning-chandler-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-cleaning-mesa-hero",
+      "destination": "/wp-content/uploads/2026/05/chimney-cleaning-mesa-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-cleaning-mesa-hero/",
+      "destination": "/wp-content/uploads/2026/05/chimney-cleaning-mesa-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-cleaning-phoenix-hero",
+      "destination": "/wp-content/uploads/2026/05/chimney-cleaning-phoenix-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-cleaning-phoenix-hero/",
+      "destination": "/wp-content/uploads/2026/05/chimney-cleaning-phoenix-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-inspection-queen-creek-hero",
+      "destination": "/wp-content/uploads/2026/05/chimney-inspection-queen-creek-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-inspection-queen-creek-hero/",
+      "destination": "/wp-content/uploads/2026/05/chimney-inspection-queen-creek-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/pre-burning-season-chimney-inspection-arizona-hero",
+      "destination": "/wp-content/uploads/2026/05/pre-burning-season-chimney-inspection-arizona-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/pre-burning-season-chimney-inspection-arizona-hero/",
+      "destination": "/wp-content/uploads/2026/05/pre-burning-season-chimney-inspection-arizona-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-repair-storm-damage-arizona-hero",
+      "destination": "/wp-content/uploads/2026/05/chimney-repair-storm-damage-arizona-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-repair-storm-damage-arizona-hero/",
+      "destination": "/wp-content/uploads/2026/05/chimney-repair-storm-damage-arizona-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/emergency-chimney-repair-arizona-hero",
+      "destination": "/wp-content/uploads/2026/05/emergency-chimney-repair-arizona-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/emergency-chimney-repair-arizona-hero/",
+      "destination": "/wp-content/uploads/2026/05/emergency-chimney-repair-arizona-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-repair-paradise-valley-hero",
+      "destination": "/wp-content/uploads/2026/05/chimney-repair-paradise-valley-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-repair-paradise-valley-hero/",
+      "destination": "/wp-content/uploads/2026/05/chimney-repair-paradise-valley-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-repair-gilbert-hero",
+      "destination": "/wp-content/uploads/2026/05/chimney-repair-gilbert-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-repair-gilbert-hero/",
+      "destination": "/wp-content/uploads/2026/05/chimney-repair-gilbert-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-insert-vs-gas-logs-arizona-hero",
+      "destination": "/wp-content/uploads/2026/05/gas-insert-vs-gas-logs-arizona-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-insert-vs-gas-logs-arizona-hero/",
+      "destination": "/wp-content/uploads/2026/05/gas-insert-vs-gas-logs-arizona-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-leak-repair-phoenix-hero",
+      "destination": "/wp-content/uploads/2026/05/chimney-leak-repair-phoenix-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-leak-repair-phoenix-hero/",
+      "destination": "/wp-content/uploads/2026/05/chimney-leak-repair-phoenix-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling-hero",
+      "destination": "/wp-content/uploads/2026/05/fireplace-remodeling-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling-hero/",
+      "destination": "/wp-content/uploads/2026/05/fireplace-remodeling-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-installation-hero",
+      "destination": "/wp-content/uploads/2026/05/fireplace-installation-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-installation-hero/",
+      "destination": "/wp-content/uploads/2026/05/fireplace-installation-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-glendale-hero",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-glendale-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-glendale-hero/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-glendale-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-tempe-hero",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-tempe-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-tempe-hero/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-tempe-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling-tempe-hero",
+      "destination": "/wp-content/uploads/2026/05/fireplace-remodeling-tempe-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling-tempe-hero/",
+      "destination": "/wp-content/uploads/2026/05/fireplace-remodeling-tempe-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-log-replacement-chandler-hero",
+      "destination": "/wp-content/uploads/2026/05/gas-log-replacement-chandler-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-log-replacement-chandler-hero/",
+      "destination": "/wp-content/uploads/2026/05/gas-log-replacement-chandler-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-log-replacement-gilbert-hero",
+      "destination": "/wp-content/uploads/2026/05/gas-log-replacement-gilbert-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-log-replacement-gilbert-hero/",
+      "destination": "/wp-content/uploads/2026/05/gas-log-replacement-gilbert-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-log-replacement-mesa-hero",
+      "destination": "/wp-content/uploads/2026/05/gas-log-replacement-mesa-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-log-replacement-mesa-hero/",
+      "destination": "/wp-content/uploads/2026/05/gas-log-replacement-mesa-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-log-replacement-scottsdale-hero",
+      "destination": "/wp-content/uploads/2026/05/gas-log-replacement-scottsdale-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-log-replacement-scottsdale-hero/",
+      "destination": "/wp-content/uploads/2026/05/gas-log-replacement-scottsdale-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-log-replacement-phoenix-hero",
+      "destination": "/wp-content/uploads/2026/05/gas-log-replacement-phoenix-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-log-replacement-phoenix-hero/",
+      "destination": "/wp-content/uploads/2026/05/gas-log-replacement-phoenix-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-inspection-surprise-hero",
+      "destination": "/wp-content/uploads/2026/05/chimney-inspection-surprise-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-inspection-surprise-hero/",
+      "destination": "/wp-content/uploads/2026/05/chimney-inspection-surprise-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling-queen-creek-hero",
+      "destination": "/wp-content/uploads/2026/05/fireplace-remodeling-queen-creek-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling-queen-creek-hero/",
+      "destination": "/wp-content/uploads/2026/05/fireplace-remodeling-queen-creek-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-inspection-fountain-hills-hero",
+      "destination": "/wp-content/uploads/2026/05/chimney-inspection-fountain-hills-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-inspection-fountain-hills-hero/",
+      "destination": "/wp-content/uploads/2026/05/chimney-inspection-fountain-hills-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/outdoor-fireplace-installation-cost-arizona-hero",
+      "destination": "/wp-content/uploads/2026/05/outdoor-fireplace-installation-cost-arizona-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/outdoor-fireplace-installation-cost-arizona-hero/",
+      "destination": "/wp-content/uploads/2026/05/outdoor-fireplace-installation-cost-arizona-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-cap-blown-off-phoenix-hero",
+      "destination": "/wp-content/uploads/2026/05/chimney-cap-blown-off-phoenix-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-cap-blown-off-phoenix-hero/",
+      "destination": "/wp-content/uploads/2026/05/chimney-cap-blown-off-phoenix-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/wood-to-gas-fireplace-conversion-paradise-valley-hero",
+      "destination": "/wp-content/uploads/2026/05/wood-to-gas-fireplace-conversion-paradise-valley-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/wood-to-gas-fireplace-conversion-paradise-valley-hero/",
+      "destination": "/wp-content/uploads/2026/05/wood-to-gas-fireplace-conversion-paradise-valley-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/wood-to-gas-fireplace-conversion-mesa-hero",
+      "destination": "/wp-content/uploads/2026/05/wood-to-gas-fireplace-conversion-mesa-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/wood-to-gas-fireplace-conversion-mesa-hero/",
+      "destination": "/wp-content/uploads/2026/05/wood-to-gas-fireplace-conversion-mesa-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/wood-to-gas-fireplace-conversion-phoenix-hero",
+      "destination": "/wp-content/uploads/2026/05/wood-to-gas-fireplace-conversion-phoenix-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/wood-to-gas-fireplace-conversion-phoenix-hero/",
+      "destination": "/wp-content/uploads/2026/05/wood-to-gas-fireplace-conversion-phoenix-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-gilbert-hero",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-gilbert-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-gilbert-hero/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-gilbert-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-chandler-hero",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-chandler-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-chandler-hero/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-chandler-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-mesa-hero",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-mesa-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-mesa-hero/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-mesa-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-scottsdale-hero",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-scottsdale-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-scottsdale-hero/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-scottsdale-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-repair-chandler-hero",
+      "destination": "/wp-content/uploads/2026/05/chimney-repair-chandler-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-repair-chandler-hero/",
+      "destination": "/wp-content/uploads/2026/05/chimney-repair-chandler-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-repair-mesa-hero",
+      "destination": "/wp-content/uploads/2026/05/chimney-repair-mesa-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-repair-mesa-hero/",
+      "destination": "/wp-content/uploads/2026/05/chimney-repair-mesa-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-repair-scottsdale-hero",
+      "destination": "/wp-content/uploads/2026/05/chimney-repair-scottsdale-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-repair-scottsdale-hero/",
+      "destination": "/wp-content/uploads/2026/05/chimney-repair-scottsdale-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-inspection-gilbert-hero",
+      "destination": "/wp-content/uploads/2026/05/chimney-inspection-gilbert-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-inspection-gilbert-hero/",
+      "destination": "/wp-content/uploads/2026/05/chimney-inspection-gilbert-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-inspection-chandler-hero",
+      "destination": "/wp-content/uploads/2026/05/chimney-inspection-chandler-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-inspection-chandler-hero/",
+      "destination": "/wp-content/uploads/2026/05/chimney-inspection-chandler-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-inspection-mesa-hero",
+      "destination": "/wp-content/uploads/2026/05/chimney-inspection-mesa-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-inspection-mesa-hero/",
+      "destination": "/wp-content/uploads/2026/05/chimney-inspection-mesa-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-inspection-scottsdale-hero",
+      "destination": "/wp-content/uploads/2026/05/chimney-inspection-scottsdale-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-inspection-scottsdale-hero/",
+      "destination": "/wp-content/uploads/2026/05/chimney-inspection-scottsdale-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling-peoria-hero",
+      "destination": "/wp-content/uploads/2026/05/fireplace-remodeling-peoria-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling-peoria-hero/",
+      "destination": "/wp-content/uploads/2026/05/fireplace-remodeling-peoria-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling-paradise-valley-hero",
+      "destination": "/wp-content/uploads/2026/05/fireplace-remodeling-paradise-valley-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling-paradise-valley-hero/",
+      "destination": "/wp-content/uploads/2026/05/fireplace-remodeling-paradise-valley-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling-glendale-hero",
+      "destination": "/wp-content/uploads/2026/05/fireplace-remodeling-glendale-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling-glendale-hero/",
+      "destination": "/wp-content/uploads/2026/05/fireplace-remodeling-glendale-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling-gilbert-hero",
+      "destination": "/wp-content/uploads/2026/05/fireplace-remodeling-gilbert-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling-gilbert-hero/",
+      "destination": "/wp-content/uploads/2026/05/fireplace-remodeling-gilbert-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/firebox-repair-phoenix-hero",
+      "destination": "/wp-content/uploads/2026/05/firebox-repair-phoenix-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/firebox-repair-phoenix-hero/",
+      "destination": "/wp-content/uploads/2026/05/firebox-repair-phoenix-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-cap-installation-phoenix-hero",
+      "destination": "/wp-content/uploads/2026/05/chimney-cap-installation-phoenix-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-cap-installation-phoenix-hero/",
+      "destination": "/wp-content/uploads/2026/05/chimney-cap-installation-phoenix-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/wood-to-gas-fireplace-conversion-scottsdale-hero",
+      "destination": "/wp-content/uploads/2026/05/wood-to-gas-fireplace-conversion-scottsdale-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/wood-to-gas-fireplace-conversion-scottsdale-hero/",
+      "destination": "/wp-content/uploads/2026/05/wood-to-gas-fireplace-conversion-scottsdale-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-phoenix-hero",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-phoenix-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-phoenix-hero/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-phoenix-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodel-cost-arizona-hero",
+      "destination": "/wp-content/uploads/2026/05/fireplace-remodel-cost-arizona-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodel-cost-arizona-hero/",
+      "destination": "/wp-content/uploads/2026/05/fireplace-remodel-cost-arizona-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-leaking-scottsdale-hero",
+      "destination": "/wp-content/uploads/2026/05/chimney-leaking-scottsdale-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-leaking-scottsdale-hero/",
+      "destination": "/wp-content/uploads/2026/05/chimney-leaking-scottsdale-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-repair-phoenix-hero",
+      "destination": "/wp-content/uploads/2026/05/chimney-repair-phoenix-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-repair-phoenix-hero/",
+      "destination": "/wp-content/uploads/2026/05/chimney-repair-phoenix-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-cleaning-scottsdale-hero",
+      "destination": "/wp-content/uploads/2026/05/chimney-cleaning-scottsdale-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-cleaning-scottsdale-hero/",
+      "destination": "/wp-content/uploads/2026/05/chimney-cleaning-scottsdale-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-inspection-phoenix-hero",
+      "destination": "/wp-content/uploads/2026/05/chimney-inspection-phoenix-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-inspection-phoenix-hero/",
+      "destination": "/wp-content/uploads/2026/05/chimney-inspection-phoenix-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling-mesa-hero",
+      "destination": "/wp-content/uploads/2026/05/fireplace-remodeling-mesa-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling-mesa-hero/",
+      "destination": "/wp-content/uploads/2026/05/fireplace-remodeling-mesa-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling-chandler-hero",
+      "destination": "/wp-content/uploads/2026/05/fireplace-remodeling-chandler-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling-chandler-hero/",
+      "destination": "/wp-content/uploads/2026/05/fireplace-remodeling-chandler-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling-scottsdale-hero",
+      "destination": "/wp-content/uploads/2026/05/fireplace-remodeling-scottsdale-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling-scottsdale-hero/",
+      "destination": "/wp-content/uploads/2026/05/fireplace-remodeling-scottsdale-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling-phoenix-hero",
+      "destination": "/wp-content/uploads/2026/05/fireplace-remodeling-phoenix-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remodeling-phoenix-hero/",
+      "destination": "/wp-content/uploads/2026/05/fireplace-remodeling-phoenix-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-scottsdale-hero",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-repair-scottsdale-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-scottsdale-hero/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-repair-scottsdale-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-phoenix-hero",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-repair-phoenix-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-repair-phoenix-hero/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-repair-phoenix-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/monsoon-chimney-damage-arizona-hero",
+      "destination": "/wp-content/uploads/2026/05/monsoon-chimney-damage-arizona-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/monsoon-chimney-damage-arizona-hero/",
+      "destination": "/wp-content/uploads/2026/05/monsoon-chimney-damage-arizona-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/thermopile-replacement-scottsdale-hero",
+      "destination": "/wp-content/uploads/2026/05/thermopile-replacement-scottsdale-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/thermopile-replacement-scottsdale-hero/",
+      "destination": "/wp-content/uploads/2026/05/thermopile-replacement-scottsdale-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/creosote-smell-in-house-phoenix-hero",
+      "destination": "/wp-content/uploads/2026/05/creosote-smell-in-house-phoenix-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/creosote-smell-in-house-phoenix-hero/",
+      "destination": "/wp-content/uploads/2026/05/creosote-smell-in-house-phoenix-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/pilot-light-wont-light-mesa-hero",
+      "destination": "/wp-content/uploads/2026/05/pilot-light-wont-light-mesa-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/pilot-light-wont-light-mesa-hero/",
+      "destination": "/wp-content/uploads/2026/05/pilot-light-wont-light-mesa-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/pilot-light-wont-stay-on-scottsdale-hero",
+      "destination": "/wp-content/uploads/2026/05/pilot-light-wont-stay-on-scottsdale-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/pilot-light-wont-stay-on-scottsdale-hero/",
+      "destination": "/wp-content/uploads/2026/05/pilot-light-wont-stay-on-scottsdale-hero.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/arizona-chimney-pros-footer-logo",
+      "destination": "/wp-content/uploads/2026/05/arizona-chimney-pros-footer-logo.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/arizona-chimney-pros-footer-logo/",
+      "destination": "/wp-content/uploads/2026/05/arizona-chimney-pros-footer-logo.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/arizona-chimney-pros-footer-logo-transparent",
+      "destination": "/wp-content/uploads/2026/05/arizona-chimney-pros-footer-logo-transparent.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/arizona-chimney-pros-footer-logo-transparent/",
+      "destination": "/wp-content/uploads/2026/05/arizona-chimney-pros-footer-logo-transparent.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/cracked-chimney-crown-hero-phoenix-tile-roof",
+      "destination": "/wp-content/uploads/2026/05/cracked-chimney-crown-hero-phoenix-tile-roof.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/cracked-chimney-crown-hero-phoenix-tile-roof/",
+      "destination": "/wp-content/uploads/2026/05/cracked-chimney-crown-hero-phoenix-tile-roof.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/cracked-chimney-crown-tier-examples-brick-stack",
+      "destination": "/wp-content/uploads/2026/05/cracked-chimney-crown-tier-examples-brick-stack.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/cracked-chimney-crown-tier-examples-brick-stack/",
+      "destination": "/wp-content/uploads/2026/05/cracked-chimney-crown-tier-examples-brick-stack.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/cracked-chimney-crown-monsoon-test-diagnostic",
+      "destination": "/wp-content/uploads/2026/05/cracked-chimney-crown-monsoon-test-diagnostic.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/cracked-chimney-crown-monsoon-test-diagnostic/",
+      "destination": "/wp-content/uploads/2026/05/cracked-chimney-crown-monsoon-test-diagnostic.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/cracked-chimney-crown-seal-vs-rebuild-decision",
+      "destination": "/wp-content/uploads/2026/05/cracked-chimney-crown-seal-vs-rebuild-decision.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/cracked-chimney-crown-seal-vs-rebuild-decision/",
+      "destination": "/wp-content/uploads/2026/05/cracked-chimney-crown-seal-vs-rebuild-decision.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/water-leaking-chimney-monsoon-phoenix-hero-v2",
+      "destination": "/wp-content/uploads/2026/05/water-leaking-chimney-monsoon-phoenix-hero-v2.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/water-leaking-chimney-monsoon-phoenix-hero-v2/",
+      "destination": "/wp-content/uploads/2026/05/water-leaking-chimney-monsoon-phoenix-hero-v2.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/firebox-flashlight-inspection-monsoon-water-phoenix-h",
+      "destination": "/wp-content/uploads/2026/05/firebox-flashlight-inspection-monsoon-water-phoenix-h.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/firebox-flashlight-inspection-monsoon-water-phoenix-h/",
+      "destination": "/wp-content/uploads/2026/05/firebox-flashlight-inspection-monsoon-water-phoenix-h.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/emergency-tarp-chimney-monsoon-storm-phoenix-h",
+      "destination": "/wp-content/uploads/2026/05/emergency-tarp-chimney-monsoon-storm-phoenix-h.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/emergency-tarp-chimney-monsoon-storm-phoenix-h/",
+      "destination": "/wp-content/uploads/2026/05/emergency-tarp-chimney-monsoon-storm-phoenix-h.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-flashing-sealant-repair-tile-roof-phoenix-h",
+      "destination": "/wp-content/uploads/2026/05/chimney-flashing-sealant-repair-tile-roof-phoenix-h.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-flashing-sealant-repair-tile-roof-phoenix-h/",
+      "destination": "/wp-content/uploads/2026/05/chimney-flashing-sealant-repair-tile-roof-phoenix-h.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/acp-aside-protect-your-home-top-down",
+      "destination": "/wp-content/uploads/2026/05/acp-aside-protect-your-home-top-down.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/acp-aside-protect-your-home-top-down/",
+      "destination": "/wp-content/uploads/2026/05/acp-aside-protect-your-home-top-down.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/acp-aside-chimney-repair-done-right",
+      "destination": "/wp-content/uploads/2026/05/acp-aside-chimney-repair-done-right.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/acp-aside-chimney-repair-done-right/",
+      "destination": "/wp-content/uploads/2026/05/acp-aside-chimney-repair-done-right.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/acp-aside-chimney-inspection-repair-banner",
+      "destination": "/wp-content/uploads/2026/05/acp-aside-chimney-inspection-repair-banner.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/acp-aside-chimney-inspection-repair-banner/",
+      "destination": "/wp-content/uploads/2026/05/acp-aside-chimney-inspection-repair-banner.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-not-turning-on-hero-arizona-technician",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-not-turning-on-hero-arizona-technician.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-not-turning-on-hero-arizona-technician/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-not-turning-on-hero-arizona-technician.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-technician-diagnostic-tool-remote",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-technician-diagnostic-tool-remote.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-technician-diagnostic-tool-remote/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-technician-diagnostic-tool-remote.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-pilot-igniter-burner-service",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-pilot-igniter-burner-service.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-pilot-igniter-burner-service/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-pilot-igniter-burner-service.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-firebox-service-toolbox-arizona",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-firebox-service-toolbox-arizona.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-firebox-service-toolbox-arizona/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-firebox-service-toolbox-arizona.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-cap-installation-cost-hero-arizona-mesh-cap-ai",
+      "destination": "/wp-content/uploads/2026/05/chimney-cap-installation-cost-hero-arizona-mesh-cap-ai.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-cap-installation-cost-hero-arizona-mesh-cap-ai/",
+      "destination": "/wp-content/uploads/2026/05/chimney-cap-installation-cost-hero-arizona-mesh-cap-ai.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-cap-failure-signs-rust-damage-ai",
+      "destination": "/wp-content/uploads/2026/05/chimney-cap-failure-signs-rust-damage-ai.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-cap-failure-signs-rust-damage-ai/",
+      "destination": "/wp-content/uploads/2026/05/chimney-cap-failure-signs-rust-damage-ai.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-cap-rooftop-inspection-arizona-technician-ai",
+      "destination": "/wp-content/uploads/2026/05/chimney-cap-rooftop-inspection-arizona-technician-ai.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-cap-rooftop-inspection-arizona-technician-ai/",
+      "destination": "/wp-content/uploads/2026/05/chimney-cap-rooftop-inspection-arizona-technician-ai.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-cap-install-toolwork-stainless-mesh-ai",
+      "destination": "/wp-content/uploads/2026/05/chimney-cap-install-toolwork-stainless-mesh-ai.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-cap-install-toolwork-stainless-mesh-ai/",
+      "destination": "/wp-content/uploads/2026/05/chimney-cap-install-toolwork-stainless-mesh-ai.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-technician-diagnostic-phoenix",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-technician-diagnostic-phoenix.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-technician-diagnostic-phoenix/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-technician-diagnostic-phoenix.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-repair-cost-assessment-phoenix-tile-roof",
+      "destination": "/wp-content/uploads/2026/05/chimney-repair-cost-assessment-phoenix-tile-roof.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-repair-cost-assessment-phoenix-tile-roof/",
+      "destination": "/wp-content/uploads/2026/05/chimney-repair-cost-assessment-phoenix-tile-roof.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-thermopile-multimeter-test",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-thermopile-multimeter-test.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-thermopile-multimeter-test/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-thermopile-multimeter-test.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-pilot-light-troubleshooting-phoenix",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-pilot-light-troubleshooting-phoenix.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-pilot-light-troubleshooting-phoenix/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-pilot-light-troubleshooting-phoenix.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/thermocouple-replacement-gas-fireplace-hands-tools",
+      "destination": "/wp-content/uploads/2026/05/thermocouple-replacement-gas-fireplace-hands-tools.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/thermocouple-replacement-gas-fireplace-hands-tools/",
+      "destination": "/wp-content/uploads/2026/05/thermocouple-replacement-gas-fireplace-hands-tools.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remote-control-replacement-hero-scottsdale-living-room",
+      "destination": "/wp-content/uploads/2026/05/fireplace-remote-control-replacement-hero-scottsdale-living-room.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remote-control-replacement-hero-scottsdale-living-room/",
+      "destination": "/wp-content/uploads/2026/05/fireplace-remote-control-replacement-hero-scottsdale-living-room.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remote-control-replacement-receiver-module-access",
+      "destination": "/wp-content/uploads/2026/05/fireplace-remote-control-replacement-receiver-module-access.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remote-control-replacement-receiver-module-access/",
+      "destination": "/wp-content/uploads/2026/05/fireplace-remote-control-replacement-receiver-module-access.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remote-control-replacement-options-comparison",
+      "destination": "/wp-content/uploads/2026/05/fireplace-remote-control-replacement-options-comparison.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remote-control-replacement-options-comparison/",
+      "destination": "/wp-content/uploads/2026/05/fireplace-remote-control-replacement-options-comparison.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remote-control-replacement-hero-scottsdale-living-room-sm",
+      "destination": "/wp-content/uploads/2026/05/fireplace-remote-control-replacement-hero-scottsdale-living-room-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remote-control-replacement-hero-scottsdale-living-room-sm/",
+      "destination": "/wp-content/uploads/2026/05/fireplace-remote-control-replacement-hero-scottsdale-living-room-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remote-control-replacement-receiver-module-access-sm",
+      "destination": "/wp-content/uploads/2026/05/fireplace-remote-control-replacement-receiver-module-access-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remote-control-replacement-receiver-module-access-sm/",
+      "destination": "/wp-content/uploads/2026/05/fireplace-remote-control-replacement-receiver-module-access-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remote-control-replacement-options-comparison-sm",
+      "destination": "/wp-content/uploads/2026/05/fireplace-remote-control-replacement-options-comparison-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-remote-control-replacement-options-comparison-sm/",
+      "destination": "/wp-content/uploads/2026/05/fireplace-remote-control-replacement-options-comparison-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-repair-tempe-hero-roof-crown-tempe-az-sm",
+      "destination": "/wp-content/uploads/2026/06/chimney-repair-tempe-hero-roof-crown-tempe-az-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-repair-tempe-hero-roof-crown-tempe-az-sm/",
+      "destination": "/wp-content/uploads/2026/06/chimney-repair-tempe-hero-roof-crown-tempe-az-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-repair-tempe-supporting_1-cracked-crown-closeup-tempe-sm",
+      "destination": "/wp-content/uploads/2026/06/chimney-repair-tempe-supporting_1-cracked-crown-closeup-tempe-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-repair-tempe-supporting_1-cracked-crown-closeup-tempe-sm/",
+      "destination": "/wp-content/uploads/2026/06/chimney-repair-tempe-supporting_1-cracked-crown-closeup-tempe-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-repair-tempe-supporting_2-flashing-damage-tile-roof-tempe-sm",
+      "destination": "/wp-content/uploads/2026/06/chimney-repair-tempe-supporting_2-flashing-damage-tile-roof-tempe-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-repair-tempe-supporting_2-flashing-damage-tile-roof-tempe-sm/",
+      "destination": "/wp-content/uploads/2026/06/chimney-repair-tempe-supporting_2-flashing-damage-tile-roof-tempe-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-repair-tempe-supporting_3-tuckpointing-mortar-joints-tempe-sm",
+      "destination": "/wp-content/uploads/2026/06/chimney-repair-tempe-supporting_3-tuckpointing-mortar-joints-tempe-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-repair-tempe-supporting_3-tuckpointing-mortar-joints-tempe-sm/",
+      "destination": "/wp-content/uploads/2026/06/chimney-repair-tempe-supporting_3-tuckpointing-mortar-joints-tempe-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-pilot-light-wont-stay-lit-hero-arizona-scottsdale-living-room",
+      "destination": "/wp-content/uploads/2026/06/gas-fireplace-pilot-light-wont-stay-lit-hero-arizona-scottsdale-living-room.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-pilot-light-wont-stay-lit-hero-arizona-scottsdale-living-room/",
+      "destination": "/wp-content/uploads/2026/06/gas-fireplace-pilot-light-wont-stay-lit-hero-arizona-scottsdale-living-room.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-pilot-light-wont-stay-lit-thermocouple-closeup",
+      "destination": "/wp-content/uploads/2026/06/gas-fireplace-pilot-light-wont-stay-lit-thermocouple-closeup.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-pilot-light-wont-stay-lit-thermocouple-closeup/",
+      "destination": "/wp-content/uploads/2026/06/gas-fireplace-pilot-light-wont-stay-lit-thermocouple-closeup.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-pilot-light-wont-stay-lit-control-valve-millivolt",
+      "destination": "/wp-content/uploads/2026/06/gas-fireplace-pilot-light-wont-stay-lit-control-valve-millivolt.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-pilot-light-wont-stay-lit-control-valve-millivolt/",
+      "destination": "/wp-content/uploads/2026/06/gas-fireplace-pilot-light-wont-stay-lit-control-valve-millivolt.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-pilot-light-wont-stay-lit-roof-vent-arizona",
+      "destination": "/wp-content/uploads/2026/06/gas-fireplace-pilot-light-wont-stay-lit-roof-vent-arizona.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-pilot-light-wont-stay-lit-roof-vent-arizona/",
+      "destination": "/wp-content/uploads/2026/06/gas-fireplace-pilot-light-wont-stay-lit-roof-vent-arizona.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-inspection-cost-hero-rooftop-technician-sm",
+      "destination": "/wp-content/uploads/2026/06/chimney-inspection-cost-hero-rooftop-technician-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-inspection-cost-hero-rooftop-technician-sm/",
+      "destination": "/wp-content/uploads/2026/06/chimney-inspection-cost-hero-rooftop-technician-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-inspection-cost-support-crown-cap-check-sm",
+      "destination": "/wp-content/uploads/2026/06/chimney-inspection-cost-support-crown-cap-check-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-inspection-cost-support-crown-cap-check-sm/",
+      "destination": "/wp-content/uploads/2026/06/chimney-inspection-cost-support-crown-cap-check-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-inspection-cost-support-flue-camera-scan-sm",
+      "destination": "/wp-content/uploads/2026/06/chimney-inspection-cost-support-flue-camera-scan-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-inspection-cost-support-flue-camera-scan-sm/",
+      "destination": "/wp-content/uploads/2026/06/chimney-inspection-cost-support-flue-camera-scan-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-inspection-cost-support-written-report-sm",
+      "destination": "/wp-content/uploads/2026/06/chimney-inspection-cost-support-written-report-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-inspection-cost-support-written-report-sm/",
+      "destination": "/wp-content/uploads/2026/06/chimney-inspection-cost-support-written-report-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-repair-phoenix-hero-technician-gas-burner-service-sm",
+      "destination": "/wp-content/uploads/2026/06/fireplace-repair-phoenix-hero-technician-gas-burner-service-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-repair-phoenix-hero-technician-gas-burner-service-sm/",
+      "destination": "/wp-content/uploads/2026/06/fireplace-repair-phoenix-hero-technician-gas-burner-service-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-repair-phoenix-burner-flame-adjustment-sm",
+      "destination": "/wp-content/uploads/2026/06/fireplace-repair-phoenix-burner-flame-adjustment-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-repair-phoenix-burner-flame-adjustment-sm/",
+      "destination": "/wp-content/uploads/2026/06/fireplace-repair-phoenix-burner-flame-adjustment-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-repair-phoenix-firebox-diagnostic-scope-sm",
+      "destination": "/wp-content/uploads/2026/06/fireplace-repair-phoenix-firebox-diagnostic-scope-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-repair-phoenix-firebox-diagnostic-scope-sm/",
+      "destination": "/wp-content/uploads/2026/06/fireplace-repair-phoenix-firebox-diagnostic-scope-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-repair-phoenix-venting-rooftop-scan-sm",
+      "destination": "/wp-content/uploads/2026/06/fireplace-repair-phoenix-venting-rooftop-scan-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/fireplace-repair-phoenix-venting-rooftop-scan-sm/",
+      "destination": "/wp-content/uploads/2026/06/fireplace-repair-phoenix-venting-rooftop-scan-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/why-is-my-fireplace-smoking-hero-gas-fireplace-service-sm",
+      "destination": "/wp-content/uploads/2026/06/why-is-my-fireplace-smoking-hero-gas-fireplace-service-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/why-is-my-fireplace-smoking-hero-gas-fireplace-service-sm/",
+      "destination": "/wp-content/uploads/2026/06/why-is-my-fireplace-smoking-hero-gas-fireplace-service-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/why-is-my-fireplace-smoking-support-firebox-camera-inspection-sm",
+      "destination": "/wp-content/uploads/2026/06/why-is-my-fireplace-smoking-support-firebox-camera-inspection-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/why-is-my-fireplace-smoking-support-firebox-camera-inspection-sm/",
+      "destination": "/wp-content/uploads/2026/06/why-is-my-fireplace-smoking-support-firebox-camera-inspection-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/why-is-my-fireplace-smoking-support-firebox-creosote-cleaning-sm",
+      "destination": "/wp-content/uploads/2026/06/why-is-my-fireplace-smoking-support-firebox-creosote-cleaning-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/why-is-my-fireplace-smoking-support-firebox-creosote-cleaning-sm/",
+      "destination": "/wp-content/uploads/2026/06/why-is-my-fireplace-smoking-support-firebox-creosote-cleaning-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/why-is-my-fireplace-smoking-support-rooftop-flue-sweep-sm",
+      "destination": "/wp-content/uploads/2026/06/why-is-my-fireplace-smoking-support-rooftop-flue-sweep-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/why-is-my-fireplace-smoking-support-rooftop-flue-sweep-sm/",
+      "destination": "/wp-content/uploads/2026/06/why-is-my-fireplace-smoking-support-rooftop-flue-sweep-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/why-is-my-fireplace-smoking-hero-living-room-smoke-sm",
+      "destination": "/wp-content/uploads/2026/06/why-is-my-fireplace-smoking-hero-living-room-smoke-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/why-is-my-fireplace-smoking-hero-living-room-smoke-sm/",
+      "destination": "/wp-content/uploads/2026/06/why-is-my-fireplace-smoking-hero-living-room-smoke-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/why-is-my-fireplace-smoking-support-damper-flashlight-check-sm",
+      "destination": "/wp-content/uploads/2026/06/why-is-my-fireplace-smoking-support-damper-flashlight-check-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/why-is-my-fireplace-smoking-support-damper-flashlight-check-sm/",
+      "destination": "/wp-content/uploads/2026/06/why-is-my-fireplace-smoking-support-damper-flashlight-check-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/why-is-my-fireplace-smoking-support-firebox-creosote-cleaning-sm-1",
+      "destination": "/wp-content/uploads/2026/06/why-is-my-fireplace-smoking-support-firebox-creosote-cleaning-sm-1.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/why-is-my-fireplace-smoking-support-firebox-creosote-cleaning-sm-1/",
+      "destination": "/wp-content/uploads/2026/06/why-is-my-fireplace-smoking-support-firebox-creosote-cleaning-sm-1.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/why-is-my-fireplace-smoking-support-rooftop-flue-cap-sm",
+      "destination": "/wp-content/uploads/2026/06/why-is-my-fireplace-smoking-support-rooftop-flue-cap-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/why-is-my-fireplace-smoking-support-rooftop-flue-cap-sm/",
+      "destination": "/wp-content/uploads/2026/06/why-is-my-fireplace-smoking-support-rooftop-flue-cap-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-leak-rain-hero-phoenix-monsoon-sm",
+      "destination": "/wp-content/uploads/2026/06/chimney-leak-rain-hero-phoenix-monsoon-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-leak-rain-hero-phoenix-monsoon-sm/",
+      "destination": "/wp-content/uploads/2026/06/chimney-leak-rain-hero-phoenix-monsoon-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-leak-rain-flashing-seam-roof-sm",
+      "destination": "/wp-content/uploads/2026/06/chimney-leak-rain-flashing-seam-roof-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-leak-rain-flashing-seam-roof-sm/",
+      "destination": "/wp-content/uploads/2026/06/chimney-leak-rain-flashing-seam-roof-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-leak-rain-ceiling-water-stain-sm",
+      "destination": "/wp-content/uploads/2026/06/chimney-leak-rain-ceiling-water-stain-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-leak-rain-ceiling-water-stain-sm/",
+      "destination": "/wp-content/uploads/2026/06/chimney-leak-rain-ceiling-water-stain-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-leak-rain-waterproof-sealant-crown-sm",
+      "destination": "/wp-content/uploads/2026/06/chimney-leak-rain-waterproof-sealant-crown-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-leak-rain-waterproof-sealant-crown-sm/",
+      "destination": "/wp-content/uploads/2026/06/chimney-leak-rain-waterproof-sealant-crown-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-smells-like-gas-hero-living-room-sm",
+      "destination": "/wp-content/uploads/2026/06/gas-fireplace-smells-like-gas-hero-living-room-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-smells-like-gas-hero-living-room-sm/",
+      "destination": "/wp-content/uploads/2026/06/gas-fireplace-smells-like-gas-hero-living-room-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-smells-like-gas-leak-check-soapy-test-sm",
+      "destination": "/wp-content/uploads/2026/06/gas-fireplace-smells-like-gas-leak-check-soapy-test-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-smells-like-gas-leak-check-soapy-test-sm/",
+      "destination": "/wp-content/uploads/2026/06/gas-fireplace-smells-like-gas-leak-check-soapy-test-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-smells-like-gas-blue-flame-burner-sm",
+      "destination": "/wp-content/uploads/2026/06/gas-fireplace-smells-like-gas-blue-flame-burner-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-smells-like-gas-blue-flame-burner-sm/",
+      "destination": "/wp-content/uploads/2026/06/gas-fireplace-smells-like-gas-blue-flame-burner-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-smells-like-gas-shutoff-valve-window-sm",
+      "destination": "/wp-content/uploads/2026/06/gas-fireplace-smells-like-gas-shutoff-valve-window-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-smells-like-gas-shutoff-valve-window-sm/",
+      "destination": "/wp-content/uploads/2026/06/gas-fireplace-smells-like-gas-shutoff-valve-window-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-maintenance-hero-technician-scottsdale-sm",
+      "destination": "/wp-content/uploads/2026/06/gas-fireplace-maintenance-hero-technician-scottsdale-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-maintenance-hero-technician-scottsdale-sm/",
+      "destination": "/wp-content/uploads/2026/06/gas-fireplace-maintenance-hero-technician-scottsdale-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-maintenance-support-burner-tray-cleaning-sm",
+      "destination": "/wp-content/uploads/2026/06/gas-fireplace-maintenance-support-burner-tray-cleaning-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-maintenance-support-burner-tray-cleaning-sm/",
+      "destination": "/wp-content/uploads/2026/06/gas-fireplace-maintenance-support-burner-tray-cleaning-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-maintenance-support-glass-cleaning-sm",
+      "destination": "/wp-content/uploads/2026/06/gas-fireplace-maintenance-support-glass-cleaning-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-maintenance-support-glass-cleaning-sm/",
+      "destination": "/wp-content/uploads/2026/06/gas-fireplace-maintenance-support-glass-cleaning-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-maintenance-support-blue-flame-check-sm",
+      "destination": "/wp-content/uploads/2026/06/gas-fireplace-maintenance-support-blue-flame-check-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-maintenance-support-blue-flame-check-sm/",
+      "destination": "/wp-content/uploads/2026/06/gas-fireplace-maintenance-support-blue-flame-check-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/how-to-clean-gas-fireplace-glass-hero-living-room-sm",
+      "destination": "/wp-content/uploads/2026/06/how-to-clean-gas-fireplace-glass-hero-living-room-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/how-to-clean-gas-fireplace-glass-hero-living-room-sm/",
+      "destination": "/wp-content/uploads/2026/06/how-to-clean-gas-fireplace-glass-hero-living-room-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/how-to-clean-gas-fireplace-glass-support-cloudy-film-sm",
+      "destination": "/wp-content/uploads/2026/06/how-to-clean-gas-fireplace-glass-support-cloudy-film-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/how-to-clean-gas-fireplace-glass-support-cloudy-film-sm/",
+      "destination": "/wp-content/uploads/2026/06/how-to-clean-gas-fireplace-glass-support-cloudy-film-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/how-to-clean-gas-fireplace-glass-support-wiping-panel-sm",
+      "destination": "/wp-content/uploads/2026/06/how-to-clean-gas-fireplace-glass-support-wiping-panel-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/how-to-clean-gas-fireplace-glass-support-wiping-panel-sm/",
+      "destination": "/wp-content/uploads/2026/06/how-to-clean-gas-fireplace-glass-support-wiping-panel-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/how-to-clean-gas-fireplace-glass-support-blue-flame-burner-sm",
+      "destination": "/wp-content/uploads/2026/06/how-to-clean-gas-fireplace-glass-support-blue-flame-burner-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/how-to-clean-gas-fireplace-glass-support-blue-flame-burner-sm/",
+      "destination": "/wp-content/uploads/2026/06/how-to-clean-gas-fireplace-glass-support-blue-flame-burner-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/how-often-chimney-cleaned-hero-rooftop-sweep-sm",
+      "destination": "/wp-content/uploads/2026/06/how-often-chimney-cleaned-hero-rooftop-sweep-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/how-often-chimney-cleaned-hero-rooftop-sweep-sm/",
+      "destination": "/wp-content/uploads/2026/06/how-often-chimney-cleaned-hero-rooftop-sweep-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/how-often-chimney-cleaned-support-creosote-flue-sm",
+      "destination": "/wp-content/uploads/2026/06/how-often-chimney-cleaned-support-creosote-flue-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/how-often-chimney-cleaned-support-creosote-flue-sm/",
+      "destination": "/wp-content/uploads/2026/06/how-often-chimney-cleaned-support-creosote-flue-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/how-often-chimney-cleaned-support-firebox-sweep-sm",
+      "destination": "/wp-content/uploads/2026/06/how-often-chimney-cleaned-support-firebox-sweep-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/how-often-chimney-cleaned-support-firebox-sweep-sm/",
+      "destination": "/wp-content/uploads/2026/06/how-often-chimney-cleaned-support-firebox-sweep-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/how-often-chimney-cleaned-support-rooftop-cap-sm",
+      "destination": "/wp-content/uploads/2026/06/how-often-chimney-cleaned-support-rooftop-cap-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/how-often-chimney-cleaned-support-rooftop-cap-sm/",
+      "destination": "/wp-content/uploads/2026/06/how-often-chimney-cleaned-support-rooftop-cap-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/creosote-buildup-hero-fireplace-sweep-sm",
+      "destination": "/wp-content/uploads/2026/06/creosote-buildup-hero-fireplace-sweep-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/creosote-buildup-hero-fireplace-sweep-sm/",
+      "destination": "/wp-content/uploads/2026/06/creosote-buildup-hero-fireplace-sweep-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/creosote-buildup-support-creosote-glaze-flue-sm",
+      "destination": "/wp-content/uploads/2026/06/creosote-buildup-support-creosote-glaze-flue-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/creosote-buildup-support-creosote-glaze-flue-sm/",
+      "destination": "/wp-content/uploads/2026/06/creosote-buildup-support-creosote-glaze-flue-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/creosote-buildup-support-rooftop-chimney-sweep-sm",
+      "destination": "/wp-content/uploads/2026/06/creosote-buildup-support-rooftop-chimney-sweep-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/creosote-buildup-support-rooftop-chimney-sweep-sm/",
+      "destination": "/wp-content/uploads/2026/06/creosote-buildup-support-rooftop-chimney-sweep-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/creosote-buildup-support-firebox-soot-vacuum-sm",
+      "destination": "/wp-content/uploads/2026/06/creosote-buildup-support-firebox-soot-vacuum-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/creosote-buildup-support-firebox-soot-vacuum-sm/",
+      "destination": "/wp-content/uploads/2026/06/creosote-buildup-support-firebox-soot-vacuum-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/do-gas-fireplaces-need-cleaning-hero-technician-inspect-sm",
+      "destination": "/wp-content/uploads/2026/06/do-gas-fireplaces-need-cleaning-hero-technician-inspect-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/do-gas-fireplaces-need-cleaning-hero-technician-inspect-sm/",
+      "destination": "/wp-content/uploads/2026/06/do-gas-fireplaces-need-cleaning-hero-technician-inspect-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/do-gas-fireplaces-need-cleaning-support-dusty-burner-tray-sm",
+      "destination": "/wp-content/uploads/2026/06/do-gas-fireplaces-need-cleaning-support-dusty-burner-tray-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/do-gas-fireplaces-need-cleaning-support-dusty-burner-tray-sm/",
+      "destination": "/wp-content/uploads/2026/06/do-gas-fireplaces-need-cleaning-support-dusty-burner-tray-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/do-gas-fireplaces-need-cleaning-support-pilot-burner-cleaning-sm",
+      "destination": "/wp-content/uploads/2026/06/do-gas-fireplaces-need-cleaning-support-pilot-burner-cleaning-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/do-gas-fireplaces-need-cleaning-support-pilot-burner-cleaning-sm/",
+      "destination": "/wp-content/uploads/2026/06/do-gas-fireplaces-need-cleaning-support-pilot-burner-cleaning-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/do-gas-fireplaces-need-cleaning-support-glass-cleaning-sm",
+      "destination": "/wp-content/uploads/2026/06/do-gas-fireplaces-need-cleaning-support-glass-cleaning-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/do-gas-fireplaces-need-cleaning-support-glass-cleaning-sm/",
+      "destination": "/wp-content/uploads/2026/06/do-gas-fireplaces-need-cleaning-support-glass-cleaning-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-turns-off-by-itself-hero-linear-fireplace-sm",
+      "destination": "/wp-content/uploads/2026/06/gas-fireplace-turns-off-by-itself-hero-linear-fireplace-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-turns-off-by-itself-hero-linear-fireplace-sm/",
+      "destination": "/wp-content/uploads/2026/06/gas-fireplace-turns-off-by-itself-hero-linear-fireplace-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-turns-off-by-itself-thermocouple-pilot-inspection-sm",
+      "destination": "/wp-content/uploads/2026/06/gas-fireplace-turns-off-by-itself-thermocouple-pilot-inspection-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-turns-off-by-itself-thermocouple-pilot-inspection-sm/",
+      "destination": "/wp-content/uploads/2026/06/gas-fireplace-turns-off-by-itself-thermocouple-pilot-inspection-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-turns-off-by-itself-dust-burner-cleaning-sm",
+      "destination": "/wp-content/uploads/2026/06/gas-fireplace-turns-off-by-itself-dust-burner-cleaning-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-turns-off-by-itself-dust-burner-cleaning-sm/",
+      "destination": "/wp-content/uploads/2026/06/gas-fireplace-turns-off-by-itself-dust-burner-cleaning-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-turns-off-by-itself-gas-valve-check-sm",
+      "destination": "/wp-content/uploads/2026/06/gas-fireplace-turns-off-by-itself-gas-valve-check-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-turns-off-by-itself-gas-valve-check-sm/",
+      "destination": "/wp-content/uploads/2026/06/gas-fireplace-turns-off-by-itself-gas-valve-check-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/how-to-turn-on-a-gas-fireplace-hero-living-room-ignition-sm",
+      "destination": "/wp-content/uploads/2026/06/how-to-turn-on-a-gas-fireplace-hero-living-room-ignition-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/how-to-turn-on-a-gas-fireplace-hero-living-room-ignition-sm/",
+      "destination": "/wp-content/uploads/2026/06/how-to-turn-on-a-gas-fireplace-hero-living-room-ignition-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/how-to-turn-on-a-gas-fireplace-support-control-knob-sm",
+      "destination": "/wp-content/uploads/2026/06/how-to-turn-on-a-gas-fireplace-support-control-knob-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/how-to-turn-on-a-gas-fireplace-support-control-knob-sm/",
+      "destination": "/wp-content/uploads/2026/06/how-to-turn-on-a-gas-fireplace-support-control-knob-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/how-to-turn-on-a-gas-fireplace-support-blue-flame-logs-sm",
+      "destination": "/wp-content/uploads/2026/06/how-to-turn-on-a-gas-fireplace-support-blue-flame-logs-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/how-to-turn-on-a-gas-fireplace-support-blue-flame-logs-sm/",
+      "destination": "/wp-content/uploads/2026/06/how-to-turn-on-a-gas-fireplace-support-blue-flame-logs-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/how-to-turn-on-a-gas-fireplace-support-remote-receiver-battery-sm",
+      "destination": "/wp-content/uploads/2026/06/how-to-turn-on-a-gas-fireplace-support-remote-receiver-battery-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/how-to-turn-on-a-gas-fireplace-support-remote-receiver-battery-sm/",
+      "destination": "/wp-content/uploads/2026/06/how-to-turn-on-a-gas-fireplace-support-remote-receiver-battery-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-smell-hero-living-room-odor-sm",
+      "destination": "/wp-content/uploads/2026/06/chimney-smell-hero-living-room-odor-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-smell-hero-living-room-odor-sm/",
+      "destination": "/wp-content/uploads/2026/06/chimney-smell-hero-living-room-odor-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-smell-support-damper-seal-inspection-sm",
+      "destination": "/wp-content/uploads/2026/06/chimney-smell-support-damper-seal-inspection-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-smell-support-damper-seal-inspection-sm/",
+      "destination": "/wp-content/uploads/2026/06/chimney-smell-support-damper-seal-inspection-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-smell-support-creosote-flue-cleaning-sm",
+      "destination": "/wp-content/uploads/2026/06/chimney-smell-support-creosote-flue-cleaning-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-smell-support-creosote-flue-cleaning-sm/",
+      "destination": "/wp-content/uploads/2026/06/chimney-smell-support-creosote-flue-cleaning-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-smell-support-rooftop-cap-screen-sm",
+      "destination": "/wp-content/uploads/2026/06/chimney-smell-support-rooftop-cap-screen-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-smell-support-rooftop-cap-screen-sm/",
+      "destination": "/wp-content/uploads/2026/06/chimney-smell-support-rooftop-cap-screen-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/white-stains-on-chimney-hero-exterior-masonry-sm",
+      "destination": "/wp-content/uploads/2026/06/white-stains-on-chimney-hero-exterior-masonry-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/white-stains-on-chimney-hero-exterior-masonry-sm/",
+      "destination": "/wp-content/uploads/2026/06/white-stains-on-chimney-hero-exterior-masonry-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/white-stains-on-chimney-support-cracked-crown-sm",
+      "destination": "/wp-content/uploads/2026/06/white-stains-on-chimney-support-cracked-crown-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/white-stains-on-chimney-support-cracked-crown-sm/",
+      "destination": "/wp-content/uploads/2026/06/white-stains-on-chimney-support-cracked-crown-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/white-stains-on-chimney-support-efflorescence-detail-sm",
+      "destination": "/wp-content/uploads/2026/06/white-stains-on-chimney-support-efflorescence-detail-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/white-stains-on-chimney-support-efflorescence-detail-sm/",
+      "destination": "/wp-content/uploads/2026/06/white-stains-on-chimney-support-efflorescence-detail-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/white-stains-on-chimney-support-waterproofing-seal-sm",
+      "destination": "/wp-content/uploads/2026/06/white-stains-on-chimney-support-waterproofing-seal-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/white-stains-on-chimney-support-waterproofing-seal-sm/",
+      "destination": "/wp-content/uploads/2026/06/white-stains-on-chimney-support-waterproofing-seal-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-waterproofing-hero-rooftop-sealer-sm",
+      "destination": "/wp-content/uploads/2026/07/chimney-waterproofing-hero-rooftop-sealer-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-waterproofing-hero-rooftop-sealer-sm/",
+      "destination": "/wp-content/uploads/2026/07/chimney-waterproofing-hero-rooftop-sealer-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-waterproofing-support-cracked-crown-efflorescence-sm",
+      "destination": "/wp-content/uploads/2026/07/chimney-waterproofing-support-cracked-crown-efflorescence-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-waterproofing-support-cracked-crown-efflorescence-sm/",
+      "destination": "/wp-content/uploads/2026/07/chimney-waterproofing-support-cracked-crown-efflorescence-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-waterproofing-support-flashing-sealing-sm",
+      "destination": "/wp-content/uploads/2026/07/chimney-waterproofing-support-flashing-sealing-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-waterproofing-support-flashing-sealing-sm/",
+      "destination": "/wp-content/uploads/2026/07/chimney-waterproofing-support-flashing-sealing-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-waterproofing-support-water-beading-sealed-stucco-sm",
+      "destination": "/wp-content/uploads/2026/07/chimney-waterproofing-support-water-beading-sealed-stucco-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-waterproofing-support-water-beading-sealed-stucco-sm/",
+      "destination": "/wp-content/uploads/2026/07/chimney-waterproofing-support-water-beading-sealed-stucco-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-waterproofing-support-water-beading-sealed-stucco",
+      "destination": "/wp-content/uploads/2026/07/chimney-waterproofing-support-water-beading-sealed-stucco-sm-1.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-waterproofing-support-water-beading-sealed-stucco/",
+      "destination": "/wp-content/uploads/2026/07/chimney-waterproofing-support-water-beading-sealed-stucco-sm-1.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/birds-nesting-in-chimney-hero-chimney-quail-scottsdale-sm",
+      "destination": "/wp-content/uploads/2026/07/birds-nesting-in-chimney-hero-chimney-quail-scottsdale-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/birds-nesting-in-chimney-hero-chimney-quail-scottsdale-sm/",
+      "destination": "/wp-content/uploads/2026/07/birds-nesting-in-chimney-hero-chimney-quail-scottsdale-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/birds-nesting-in-chimney-nest-in-flue-phoenix-sm",
+      "destination": "/wp-content/uploads/2026/07/birds-nesting-in-chimney-nest-in-flue-phoenix-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/birds-nesting-in-chimney-nest-in-flue-phoenix-sm/",
+      "destination": "/wp-content/uploads/2026/07/birds-nesting-in-chimney-nest-in-flue-phoenix-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/birds-nesting-in-chimney-new-stainless-cap-installed-sm",
+      "destination": "/wp-content/uploads/2026/07/birds-nesting-in-chimney-new-stainless-cap-installed-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/birds-nesting-in-chimney-new-stainless-cap-installed-sm/",
+      "destination": "/wp-content/uploads/2026/07/birds-nesting-in-chimney-new-stainless-cap-installed-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/birds-nesting-in-chimney-technician-inspecting-bent-cap-sm",
+      "destination": "/wp-content/uploads/2026/07/birds-nesting-in-chimney-technician-inspecting-bent-cap-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/birds-nesting-in-chimney-technician-inspecting-bent-cap-sm/",
+      "destination": "/wp-content/uploads/2026/07/birds-nesting-in-chimney-technician-inspecting-bent-cap-sm.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/chatgpt-image-mar-27-2026-02_59_28-pm",
+      "destination": "/wp-content/uploads/2026/08/ChatGPT-Image-Mar-27-2026-02_59_28-PM.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/chatgpt-image-mar-27-2026-02_59_28-pm/",
+      "destination": "/wp-content/uploads/2026/08/ChatGPT-Image-Mar-27-2026-02_59_28-PM.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-glendale-az-clip-05",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-glendale-az-clip-05.mp4",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-glendale-az-clip-05/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-glendale-az-clip-05.mp4",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-glendale-az-clip-06",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-glendale-az-clip-06.mp4",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-glendale-az-clip-06/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-glendale-az-clip-06.mp4",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-tempe-az-clip-05",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-tempe-az-clip-05.mp4",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-tempe-az-clip-05/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-tempe-az-clip-05.mp4",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-tempe-az-clip-06",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-tempe-az-clip-06.mp4",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-tempe-az-clip-06/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-tempe-az-clip-06.mp4",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-logs-chandler-az-clip-05",
+      "destination": "/wp-content/uploads/2026/05/gas-logs-chandler-az-clip-05.mp4",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-logs-chandler-az-clip-05/",
+      "destination": "/wp-content/uploads/2026/05/gas-logs-chandler-az-clip-05.mp4",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-logs-gilbert-az-clip-05",
+      "destination": "/wp-content/uploads/2026/05/gas-logs-gilbert-az-clip-05.mp4",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-logs-gilbert-az-clip-05/",
+      "destination": "/wp-content/uploads/2026/05/gas-logs-gilbert-az-clip-05.mp4",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-logs-mesa-az-clip-05",
+      "destination": "/wp-content/uploads/2026/05/gas-logs-mesa-az-clip-05.mp4",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-logs-mesa-az-clip-05/",
+      "destination": "/wp-content/uploads/2026/05/gas-logs-mesa-az-clip-05.mp4",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-logs-scottsdale-az-clip-05",
+      "destination": "/wp-content/uploads/2026/05/gas-logs-scottsdale-az-clip-05.mp4",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-logs-scottsdale-az-clip-05/",
+      "destination": "/wp-content/uploads/2026/05/gas-logs-scottsdale-az-clip-05.mp4",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-logs-phoenix-az-clip-05",
+      "destination": "/wp-content/uploads/2026/05/gas-logs-phoenix-az-clip-05.mp4",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-logs-phoenix-az-clip-05/",
+      "destination": "/wp-content/uploads/2026/05/gas-logs-phoenix-az-clip-05.mp4",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-paradise-valley-az-clip-05",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-paradise-valley-az-clip-05.mp4",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-paradise-valley-az-clip-05/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-paradise-valley-az-clip-05.mp4",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-paradise-valley-az-clip-06",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-paradise-valley-az-clip-06.mp4",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-paradise-valley-az-clip-06/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-paradise-valley-az-clip-06.mp4",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-mesa-az-clip-11",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-mesa-az-clip-11.mp4",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-mesa-az-clip-11/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-mesa-az-clip-11.mp4",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-mesa-az-clip-12",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-mesa-az-clip-12.mp4",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-mesa-az-clip-12/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-mesa-az-clip-12.mp4",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-phoenix-az-clip-05",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-phoenix-az-clip-05.mp4",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-phoenix-az-clip-05/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-phoenix-az-clip-05.mp4",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-phoenix-az-clip-06",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-phoenix-az-clip-06.mp4",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-phoenix-az-clip-06/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-phoenix-az-clip-06.mp4",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-gilbert-az-clip-05",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-gilbert-az-clip-05.mp4",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-gilbert-az-clip-05/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-gilbert-az-clip-05.mp4",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-gilbert-az-clip-06",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-gilbert-az-clip-06.mp4",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-gilbert-az-clip-06/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-gilbert-az-clip-06.mp4",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-chandler-az-clip-05",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-chandler-az-clip-05.mp4",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-chandler-az-clip-05/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-chandler-az-clip-05.mp4",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-chandler-az-clip-06",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-chandler-az-clip-06.mp4",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-chandler-az-clip-06/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-chandler-az-clip-06.mp4",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-mesa-az-clip-17",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-mesa-az-clip-17.mp4",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-mesa-az-clip-17/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-mesa-az-clip-17.mp4",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-mesa-az-clip-18",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-mesa-az-clip-18.mp4",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-mesa-az-clip-18/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-mesa-az-clip-18.mp4",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-scottsdale-az-clip-05",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-scottsdale-az-clip-05.mp4",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-scottsdale-az-clip-05/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-scottsdale-az-clip-05.mp4",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-scottsdale-az-clip-06",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-scottsdale-az-clip-06.mp4",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-scottsdale-az-clip-06/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-scottsdale-az-clip-06.mp4",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-cap-phoenix-az-clip-10",
+      "destination": "/wp-content/uploads/2026/05/chimney-cap-phoenix-az-clip-10.mp4",
+      "statusCode": 301
+    },
+    {
+      "source": "/chimney-cap-phoenix-az-clip-10/",
+      "destination": "/wp-content/uploads/2026/05/chimney-cap-phoenix-az-clip-10.mp4",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-scottsdale-az-clip-11",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-scottsdale-az-clip-11.mp4",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-scottsdale-az-clip-11/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-scottsdale-az-clip-11.mp4",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-scottsdale-az-clip-12",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-scottsdale-az-clip-12.mp4",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-scottsdale-az-clip-12/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-scottsdale-az-clip-12.mp4",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-phoenix-az-clip-11",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-phoenix-az-clip-11.mp4",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-phoenix-az-clip-11/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-phoenix-az-clip-11.mp4",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-phoenix-az-clip-12",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-phoenix-az-clip-12.mp4",
+      "statusCode": 301
+    },
+    {
+      "source": "/gas-fireplace-installation-phoenix-az-clip-12/",
+      "destination": "/wp-content/uploads/2026/05/gas-fireplace-installation-phoenix-az-clip-12.mp4",
+      "statusCode": 301
+    },
+    {
+      "source": "/site-wide-fire-loop-background",
+      "destination": "/wp-content/uploads/2026/05/site-fire-loop.mp4",
+      "statusCode": 301
+    },
+    {
+      "source": "/site-wide-fire-loop-background/",
+      "destination": "/wp-content/uploads/2026/05/site-fire-loop.mp4",
+      "statusCode": 301
+    },
+    {
       "source": "/:path((?!api(?:/|$))(?:.*/)?[^/.]+)",
       "destination": "/:path/",
       "statusCode": 301
