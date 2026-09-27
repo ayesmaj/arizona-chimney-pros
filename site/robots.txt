@@ -3,4 +3,3 @@ Allow: /
 Disallow: /api/
 
 Sitemap: https://arizonachimneypros.com/sitemap.xml
-Sitemap: https://arizonachimneypros.com/sitemap_index.xml
