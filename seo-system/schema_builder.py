@@ -36,16 +36,17 @@ BUSINESS = {
     "email":       "info@arizonachimneypros.com",
     "priceRange":  "$$",
     "image":       "https://arizonachimneypros.com/wp-content/uploads/truck.jpg",
-    # Service Area Business (SAB) pattern — no public street address.
-    # Google's SAB guidance: use addressLocality + addressRegion + country,
-    # and express the actual service area via `areaServed` (GeoCircle below).
+    # Public business address supplied for the Scottsdale office.
+    # Keep it aligned with the visible website address and business profile.
     "address": {
-        "addressLocality": "Phoenix",
+        "streetAddress":   "16427 N. Scottsdale Road, Suite 410",
+        "addressLocality": "Scottsdale",
         "addressRegion":   "AZ",
+        "postalCode":      "85254",
         "addressCountry":  "US",
     },
-    # Phoenix city-hall coords — center of the 40-mile service radius.
-    "geo": {
+    # Phoenix city-hall coords — center of the 40-mile service radius only.
+    "serviceCenter": {
         "latitude":  33.4484,
         "longitude": -112.0740,
     },
@@ -177,8 +178,8 @@ def _build_opening_hours() -> list[dict]:
 def build_business_node(content: dict | None = None) -> dict:
     """Reusable LocalBusiness node — referenced by @id from other schemas.
 
-    Service Area Business pattern: no streetAddress; areaServed GeoCircle
-    defines the footprint. Google's SAB guidance explicitly permits this.
+    Public Scottsdale office address plus an areaServed GeoCircle that
+    defines the wider Phoenix-metro service footprint.
 
     When content is provided and contains review_1..3 data, attaches
     AggregateRating so the business earns review stars in rich results.
@@ -208,11 +209,6 @@ def build_business_node(content: dict | None = None) -> dict:
             "@type": "PostalAddress",
             **BUSINESS["address"],
         },
-        "geo": {
-            "@type":     "GeoCoordinates",
-            "latitude":  BUSINESS["geo"]["latitude"],
-            "longitude": BUSINESS["geo"]["longitude"],
-        },
         "openingHoursSpecification": _build_opening_hours(),
         # GeoCircle = primary footprint for Local ranking signals.
         "areaServed": [
@@ -220,8 +216,8 @@ def build_business_node(content: dict | None = None) -> dict:
                 "@type":       "GeoCircle",
                 "geoMidpoint": {
                     "@type":     "GeoCoordinates",
-                    "latitude":  BUSINESS["geo"]["latitude"],
-                    "longitude": BUSINESS["geo"]["longitude"],
+                    "latitude":  BUSINESS["serviceCenter"]["latitude"],
+                    "longitude": BUSINESS["serviceCenter"]["longitude"],
                 },
                 "geoRadius": BUSINESS["serviceRadius_km"] * 1000,  # meters
             },
