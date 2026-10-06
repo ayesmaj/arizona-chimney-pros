@@ -927,18 +927,33 @@
      * also call sendToCrm() here — that would append the notes twice.
      * The live WordPress page never sets the global and keeps the Jetpack path.
      */
+    var ATTR_KEYS = ["utm_source", "utm_medium", "utm_campaign", "utm_content", "utm_term", "gclid", "fbclid"];
+
+    /** First-touch attribution stored by acp-attr.js on the visitor's landing page,
+     *  falling back to whatever is on the current URL. */
+    function storedAttr() {
+      try { return JSON.parse(sessionStorage.getItem("acp_attr") || "{}") || {}; } catch (e) { return {}; }
+    }
+
     function utmParams() {
-      var out = {};
+      var out = {}, stored = storedAttr();
       try {
         var q = new URLSearchParams(location.search);
-        ["utm_source", "utm_medium", "utm_campaign", "utm_content", "utm_term", "gclid"].forEach(function (k) {
-          if (q.get(k)) out[k] = q.get(k);
+        ATTR_KEYS.forEach(function (k) {
+          var v = q.get(k) || stored[k];
+          if (v) out[k] = v;
         });
-      } catch (e) { /* old browser: no attribution */ }
+      } catch (e) {
+        ATTR_KEYS.forEach(function (k) { if (stored[k]) out[k] = stored[k]; });
+      }
       return out;
     }
 
+    var sending = false;
+
     function submitViaApi() {
+      if (sending) return;              // one intentional submit = one POST
+      sending = true;
       nextBtn.disabled = true;
       backBtn.disabled = true;
       nextBtn.textContent = "Sending…";
@@ -960,12 +975,15 @@
           inArea: state.inArea
         },
         page: location.href,
+        landing_page: storedAttr().landing_page || location.href,
+        submitted_at: new Date().toISOString(),
         referrer: document.referrer,
         utm: utmParams(),
         startedAt: startedAt,
         company: honeypot.value
       };
       function fail(msg) {
+        sending = false;
         nextBtn.disabled = false;
         backBtn.disabled = false;
         nextBtn.textContent = "Request Free Estimate";
