@@ -895,36 +895,11 @@
      * block their confirmation. keepalive lets it finish even as the page
      * changes underneath it.
      */
-    var CRM_ENDPOINT = "https://acp-platform-green.vercel.app/api/leads";
 
-    function sendToCrm() {
-      try {
-        var notes = state.notes.trim();
-        var payload = {
-          name: state.name.trim(),
-          phone: state.phone.trim(),
-          email: state.email.trim(),
-          address: composedAddress(),
-          service: state.service,
-          date: state.date,
-          time: state.time,
-          issues: state.issues.join(", "),
-          notes: notes
-        };
-        fetch(CRM_ENDPOINT, {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(payload),
-          keepalive: true,
-          mode: "cors"
-        })["catch"](function () { /* customer already booked; nothing to show */ });
-      } catch (e) { /* never let CRM mirroring break the booking */ }
-    }
 
     /* ── API mode (static hosting, no WordPress) ─────────────────────────
      * Opt-in via window.ACP_BOOKING_ENDPOINT. The server validates, files the
-     * CRM lead with its secret and sends both emails, so the wizard does NOT
-     * also call sendToCrm() here — that would append the notes twice.
+     * CRM lead with its secret and sends both emails.
      * The live WordPress page never sets the global and keeps the Jetpack path.
      */
     var ATTR_KEYS = ["utm_source", "utm_medium", "utm_campaign", "utm_content", "utm_term", "gclid", "fbclid"];
@@ -1035,7 +1010,6 @@
       function onSuccess() {
         if (done) return;
         settle();
-        sendToCrm();
         // The wizard replaces Jetpack's own confirmation, so hide it.
         var jm = container.querySelector(".contact-form-submission");
         if (jm) jm.style.display = "none";

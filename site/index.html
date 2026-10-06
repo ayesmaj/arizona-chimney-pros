@@ -2899,33 +2899,6 @@ if (emberContainer) {
 }
 /* ===== CONTACT FORM ===== */
 
-const contactForm = document.getElementById('contactForm');
-
-if (contactForm) {
-
-  contactForm.addEventListener('submit', async e => {
-
-    e.preventDefault();
-
-    const btn = contactForm.querySelector('.form-submit');
-
-    const orig = btn.textContent;
-
-    btn.textContent = 'Sending…';
-
-    btn.disabled = true;
-
-    await new Promise(r => setTimeout(r, 1200));
-
-    const success = contactForm.querySelector('.form-success');
-
-    contactForm.querySelector('.form-fields').style.display = 'none';
-
-    if (success) success.style.display = 'block';
-
-  });
-
-}
 /* ===== SMOOTH SCROLL FOR HASH LINKS ===== */
 
 document.querySelectorAll('a[href^="#"]').forEach(a => {
