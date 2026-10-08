@@ -228,6 +228,44 @@ html body .float-cta { width: 60px; height: 60px; padding: 0 !important; justify
 html body .float-cta svg { width: 24px !important; height: 24px !important; display: block; }
 html body .float-cta span, html body .float-cta br { display: none !important; }
 
+/* ── injected site header (pages that shipped their own ad-hoc nav) ─────── */
+html body .acp-site-header { display: none !important; }
+html body.acp-injected-header { padding-top: calc(var(--ao-bar-h) + 72px) !important; }
+
+/* ── about page ─────────────────────────────────────────────────────────── */
+.ao-about-hero { position: relative; isolation: isolate; display: flex; align-items: center; justify-content: center; text-align: center; min-height: min(74svh, 780px); padding: 150px 24px 84px; color: var(--ao-ivory); background: var(--ao-charcoal); }
+.ao-about-hero__bg { position: absolute; inset: 0; z-index: 0; overflow: hidden; }
+.ao-about-hero__bg img { width: 100%; height: 100%; object-fit: cover; object-position: center 58%; display: block; transform: scale(1.03); }
+.ao-about-hero__bg::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(18, 18, 18, .80) 0%, rgba(18, 18, 18, .46) 42%, rgba(18, 18, 18, .90) 100%), radial-gradient(55% 48% at 50% 54%, rgba(18, 18, 18, .38), transparent 72%); }
+.ao-about-hero__inner { position: relative; z-index: 1; max-width: 840px; }
+.ao-about-hero h1 { margin: 14px 0 18px; font-size: clamp(2.1rem, 4.6vw, 3.6rem); font-weight: 800; line-height: 1.08; letter-spacing: -.02em; color: #fff; }
+.ao-about-hero p { margin: 0 auto 30px; max-width: 640px; font-size: 1.1rem; line-height: 1.65; color: rgba(245, 242, 237, .84); }
+.ao-about-hero .ao-btn--ghost svg { width: 16px; height: 16px; margin-right: 8px; vertical-align: -3px; }
+.ao-about-story { background: var(--ao-ivory); color: var(--ao-ink); padding: 88px 0 72px; }
+.ao-about-story__grid { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); gap: 60px; align-items: center; }
+.ao-about-story__media { position: relative; margin: 0; border-radius: 22px; overflow: hidden; aspect-ratio: 4 / 5; background: var(--ao-stone); box-shadow: 0 30px 60px rgba(18, 18, 18, .18); }
+.ao-about-story__media img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.ao-about-story__media::after { content: ""; position: absolute; inset: 0; border-radius: inherit; box-shadow: inset 0 0 0 1px rgba(201, 168, 106, .38); pointer-events: none; }
+.ao-about-story__text h2 { margin: 0 0 18px; font-size: clamp(1.8rem, 3vw, 2.4rem); font-weight: 800; letter-spacing: -.02em; color: var(--ao-ink); }
+.ao-about-story__text p { margin: 0 0 16px; color: var(--ao-ink-soft); line-height: 1.8; font-size: 1.02rem; }
+.ao-about-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; margin-top: 64px; background: rgba(201, 168, 106, .35); border: 1px solid rgba(201, 168, 106, .35); border-radius: 18px; overflow: hidden; }
+.ao-about-stats > div { background: var(--ao-charcoal); color: var(--ao-ivory); padding: 30px 20px; text-align: center; }
+.ao-about-stats b { display: block; font-size: 2.3rem; font-weight: 800; letter-spacing: -.03em; color: var(--ao-ember); line-height: 1; }
+.ao-about-stats span { display: block; margin-top: 8px; font-size: .85rem; color: rgba(245, 242, 237, .75); letter-spacing: .02em; }
+html body.acp-about { background: var(--ao-ivory) !important; }
+html body.acp-about .entry-content > section { margin-top: 0 !important; }
+html body.acp-about .entry-content > section:not(.ao-about-hero):not(.ao-final) h2 { color: var(--ao-ink); }
+html body .ao-about-cta { background: var(--ao-ivory); color: var(--ao-ink); max-width: none !important; }
+html body .ao-about-cta > * { max-width: 700px; margin-left: auto; margin-right: auto; }
+html body .ao-about-cta h2 { color: var(--ao-ink); }
+html body .ao-about-cta p { color: var(--ao-ink-soft) !important; }
+@media (max-width: 900px) {
+  .ao-about-hero { min-height: 70svh; padding: 132px 20px 60px; }
+  .ao-about-story { padding: 64px 0 56px; }
+  .ao-about-story__grid { grid-template-columns: 1fr; gap: 32px; }
+  .ao-about-stats { grid-template-columns: repeat(2, 1fr); margin-top: 44px; }
+}
+
 /* ── included grid ───────────────────────────────────────────────────── */
 .ao-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; margin-top: 44px; }
 /* photo tile: full-bleed image, bottom gradient, copy pinned low; image zooms on hover (21st "Reveal on hover" pattern, CSS-only) */

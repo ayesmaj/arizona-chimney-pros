@@ -14,7 +14,7 @@ from html import escape as H
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SITE = os.path.join(ROOT, 'site')
 ORIGIN = 'https://arizonachimneypros.com'
-VER = '9'
+VER = '10'
 
 cfg_src = io.open(os.path.join(SITE, 'offer', 'inspection-offer.config.js'), encoding='utf-8').read()
 CFG = json.loads(cfg_src[cfg_src.index('{'):cfg_src.rindex('}') + 1])
@@ -305,6 +305,9 @@ PHRASES = [
     (r'(?i) — that fee is credited directly toward the job if you move forward with us\.', '.'),
     # last resort for anything phrased differently
     (r'(?i),? (?:and )?(?:is |gets |that gets )?credited (?:toward|to|against|directly toward) (?:any |the |that )?(?:repair(?: cost| total| work)?|project|work)(?: you book| if you[^.,;<]*| when you[^.,;<]*)?', ''),
+    (r'Get a Book \$99 Inspection', 'Book $99 Inspection'),
+    (r'(?i)Free written estimates? on every service call\.', 'Written pricing with every $99 inspection.'),
+    (r'(?i)free written (?:estimate|quote)s?', 'written pricing'),
 ]
 PROTECT = re.compile(r'(<script[^>]*>.*?</script>|<style[^>]*>.*?</style>|<svg[^>]*>.*?</svg>|<!--.*?-->)', re.S | re.I)
 
@@ -409,6 +412,67 @@ def phone_icons(html):
     flt = f'<a href="{TEL}" class="float-cta" aria-label="Call Arizona Chimney Pros">{PHONE_SVG}</a>'
     html = re.sub(r'<a (?=[^>]*class="header__phone)(?=[^>]*href="tel:)[^>]*>.*?</a>', head, html, flags=re.S)
     html = re.sub(r'<a (?=[^>]*class="float-cta)(?=[^>]*href="tel:)[^>]*>.*?</a>', flt, html, flags=re.S)
+    return html
+
+
+SITE_HEADER = io.open(os.path.join(os.path.dirname(__file__), 'site-header.html'), encoding='utf-8').read()
+
+
+def site_header(html):
+    """Pages without the real header (old self-contained WP pages) get it injected; their ad-hoc nav is hidden by CSS."""
+    body = html[html.find('<body'):]
+    if 'class="header__inner"' in body or 'class="container header__inner"' in body:
+        return html
+    html = re.sub(r'<body([^>]*?)class="', r'<body\1class="acp-injected-header ', html, count=1)
+    return re.sub(r'(<div class="wp-site-blocks"[^>]*>)', lambda m: m.group(1) + wrap('site-header', SITE_HEADER), html, count=1)
+
+
+def _img(name, widths, w, h, sizes, alt='', extra=''):
+    srcset = ', '.join(f'/images/about/{name}-{x}.webp {x}w' for x in widths)
+    return (f'<img src="/images/about/{name}-{widths[-2] if len(widths) > 1 else widths[0]}.webp" srcset="{srcset}" sizes="{sizes}" '
+            f'width="{w}" height="{h}" alt="{alt}" decoding="async" {extra}>')
+
+
+def about_page(html):
+    """Idempotent: reads the copy back out of either the original inline-styled sections or the converted ones."""
+    sec = re.compile(r'<section[^>]*>.*?</section>', re.S)
+    secs = list(sec.finditer(html))
+    hero = next((m for m in secs if 'background:#0f0f0f;padding:100px' in m.group(0)[:120] or 'class="ao-about-hero"' in m.group(0)[:60]), None)
+    story = next((m for m in secs if 'grid-template-columns:1fr 1fr;gap:64px' in m.group(0)[:160] or 'class="ao-about-story"' in m.group(0)[:60]), None)
+    if not hero or not story:
+        return html
+    h1 = re.search(r'<h1[^>]*>(.*?)</h1>', hero.group(0), re.S).group(1).strip()
+    lead = re.search(r'</h1>\s*<p[^>]*>(.*?)</p>', hero.group(0), re.S).group(1).strip()
+    new_hero = f"""<section class="ao-about-hero" aria-labelledby="about-h1">
+  <div class="ao-about-hero__bg" aria-hidden="true">{_img('about-hero', [1000, 1600, 2048], 2048, 1152, '100vw', extra='fetchpriority="high"')}</div>
+  <div class="ao-about-hero__inner acp-offer-anim">
+    <span class="ao-eyebrow">About Us</span>
+    <h1 id="about-h1">{h1}</h1>
+    <p>{lead}</p>
+    <div class="ao-cta-row">{btn(G['primaryCta'], BOOK, placement='about_hero')}<a class="ao-btn ao-btn--ghost" href="{TEL}">{PHONE_SVG} Call {H(PHONE)}</a></div>
+  </div>
+</section>"""
+    st = story.group(0)
+    h2 = re.search(r'<h2[^>]*>(.*?)</h2>', st, re.S).group(1).strip()
+    paras = [p.strip() for p in re.findall(r'<p[^>]*>(.*?)</p>', st, re.S)]
+    stats = re.findall(r'<div style="font-size:2\.2rem[^"]*">(.*?)</div>\s*<div style="font-size:0\.875rem[^"]*">(.*?)</div>', st, re.S) \
+        or re.findall(r'<b>(.*?)</b><span>(.*?)</span>', st, re.S)
+    new_story = f"""<section class="ao-about-story" aria-labelledby="about-story-h2">
+  <div class="ao-wrap ao-about-story__grid">
+    <figure class="ao-about-story__media acp-offer-anim">{_img('about-story', [700, 1100], 1100, 1375, '(max-width: 900px) calc(100vw - 32px), 520px', alt='Arizona Chimney Pros technician servicing a gas fireplace burner in a Phoenix-area home', extra='loading="lazy"')}</figure>
+    <div class="ao-about-story__text acp-offer-anim">
+      <h2 id="about-story-h2">{h2}</h2>
+      {''.join(f'<p>{p}</p>' for p in paras)}
+    </div>
+  </div>
+  <div class="ao-wrap"><div class="ao-about-stats acp-offer-anim">{''.join(f'<div><b>{n.strip()}</b><span>{l.strip()}</span></div>' for n, l in stats)}</div></div>
+</section>"""
+    html = html[:hero.start()] + new_hero + html[hero.end():story.start()] + new_story + html[story.end():]
+    # the truck wrap photo carries the retired phone number — drop that section until a current photo exists
+    html = re.sub(r'<section(?: class="ao-about-truck")? style="padding:0 0 64px;">\s*<div[^>]*>\s*<img[^>]*arizona-chimney-pros-truck[^>]*>\s*</div>\s*</section>', '', html, count=1)
+    html = re.sub(r'<body([^>]*?)class="', lambda m: '<body' + m.group(1) + 'class="acp-about ', html, count=1)
+    html = html.replace('<section style="padding:72px 24px;max-width:700px;margin:0 auto;text-align:center;">',
+                        '<section class="ao-about-cta" style="padding:72px 24px;max-width:700px;margin:0 auto;text-align:center;">', 1)
     return html
 
 
@@ -630,12 +694,15 @@ def process(rel, html):
     html = strip_all(html)
     html = head_assets(html)
     def body_tag(m):
-        attrs = re.sub(r' data-offer-service="[^"]*"', '', m.group(1)).replace('acp-offer-has-dock ', '')
+        attrs = re.sub(r' data-offer-service="[^"]*"', '', m.group(1)).replace('acp-offer-has-dock ', '').replace('acp-injected-header ', '').replace('acp-about ', '')
         return '<body' + attrs + ' data-offer-service="' + stype + '">'
     html = re.sub(r'<body([^>]*)>', body_tag, html, count=1)
     html = re.sub(r'(<body[^>]*>)', lambda m: m.group(1) + announcement_bar(), html, count=1)
+    html = site_header(html)
     html = header_cta(html)
     html = phone_icons(html)
+    if rel == 'about/index.html':
+        html = about_page(html)
     html = html.replace('<div class="trust-item"><br />Free Estimates</div>', '<div class="trust-item"><br />Clear Written Pricing</div>')
     if kind == 'home':
         html = home_hero(html)

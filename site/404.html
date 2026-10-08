@@ -2004,10 +2004,10 @@ gtag("config", "GT-WF78VHKS");
     position: relative !important;
   }
 }</style><script src="/acp-attr.js" defer></script>
-<!-- acp-offer:head --><link rel="stylesheet" href="/offer/inspection-offer.css?v=9"><script>document.documentElement.classList.add("acp-offer-js")</script><script src="/offer/inspection-offer.config.js?v=9"></script><script src="/offer/inspection-offer.js?v=9" defer></script><!-- /acp-offer:head -->
+<!-- acp-offer:head --><link rel="stylesheet" href="/offer/inspection-offer.css?v=10"><script>document.documentElement.classList.add("acp-offer-js")</script><script src="/offer/inspection-offer.config.js?v=10"></script><script src="/offer/inspection-offer.js?v=10" defer></script><!-- /acp-offer:head -->
 </head>
 
-<body class="error404 wp-custom-logo wp-embed-responsive wp-theme-assembler is-block-theme" data-offer-service="general"><!-- acp-offer:bar -->
+<body class="acp-injected-header error404 wp-custom-logo wp-embed-responsive wp-theme-assembler is-block-theme" data-offer-service="general"><!-- acp-offer:bar -->
 <div class="acp-offer-bar" role="region" aria-label="$99 Expert Fireplace Inspection offer">
   <div class="acp-offer-bar__in">
     <span class="ao-desktop"><b>$99</b> Expert Fireplace Inspection</span>
@@ -2018,7 +2018,79 @@ gtag("config", "GT-WF78VHKS");
   </div>
 </div><!-- /acp-offer:bar -->
 <script id='jetpack-search-theme-token-sampler'>(function(){try{var c=getComputedStyle(document.body),r=document.documentElement,ink=c.color,bg=c.backgroundColor;if(ink){r.style.setProperty('--jp-search-page-ink',ink);}if(bg&&bg!==ink&&bg!=='rgba(0, 0, 0, 0)'&&bg!=='transparent'){r.style.setProperty('--jp-search-page-surface',bg);}}catch(e){}})();</script>
-<a class="skip-link screen-reader-text" id="wp-skip-link" href="/#wp--skip-link--target">Skip to content</a><div class="wp-site-blocks"><header class="wp-block-template-part">
+<a class="skip-link screen-reader-text" id="wp-skip-link" href="/#wp--skip-link--target">Skip to content</a><div class="wp-site-blocks"><!-- acp-offer:site-header --><header class="header" id="header">
+  <div class="container header__inner">
+    <a href="/" class="logo" aria-label="Arizona Chimney Pros Fireplace Specialists">
+      <svg class="logo__icon" viewBox="0 0 42 42" fill="none"><rect width="42" height="42" rx="10" fill="#FF6A1A"></rect><path d="M21 7 L28 16 H24 V26 H18 V16 H14 Z" fill="white"></path><path d="M11 32 Q21 25 31 32 L33 37 H9 Z" fill="white" opacity="0.8"></path></svg>
+      <div class="logo__text">
+        <span class="logo__name">Arizona Chimney Pros</span>
+        <span class="logo__sub">Fireplace Specialists</span>
+      </div>
+    </a>
+    <nav class="nav">
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__list" id="navList">
+        <li><a href="/" class="nav__link">Home</a></li>
+<li><a href="/services/fireplace-remodeling-phoenix/" class="nav__link">Remodeling</a></li>
+<li><a href="/services/gas-fireplace-repair-phoenix/" class="nav__link">Gas Repair</a></li>
+<li><a href="/services/gas-fireplace-installation-phoenix/" class="nav__link">Installation</a></li>
+<li><a href="/services/chimney-inspection-phoenix/" class="nav__link">Chimney</a></li>
+<li><a href="/services/" class="nav__link">Areas</a></li>
+      </ul>
+    </nav>
+    <div class="header__actions">
+      <a href="tel:+16025575071" class="header__phone ao-phone" aria-label="Call (602) 557-5071"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11.5a19.79 19.79 0 01-3.07-8.63A2 2 0 012 .82h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg></a>
+      <a class="btn btn--primary" href="/contact/" title="professional on-site inspection with written pricing" aria-label="Book $99 Inspection — professional on-site inspection with written pricing" data-offer-event="inspection_offer_click" data-offer-placement="header"><span class="ao-cta-long">Book $99 Inspection</span><span class="ao-cta-short">Book $99</span></a>
+    </div>
+  </div>
+</header>
+<script>
+(function(){
+  /* Header scroll effect */
+  var hdr = document.getElementById('header');
+  if(hdr){
+    window.addEventListener('scroll', function(){
+      hdr.classList.toggle('scrolled', window.scrollY > 40);
+    }, {passive:true});
+  }
+
+  /* Mobile nav toggle */
+  var toggle = document.getElementById('navToggle');
+  var navList = document.getElementById('navList');
+  if(toggle && navList){
+    toggle.addEventListener('click', function(){
+      var open = navList.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', open);
+    });
+  }
+
+  /* FAQ accordion */
+  document.querySelectorAll('.faq-item__q').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var item = btn.closest('.faq-item');
+      var wasOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(function(el){
+        el.classList.remove('open');
+      });
+      if(!wasOpen) item.classList.add('open');
+    });
+  });
+
+  /* Scroll reveal */
+  if('IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if(e.isIntersecting){ e.target.classList.add('visible'); io.unobserve(e.target); }
+      });
+    }, {threshold:0.08});
+    document.querySelectorAll('.anim').forEach(function(el){ io.observe(el); });
+  } else {
+    document.querySelectorAll('.anim').forEach(function(el){ el.classList.add('visible'); });
+  }
+})();
+</script><!-- /acp-offer:site-header --><header class="wp-block-template-part">
 <div class="wp-block-group alignfull has-global-padding is-layout-constrained wp-block-group-is-layout-constrained" style="margin-top:0;margin-bottom:0;padding-top:0;padding-bottom:0">
     <div class="wp-block-group alignwide is-content-justification-space-between is-nowrap is-layout-flex wp-container-core-group-is-layout-862e8fa1 wp-block-group-is-layout-flex" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20)">
     <div class="wp-block-group is-nowrap is-layout-flex wp-container-core-group-is-layout-f1189ed3 wp-block-group-is-layout-flex">

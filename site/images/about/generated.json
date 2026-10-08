@@ -1,0 +1,20 @@
+{
+ "bible": "Arizona Chimney Pros lives inside upscale modern-Southwest Phoenix/Scottsdale homes at 4–6 pm: hand-troweled plaster or stacked-stone surrounds, honed travertine, tall glass onto saguaro, palo verde and desert mountains, with amber window light as key and ember-orange fire glow as the only saturated accent against charcoal shadow and warm ivory stone — never blue or teal. The technician is a craftsman, not a model: one athletic adult, plain charcoal work shirt, dark cap or none, seen at mid distance from behind or three-quarter with honest, anatomically correct hands and never a tight portrait or stock smile. Every frame is photoreal on 35–50 mm with real optical depth and editorial-documentary realism plus commercial polish — no 3D sheen, illustration or HDR — and carries zero text, letters, numbers, logos, signage, screens, plates or lettering.",
+ "model": "gpt_image_2_5 (high, 2k)",
+ "images": {
+  "about-hero": {
+   "prompt": "SUBJECT: Wide editorial photograph, luxury modern-Southwest Arizona living room: lit sandstone fireplace glowing lower-left, tall windows right framing saguaro, palo verde and desert mountains in late-afternoon gold. One technician, small at lower-left, kneels at the hearth, charcoal work shirt, back three-quarter to camera, face turned into the firebox.\nCOMPOSITION: 16:9. Centre band is a broad, smooth warm-ivory plaster wall in soft shadow, no objects, edges or texture, copy-safe for a centred headline and clean under a 4:5 centre crop. Interest at the edges and bottom third: ember glow and hearth lower-left, low linen sofa and travertine floor along the bottom, desert window right; figure under one-tenth frame height.\nCAMERA: 35 mm full-frame, eye level, f/4, deep focus, photoreal.\nLIGHT: 5 pm amber sun raking the floor; ember-orange glow on hearth and shoulder; charcoal upper corners.\nMATERIALS: lime plaster, honed travertine, sandstone, walnut, linen.\nEXCLUSIONS: no text, letters, numbers, logos, signage, screens, watermarks; no faces near centre; no blue or teal grading; no 3D-render sheen, illustration or stock smile.",
+   "alt": "Luxury Arizona living room at golden hour with a lit stone fireplace, tall windows onto the desert, and a technician working quietly at the hearth.",
+   "attempt": 1,
+   "qa_score": 20,
+   "qa_pass": false
+  },
+  "about-story": {
+   "prompt": "SUBJECT: A technician kneels on the travertine hearth of an upscale Arizona home, lit torch in hand, tools on a canvas roll, checking the gas burner inside the firebox. Three-quarter from behind and side so hands, flame and burner are the subject; face in soft profile at mid distance. One athletic adult, charcoal work shirt, dark cap, correct five-finger hands.\nCOMPOSITION: 4:5 vertical. Full-height figure, generous headroom: top fifth quiet plaster wall and a tall window's edge; back and shoulder on the left third, firebox glow right of centre; hearth and tools fill the lower third.\nCAMERA: 50 mm, hearth height, f/2.8, focus on hands and burner, soft falloff, photoreal.\nLIGHT: ember-orange glow on hands, tools and jawline; amber desert window rims shoulder and cap at right; charcoal shadow behind.\nMATERIALS: hand-troweled plaster, split-face stone, honed travertine, brass burner, steel tools, canvas roll.\nEXCLUSIONS: no text, letters, numbers, logos, watermarks, signage, screens; no tight portrait or stock smile; no blue or teal grading; no 3D render or illustration.",
+   "alt": "Chimney technician kneeling at a gas fireplace in an Arizona home, checking the burner with a torch, warm fire glow on his hands and tools.",
+   "attempt": 1,
+   "qa_score": 22,
+   "qa_pass": false
+  }
+ }
+}
