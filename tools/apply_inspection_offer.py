@@ -14,7 +14,7 @@ from html import escape as H
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SITE = os.path.join(ROOT, 'site')
 ORIGIN = 'https://arizonachimneypros.com'
-VER = '8'
+VER = '9'
 
 cfg_src = io.open(os.path.join(SITE, 'offer', 'inspection-offer.config.js'), encoding='utf-8').read()
 CFG = json.loads(cfg_src[cfg_src.index('{'):cfg_src.rindex('}') + 1])
@@ -32,9 +32,9 @@ ICONS = ['<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-widt
          '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 20h16M6 20V9l6-5 6 5v11"/><path d="M10 20v-6h4v6"/></svg>',
          '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7v10M9 10h4.5a2 2 0 010 4H9"/></svg>']
 
-# card photos (site/images/cards/<name>-{480,960}.webp, 4:3) — built from the real job photos in wp-content/uploads
-CARD_IMG = {'included': ['inc-evaluation', 'inc-diagnosis', 'inc-findings', 'inc-written', 'inc-remodel', 'inc-honest'],
-            'steps': ['step-inspect', 'step-options', 'step-decide']}
+# card photos (site/images/cards/<name>-{480,960}.webp, 4:3) — generated set, prompts in site/images/cards/generated.json
+CARD_IMG = {'included': ['g-inc-evaluation', 'g-inc-diagnosis', 'g-inc-findings', 'g-inc-written', 'g-inc-remodel', 'g-inc-honest'],
+            'steps': ['g-step-inspect', 'g-step-options', 'g-step-decide']}
 CARD_SIZES = {'included': '(max-width: 640px) calc(100vw - 32px), (max-width: 1000px) 50vw, 400px',
               'steps': '(max-width: 900px) calc(100vw - 32px), 400px'}
 

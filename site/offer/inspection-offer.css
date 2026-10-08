@@ -207,7 +207,7 @@ html body .ao-hero--full .hero__glow, html body .ao-hero--full .hero__embers { z
 .ao-steps__line { display: none; }
 .ao-step { position: relative; overflow: hidden; text-align: left; background: #fff; border: 1px solid rgba(18, 18, 18, .08); border-radius: 18px; box-shadow: 0 14px 40px rgba(18, 18, 18, .08); }
 .ao-step__media { position: relative; aspect-ratio: 16 / 10; overflow: hidden; background: #1a1a1a; }
-.ao-step__media img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 1.1s cubic-bezier(.2, .7, .2, 1); }
+.ao-step__media img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 15%; display: block; transition: transform 1.1s cubic-bezier(.2, .7, .2, 1); }
 .ao-step__media::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(18, 18, 18, 0) 55%, rgba(18, 18, 18, .35) 100%); }
 .ao-step__body { position: relative; padding: 42px 26px 28px; }
 .ao-step__num { position: absolute; top: -26px; left: 22px; display: inline-grid; place-items: center; min-width: 54px; height: 54px; padding: 0 14px; border-radius: 14px; background: var(--ao-ink); color: var(--ao-gold); font-size: 1.35rem; font-weight: 800; letter-spacing: -.02em; line-height: 1; box-shadow: 0 10px 24px rgba(18, 18, 18, .25); }

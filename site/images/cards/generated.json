@@ -1,0 +1,78 @@
+{
+ "bible": "One shoot, one afternoon, one technician: nine frames inside upscale modern-Southwest homes in the Phoenix/Scottsdale foothills, each at a different fireplace (linear plaster, stacked sandstone, tall stucco, honed limestone, dated tile, ledgestone, plaster with oak mantel, outdoor patio stucco, dark basalt) with its own angle and action, so the set reads as one job documented end to end. Light is always 4-6 pm gold through large windows showing saguaro, palo verde and desert mountains, with a lit fire as the only saturated accent; the palette is charcoal shadow, ivory and warm-stone midtones, amber window light and ember orange, never blue or teal. Camera is photoreal 35-50 mm, eye level or slightly low, f/2.8-4, editorial documentary realism with commercial polish: a real specialist absorbed in real work, correct hands, natural faces at mid distance, no stock smiles, no handshakes, no render sheen. Every frame is 4:3 with the subject in the upper two-thirds and a calm, continuous lower third of floor, hearth or shadow, crop-safe for a 16:10 trim, and contains no text, numbers, logos, watermarks, screens or signage anywhere.",
+ "model": "gpt_image_2_5 (high, 1k, 4:3)",
+ "images": {
+  "inc-evaluation": {
+   "file": "g-inc-evaluation",
+   "prompt": "One fireplace technician, adult, athletic, charcoal work shirt, plain dark cap, kneels on one knee at a long linear gas fireplace set into a smooth ivory hand-troweled plaster wall, glass front removed and leaning out of frame. He aims a small LED flashlight into the open firebox, its beam clearly lighting a simple stainless ribbon burner under a flat bed of black lava rock, with one small pilot assembly at the end; no rails, brackets, sliders or extra hardware; burner off, no flames or embers. Three-quarter view from his left, head, shoulders and firebox in the upper two-thirds, slightly right of centre, with clear headroom above the cap (top 15% of frame is plaster wall). Lower third is calm empty honed travertine with a soft amber reflection; boots stay above it. Photoreal, 40 mm, f/3.2, eye level, technician sharp. Low gold late-afternoon sun from a floor-to-ceiling window camera-left showing a blurred saguaro and desert mountains; deep readable charcoal shadows. 4:3. EXCLUSIONS: no text, numbers, logos, watermarks or readable screens; no extra people; realistic hands, correct finger count; no blown window, no blue or teal grading, no 3D-render look, no stock smile.",
+   "alt": "Technician kneeling at a linear gas fireplace in an ivory plaster wall, flashlight on the burner, in warm late-afternoon light",
+   "attempt": 2,
+   "qa_score": 23,
+   "qa_pass": false
+  },
+  "inc-diagnosis": {
+   "file": "g-inc-diagnosis",
+   "prompt": "The technician, charcoal shirt, no cap, crouches at a gas fireplace with a dry-stacked sandstone surround, both hands on a handheld manometer, its probe clipped to the brass valve beside the pilot assembly behind the open lower louver; eyes on the gauge, its face blank. Three-quarter view from his right, slightly low; face, hands, meter and valve fill the upper two-thirds, centred-right. Lower third is shadowed hearth stone and tile floor, empty. Photoreal, 50 mm, f/2.8, hands and meter sharpest, face softly sharp. Amber window light raking from camera-right across the sandstone; a tiny pilot flame casting ember glow on his fingers; shadows deep but readable. Materials: cut sandstone, black steel louver, brushed brass valve. 4:3. EXCLUSIONS: no text, numbers, gauge numerals, logos, watermarks or readable screens; no extra people; realistic hands, correct finger count; lower third calm and empty; no blown window, no blue or teal grading, no 3D-render or illustration look, no clutter.",
+   "alt": "Technician crouched at a stacked-sandstone fireplace, testing the gas valve with a handheld meter",
+   "attempt": 2,
+   "qa_score": 21,
+   "qa_pass": false
+  },
+  "inc-findings": {
+   "file": "g-inc-findings",
+   "prompt": "The technician, charcoal shirt, dark cap, kneels at the open firebox of a tall smooth-stucco gas fireplace, aiming an LED flashlight at a raking angle so a pool of light (no visible beam in the air) reveals a hairline crack and a bloom of soot on the brick-pattern clay refractory back panel. A ceramic gas log set on a burner sits in the firebox. Seen from behind and to his left at a three-quarter angle: the lit crack sits upper-centre, his shoulder and cap frame the upper-left edge, his torso ends above the lower third. Lower third is a calm, deep-shadowed flagstone hearth, empty. Photoreal, 35 mm, f/3.5, crack sharp. Flashlight is the key; warm gold window light from camera-right sidelights the stucco; rest deep charcoal. 4:3. EXCLUSIONS: no text, numbers, logos, watermarks or screens; no extra people; realistic hands, five fingers; no visible light shafts, no blue or teal grading, no render look, no clutter.",
+   "alt": "Flashlight beam revealing a hairline crack in a fireplace back panel as a technician leans into a tall stucco firebox",
+   "attempt": 2,
+   "qa_score": 23,
+   "qa_pass": true
+  },
+  "inc-written": {
+   "file": "g-inc-written",
+   "prompt": "At a gas fireplace with a honed-limestone surround, the technician, charcoal shirt, no cap, bends at the waist camera-left in three-quarter profile and tilts a dark clipboard toward a homeowner, a woman in a cream knit sweater seated on the hearth bench, reading it. The page: only soft grey line blocks and a plain signature rule. Exactly two people. Generous headroom, both heads well below the top edge, clipboard and hands upper-centre, lit fire soft behind. Bench seat edge at the two-thirds line; below it only shadowed bench face and travertine floor, no legs, knees or feet. Window camera-right shows a palo verde and desert mountains in amber late sun, ember glow on the page edge. Photoreal, 50 mm, f/2.8, eye level, clipboard and hands sharp, faces softly sharp. 4:3. EXCLUSIONS: no legible text, numbers, logos, watermarks or screens; no extra people; correct finger count; no handshake, no blue or teal grading, no 3D-render look, no stock smiles.",
+   "alt": "Technician reviewing a written estimate on a clipboard with a homeowner seated at a lit limestone fireplace",
+   "attempt": 2,
+   "qa_score": 22,
+   "qa_pass": false
+  },
+  "inc-remodel": {
+   "file": "g-inc-remodel",
+   "prompt": "The technician, charcoal shirt, dark cap, stands at a dated beige ceramic-tile fireplace surround, holding a square of split-face travertine and a short walnut mantel sample flat against the old tile with his right hand while his left pulls a steel tape measure across the firebox opening; tape blade blank, fire unlit. Three-quarter view, slightly low; samples, tape and hands fill the upper two-thirds, right of centre, his face mid-distance checking the measurement. Lower third is plain tile hearth ledge and shadowed floor, empty. Photoreal, 40 mm, f/4, samples and tape edge sharp, face softly sharp. Warm gold afternoon light from a window camera-left raking across tile and sample textures. Materials: glazed tile, travertine, oiled walnut. 4:3. EXCLUSIONS: no text, numbers, tape numerals, logos, watermarks or readable screens; no extra people; realistic hands, correct finger count; lower third calm and empty; no blown window, no blue or teal grading, no 3D-render or illustration look, no clutter.",
+   "alt": "Technician holding stone and walnut samples against a dated tile fireplace with a tape measure across the opening",
+   "attempt": 2,
+   "qa_score": 20,
+   "qa_pass": false
+  },
+  "inc-honest": {
+   "file": "g-inc-honest",
+   "prompt": "Technician in charcoal shirt, no cap, and a homeowner in a linen shirt talk unhurriedly at a lit gas fireplace: ceramic gas logs on a clean burner, no andirons or wood pile. Ledgestone surround with a plain travertine mantel shelf, no rustic timber beam. Homeowner sits on the raised hearth; technician stands an arm's length away, open palm gesturing toward the firebox. Exactly two people. Frame mid-thigh up so both figures fill the upper two-thirds with clear headroom; technician left of centre, homeowner right, fire between. Lower third: only calm hearth stone and travertine floor in warm shadow, no feet or legs. Camera-right window: saguaro, palo verde, desert mountains, late-afternoon amber light. Photoreal, 35 mm, f/3.5, eye level, three-quarter faces, sharp. Ember-orange firelight key, amber window fill, warm charcoal-and-ember cast. 4:3. EXCLUSIONS: no text, logos or watermarks; no extra people; realistic hands, correct finger count; no blue or teal grading, no 3D-render look, no stock smiles, no forest or pine trees.",
+   "alt": "Technician and homeowner in relaxed conversation beside a lit ledgestone fireplace, lit by ember glow",
+   "attempt": 2,
+   "qa_score": 19,
+   "qa_pass": false
+  },
+  "step-inspect": {
+   "file": "g-step-inspect",
+   "prompt": "A fireplace technician in a charcoal shirt and dark cap stands at a full-height ivory plaster fireplace with a single firebox opening and a floating oak mantel above his head; smooth plaster above the mantel, no second opening. He leans into the opening, one hand flat on the plaster surround, the other inside the firebox aiming an LED flashlight up toward the damper; an unlit gas log set with ceramic logs and burner sits inside. A waxed-canvas tool bag rests on the travertine floor beside him, clear of the frame edge. Three-quarter view from behind his right, 35 mm, f/4, eye level; technician and mantel sharp, centred vertically so a 16:10 trim is safe. Window camera-left shows blurred palo verde, saguaro and desert mountains; low gold sun rakes the plaster; lower third is empty warm floor. Photoreal. EXCLUSIONS: no text, logos, watermarks; nothing crossing in front of his body; realistic hands, correct finger count; no extra people; no blue grading, no render look, no clutter.",
+   "alt": "Technician reaching up into a plaster fireplace with a flashlight beneath a floating oak mantel, desert window at left",
+   "attempt": 2,
+   "qa_score": 20,
+   "qa_pass": false
+  },
+  "step-options": {
+   "file": "g-step-options",
+   "prompt": "On a covered desert patio, the technician, charcoal shirt, no cap, explains findings at an outdoor stucco fireplace, flagstone-capped hearth, open palm toward the firebox, while a homeowner, a woman in a light linen shirt, arms loosely folded, listens beside him. Exactly two people. Both figures and the firebox in the upper two-thirds, technician camera-left in three-quarter view, homeowner camera-right; centred vertically so a 16:10 trim is safe. Lower third is calm flagstone hearth and pavers in shadow. Photoreal, 40 mm, f/3.5, eye level, both sharp, desert soft. Golden-hour sun from beyond the patio camera-right, one saguaro and hazy mountains glowing behind; ember glow from the lit firebox on the stucco. Materials: stucco, flagstone, linen. 4:3. EXCLUSIONS: no text, numbers, logos, watermarks or readable screens; no extra people beyond the two named; realistic hands, correct finger count; lower third calm and empty; no handshake, no blown sky, no blue or teal grading, no 3D-render look, no stock smiles.",
+   "alt": "Technician explaining findings to a homeowner at an outdoor stucco patio fireplace at golden hour",
+   "attempt": 2,
+   "qa_score": 19,
+   "qa_pass": false
+  },
+  "step-decide": {
+   "file": "g-step-decide",
+   "prompt": "A homeowner alone, a man in a grey sweater, sits in a cognac-leather armchair angled toward a lit gas fireplace with a dark honed-basalt surround, a mug cupped in both hands, gaze on the flames; a closed folder on the side table. Exactly one person. Three-quarter view from behind his shoulder at camera-left; his profile left-centre of the upper two-thirds, the fireplace right of centre; centred vertically so a 16:10 trim is safe. Lower third is calm wool rug and basalt hearth in shadow. Photoreal, 50 mm, f/2.8, slightly low, homeowner sharp, fire soft. Ember-orange fire is the key, warming his face and the leather; last amber dusk through a window camera-right showing a dim mountain silhouette. Materials: basalt, leather, wool. 4:3. EXCLUSIONS: no text, numbers, logos, watermarks or readable screens; no extra people; realistic hands, correct finger count; lower third calm and empty; no face close-up, no blue dusk or teal grading, no 3D-render look, no stock smile.",
+   "alt": "Homeowner relaxing alone in a leather armchair beside a lit basalt gas fireplace at dusk",
+   "attempt": 1,
+   "qa_score": 18,
+   "qa_pass": false
+  }
+ }
+}
