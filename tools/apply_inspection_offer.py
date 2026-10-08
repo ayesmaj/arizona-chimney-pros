@@ -14,7 +14,7 @@ from html import escape as H
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SITE = os.path.join(ROOT, 'site')
 ORIGIN = 'https://arizonachimneypros.com'
-VER = '1'
+VER = '2'
 
 cfg_src = io.open(os.path.join(SITE, 'offer', 'inspection-offer.config.js'), encoding='utf-8').read()
 CFG = json.loads(cfg_src[cfg_src.index('{'):cfg_src.rindex('}') + 1])
@@ -312,16 +312,21 @@ def head_assets(html):
     return html.replace('</head>', tags + '\n</head>', 1)
 
 
+def cta_label():
+    """Full label on wide screens, 'Book $99' where the pill would clip."""
+    return f'<span class="ao-cta-long">{H(G["navCta"])}</span><span class="ao-cta-short">Book $99</span>'
+
+
 def header_cta(html):
     attrs = (f'href="{BOOK}" title="Full $99 credited toward approved work" aria-label="{H(G["navCta"])} — full $99 credited toward approved work" '
              f'data-offer-event="inspection_offer_click" data-offer-placement="header"')
     # homepage header: the Free Estimate pill
     html = re.sub(r'<a class="btn btn--primary" href="/contact/"[^>]*>(?:Free Estimate|Book \$99 Inspection)</a>',
-                  lambda m: f'<a class="btn btn--primary" {attrs}>{H(G["navCta"])}</a>', html, count=1)
+                  lambda m: f'<a class="btn btn--primary" {attrs}>{cta_label()}</a>', html, count=1)
     # every other page: the "Call Now" pill in .header__actions (the phone number link stays beside it)
     def in_actions(m):
         return re.sub(r'<a href="(?:tel:[^"]*|/contact/)" class="btn btn--primary"[^>]*>(?:Call Now|Free Estimate|Get Free Estimate|Book \$99 Inspection)</a>',
-                      lambda x: f'<a class="btn btn--primary" {attrs}>{H(G["navCta"])}</a>', m.group(0), count=1)
+                      lambda x: f'<a class="btn btn--primary" {attrs}>{cta_label()}</a>', m.group(0), count=1)
     return re.sub(r'<div class="header__actions">.*?</div>', in_actions, html, count=1, flags=re.S)
 
 

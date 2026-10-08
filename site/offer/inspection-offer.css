@@ -40,6 +40,14 @@ html body.acp-offer-modal-open { overflow: hidden; }
   html body .page-hero::after { position: static !important; bottom: auto !important; margin-top: 12px; }
 }
 
+/* header pill label: full text wide, short on phones so it never clips */
+.ao-cta-short { display: none; }
+@media (max-width: 520px) {
+  .ao-cta-long { display: none; }
+  .ao-cta-short { display: inline; }
+  html body .header .btn.btn--primary[data-offer-placement="header"] { padding-left: 14px !important; padding-right: 14px !important; white-space: nowrap; }
+}
+
 /* ── shared primitives ────────────────────────────────────────────────── */
 .ao-eyebrow { display: inline-flex; align-items: center; gap: 10px; font-size: .72rem; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: var(--ao-gold); }
 .ao-eyebrow::before { content: ""; width: 22px; height: 1px; background: var(--ao-gold); }
