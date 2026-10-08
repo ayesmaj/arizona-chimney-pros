@@ -14,7 +14,7 @@ from html import escape as H
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SITE = os.path.join(ROOT, 'site')
 ORIGIN = 'https://arizonachimneypros.com'
-VER = '2'
+VER = '3'
 
 cfg_src = io.open(os.path.join(SITE, 'offer', 'inspection-offer.config.js'), encoding='utf-8').read()
 CFG = json.loads(cfg_src[cfg_src.index('{'):cfg_src.rindex('}') + 1])

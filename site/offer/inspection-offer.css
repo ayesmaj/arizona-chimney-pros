@@ -29,7 +29,8 @@
    the homepage, sticky elsewhere) is pinned just under the bar. */
 html body { padding-top: var(--ao-bar-h) !important; }
 /* beats the page's own `html body header.header { top: 0 !important }` by specificity */
-html body header.header.header.header, html body header#header.header.header { top: var(--ao-bar-h) !important; }
+html body header.header.header.header, html body header#header.header.header { top: var(--ao-bar-h) !important; margin-top: 0 !important; }
+/* WordPress flow layout (.is-layout-flow > * + *) gave the fixed header a 25px top margin on every non-home page */
 html body .acp-offer-page-hero { padding-top: calc(72px + 56px); }
 html body.acp-offer-modal-open { overflow: hidden; }
 
