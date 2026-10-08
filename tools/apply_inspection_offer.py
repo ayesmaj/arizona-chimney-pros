@@ -308,6 +308,10 @@ PHRASES = [
     (r'Get a Book \$99 Inspection', 'Book $99 Inspection'),
     (r'(?i)Free written estimates? on every service call\.', 'Written pricing with every $99 inspection.'),
     (r'(?i)free written (?:estimate|quote)s?', 'written pricing'),
+    (r'(?i)roof inspection \(free\)', 'roof inspection ($99)'),
+    (r'(?i)estimates for fireplace remodeling are free with no obligation', 'our $99 design and inspection visit for fireplace remodeling includes written pricing with no obligation'),
+    (r'(?i)during a free in-home consultation', 'during a $99 in-home consultation'),
+    (r'(?i)\bFree design consult(?:ation)?s?\b', '$99 design visit'),
 ]
 PROTECT = re.compile(r'(<script[^>]*>.*?</script>|<style[^>]*>.*?</style>|<svg[^>]*>.*?</svg>|<!--.*?-->)', re.S | re.I)
 
@@ -471,6 +475,7 @@ def about_page(html):
     # the truck wrap photo carries the retired phone number — drop that section until a current photo exists
     html = re.sub(r'<section(?: class="ao-about-truck")? style="padding:0 0 64px;">\s*<div[^>]*>\s*<img[^>]*arizona-chimney-pros-truck[^>]*>\s*</div>\s*</section>', '', html, count=1)
     html = re.sub(r'<body([^>]*?)class="', lambda m: '<body' + m.group(1) + 'class="acp-about ', html, count=1)
+    html = html.replace('/wp-content/uploads/2026/05/arizona-chimney-pros-truck.png', '/images/about/about-hero-1600.webp')   # JSON-LD primary image: the truck wrap shows the retired number
     html = html.replace('<section style="padding:72px 24px;max-width:700px;margin:0 auto;text-align:center;">',
                         '<section class="ao-about-cta" style="padding:72px 24px;max-width:700px;margin:0 auto;text-align:center;">', 1)
     return html
