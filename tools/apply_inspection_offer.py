@@ -14,7 +14,7 @@ from html import escape as H
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SITE = os.path.join(ROOT, 'site')
 ORIGIN = 'https://arizonachimneypros.com'
-VER = '3'
+VER = '5'
 
 cfg_src = io.open(os.path.join(SITE, 'offer', 'inspection-offer.config.js'), encoding='utf-8').read()
 CFG = json.loads(cfg_src[cfg_src.index('{'):cfg_src.rindex('}') + 1])
@@ -81,6 +81,19 @@ def offer_card_hero():
   <div class="ao-card__credit"><b>$99 Inspection &rarr; <em>$99 Project Credit</em></b><p>Approve the recommended work and the complete inspection fee is deducted from your project.</p></div>
   {btn('Reserve My Inspection', BOOK, placement='hero_card')}
   <p class="ao-card__foot"><a href="#" data-offer-modal-open data-offer-placement="hero_card" style="color:inherit">How the credit works</a> &middot; Respond within 1 hour</p>
+</div>''')
+
+
+def hero_visual():
+    return wrap('hero-visual', f'''
+<div class="hero__card ao-hero-visual acp-offer-anim" data-offer-view="hero_visual">
+  <img class="ao-hero-visual__img" src="/images/hero/fireplace-inspection-hero-720.webp" srcset="/images/hero/fireplace-inspection-hero-720.webp 720w, /images/hero/fireplace-inspection-hero-1080.webp 1080w" sizes="(max-width: 900px) 100vw, 560px" width="720" height="900" alt="Arizona Chimney Pros technician inspecting a gas fireplace in a Phoenix home" fetchpriority="high">
+  <div class="ao-hero-visual__banner">
+    <div class="ao-hero-visual__price"><b>$99</b><span>Expert Fireplace<br>Inspection</span></div>
+    <p class="ao-hero-visual__credit">Full fee <em>credited toward approved work</em></p>
+    {btn('Book My $99 Inspection', BOOK, placement='hero_visual')}
+    <a class="ao-hero-visual__how" href="#" data-offer-modal-open data-offer-placement="hero_visual">How the credit works</a>
+  </div>
 </div>''')
 
 
@@ -351,8 +364,10 @@ def home_hero(html):
             + wrap('hero-benefits', '<ul class="ao-hero-benefits"><li>Professional On-Site Evaluation</li><li>Clear Findings</li><li>Written Pricing</li><li>Full $99 Project Credit</li></ul>'))
     html = strip('hero-benefits', html)
     html = re.sub(r'<div class="hero__ctas">.*?</div>', lambda m: ctas, html, count=1, flags=re.S)
-    html = strip('hero-card', html)
-    html = re.sub(r'<div class="hero__card">.*?</div>\s*(?=<div class="hero__badge")', lambda m: offer_card_hero() + '\n', html, count=1, flags=re.S)
+    html = strip('hero-card', html); html = strip('hero-visual', html)
+    html = re.sub(r'<div class="hero__card">.*?</div>\s*(?=<div class="hero__badge")', '', html, count=1, flags=re.S)   # original "Our Specialties" card
+    html = html.replace('<div class="hero__visual" aria-hidden="true">', '<div class="hero__visual">', 1)          # the banner must stay accessible
+    html = html.replace('<div class="hero__badge"', hero_visual() + '\n<div class="hero__badge"', 1)
     # flow band right after the hero, then How/Included before the before-after gallery
     html = strip('flow', html); html = strip('how', html); html = strip('included', html)
     html = re.sub(r'(<section class="hero".*?</section>)', lambda m: m.group(1) + '\n' + credit_flow(True), html, count=1, flags=re.S)

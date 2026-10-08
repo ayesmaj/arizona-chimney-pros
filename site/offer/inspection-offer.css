@@ -49,6 +49,10 @@ html body.acp-offer-modal-open { overflow: hidden; }
   html body .header .btn.btn--primary[data-offer-placement="header"] { padding-left: 14px !important; padding-right: 14px !important; white-space: nowrap; }
 }
 
+/* contact + inspection booking panel: on desktop it starts at the top of the
+   page, so its first content sat behind the fixed header + bar */
+@media (min-width: 901px) { html body .acp-book__panel { padding-top: calc(72px + var(--ao-bar-h) + 28px) !important; } }
+
 /* ── shared primitives ────────────────────────────────────────────────── */
 .ao-eyebrow { display: inline-flex; align-items: center; gap: 10px; font-size: .72rem; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: var(--ao-gold); }
 .ao-eyebrow::before { content: ""; width: 22px; height: 1px; background: var(--ao-gold); }
@@ -93,6 +97,23 @@ html.acp-offer-js .acp-offer-anim.is-in { opacity: 1; transform: none; }
 .ao-hero-benefits { display: flex; flex-wrap: wrap; gap: 10px 22px; margin: 4px 0 26px; padding: 0; list-style: none; }
 .ao-hero-benefits li { display: inline-flex; align-items: center; gap: 8px; font-size: 14px; color: rgba(245, 242, 237, .82); }
 .ao-hero-benefits li::before { content: "\2713"; color: var(--ao-ember); font-weight: 800; }
+
+/* ── homepage hero visual: photo with the booking banner over it ─────── */
+.ao-hero-visual { position: relative; width: 100%; max-width: 520px; border-radius: 18px; overflow: hidden; border: 1px solid var(--ao-gold-line); box-shadow: 0 30px 70px rgba(0, 0, 0, .45); background: var(--ao-surface); aspect-ratio: 4 / 5; max-height: 640px; }
+/* the original hero card was hidden on phones; the booking banner must not be */
+@media (max-width: 900px) { html body .hero__visual { display: flex !important; justify-content: center; margin-top: 8px; } }
+.ao-hero-visual__img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 60% 40%; display: block; }
+.ao-hero-visual::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(18, 18, 18, 0) 35%, rgba(18, 18, 18, .55) 70%, rgba(18, 18, 18, .92) 100%); pointer-events: none; }
+.ao-hero-visual__banner { position: absolute; left: 18px; right: 18px; bottom: 18px; z-index: 1; background: rgba(245, 242, 237, .97); color: var(--ao-ink); border: 1px solid var(--ao-gold-line); border-radius: 14px; padding: 18px 20px 16px; box-shadow: 0 18px 44px rgba(0, 0, 0, .35); }
+.ao-hero-visual__price { display: flex; align-items: center; gap: 14px; }
+.ao-hero-visual__price b { font-size: 2.6rem; font-weight: 800; letter-spacing: -.03em; line-height: 1; color: var(--ao-ink); }
+.ao-hero-visual__price span { font-size: .78rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--ao-gold); line-height: 1.3; }
+.ao-hero-visual__credit { margin: 10px 0 12px; font-size: 13.5px; color: var(--ao-ink-soft); }
+.ao-hero-visual__credit em { font-style: normal; font-weight: 700; color: var(--ao-ink); }
+.ao-hero-visual .ao-btn { width: 100%; min-height: 46px; }
+.ao-hero-visual__how { display: block; margin-top: 10px; text-align: center; font-size: 12.5px; color: var(--ao-ink-soft); text-decoration: underline; text-underline-offset: 3px; }
+.ao-hero-visual__how:hover { color: var(--ao-ember); }
+@media (max-width: 900px) { .ao-hero-visual { aspect-ratio: 4 / 4.6; max-height: none; } .ao-hero-visual__banner { left: 12px; right: 12px; bottom: 12px; padding: 16px; } }
 
 /* ── offer card: hero / inline / compact ─────────────────────────────── */
 .ao-card { position: relative; border: 1px solid var(--ao-gold-line); border-radius: 18px; overflow: hidden;
@@ -212,10 +233,11 @@ html.acp-offer-js .acp-offer-anim.is-in { opacity: 1; transform: none; }
 
 /* ── contact/booking summary ─────────────────────────────────────────── */
 .ao-booksum { border: 1px solid var(--ao-gold-line); border-radius: 14px; padding: 20px 22px; margin: 0 0 22px; background: rgba(201, 168, 106, .05); }
-.ao-booksum__head { display: flex; justify-content: space-between; align-items: center; gap: 14px; flex-wrap: wrap; }
+.ao-booksum__head { display: flex; justify-content: space-between; align-items: baseline; gap: 14px; flex-wrap: wrap; }
 .ao-booksum__head b { font-size: .78rem; letter-spacing: .14em; text-transform: uppercase; color: var(--ao-gold); }
 .ao-booksum__price { font-size: .78rem; letter-spacing: .12em; text-transform: uppercase; font-weight: 700; }
-.ao-booksum__price em { font-style: normal; font-size: 1.6rem; letter-spacing: -.02em; color: var(--ao-ember); margin-left: 6px; }
+.ao-booksum__price { display: inline-flex; align-items: baseline; gap: 8px; }
+.ao-booksum__price em { font-style: normal; font-size: 1.6rem; letter-spacing: -.02em; color: var(--ao-ember); line-height: 1; }
 .ao-booksum ul { list-style: none; margin: 12px 0 10px; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 6px 16px; }
 .ao-booksum li { font-size: 13.5px; display: flex; gap: 8px; align-items: flex-start; line-height: 1.4; }
 .ao-booksum li::before { content: "\2713"; color: var(--ao-ember); font-weight: 800; }
