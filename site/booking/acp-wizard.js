@@ -39,8 +39,8 @@
     "Won't turn on", "Pilot light issue", "Smells like gas", "Smoke coming in",
     "Cracks / damage", "Needs cleaning", "Remodel project", "Just an inspection",
   ];
-  var PHONE_DISPLAY = "(602) 536-8034";
-  var PHONE_HREF = "+16025368034";
+  var PHONE_DISPLAY = "(602) 557-5071";
+  var PHONE_HREF = "+16025575071";
 
   /* ── tiny helpers ─────────────────────────────────────────────────── */
 
