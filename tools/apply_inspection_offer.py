@@ -310,7 +310,7 @@ PHRASES = [
     (r'(?i)free written (?:estimate|quote)s?', 'written pricing'),
     (r'(?i)roof inspection \(free\)', 'roof inspection ($99)'),
     (r'(?i)estimates for fireplace remodeling are free with no obligation', 'our $99 design and inspection visit for fireplace remodeling includes written pricing with no obligation'),
-    (r'(?i)\ba free in-home consultation', 'a $99 in-home consultation'),
+    (r'(?i)\bfree in-home consultation', '$99 in-home consultation'),
     (r'(?i)\bFree design consult(?:ation)?s?\b', '$99 design visit'),
 ]
 PROTECT = re.compile(r'(<script[^>]*>.*?</script>|<style[^>]*>.*?</style>|<svg[^>]*>.*?</svg>|<!--.*?-->)', re.S | re.I)
