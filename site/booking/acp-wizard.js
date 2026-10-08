@@ -162,6 +162,18 @@
 ".acpw-vbanner.warn{border-color:rgba(232,179,76,.5);background:rgba(232,179,76,.07)}" +
 ".acpw-vbanner.warn .vc{border-color:#e8b34c;color:#e8b34c}" +
 ".acpw-cols2{display:grid;grid-template-columns:1fr 1fr;gap:0 12px}" +
+".acpw-offer-sum{border:1px solid rgba(201,168,106,.45);border-radius:12px;padding:14px 16px;margin:0 0 12px;background:rgba(201,168,106,.06)}" +
+".acpw-offer-sum .k{display:block;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);font-weight:700}" +
+".acpw-offer-sum b{display:block;font-size:30px;font-weight:800;letter-spacing:-.02em;color:var(--ink);margin:4px 0 2px}" +
+".acpw-offer-sum p{margin:0;font-size:13px;color:var(--dim)}" +
+".acpw-offer-link{background:none;border:0;padding:0;margin-top:6px;color:var(--gold);text-decoration:underline;text-underline-offset:3px;font-size:13px;cursor:pointer}" +
+".acpw-offer-detail{margin:8px 0 0;font-size:13px;color:var(--dim);line-height:1.5}" +
+".acpw-sublabel{display:block;font-size:12px;color:var(--dim);margin:12px 0 6px}" +
+".acpw-success .acpw-when{display:inline-block;margin:6px 0 10px;padding:8px 12px;border:1px solid rgba(201,168,106,.45);border-radius:8px;font-weight:700}" +
+".acpw-success .acpw-credit{color:var(--gold);font-weight:600}" +
+".acpw-success .acpw-actions{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:14px}" +
+".acpw-success .acpw-actions a{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:10px 18px;border-radius:10px;font-weight:700;text-decoration:none}" +
+".acpw-success .acpw-actions a.p{background:var(--ember);color:#fff}.acpw-success .acpw-actions a.g{border:1px solid rgba(201,168,106,.45);color:var(--ink)}" +
 ".acpw-review{border:1px solid var(--line);border-radius:12px;background:var(--panel);padding:4px 16px;margin-top:2px}" +
 ".acpw-row{display:flex;justify-content:space-between;gap:12px;align-items:baseline;padding:11px 0;border-bottom:1px solid rgba(255,255,255,.05);font-size:14px}" +
 ".acpw-row:last-child{border-bottom:0}" +
@@ -204,19 +216,22 @@
 
   /* ── premium success card ─────────────────────────────────────────── */
 
-  function successCard() {
+  function successCard(when) {
     var s = el("div", "acpw");
     s.setAttribute("role", "status");
     var box = el("div", "acpw-success");
     var ic = el("div", "ic");
     ic.innerHTML = ICONS.check;
     box.appendChild(ic);
-    box.appendChild(el("h3", null, "Your request is in."));
-    box.appendChild(el("p", null, "Thank you — we’ve received your booking request and sent a confirmation to your email."));
-    var p2 = el("p");
-    p2.innerHTML = "We’ll call you shortly to confirm your appointment time. Need us right now? <a href='tel:" + PHONE_HREF + "'>Call " + PHONE_DISPLAY + "</a>";
-    box.appendChild(p2);
+    box.appendChild(el("h3", null, "Your Inspection Request Is In"));
+    box.appendChild(el("p", null, "Thank you. Our team will contact you shortly to confirm the appointment details and review the $99 inspection process."));
+    if (when) box.appendChild(el("div", "acpw-when", "Requested: " + when));
+    box.appendChild(el("p", "acpw-credit", "Approve the recommended work and your full $99 inspection fee becomes project credit."));
+    var acts = el("div", "acpw-actions");
+    acts.innerHTML = "<a class='p' href='tel:" + PHONE_HREF + "'>Call Arizona Chimney Pros</a><a class='g' href='/'>Return Home</a>";
+    box.appendChild(acts);
     s.appendChild(box);
+    if (window.ACP_OFFER_TRACK) window.ACP_OFFER_TRACK("inspection_form_submit", "wizard");
     return s;
   }
 
@@ -241,7 +256,7 @@
 
     var state = {
       step: 0,
-      service: "", issues: [], notes: "",
+      service: "", issues: [], notes: "", fuel: "", working: "",
       date: "", time: "",
       name: "", phone: "", email: "",
       addr: { search: "", apt: "", street: "", city: "", zip: "" },
@@ -254,7 +269,7 @@
       { key: "schedule", label: "Schedule", title: "Preferred Time", sub: "We’ll call to confirm the exact slot.", icon: ICONS.schedule },
       { key: "contact", label: "Contact", title: "Your Details", sub: "Only used to confirm this appointment.", icon: ICONS.contact },
       { key: "address", label: "Address", title: "Your Address", sub: "Please confirm your service address.", icon: ICONS.address },
-      { key: "review", label: "Review", title: "Review & Send", sub: "Check everything looks right.", icon: ICONS.review },
+      { key: "review", label: "Review", title: "Review & Send", sub: "Check everything looks right \u2014 $99 inspection, fully credited.", icon: ICONS.review },
     ];
 
     var root = el("div", "acpw");
@@ -320,6 +335,7 @@
     function setError(msg) { errBox.textContent = msg || ""; }
 
     /* ── step 1: service ── */
+    var formStarted = false;
     function renderService() {
       var wrap = el("div", "acpw-step");
       var grid = el("div", "acpw-grid");
@@ -347,6 +363,7 @@
         var ch = el("button", "acpw-chip" + (state.issues.indexOf(c) !== -1 ? " sel" : ""), c);
         ch.type = "button";
         ch.onclick = function () {
+          if (!formStarted && window.ACP_OFFER_TRACK) { formStarted = true; window.ACP_OFFER_TRACK("inspection_form_start", "wizard"); }
           var i = state.issues.indexOf(c);
           if (i === -1) state.issues.push(c); else state.issues.splice(i, 1);
           ch.classList.toggle("sel");
@@ -354,6 +371,21 @@
         chips.appendChild(ch);
       });
       wrap.appendChild(chips);
+      [["fuel", "Fuel type (optional)", ["Gas", "Wood", "Not sure"]],
+       ["working", "Is the fireplace currently working? (optional)", ["Yes", "No", "Intermittent"]]].forEach(function (grp) {
+        wrap.appendChild(el("span", "acpw-sublabel", grp[1]));
+        var row = el("div", "acpw-chips");
+        grp[2].forEach(function (v) {
+          var ch = el("button", "acpw-chip" + (state[grp[0]] === v ? " sel" : ""), v);
+          ch.type = "button";
+          ch.onclick = function () {
+            state[grp[0]] = state[grp[0]] === v ? "" : v;
+            Array.prototype.forEach.call(row.children, function (c) { c.classList.toggle("sel", c.textContent === state[grp[0]]); });
+          };
+          row.appendChild(ch);
+        });
+        wrap.appendChild(row);
+      });
       var ta = el("textarea", "acpw-ta");
       fieldLabel(wrap, "Tell us more (optional)", ta);
       ta.placeholder = "Smell, smoke, last cleaning, gas or wood burning, anything unusual…";
@@ -837,6 +869,25 @@
         box.appendChild(row);
       });
       wrap.appendChild(box);
+      var OFFER = window.ACP_OFFER || {};
+      var sum = el("div", "acpw-offer-sum");
+      sum.setAttribute("role", "note");
+      sum.appendChild(el("span", "k", "Expert Fireplace Inspection"));
+      sum.appendChild(el("b", null, "$" + (OFFER.price || 99)));
+      sum.appendChild(el("p", null, "Full $" + (OFFER.price || 99) + " credited toward approved work."));
+      var link = el("button", "acpw-offer-link", "How the Credit Works");
+      link.type = "button";
+      link.setAttribute("aria-expanded", "false");
+      var detail = el("p", "acpw-offer-detail", OFFER.creditModal || "When you approve the recommended repair, installation, or fireplace remodeling work, the complete $99 inspection fee is deducted from the approved project total. If you do not move forward, the $99 covers the professional visit and evaluation.");
+      detail.hidden = true;
+      link.onclick = function () {
+        if (window.ACP_OFFER_MODAL) { window.ACP_OFFER_MODAL.open("review_step"); return; }
+        detail.hidden = !detail.hidden;
+        link.setAttribute("aria-expanded", String(!detail.hidden));
+      };
+      sum.appendChild(link);
+      sum.appendChild(detail);
+      wrap.appendChild(sum);
       wrap.appendChild(el("p", "acpw-hint", "By submitting you agree we may call, text or email you about this request."));
       return wrap;
     }
@@ -926,6 +977,12 @@
 
     var sending = false;
 
+    function whenLabel() {
+      var t = "";
+      slots.forEach(function (sl) { if (sl.value === state.time) t = sl.label; });
+      return state.date ? state.date + (t ? " \u00b7 " + t : "") : "";
+    }
+
     function submitViaApi() {
       if (sending) return;              // one intentional submit = one POST
       sending = true;
@@ -950,6 +1007,14 @@
           inArea: state.inArea
         },
         page: location.href,
+        pagePath: location.pathname,
+        leadSource: storedAttr().utm_source || "website",
+        offerCode: (window.ACP_OFFER && window.ACP_OFFER.offerCode) || "inspection_99_project_credit",
+        inspectionPrice: (window.ACP_OFFER && window.ACP_OFFER.price) || 99,
+        inspectionCreditEligible: true,
+        serviceType: state.service,
+        fuelType: state.fuel,
+        fireplaceWorking: state.working,
         landing_page: storedAttr().landing_page || location.href,
         submitted_at: new Date().toISOString(),
         referrer: document.referrer,
@@ -961,7 +1026,7 @@
         sending = false;
         nextBtn.disabled = false;
         backBtn.disabled = false;
-        nextBtn.textContent = "Request Free Estimate";
+        nextBtn.textContent = "Request My $99 Inspection";
         setError(msg || ("Something went wrong sending your request — please try again or call us at " + PHONE_DISPLAY + "."));
       }
       fetch(window.ACP_BOOKING_ENDPOINT, {
@@ -972,7 +1037,7 @@
         return r.json()["catch"](function () { return { ok: false }; }).then(function (d) {
           if (r.ok && d.ok) {
             if (!root.parentNode) return;
-            var card = successCard();
+            var card = successCard(whenLabel());
             root.parentNode.replaceChild(card, root);
             card.scrollIntoView({ behavior: "smooth", block: "center" });
           } else {
@@ -1014,7 +1079,7 @@
         var jm = container.querySelector(".contact-form-submission");
         if (jm) jm.style.display = "none";
         if (!root.parentNode) return;
-        var card = successCard();
+        var card = successCard(whenLabel());
         root.parentNode.replaceChild(card, root);
         card.scrollIntoView({ behavior: "smooth", block: "center" });
       }
@@ -1022,7 +1087,7 @@
         if (done) return;
         settle();
         nextBtn.disabled = false;
-        nextBtn.textContent = "Request Free Estimate";
+        nextBtn.textContent = "Request My $99 Inspection";
         setError(msg);
       }
       var mo = new MutationObserver(function () {
@@ -1048,7 +1113,7 @@
       pendingTimer = setTimeout(function () {
         if (done || !document.body.contains(root)) return;
         nextBtn.disabled = false;
-        nextBtn.textContent = "Request Free Estimate";
+        nextBtn.textContent = "Request My $99 Inspection";
         setError("Taking longer than expected — if this doesn’t go through, call us at " + PHONE_DISPLAY + ".");
       }, 15000);
     }
@@ -1079,7 +1144,7 @@
         "</b> <span>· " + esc(s.title) + "</span></h4><p>" + esc(s.sub) + "</p></div>";
       backBtn.style.visibility = step === 0 ? "hidden" : "visible";
       nextBtn.innerHTML = step === STEPS.length - 1
-        ? "Request Free Estimate"
+        ? "Request My $99 Inspection"
         : "Next: " + esc(STEPS[step + 1].label) + " &nbsp;&#8250;";
       nextBtn.disabled = false;
       backBtn.disabled = false;
@@ -1131,7 +1196,7 @@
       // Returning from a classic (non-AJAX) submit: premium success card.
       if (/contact-form-sent/.test(location.search)) {
         var doneMsg = document.querySelector(".contact-form-submission");
-        var card = successCard();
+        var card = successCard(whenLabel());
         if (mount) {
           mount.appendChild(card);
           if (doneMsg) doneMsg.style.display = "none";
