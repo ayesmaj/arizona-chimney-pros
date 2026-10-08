@@ -402,9 +402,17 @@ def footer(html):
     return html
 
 
+def dedupe_brand(title):
+    """'X | Arizona Chimney Pros - Arizona Chimney Pros' -> 'X | Arizona Chimney Pros'."""
+    core = re.sub(r'\s*[-|–]\s*Arizona Chimney Pros\s*$', '', title)
+    return core if 'Arizona Chimney Pros' in core else title
+
+
 def metadata(html, rel, stype, page_kind):
     def set_tag(h, pat, new):
         return re.sub(pat, new, h, count=1) if re.search(pat, h) else h
+    html = re.sub(r'<title>([^<]*)</title>', lambda m: '<title>' + dedupe_brand(m.group(1).strip()) + '</title>', html, count=1)
+    html = re.sub(r'(<meta property="og:title" content=")([^"]*)(")', lambda m: m.group(1) + dedupe_brand(m.group(2).strip()) + m.group(3), html, count=1)
     if rel == 'index.html':
         html = set_tag(html, r'<title>[^<]*</title>', '<title>Arizona Fireplace Services | $99 Expert Inspection</title>')
         desc = 'Book a $99 expert fireplace inspection with Arizona Chimney Pros. Get clear findings and written options. Full fee credited toward approved repair, installation, or remodeling work.'
