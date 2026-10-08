@@ -14,7 +14,7 @@ from html import escape as H
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SITE = os.path.join(ROOT, 'site')
 ORIGIN = 'https://arizonachimneypros.com'
-VER = '5'
+VER = '6'
 
 cfg_src = io.open(os.path.join(SITE, 'offer', 'inspection-offer.config.js'), encoding='utf-8').read()
 CFG = json.loads(cfg_src[cfg_src.index('{'):cfg_src.rindex('}') + 1])
@@ -62,8 +62,8 @@ def announcement_bar():
   <div class="acp-offer-bar__in">
     <span class="ao-desktop"><b>$99</b> Expert Fireplace Inspection</span>
     <span class="ao-desktop acp-offer-bar__sep" aria-hidden="true"></span>
-    <span class="ao-desktop">Full Fee <span class="ao-credit">Credited Toward Approved Work</span></span>
-    <span class="ao-mobile"><b>$99</b> Inspection &middot; <span class="ao-credit">Fully Credited</span></span>
+    <span class="ao-desktop">Clear Findings <span class="ao-credit">&amp; Written Pricing</span></span>
+    <span class="ao-mobile"><b>$99</b> Inspection &middot; <span class="ao-credit">Written Pricing</span></span>
     <a class="ao-link" href="{BOOK}" data-offer-event="inspection_offer_click" data-offer-placement="announcement_bar"><span class="ao-desktop">Book Inspection</span><span class="ao-mobile">Book</span>{ARROW}</a>
   </div>
 </div>''')
@@ -78,10 +78,14 @@ def offer_card_hero():
   <div class="ao-card__price"><b>$99</b><span>per visit</span></div>
   <p class="ao-card__title">Fireplace Inspection &amp; Project Evaluation</p>
   <ul class="ao-card__list">{''.join(f'<li>{H(i)}</li>' for i in items)}</ul>
-  <div class="ao-card__credit"><b>$99 Inspection &rarr; <em>$99 Project Credit</em></b><p>Approve the recommended work and the complete inspection fee is deducted from your project.</p></div>
+  <div class="ao-card__credit"><b>One visit &rarr; <em>Written Pricing</em></b><p>You get clear findings and written options before any work begins. No obligation.</p></div>
   {btn('Reserve My Inspection', BOOK, placement='hero_card')}
-  <p class="ao-card__foot"><a href="#" data-offer-modal-open data-offer-placement="hero_card" style="color:inherit">How the credit works</a> &middot; Respond within 1 hour</p>
+  <p class="ao-card__foot"><a href="#" data-offer-modal-open data-offer-placement="hero_card" style="color:inherit">What the $99 covers</a> &middot; Respond within 1 hour</p>
 </div>''')
+
+
+def hero_bg():
+    return wrap('hero-bg', '''<div class="ao-hero-bg" aria-hidden="true"><img src="/images/hero/home-hero-1672.webp" srcset="/images/hero/home-hero-1000.webp 1000w, /images/hero/home-hero-1672.webp 1672w" sizes="100vw" width="1672" height="941" alt="" fetchpriority="high" decoding="async"></div>''')
 
 
 def hero_visual():
@@ -90,25 +94,12 @@ def hero_visual():
   <img class="ao-hero-visual__img" src="/images/hero/fireplace-inspection-hero-720.webp" srcset="/images/hero/fireplace-inspection-hero-720.webp 720w, /images/hero/fireplace-inspection-hero-1080.webp 1080w" sizes="(max-width: 900px) 100vw, 560px" width="720" height="900" alt="Arizona Chimney Pros technician inspecting a gas fireplace in a Phoenix home" fetchpriority="high">
   <div class="ao-hero-visual__banner">
     <div class="ao-hero-visual__price"><b>$99</b><span>Expert Fireplace<br>Inspection</span></div>
-    <p class="ao-hero-visual__credit">Full fee <em>credited toward approved work</em></p>
+    <p class="ao-hero-visual__credit">Clear findings and <em>written pricing before any work</em></p>
     {btn('Book My $99 Inspection', BOOK, placement='hero_visual')}
-    <a class="ao-hero-visual__how" href="#" data-offer-modal-open data-offer-placement="hero_visual">How the credit works</a>
+    <a class="ao-hero-visual__how" href="#" data-offer-modal-open data-offer-placement="hero_visual">What the $99 covers</a>
   </div>
 </div>''')
 
-
-def credit_flow(dark=True):
-    return wrap('flow', f'''
-<section class="ao-flow-band {'ao-section--charcoal' if dark else 'ao-section--ivory'} acp-offer-anim" aria-label="How the $99 becomes project credit">
-  <div class="ao-wrap">
-    <div class="ao-flow">
-      <div class="ao-ring" aria-hidden="true"><svg viewBox="0 0 132 132"><circle cx="66" cy="66" r="62"/></svg><div class="ao-ring__num">$99<small>Inspection</small></div></div>
-      <div class="ao-flow__line" aria-hidden="true"><b>&rsaquo;</b></div>
-      <div class="ao-flow__credit"><strong><em>100%</em> Project Credit</strong><span>When you approve the recommended work</span></div>
-    </div>
-    <p class="ao-flow__sub">$99 inspection &rarr; 100% project credit. {H(CFG["supportingLine"])}</p>
-  </div>
-</section>''')
 
 
 def how_it_works():
@@ -148,7 +139,7 @@ def inline_card(stype, compact=False, placement='inline'):
         details = '<ul class="ao-chips">' + ''.join(f'<li>{H(d)}</li>' for d in s.get('details', [])) + '</ul>'
     return wrap('inline-' + placement, f'''
 <div class="ao-card ao-card--inline{' ao-card--compact' if compact else ''} acp-offer-anim" data-offer-view="{placement}">
-  <div class="ao-card__big">$99<small>{'Credited to approved work' if compact else 'Fully credited'}</small></div>
+  <div class="ao-card__big">$99<small>{'Written pricing included' if compact else 'Per visit'}</small></div>
   <div><h3>{H(s["inlineTitle"] if not compact else "Start With a Professional $99 Inspection")}</h3><p>{H(s["inlineCopy"] if not compact else G["inlineCopy"])}</p>{details}</div>
   <div class="ao-card__actions">{btn(s["primaryCta"] if not compact else "Book Inspection", BOOK, placement=placement)}
     <a class="ao-btn ao-btn--ghost-dark" href="{TEL}" data-offer-event="inspection_phone_click" data-offer-placement="{placement}">{PHONE_SVG}Call Now</a></div>
@@ -162,7 +153,7 @@ def final_cta(stype):
   <div class="ao-wrap acp-offer-anim" data-offer-view="final_cta">
     <span class="ao-eyebrow">Professional Answers Start Here</span>
     <h2 class="ao-title" id="cta-heading">Book Your $99 Fireplace Inspection</h2>
-    <p class="ao-lead">We&rsquo;ll evaluate the fireplace, explain what we find, and provide clear written options. Move forward with the recommended work and the full $99 inspection fee is applied to your project.</p>
+    <p class="ao-lead">We&rsquo;ll evaluate the fireplace, explain what we find, and provide clear written options &mdash; before any work begins.</p>
     <div class="ao-cta-row">{btn(s["primaryCta"] if stype != "general" else "Book My Inspection", BOOK, placement='final_cta')}
       <a class="ao-btn ao-btn--ghost" href="{TEL}" data-offer-event="inspection_phone_click" data-offer-placement="final_cta">{PHONE_SVG}Call {PHONE}</a></div>
     <p class="ao-area">{H(CFG["serviceAreaLine"])}</p>
@@ -173,7 +164,7 @@ def final_cta(stype):
 def footer_block():
     return wrap('footer', f'''
 <div class="ao-footer-offer">
-  <div><b>$99 <em>Expert Fireplace Inspection</em></b><span>Full fee credited toward approved work</span></div>
+  <div><b>$99 <em>Expert Fireplace Inspection</em></b><span>Clear findings and written pricing before any work</span></div>
   {btn('Book Inspection', BOOK, placement='footer')}
 </div>''')
 
@@ -181,23 +172,23 @@ def footer_block():
 def body_end(with_dock):
     dock = f'''
 <div class="acp-offer-dock" id="acp-offer-dock" role="region" aria-label="Book a $99 inspection">
-  <div class="acp-offer-dock__text"><b><em>$99</em> Inspection</b><span>Fully Credited</span></div>
+  <div class="acp-offer-dock__text"><b><em>$99</em> Inspection</b><span>Written pricing</span></div>
   <a class="acp-offer-dock__call" href="{TEL}" aria-label="Call {PHONE}" data-offer-event="inspection_phone_click" data-offer-placement="mobile_dock">{PHONE_SVG}</a>
   {btn('Book Now', BOOK, event='inspection_mobile_dock_click', placement='mobile_dock')}
 </div>
 <div class="acp-offer-float" id="acp-offer-float" hidden role="complementary" aria-label="Book a $99 inspection">
   <button class="acp-offer-float__close" type="button" aria-label="Dismiss" data-offer-float-close>&times;</button>
-  <small>Need Clear Answers?</small><b>Book a <em>$99</em> Inspection</b><p>Full fee credited toward approved work</p>
+  <small>Need Clear Answers?</small><b>Book a <em>$99</em> Inspection</b><p>Clear findings and written pricing</p>
   {btn('Book Now', BOOK, event='inspection_floating_card_click', placement='floating_card')}
 </div>''' if with_dock else ''
     modal = f'''
 <div class="acp-offer-modal" id="acp-offer-modal" hidden role="dialog" aria-modal="true" aria-labelledby="acp-offer-modal-title" tabindex="-1">
   <div class="acp-offer-modal__box">
     <button class="acp-offer-modal__close" type="button" aria-label="Close" data-offer-modal-close>&times;</button>
-    <span class="ao-eyebrow">How the Credit Works</span>
-    <h2 id="acp-offer-modal-title">{H(CFG["creditLabel"])}</h2>
-    <p class="acp-offer-modal__flow">$99 Inspection {ARROW} <em>$99 Project Credit</em></p>
-    <p>{H(CFG["creditModal"])}</p>
+    <span class="ao-eyebrow">The $99 Visit</span>
+    <h2 id="acp-offer-modal-title">{H(CFG["feeLabel"])}</h2>
+    <p class="acp-offer-modal__flow">$99 Inspection {ARROW} <em>Findings &amp; Written Pricing</em></p>
+    <p>{H(CFG["feeModal"])}</p>
     {btn('Book My $99 Inspection', BOOK, placement='credit_modal')}
   </div>
 </div>'''
@@ -232,28 +223,74 @@ def city_of(html, prefix):
 
 # ───────────────────────── text sweep ─────────────────────────
 PHRASES = [
-    (r'Free roof inspection \+ \$99 interior diagnostic credited toward any repair', '$99 inspection credited toward approved work'),
-    (r'Free roof inspection \+ 30-minute interior diagnostic', '$99 inspection, credited toward approved work'),
-    (r'Free roof and unit inspection', '$99 fireplace inspection, credited toward approved work'),
-    (r'(?i)free roof &amp; firebox inspections?', '$99 fireplace &amp; chimney inspection, credited toward approved work'),
-    (r'(?i)a free roof inspection', 'a $99 inspection, credited toward approved work'),
-    (r'(?i)free roof inspection', '$99 inspection, credited toward approved work'),
-    (r'(?i)free estimates — call today', '$99 inspection, credited toward approved work — call today'),
-    (r'(?i)free estimates\. call today', '$99 inspection, credited toward approved work. Call today'),
+    (r'Free roof inspection \+ \$99 interior diagnostic credited toward any repair', '$99 inspection with written pricing'),
+    (r'Free roof inspection \+ 30-minute interior diagnostic', '$99 inspection with written pricing'),
+    (r'Free roof and unit inspection', '$99 fireplace inspection with written pricing'),
+    (r'(?i)free roof &amp; firebox inspections?', '$99 fireplace &amp; chimney inspection with written pricing'),
+    (r'(?i)a free roof inspection', 'a $99 inspection with written pricing'),
+    (r'(?i)free roof inspection', '$99 inspection with written pricing'),
+    (r'(?i)free estimates — call today', '$99 inspection with written pricing — call today'),
+    (r'(?i)free estimates\. call today', '$99 inspection with written pricing. Call today'),
+    # earlier runs wrote the credit idea into page prose and data; strip it wherever it appears
+    (r'(?i)\$99 inspection credited toward approved work', '$99 inspection with written pricing'),
+    (r'(?i)\$99 inspection, credited toward approved work', '$99 inspection with written pricing'),
+    (r'(?i)\$99 (on-site|in-home|fireplace|fireplace &amp; chimney|fireplace & chimney) inspection, credited toward approved work', r'$99 \1 inspection with written pricing'),
+    (r'(?i)\$99 design &amp; inspection visit, credited toward approved work', '$99 design &amp; inspection visit with written pricing'),
+    (r'\$99 Credited to Approved Work', 'Clear Written Pricing'),
+    (r'(?i)full \$99 credited toward approved work', 'professional on-site inspection with written pricing'),
+    (r'(?i), credited toward approved work', ' with written pricing'),
+    (r'(?i) credited toward approved work', ' with written pricing'),
     (r'Get Free Estimate', G['primaryCta']),
     (r'Book Your Free Estimate', 'Book Your $99 Inspection'),
-    (r'Free Estimates', '$99 Credited to Approved Work'),
+    (r'Free Estimates', 'Clear Written Pricing'),
     (r'Free Estimate', G['navCta']),
     (r'for your free estimate', 'to book your $99 inspection'),
-    (r'free on-site estimates?', '$99 on-site inspection, credited toward approved work'),
-    (r'free in-home estimates?', '$99 in-home inspection, credited toward approved work'),
-    (r'free estimates?', '$99 inspection, credited toward approved work'),
+    (r'free on-site estimates?', '$99 on-site inspection with written pricing'),
+    (r'free in-home estimates?', '$99 in-home inspection with written pricing'),
+    (r'free estimates?', '$99 inspection with written pricing'),
     (r'Free Consultation', '$99 Design &amp; Inspection Visit'),
-    (r'free consultation', '$99 design &amp; inspection visit, credited toward approved work'),
-    (r'complimentary (?:estimate|inspection|consultation)', '$99 inspection, credited toward approved work'),
+    (r'free consultation', '$99 design &amp; inspection visit with written pricing'),
+    (r'complimentary (?:estimate|inspection|consultation)', '$99 inspection with written pricing'),
     (r'no-obligation (?:estimate|quote)', '$99 inspection'),
-    (r'free (?:quote|inspection)', '$99 inspection, credited toward approved work'),
-    (r'(?i)free estimates?', '$99 inspection, credited toward approved work'),
+    (r'free (?:quote|inspection)', '$99 inspection with written pricing'),
+    (r'(?i)free estimates?', '$99 inspection with written pricing'),
+
+    # ── legacy '$99 diagnostic credited toward the repair' promises in older page copy ──
+    (r'\(\$99,? credited (?:to|toward) (?:the )?repair\)', '($99 diagnostic)'),
+    (r'(?i)Diagnostic visit is \$99, credited toward any repair', 'Diagnostic visit is $99, with written pricing for any repair'),
+    (r'(?i)Our diagnostic is \$99 and credited toward the repair', 'Our diagnostic is $99, with written pricing for any repair'),
+    (r'(?i)Diagnostic is \$99 and credited toward the repair', 'Diagnostic is $99, with written pricing for any repair'),
+    (r'(?i)\$99 diagnostic, credited toward any repair', '$99 diagnostic with written pricing for any repair'),
+    (r'(?i)\$99 diagnostic credited toward the repair', '$99 diagnostic with written pricing'),
+    (r'(?i)Every visit includes the \$99 diagnostic, credited toward the repair if you proceed', 'Every visit starts with the $99 diagnostic, followed by written pricing'),
+    (r'(?i)We diagnose in 30 minutes &mdash; \$99 credited to the repair', 'We diagnose in 30 minutes &mdash; $99 diagnostic, written pricing'),
+    (r'(?i)We diagnose in 30 minutes — \$99 credited to the repair', 'We diagnose in 30 minutes — $99 diagnostic, written pricing'),
+    (r'(?i)that gets credited toward the repair cost if you move forward with us', 'and we quote any repair in writing before work begins'),
+    (r'(?i)that gets credited toward the repair if you move forward with us', 'and we quote any repair in writing before work begins'),
+    (r'(?i)gets credited toward the repair if you proceed with us that same visit, so you(?:&#8217;|&rsquo;|\')re not paying twice', 'covers the visit and the diagnosis; any repair is quoted separately in writing'),
+    (r'(?i), and that amount is credited toward any repair done on the same visit, so it doesn(?:&#8217;|&rsquo;|\')t add to your total', ', and we quote any repair in writing before doing the work'),
+    (r'(?i), and that amount is credited directly toward the repair when you move forward with us', ', and we quote any repair in writing before you decide'),
+    (r'(?i), and that amount is credited toward any repair[^.<]*', ', and we quote any repair in writing before doing the work'),
+    (r'(?i)\(\$75-\$125\) credited toward the repair, and only quote', '($75-$125) and only quote'),
+    (r'(?i)is \$99&ndash;\$189 and is credited toward any repair work you book', 'is $99&ndash;$189, with written pricing for any repair work'),
+    (r'(?i)\$99 to \$189, credited toward any repair work you book', '$99 to $189, with written pricing for any repair work'),
+    (r'(?i)\$99&ndash;\$189, credited against the repair if you book the work', '$99&ndash;$189, quoted separately from any repair work'),
+    (r'(?i)the inspection fee is credited toward that work when you book with us on the same visit or within 14 days', 'the inspection fee covers the visit and the repair is quoted separately in writing'),
+    (r'(?i)the inspection fee is credited toward the repair total', 'the inspection fee covers the visit and any repair is quoted separately'),
+    (r'(?i), credited toward the repair if you approve work on the same visit', ''),
+    (r'(?i), which is credited toward the repair cost if you proceed with us', ''),
+    (r'(?i)Clear findings, written options, and the full \$99 credited toward approved repair, installation, or remodeling work', 'Clear findings and written options for repair, installation, or remodeling before any work begins'),
+    (r'(?i)Full fee credited toward approved repair, installation, or remodeling work', 'Clear findings and written pricing before any work begins'),
+    (r'(?i), the complete \$99 is credited toward the project', ', you receive written pricing before any work begins'),
+    (r'(?i)We charge a \$99 diagnostic fee for the inspection and testing visit — that fee is credited in full toward the cost of any repair we complete on the same visit\. You(?:&#8217;|&rsquo;|\')re not paying for a second trip\.', 'We charge a $99 diagnostic fee for the inspection and testing visit, and we quote any repair in writing before the work starts.'),
+    (r'(?i)Our \$99 diagnostic fee is credited toward whatever repair we complete on the same visit, so you(?:&#8217;|&rsquo;|\')re not paying for the diagnosis separately if we fix it that day\.', 'Our $99 diagnostic fee covers the visit and the diagnosis; any repair is quoted separately in writing.'),
+    (r'(?i), which is credited in full toward the repair if you move forward\.', '.'),
+    (r'(?i)If you move forward with the repair, that fee is credited toward the total cost of the job\. You only pay it separately if you decide not to proceed after the diagnosis[^.]*\.', 'The fee covers the visit and the diagnosis, and any repair is quoted separately in writing.'),
+    (r'(?i)We charge a \$99 diagnostic fee to come out and identify the problem — that amount gets credited toward your repair if you move forward\.', 'We charge a $99 diagnostic fee to come out and identify the problem.'),
+    (r'(?i)We charge a \$99 diagnostic fee that gets credited toward whatever repair you approve, so you(?:&#8217;|&rsquo;|\')re not paying twice — once to find out what(?:&#8217;|&rsquo;|\')s wrong and again to fix it\.', 'We charge a $99 diagnostic fee to find out exactly what is wrong, and quote any repair in writing before fixing it.'),
+    (r'(?i) — that fee is credited directly toward the job if you move forward with us\.', '.'),
+    # last resort for anything phrased differently
+    (r'(?i),? (?:and )?(?:is |gets |that gets )?credited (?:toward|to|against|directly toward) (?:any |the |that )?(?:repair(?: cost| total| work)?|project|work)(?: you book| if you[^.,;<]*| when you[^.,;<]*)?', ''),
 ]
 PROTECT = re.compile(r'(<script[^>]*>.*?</script>|<style[^>]*>.*?</style>|<svg[^>]*>.*?</svg>|<!--.*?-->)', re.S | re.I)
 
@@ -281,6 +318,7 @@ def leftovers(html):
 
 
 # ───────────────────────── JSON-LD ─────────────────────────
+RETIRED_FAQ = {'Does the entire $99 go toward the work?', 'Do you offer free estimates?'}
 JSON_PHRASES = [(re.compile(p, re.I), re.sub(r'&amp;', '&', r)) for p, r in PHRASES]
 
 
@@ -302,18 +340,25 @@ def fix_jsonld(html, stype, page_kind):
         nodes = d.get('@graph') if isinstance(d, dict) and '@graph' in d else [d]
         offer = {'@type': 'Offer', 'name': G['name'], 'price': str(CFG['price']), 'priceCurrency': CFG['currency'],
                  'url': ORIGIN + LEARN,
-                 'description': 'Professional on-site fireplace inspection. Full fee credited toward approved repair, installation, or fireplace remodeling work.'}
+                 'description': 'Professional on-site fireplace inspection with clear findings and written pricing for any recommended work.'}
         for n in nodes:
             if not isinstance(n, dict): continue
             t = n.get('@type')
             if t == 'Service' or (isinstance(t, list) and 'Service' in t):
                 n['offers'] = offer
-            if t == 'FAQPage' and page_kind == 'service':
-                names = {q.get('name') for q in n.get('mainEntity', [])}
-                for i in CFG['serviceFaq']:
-                    q, a = CFG['faq'][i]
-                    if q not in names:
-                        n.setdefault('mainEntity', []).append({'@type': 'Question', 'name': q, 'acceptedAnswer': {'@type': 'Answer', 'text': a}})
+            if t == 'FAQPage':
+                answers = {q: a for q, a in CFG['faq']}
+                ents = [e for e in n.get('mainEntity', []) if e.get('name') not in RETIRED_FAQ]
+                for e in ents:                       # answers follow the config on every run
+                    if e.get('name') in answers:
+                        e['acceptedAnswer'] = {'@type': 'Answer', 'text': answers[e['name']]}
+                if page_kind == 'service':
+                    names = {e.get('name') for e in ents}
+                    for i in CFG['serviceFaq']:
+                        q, a = CFG['faq'][i]
+                        if q not in names:
+                            ents.append({'@type': 'Question', 'name': q, 'acceptedAnswer': {'@type': 'Answer', 'text': a}})
+                n['mainEntity'] = ents
         return m.group(1) + json.dumps(d, ensure_ascii=False) + '</script>'
     return re.sub(r'(<script[^>]*application/ld\+json[^>]*>)(.*?)</script>', sub, html, flags=re.S)
 
@@ -331,7 +376,7 @@ def cta_label():
 
 
 def header_cta(html):
-    attrs = (f'href="{BOOK}" title="Full $99 credited toward approved work" aria-label="{H(G["navCta"])} — full $99 credited toward approved work" '
+    attrs = (f'href="{BOOK}" title="Professional on-site inspection with written pricing" aria-label="{H(G["navCta"])} — professional on-site inspection with written pricing" '
              f'data-offer-event="inspection_offer_click" data-offer-placement="header"')
     # homepage header: the Free Estimate pill
     html = re.sub(r'<a class="btn btn--primary" href="/contact/"[^>]*>(?:Free Estimate|Book \$99 Inspection)</a>',
@@ -358,29 +403,32 @@ def home_hero(html):
     html = re.sub(r'(<span class="label">)[^<]*(</span>\s*<h1 id="hero-heading")', r'\1Arizona Fireplace Specialists\2', html, count=1)
     html = re.sub(r'(<h1 id="hero-heading" class="hero__title">).*?(</h1>)', r'\1Know Exactly What <span class="text-orange">Your Fireplace Needs.</span>\2', html, count=1, flags=re.S)
     html = re.sub(r'(<p class="hero__subtitle">).*?(</p>)',
-                  r'\1Book a professional on-site fireplace inspection for $99. Get clear findings, written options, and expert guidance for repair, installation, or a complete fireplace transformation. Approve the work and your full $99 becomes project credit.\2', html, count=1, flags=re.S)
+                  r'\1Book a professional on-site fireplace inspection for $99. Get clear findings, written options, and expert guidance for repair, installation, or a complete fireplace transformation. Clear answers before any work begins.\2', html, count=1, flags=re.S)
     ctas = (f'<div class="hero__ctas"><a class="btn btn--primary btn--lg" href="{BOOK}" data-offer-event="inspection_offer_click" data-offer-placement="hero">{H(G["primaryCta"])}</a>'
             f'<a class="btn btn--ghost btn--lg" href="{TEL}" data-offer-event="inspection_phone_click" data-offer-placement="hero">Call Now</a></div>'
-            + wrap('hero-benefits', '<ul class="ao-hero-benefits"><li>Professional On-Site Evaluation</li><li>Clear Findings</li><li>Written Pricing</li><li>Full $99 Project Credit</li></ul>'))
+            + wrap('hero-benefits', '<ul class="ao-hero-benefits"><li>Professional On-Site Evaluation</li><li>Clear Findings</li><li>Written Pricing</li><li>No Obligation</li></ul>'))
     html = strip('hero-benefits', html)
     html = re.sub(r'<div class="hero__ctas">.*?</div>', lambda m: ctas, html, count=1, flags=re.S)
-    html = strip('hero-card', html); html = strip('hero-visual', html)
+    html = strip('hero-card', html); html = strip('hero-visual', html); html = strip('hero-bg', html); html = strip('hero-pill', html)
     html = re.sub(r'<div class="hero__card">.*?</div>\s*(?=<div class="hero__badge")', '', html, count=1, flags=re.S)   # original "Our Specialties" card
-    html = html.replace('<div class="hero__visual" aria-hidden="true">', '<div class="hero__visual">', 1)          # the banner must stay accessible
-    html = html.replace('<div class="hero__badge"', hero_visual() + '\n<div class="hero__badge"', 1)
+    # full-bleed photo behind a centered hero (the side card/visual is hidden by CSS)
+    html = re.sub(r'<section class="hero(?: ao-hero--full)?"', '<section class="hero ao-hero--full"', html, count=1)
+    html = re.sub(r'(<section class="hero ao-hero--full"[^>]*>)', lambda m: m.group(1) + hero_bg(), html, count=1)
+    html = html.replace('<h1 id="hero-heading"', wrap('hero-pill', '<div class="ao-hero-pill"><b>$99</b> Expert Fireplace Inspection <span>&middot; written pricing, no obligation</span></div>') + '\n<h1 id="hero-heading"', 1)
     # flow band right after the hero, then How/Included before the before-after gallery
     html = strip('flow', html); html = strip('how', html); html = strip('included', html)
-    html = re.sub(r'(<section class="hero".*?</section>)', lambda m: m.group(1) + '\n' + credit_flow(True), html, count=1, flags=re.S)
     html = html.replace('<section class="ba-v2-section', how_it_works() + '\n' + included(True) + '\n<section class="ba-v2-section', 1)
     # before/after connection
     html = strip('ba-lead', html); html = strip('ba-cta', html)
-    lead = wrap('ba-lead', '<div class="ao-ba-lead acp-offer-anim"><span class="ao-eyebrow">Your Inspection Can Be the First Step</span><h2 class="ao-title">From &ldquo;What Does This Need?&rdquo; to a Complete Transformation</h2><p class="ao-lead">Whether your fireplace needs a focused repair or a complete redesign, the $99 inspection gives you clear options before the project begins &mdash; and the fee is applied when you move forward.</p></div>')
+    lead = wrap('ba-lead', '<div class="ao-ba-lead acp-offer-anim"><span class="ao-eyebrow">Your Inspection Can Be the First Step</span><h2 class="ao-title">From &ldquo;What Does This Need?&rdquo; to a Complete Transformation</h2><p class="ao-lead">Whether your fireplace needs a focused repair or a complete redesign, the $99 inspection gives you clear options and written pricing before the project begins.</p></div>')
     html = html.replace('<div class="ba-v2-hdr">', lead + '\n<div class="ba-v2-hdr">', 1)
     i = html.find('<section class="ba-v2-section'); j = html.find('</section>', i)
     html = html[:j] + wrap('ba-cta', f'<div class="ao-ba-cta">{btn("Let&rsquo;s Inspect Your Fireplace", BOOK, placement="before_after")}</div>') + html[j:]
     # FAQ: swap the "free estimates" item for the real answer, then add two more
     html = re.sub(r'<div class="faq-item">\s*<button class="faq-item__q">(?:<br />)?\s*Do you offer free estimates\?.*?</div>\s*</p></div>',
                   faq_items([0]), html, count=1, flags=re.S)
+    html = re.sub(r'<div class="faq-item"><button class="faq-item__q" type="button">' + re.escape(CFG['faq'][0][0]) + r'<svg.*?</div></div>',
+                  lambda m: faq_items([0]), html, count=1, flags=re.S)
     html = strip('home-faq', html)
     html = html.replace('</div>\n<p><!-- ===== FINAL', wrap('home-faq', faq_items([2, 3])) + '</div>\n<p><!-- ===== FINAL', 1) if '<!-- ===== FINAL' in html else html
     return html
@@ -430,13 +478,13 @@ def metadata(html, rel, stype, page_kind):
     html = re.sub(r'(<meta property="og:title" content=")([^"]*)(")', lambda m: m.group(1) + dedupe_brand(m.group(2).strip()) + m.group(3), html, count=1)
     if rel == 'index.html':
         html = set_tag(html, r'<title>[^<]*</title>', '<title>Arizona Fireplace Services | $99 Expert Inspection</title>')
-        desc = 'Book a $99 expert fireplace inspection with Arizona Chimney Pros. Get clear findings and written options. Full fee credited toward approved repair, installation, or remodeling work.'
+        desc = 'Book a $99 expert fireplace inspection with Arizona Chimney Pros. Get clear findings and written pricing for repair, installation, or remodeling before any work begins.'
         html = set_tag(html, r'<meta property="og:title" content="[^"]*"', '<meta property="og:title" content="Arizona Fireplace Services | $99 Expert Inspection"')
         html = set_tag(html, r'<meta property="og:description" content="[^"]*"', f'<meta property="og:description" content="{desc}"')
         if '<meta name="description"' not in html:
             html = html.replace('<title>', f'<meta name="description" content="{desc}">\n<title>', 1)
     elif rel == 'contact/index.html':
-        desc = 'Book your $99 expert fireplace inspection. Clear findings, written options, and the full $99 credited toward approved repair, installation, or remodeling work.'
+        desc = 'Book your $99 expert fireplace inspection. Clear findings and written options for repair, installation, or remodeling before any work begins.'
         html = set_tag(html, r'<title>[^<]*</title>', '<title>Book a $99 Fireplace Inspection | Arizona Chimney Pros</title>')
         html = set_tag(html, r'<meta property="og:title" content="[^"]*"', '<meta property="og:title" content="Book a $99 Fireplace Inspection | Arizona Chimney Pros"')
         html = set_tag(html, r'<meta property="og:description" content="[^"]*"', f'<meta property="og:description" content="{desc}"')
@@ -458,15 +506,15 @@ def metadata(html, rel, stype, page_kind):
 def contact_page(html):
     html = re.sub(r'<h1>Book Your Free <em>Fireplace Estimate</em></h1>|<h1>Book Your \$99 Expert <em>Fireplace Inspection</em></h1>',
                   '<h1>Book Your $99 Expert <em>Fireplace Inspection</em></h1>', html, count=1)
-    html = re.sub(r'(<div class="acp-book__eyebrow">)[^<]*(</div>)', r'\1$99 Inspection &middot; Fully Credited\2', html, count=1)
+    html = re.sub(r'(<div class="acp-book__eyebrow">)[^<]*(</div>)', r'\1$99 Inspection &middot; Written Pricing\2', html, count=1)
     html = re.sub(r'(<p class="acp-book__sub">).*?(</p>)', r'\1Tell us what is happening with your fireplace or what you want to transform. Our team will contact you to confirm the appointment details.\2', html, count=1, flags=re.S)
     html = re.sub(r'<div class="acp-bookform-head">.*?</div>\s*<div id="acp-wizard-mount">',
                   lambda m: '<div class="acp-bookform-head"><div class="kicker">$99 Expert Inspection</div><h3>Request My Inspection</h3><p>Tell us what you need and when. We&rsquo;ll call to confirm your appointment.</p></div>\n<div id="acp-wizard-mount">', html, count=1, flags=re.S)
     html = strip('booksum', html)
     summary = wrap('booksum', f'''<div class="ao-booksum" data-offer-view="booking_summary">
   <div class="ao-booksum__head"><b>Your Inspection Includes</b><span class="ao-booksum__price">Inspection fee<em>$99</em></span></div>
-  <ul><li>Professional on-site evaluation</li><li>Clear findings and recommendations</li><li>Written repair, installation, or remodeling options</li><li>Full $99 credit toward approved work</li></ul>
-  <p>The complete $99 is deducted from approved repair, installation, or fireplace remodeling work. <a href="#" data-offer-modal-open data-offer-placement="booking_summary">How the credit works</a></p>
+  <ul><li>Professional on-site evaluation</li><li>Clear findings and recommendations</li><li>Written repair, installation, or remodeling options</li><li>No obligation to approve additional work</li></ul>
+  <p>The $99 covers the professional visit and evaluation. Any recommended work is quoted separately in writing. <a href="#" data-offer-modal-open data-offer-placement="booking_summary">What the $99 covers</a></p>
 </div>''')
     html = html.replace('<div class="acp-bookform-head">', summary + '\n<div class="acp-bookform-head">', 1)
     # the no-JS fallback form's submit button
@@ -479,7 +527,7 @@ def inspection_page(contact_html):
     html = html.replace(f'{ORIGIN}/contact/', f'{ORIGIN}{LEARN}')
     html = html.replace('page-id-315', 'page-id-315 acp-inspection-page')
     html = re.sub(r'<title>[^<]*</title>', '<title>$99 Fireplace Inspection | Arizona Chimney Pros</title>', html, count=1)
-    desc = 'Book a professional $99 fireplace inspection with Arizona Chimney Pros. Get clear findings and written options. Full fee credited toward approved repair, installation, or remodeling work.'
+    desc = 'Book a professional $99 fireplace inspection with Arizona Chimney Pros. Get clear findings and written options for repair, installation, or remodeling before any work begins.'
     html = re.sub(r'<meta name="description" content="[^"]*"', f'<meta name="description" content="{desc}"', html, count=1)
     html = re.sub(r'<meta property="og:title" content="[^"]*"', '<meta property="og:title" content="$99 Fireplace Inspection | Arizona Chimney Pros"', html, count=1)
     html = re.sub(r'<meta property="og:description" content="[^"]*"', f'<meta property="og:description" content="{desc}"', html, count=1)
@@ -502,7 +550,7 @@ def inspection_page(contact_html):
             d['@graph'].append({'@type': 'Service', 'name': G['name'], 'serviceType': 'Fireplace inspection', 'provider': {'@id': f'{ORIGIN}/#organization'},
                                 'areaServed': 'Phoenix metro area, Arizona', 'url': f'{ORIGIN}{LEARN}',
                                 'offers': {'@type': 'Offer', 'name': G['name'], 'price': str(CFG['price']), 'priceCurrency': CFG['currency'], 'url': ORIGIN + LEARN,
-                                           'description': 'Professional on-site fireplace inspection. Full fee credited toward approved repair, installation, or fireplace remodeling work.'}})
+                                           'description': 'Professional on-site fireplace inspection with clear findings and written pricing for any recommended work.'}})
         return m.group(1) + json.dumps(d, ensure_ascii=False) + '</script>'
     html = re.sub(r'(<script[^>]*application/ld\+json[^>]*>)(.*?)</script>', sub, html, count=1, flags=re.S)
     cases = [('Gas Fireplace Repair', CFG['gasRepair']['inlineCopy'], '/services/gas-fireplace-repair/', CFG['gasRepair']['name']),
@@ -519,14 +567,13 @@ def inspection_page(contact_html):
     <div>
       <span class="ao-eyebrow">Arizona Fireplace Specialists</span>
       <h1 id="ao-page-title">$99 Expert <em>Fireplace Inspection</em></h1>
-      <p class="ao-lead">{H(G["description"])} Approve the recommended repair, installation, or fireplace remodel, and the complete $99 inspection fee is applied to your project.</p>
-      <ul class="ao-hero-benefits"><li>Professional On-Site Evaluation</li><li>Clear Findings</li><li>Written Pricing</li><li>Full $99 Project Credit</li></ul>
+      <p class="ao-lead">{H(G["description"])} One professional visit, clear answers, and no obligation.</p>
+      <ul class="ao-hero-benefits"><li>Professional On-Site Evaluation</li><li>Clear Findings</li><li>Written Pricing</li><li>No Obligation</li></ul>
       <div class="ao-cta-row" style="justify-content:flex-start">{btn(G["primaryCta"], "#book", placement="inspection_hero")}<a class="ao-btn ao-btn--ghost" href="{TEL}" data-offer-event="inspection_phone_click" data-offer-placement="inspection_hero">{PHONE_SVG}Call {PHONE}</a></div>
     </div>
     {offer_card_hero().replace('hero__card ', '')}
   </div>
 </section>
-{credit_flow(True)}
 {included(False)}
 {how_it_works()}
 <section class="ao-section ao-section--stone" aria-labelledby="ao-uc-title">
@@ -564,7 +611,7 @@ def process(rel, html):
     html = re.sub(r'<body([^>]*)>', body_tag, html, count=1)
     html = re.sub(r'(<body[^>]*>)', lambda m: m.group(1) + announcement_bar(), html, count=1)
     html = header_cta(html)
-    html = html.replace('<div class="trust-item"><br />Free Estimates</div>', '<div class="trust-item"><br />$99 Credited to Approved Work</div>')
+    html = html.replace('<div class="trust-item"><br />Free Estimates</div>', '<div class="trust-item"><br />Clear Written Pricing</div>')
     if kind == 'home':
         html = home_hero(html)
     if kind == 'contact':

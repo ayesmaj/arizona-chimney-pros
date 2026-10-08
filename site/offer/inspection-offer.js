@@ -1,6 +1,6 @@
 /* Arizona Chimney Pros — $99 inspection offer: runtime behaviour.
  * Everything visible is server-rendered by tools/apply_inspection_offer.py;
- * this file only adds the floating card, the credit modal, entrance
+ * this file only adds the floating card, the fee-details modal, entrance
  * animations and analytics events. */
 (function () {
   "use strict";
@@ -49,7 +49,7 @@
     doc.querySelectorAll(".acp-offer-anim").forEach(function (n) { n.classList.add("is-in"); });
   }
 
-  /* ── credit modal (accessible: focus trap, Esc, restore focus) ── */
+  /* ── fee-details modal (accessible: focus trap, Esc, restore focus) ── */
   var modal = doc.getElementById("acp-offer-modal");
   var lastFocus = null;
   function focusables() {

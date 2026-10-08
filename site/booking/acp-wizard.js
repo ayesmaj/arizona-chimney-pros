@@ -224,9 +224,9 @@
     ic.innerHTML = ICONS.check;
     box.appendChild(ic);
     box.appendChild(el("h3", null, "Your Inspection Request Is In"));
-    box.appendChild(el("p", null, "Thank you. Our team will contact you shortly to confirm the appointment details and review the $99 inspection process."));
+    box.appendChild(el("p", null, "Thank you. Our team will contact you shortly to confirm the appointment details for your $99 inspection."));
     if (when) box.appendChild(el("div", "acpw-when", "Requested: " + when));
-    box.appendChild(el("p", "acpw-credit", "Approve the recommended work and your full $99 inspection fee becomes project credit."));
+    box.appendChild(el("p", "acpw-credit", "You\u2019ll get clear findings and written pricing for any recommended work \u2014 no obligation."));
     var acts = el("div", "acpw-actions");
     acts.innerHTML = "<a class='p' href='tel:" + PHONE_HREF + "'>Call Arizona Chimney Pros</a><a class='g' href='/'>Return Home</a>";
     box.appendChild(acts);
@@ -269,7 +269,7 @@
       { key: "schedule", label: "Schedule", title: "Preferred Time", sub: "We’ll call to confirm the exact slot.", icon: ICONS.schedule },
       { key: "contact", label: "Contact", title: "Your Details", sub: "Only used to confirm this appointment.", icon: ICONS.contact },
       { key: "address", label: "Address", title: "Your Address", sub: "Please confirm your service address.", icon: ICONS.address },
-      { key: "review", label: "Review", title: "Review & Send", sub: "Check everything looks right \u2014 $99 inspection, fully credited.", icon: ICONS.review },
+      { key: "review", label: "Review", title: "Review & Send", sub: "Check everything looks right \u2014 $99 professional inspection.", icon: ICONS.review },
     ];
 
     var root = el("div", "acpw");
@@ -874,11 +874,11 @@
       sum.setAttribute("role", "note");
       sum.appendChild(el("span", "k", "Expert Fireplace Inspection"));
       sum.appendChild(el("b", null, "$" + (OFFER.price || 99)));
-      sum.appendChild(el("p", null, "Full $" + (OFFER.price || 99) + " credited toward approved work."));
-      var link = el("button", "acpw-offer-link", "How the Credit Works");
+      sum.appendChild(el("p", null, "Professional on-site inspection with written pricing. No obligation."));
+      var link = el("button", "acpw-offer-link", "What the $" + (OFFER.price || 99) + " covers");
       link.type = "button";
       link.setAttribute("aria-expanded", "false");
-      var detail = el("p", "acpw-offer-detail", OFFER.creditModal || "When you approve the recommended repair, installation, or fireplace remodeling work, the complete $99 inspection fee is deducted from the approved project total. If you do not move forward, the $99 covers the professional visit and evaluation.");
+      var detail = el("p", "acpw-offer-detail", OFFER.feeModal || "The $99 covers a professional on-site visit: we evaluate the fireplace, explain what we find, and give you written pricing for any recommended work. There is no obligation to approve additional work.");
       detail.hidden = true;
       link.onclick = function () {
         if (window.ACP_OFFER_MODAL) { window.ACP_OFFER_MODAL.open("review_step"); return; }
@@ -1009,9 +1009,9 @@
         page: location.href,
         pagePath: location.pathname,
         leadSource: storedAttr().utm_source || "website",
-        offerCode: (window.ACP_OFFER && window.ACP_OFFER.offerCode) || "inspection_99_project_credit",
+        offerCode: (window.ACP_OFFER && window.ACP_OFFER.offerCode) || "inspection_99",
         inspectionPrice: (window.ACP_OFFER && window.ACP_OFFER.price) || 99,
-        inspectionCreditEligible: true,
+        inspectionCreditEligible: false,
         serviceType: state.service,
         fuelType: state.fuel,
         fireplaceWorking: state.working,

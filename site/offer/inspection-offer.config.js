@@ -5,7 +5,7 @@ window.ACP_OFFER = {
   "enabled": true,
   "price": 99,
   "currency": "USD",
-  "offerCode": "inspection_99_project_credit",
+  "offerCode": "inspection_99",
   "phoneDisplay": "(602) 557-5071",
   "phoneHref": "tel:+16025575071",
   "bookingUrl": "/contact/",
@@ -16,44 +16,41 @@ window.ACP_OFFER = {
     "name": "$99 Expert Fireplace Inspection",
     "shortName": "$99 Inspection",
     "headline": "Know Exactly What Your Fireplace Needs.",
-    "description": "Get clear findings, professional recommendations, and written pricing before work begins.",
-    "creditHeadline": "Your Full $99 Becomes Project Credit",
-    "creditDescription": "Approve the recommended repair, installation, or fireplace remodeling work, and the complete $99 inspection fee is deducted from your project total.",
+    "description": "Get clear findings, professional recommendations, and written pricing before any work begins.",
     "primaryCta": "Book My $99 Inspection",
     "navCta": "Book $99 Inspection",
     "inlineTitle": "Start With a Professional $99 Inspection",
-    "inlineCopy": "Get clear findings and written options before work begins. Approve the recommended work and the complete $99 is applied to your project."
+    "inlineCopy": "A fireplace specialist evaluates the fireplace, explains what they find, and gives you written pricing before any work begins."
   },
   "gasRepair": {
     "name": "$99 Gas Fireplace Diagnostic",
     "primaryCta": "Book $99 Diagnostic",
     "inlineTitle": "Start With a $99 Gas Fireplace Diagnostic",
-    "inlineCopy": "We evaluate the relevant accessible fireplace components, identify the likely cause of the problem, and explain the available repair options. Approve the repair and the full $99 is credited toward the work."
+    "inlineCopy": "We evaluate the relevant accessible fireplace components, identify the likely cause of the problem, and explain the available repair options with written pricing."
   },
   "remodeling": {
     "name": "$99 Fireplace Design & Inspection Visit",
     "primaryCta": "Start My Fireplace Remodel",
     "inlineTitle": "Start With a $99 Fireplace Design & Inspection Visit",
-    "inlineCopy": "We evaluate the existing fireplace, review the remodeling area, discuss your design goals, and prepare a written project scope. Hire Arizona Chimney Pros for the remodel and the full $99 is credited toward the project.",
+    "inlineCopy": "We evaluate the existing fireplace, review the remodeling area, discuss your design goals, and prepare a written project scope and pricing.",
     "details": ["Mantel", "Frame and surround", "Stone", "Brick", "Tile", "Slab", "Hearth", "Burner system", "Gas logs", "Fire glass", "Remote and controls"]
   },
   "installation": {
     "name": "$99 Installation Planning Visit",
     "primaryCta": "Plan My Installation",
     "inlineTitle": "Start With a $99 Installation Planning Visit",
-    "inlineCopy": "We evaluate the space, dimensions, existing fireplace conditions, visible venting considerations, finish goals, and installation options. Move forward with the installation and the full $99 is credited toward the project."
+    "inlineCopy": "We evaluate the space, dimensions, existing fireplace conditions, visible venting considerations, finish goals, and installation options, and give you written pricing."
   },
   "chimney": {
     "name": "$99 Fireplace & Chimney Inspection",
     "primaryCta": "Book Chimney Inspection",
     "inlineTitle": "Start With a $99 Fireplace & Chimney Inspection",
-    "inlineCopy": "We perform the accessible visual evaluation relevant to your requested chimney or fireplace service and explain any visible concerns. Approve the recommended work and the full $99 is credited toward the project."
+    "inlineCopy": "We perform the accessible visual evaluation relevant to your requested chimney or fireplace service, explain any visible concerns, and give you written pricing for any recommended work."
   },
 
   "supportingLine": "One professional visit. Clear answers. No guesswork.",
-  "creditLabel": "Your $99 Becomes Project Credit",
-  "creditExplanation": "Move forward with approved work and the full inspection fee is deducted from your project total.",
-  "creditModal": "When you approve the recommended repair, installation, or fireplace remodeling work, Arizona Chimney Pros deducts the complete $99 inspection fee from the approved project total. If you do not move forward, the $99 covers the professional visit and evaluation.",
+  "feeLabel": "What the $99 Covers",
+  "feeModal": "The $99 covers a professional on-site visit: a fireplace specialist evaluates the fireplace or the area you want to remodel, explains what they find, and gives you written pricing for any recommended repair, installation, or remodeling work. You decide what happens next — there is no obligation to approve additional work.",
 
   "included": [
     ["Professional Evaluation", "Review of accessible components relevant to your requested service."],
@@ -61,18 +58,18 @@ window.ACP_OFFER = {
     ["Visible Findings", "Photos or visual explanations when they help communicate the recommendation."],
     ["Written Options", "Clear written pricing for recommended repair, installation, or remodeling work."],
     ["Remodel Planning", "For fireplace transformations: dimensions, wall finish, mantel, hearth, burner, logs, fire glass, remote, and related upgrades."],
-    ["Full Project Credit", "The complete $99 is credited toward approved qualifying work."]
+    ["Honest Recommendations", "You get clear next steps and written pricing — and no pressure to approve additional work."]
   ],
   "steps": [
     ["We Inspect", "A fireplace specialist visits your home, evaluates the fireplace or requested project, and documents the relevant visible condition."],
     ["You Get Clear Options", "We explain what we found and provide written repair, installation, or remodeling options before work begins."],
-    ["Your $99 Becomes Credit", "Approve the recommended work and the full inspection fee is deducted from your project price."]
+    ["You Decide", "With findings and written pricing in hand, you choose whether to move forward — on your schedule, with no obligation."]
   ],
   "faq": [
-    ["Is the fireplace inspection free?", "No. Arizona Chimney Pros charges $99 for the professional on-site fireplace inspection. If you approve the recommended repair, installation, or fireplace remodeling work, the complete $99 is credited toward the project."],
+    ["Is the fireplace inspection free?", "No. Arizona Chimney Pros charges $99 for the professional on-site fireplace inspection. The fee covers the visit, the evaluation, an explanation of what we find, and written pricing for any recommended work."],
     ["Why do you charge for the inspection?", "The appointment is a professional service visit, not a quick sales appointment. A fireplace specialist travels to the property, evaluates the fireplace or remodeling area, explains relevant findings, and prepares written options."],
-    ["Does the entire $99 go toward the work?", "Yes. When qualifying recommended work is approved, the complete $99 inspection fee is deducted from the project total."],
-    ["What happens if I do not move forward?", "The $99 covers the professional visit, evaluation, explanation of relevant findings, and preparation of recommended options. You are not required to approve additional work."],
+    ["What does the $99 cover?", "The professional visit, the evaluation of the fireplace or remodeling area, an explanation of relevant findings, and written pricing for recommended options. Any repair, installation, or remodeling work is quoted separately and only happens if you approve it."],
+    ["What happens if I do not move forward?", "Nothing further. You keep the findings and the written pricing, and you are not required to approve additional work."],
     ["Is written pricing included?", "Yes. You receive written pricing for the recommended repair, installation, or remodeling work relevant to the inspection."],
     ["Are advanced chimney scans included?", "No. The $99 visit is an accessible visual evaluation. Any additional inspection or testing is explained and priced before it is performed."]
   ],

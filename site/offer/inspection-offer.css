@@ -98,7 +98,26 @@ html.acp-offer-js .acp-offer-anim.is-in { opacity: 1; transform: none; }
 .ao-hero-benefits li { display: inline-flex; align-items: center; gap: 8px; font-size: 14px; color: rgba(245, 242, 237, .82); }
 .ao-hero-benefits li::before { content: "\2713"; color: var(--ao-ember); font-weight: 800; }
 
-/* ── homepage hero visual: photo with the booking banner over it ─────── */
+/* ── homepage hero: full-bleed photo, gradient, centered copy ─────────── */
+html body .hero.ao-hero--full { position: relative; min-height: min(calc(100svh - var(--ao-bar-h)), 900px); display: flex; align-items: center; isolation: isolate; }
+.ao-hero-bg { position: absolute; inset: 0; z-index: 0; overflow: hidden; }
+.ao-hero-bg img { width: 100%; height: 100%; object-fit: cover; object-position: center 55%; display: block; transform: scale(1.04); transition: transform 14s linear; }
+html.acp-offer-js .is-in .ao-hero-bg img, html.acp-offer-js .ao-hero--full.is-in .ao-hero-bg img { transform: scale(1); }
+.ao-hero-bg::after { content: ""; position: absolute; inset: 0;
+  background: linear-gradient(180deg, rgba(18, 18, 18, .82) 0%, rgba(18, 18, 18, .55) 38%, rgba(18, 18, 18, .62) 70%, rgba(18, 18, 18, .96) 100%),
+              radial-gradient(60% 50% at 50% 60%, rgba(255, 106, 26, .10), transparent 70%); }
+html body .ao-hero--full .hero__inner { grid-template-columns: 1fr !important; justify-items: center; text-align: center; position: relative; z-index: 2; }
+html body .ao-hero--full .hero__content { max-width: 880px; margin-inline: auto; display: flex; flex-direction: column; align-items: center; }
+html body .ao-hero--full .hero__subtitle { max-width: 680px !important; margin-inline: auto; }
+html body .ao-hero--full .hero__ctas, html body .ao-hero--full .ao-hero-benefits, html body .ao-hero--full .hero__proof { justify-content: center !important; }
+html body .ao-hero--full .hero__visual, html body .ao-hero--full .hero__badge { display: none !important; }
+html body .ao-hero--full .hero__glow, html body .ao-hero--full .hero__embers { z-index: 1; }
+.ao-hero-pill { display: inline-flex; align-items: center; gap: 8px; margin: 18px 0 20px; padding: 9px 16px; border: 1px solid var(--ao-gold-line); border-radius: 999px; background: rgba(18, 18, 18, .55); backdrop-filter: blur(6px); color: var(--ao-ivory); font-size: 14px; font-weight: 600; letter-spacing: .01em; }
+.ao-hero-pill b { color: var(--ao-ember); font-weight: 800; font-size: 16px; }
+.ao-hero-pill span { color: var(--ao-gold); font-weight: 500; }
+@media (max-width: 640px) { .ao-hero-pill span { display: none; } }
+
+/* ── (legacy) hero visual card ──────────────────────────────────────── */
 .ao-hero-visual { position: relative; width: 100%; max-width: 520px; border-radius: 18px; overflow: hidden; border: 1px solid var(--ao-gold-line); box-shadow: 0 30px 70px rgba(0, 0, 0, .45); background: var(--ao-surface); aspect-ratio: 4 / 5; max-height: 640px; }
 /* the original hero card was hidden on phones; the booking banner must not be */
 @media (max-width: 900px) { html body .hero__visual { display: flex !important; justify-content: center; margin-top: 8px; } }
