@@ -14,7 +14,7 @@ from html import escape as H
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SITE = os.path.join(ROOT, 'site')
 ORIGIN = 'https://arizonachimneypros.com'
-VER = '6'
+VER = '8'
 
 cfg_src = io.open(os.path.join(SITE, 'offer', 'inspection-offer.config.js'), encoding='utf-8').read()
 CFG = json.loads(cfg_src[cfg_src.index('{'):cfg_src.rindex('}') + 1])
@@ -31,6 +31,18 @@ ICONS = ['<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-widt
          '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 3h9l5 5v13H6z"/><path d="M9 13h6M9 17h6"/></svg>',
          '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 20h16M6 20V9l6-5 6 5v11"/><path d="M10 20v-6h4v6"/></svg>',
          '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7v10M9 10h4.5a2 2 0 010 4H9"/></svg>']
+
+# card photos (site/images/cards/<name>-{480,960}.webp, 4:3) — built from the real job photos in wp-content/uploads
+CARD_IMG = {'included': ['inc-evaluation', 'inc-diagnosis', 'inc-findings', 'inc-written', 'inc-remodel', 'inc-honest'],
+            'steps': ['step-inspect', 'step-options', 'step-decide']}
+CARD_SIZES = {'included': '(max-width: 640px) calc(100vw - 32px), (max-width: 1000px) 50vw, 400px',
+              'steps': '(max-width: 900px) calc(100vw - 32px), 400px'}
+
+
+def card_img(kind, i):
+    n = CARD_IMG[kind][i]
+    return (f'<img src="/images/cards/{n}-960.webp" srcset="/images/cards/{n}-480.webp 480w, /images/cards/{n}-960.webp 960w" '
+            f'sizes="{CARD_SIZES[kind]}" width="960" height="720" alt="" loading="lazy" decoding="async">')
 
 
 # ───────────────────────── helpers ─────────────────────────
@@ -103,7 +115,8 @@ def hero_visual():
 
 
 def how_it_works():
-    steps = ''.join(f'<div class="ao-step acp-offer-anim"><div class="ao-step__num">0{i + 1}</div><h3>{H(t)}</h3><p>{H(d)}</p></div>'
+    steps = ''.join(f'<div class="ao-step acp-offer-anim"><div class="ao-step__media" aria-hidden="true">{card_img("steps", i)}</div>'
+                    f'<div class="ao-step__body"><div class="ao-step__num">0{i + 1}</div><h3>{H(t)}</h3><p>{H(d)}</p></div></div>'
                     for i, (t, d) in enumerate(CFG['steps']))
     return wrap('how', f'''
 <section class="ao-section ao-section--ivory" id="how-the-99-works" aria-labelledby="ao-how-title">
@@ -118,7 +131,8 @@ def how_it_works():
 
 
 def included(dark=True):
-    tiles = ''.join(f'<div class="ao-tile{" ao-tile--credit" if i == 5 else ""} acp-offer-anim"><div class="ao-ico">{ICONS[i]}</div><h3>{H(t)}</h3><p>{H(d)}</p></div>'
+    tiles = ''.join(f'<div class="ao-tile{" ao-tile--credit" if i == 5 else ""} acp-offer-anim"><div class="ao-tile__bg" aria-hidden="true">{card_img("included", i)}</div>'
+                    f'<div class="ao-ico">{ICONS[i]}</div><div class="ao-tile__body"><h3>{H(t)}</h3><p>{H(d)}</p></div></div>'
                     for i, (t, d) in enumerate(CFG['included']))
     return wrap('included', f'''
 <section class="ao-section {'ao-section--charcoal' if dark else 'ao-section--stone'}" aria-labelledby="ao-inc-title">
@@ -388,6 +402,16 @@ def header_cta(html):
     return re.sub(r'<div class="header__actions">.*?</div>', in_actions, html, count=1, flags=re.S)
 
 
+def phone_icons(html):
+    """Header phone link and the floating call button become icon-only round buttons.
+    Lookaheads require href=tel: so the CSS comment that quotes <a class="header__phone"> is left alone."""
+    head = f'<a href="{TEL}" class="header__phone ao-phone" aria-label="Call {H(PHONE)}">{PHONE_SVG}</a>'
+    flt = f'<a href="{TEL}" class="float-cta" aria-label="Call Arizona Chimney Pros">{PHONE_SVG}</a>'
+    html = re.sub(r'<a (?=[^>]*class="header__phone)(?=[^>]*href="tel:)[^>]*>.*?</a>', head, html, flags=re.S)
+    html = re.sub(r'<a (?=[^>]*class="float-cta)(?=[^>]*href="tel:)[^>]*>.*?</a>', flt, html, flags=re.S)
+    return html
+
+
 def page_hero_ctas(html, stype):
     """Service/guide hero: booking becomes the primary action, with the service-specific label."""
     s = svc(stype)
@@ -611,6 +635,7 @@ def process(rel, html):
     html = re.sub(r'<body([^>]*)>', body_tag, html, count=1)
     html = re.sub(r'(<body[^>]*>)', lambda m: m.group(1) + announcement_bar(), html, count=1)
     html = header_cta(html)
+    html = phone_icons(html)
     html = html.replace('<div class="trust-item"><br />Free Estimates</div>', '<div class="trust-item"><br />Clear Written Pricing</div>')
     if kind == 'home':
         html = home_hero(html)
